@@ -1,0 +1,8 @@
+---
+published: true
+title: test post
+layout: post
+---
+# test post by tinypress
+
+This is post make by tinypess.co
