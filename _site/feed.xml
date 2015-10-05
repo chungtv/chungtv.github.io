@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Oct 2015 22:02:48 +0700</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2015 22:02:48 +0700</lastBuildDate>
+    <pubDate>Mon, 05 Oct 2015 21:42:04 +0700</pubDate>
+    <lastBuildDate>Mon, 05 Oct 2015 21:42:04 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -35,6 +35,231 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Cách sửa lỗi conflict collation trong MS SQL Server</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Trong quá trình cài đặt SQL Server, do không chú chọn Collation phù hợp dẫn đến khi vận hành thường bị conflic collation của SQL Server và Database.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Có nhiều cách để sửa lỗi này.
+1. Cách tốt nhất là cài lại SQL Server và chọn Collation phù hợp.
+2. Nếu không muốn cài lại SQL Server, đây là một trong những cách mà tôi đã làm thành công.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tìm một instance SQL ở máy nào đó, đã cài đúng collation (chú ý là cũng phải đúng phiên bản SQL server).&lt;/li&gt;
+  &lt;li&gt;Backup database &lt;code&gt;Model&lt;/code&gt; (đây là một database nằm trong phần Sys Databases).&lt;/li&gt;
+  &lt;li&gt;Restore database Model đúng đã backup ở bước trên sang instance SQL bị lỗi Conflic Collation.&lt;/li&gt;
+  &lt;li&gt;Restart lại service SQL Server và kiểm tra lại.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Chúc các bạn thành công.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Sep 2015 11:16:35 +0700</pubDate>
+        <link>http://yourdomain.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Start menu, Cotana và Modern Apps không hoạt động trong windows 10</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/content/images/2015/08/windows_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không hoạt động trong Windows 10. Sau đây, tôi sẽ hướng dẫn sửa lỗi Start menu, Cortana, Search Box và các ứng dụng Modern không hoạt động trong windows 10.&lt;/p&gt;
+
+&lt;p&gt;1.- Mở Windows Powershell dưới quyền Administator&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a. Cách 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nhấn tổ hợp phím &lt;kbd&gt;Windows + R&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Gõ &lt;code&gt;Powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Sau khi Powershell đã chạy, Click phải lên icon PowerShell dưới thanh Taskbar và chọn &lt;code&gt;Run as Administrator &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;b. Cách 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click phải lên nút &lt;code&gt;Start&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Chọn &lt;code&gt;Command prompt (Admin)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Trong màn hình &lt;code&gt;Administrator: Command Prompt&lt;/code&gt;, gõ &lt;code&gt;powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2.- Copy và Paste đoạn sau vào màn hình &lt;code&gt;Administrator: Windows PowerShell window&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;:
+&lt;code&gt;
+Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;3.- Bỏ qua một số thông báo lỗi màu đỏ và đợi Power Shell thực hiện xong đoạn lệnh trên.&lt;/p&gt;
+
+&lt;p&gt;4.- Kiểm tra sẽ thấy Start menu đã hoạt động trở lại.&lt;/p&gt;
+
+&lt;p&gt;Chúc bạn thành công&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Aug 2015 09:16:52 +0700</pubDate>
+        <link>http://yourdomain.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sử dụng Fn key trong VMWare Fusion</title>
+        <description>&lt;p&gt;Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion.
+Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt; để thực hiện một số chức năng. Ví dụng &lt;kbd&gt;Fn+F12&lt;/kbd&gt; để hiển thị Dashboard.&lt;/p&gt;
+
+&lt;p&gt;Trong Windows, tôi muốn sử dụng chức năng của phím &lt;kbd&gt;F12&lt;/kbd&gt; hay các phím Funtions khác. Tôi làm như sau:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mở của sổ &lt;code&gt;Settings&lt;/code&gt; của máy ảo windows bằng cách vào menu &lt;code&gt;Virtual Machine -&amp;gt; Settings&lt;/code&gt; hoặc nhấn tổ hợp phím &lt;kbd&gt;command + E&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Vào &lt;code&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Chọn Profile bạn đang sử dụng và vào &lt;code&gt;Edit profile&lt;/code&gt; (biểu tượng hình răng cưa)&lt;/li&gt;
+  &lt;li&gt;Trên màn hình &lt;code&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;, bạn chọn &lt;code&gt;Mac Host Shotcuts&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Bỏ tùy chọn &lt;code&gt;Enable Mac OS Keyboard Shortcuts&lt;/code&gt;
+&lt;img src=&quot;/content/images/2015/07/aaa.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 14 Jul 2015 05:52:17 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Macbook keyboard</title>
+        <description>&lt;p&gt;Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế cho các phím đó.
+&lt;img src=&quot;http://chungtrinh.com/content/images/2015/07/IMG_7845-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Phím &lt;kbd&gt;Home&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;←&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Phím &lt;kbd&gt;End&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;→&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Phím &lt;kbd&gt;Page Up&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;↑&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Phím &lt;kbd&gt;Page Down&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;↓&lt;/kbd&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 12 Jul 2015 14:53:50 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/12/macbook-keyboard.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/12/macbook-keyboard.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sửa lỗi 9001: The log for database is not available trong MS SQL Server</title>
+        <description>&lt;p&gt;Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính &lt;code&gt;Auto Close&lt;/code&gt; đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click phải vào Database, chọn &lt;code&gt;Tasks -&amp;gt; Take Offline&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Sau đó Click phải lại vào Database, chọn &lt;code&gt;Tasks -&amp;gt; Bring Online&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Click phải, chọn &lt;code&gt;Properties&lt;/code&gt;. Trong màn hình &lt;code&gt;Database Properties&lt;/code&gt;, chọn &lt;code&gt;Options&lt;/code&gt;. Sau đó thiết lập thuộc tính &lt;code&gt;Auto Close&lt;/code&gt; về &lt;strong&gt;False&lt;/strong&gt; là xong.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server</title>
+        <description>&lt;p&gt;Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+SELECT name, 
+       DATABASEPROPERTYEX(name, &#39;IsAutoClose&#39;)
+FROM   master.dbo.sysdatabases
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tham khảo thêm tại đây &lt;a href=&quot;https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/&quot;&gt;mssqltips.com&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Jul 2015 03:10:37 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Định dạng nội dung khi chat trong skype</title>
+        <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.skype.com&quot;&gt;Skype&lt;/a&gt; hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Khi chat Skype, mặc định Skype chỉ hiển thị nội dung chat ở định dạng chữ thường. Đôi khi bạn cần nhấn mạnh nội dung bằng cách in đậm, in nghiêng hay format text trong nội dung chat. Thực ra, Skype có thể giúp bạn làm việc này khá dễ dàng, tuy nhiên mặc định thì nó bị ẩn đi. Trong bài viết này, tôi sẽ hướng dẫn các bạn thực hiện việc này.&lt;/p&gt;
+
+&lt;h3 id=&quot;ty-chn&quot;&gt;Tùy chọn&lt;/h3&gt;
+&lt;p&gt;Đầu tiên, bạn cần mở tùy chọn hiển thị nội dung có định dạng này lên.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vào menu &lt;code&gt;Tools -&amp;gt; Options...&lt;/code&gt; (hoặc nhấn tổ hợp phím &lt;kbd&gt;Ctrl + ,&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Trên màn hình &lt;code&gt;Options&lt;/code&gt;, bạn tìm đến phần &lt;code&gt;IM &amp;amp; SMS -&amp;gt; IM appearance&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Tại khung bên phải, bạn check vào tùy chọn &lt;em&gt;Show advanced text formatting&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Nhấn nút &lt;kbd&gt;Save&lt;/kbd&gt; để lưu lại và đóng cửa sổ &lt;code&gt;Options&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/2015/07/2015-07-03_141930.png&quot; alt=&quot;Show advanced text formatting&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cch-vit&quot;&gt;Cách viết&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Để &lt;strong&gt;viết đậm nội dung&lt;/strong&gt;, bạn hãy sử dụng dấu * trước và sau nội dung &lt;code&gt;*Đây là nội dung in đậm*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để &lt;em&gt;in nghiêng nội dung&lt;/em&gt;, bạn sử dụng dấu _ trước và sau nội dung &lt;code&gt;_Còn đây là nội dung in nghiêng_&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để ~~gạch ngang nội dung~~, bạn sử dụng dấu ~ trước và sau nội dung &lt;code&gt;~Nội dung gạch ngang~&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để hiển thị nội dung dạng mã nguồn, bạn đặt nội dung muốn hiển thị vào cặp {code}, kiểu thế này &lt;code&gt;{code} public class HelloWorld { } {code}&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để viết toàn bộ nội dung không có format text (tức là bỏ qua các định dạng trên) và cũng không hiển thị các emoticons của Skype, chúng ta đặt 2 ký tự !! trước nội dung, ví dụ &lt;code&gt;!! Đây là nội dung không có *text format* và cũng không có emoticons :D (monkey)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Đặt 2 ký tự @@ trước nội dung chat, sẽ không có format text nhưng có emoticons, ví dụ &lt;code&gt;@@ Đây là nội dung không có *text format* nhưng có emoticons :D&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/2015/07/2015-07-03_142227.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thật là thú vị phải không nào, chúc các bạn vui vẻ!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 03 Jul 2015 07:24:54 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hiển thị danh sách database và vị trí lưu trữ trong SQL Server</title>
+        <description>&lt;p&gt;Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
+Đây là Query sẽ trả về kết quả mong muốn.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+SELECT
+    db.name AS [DB Name],
+    mf.name AS [Logical Name],
+    type_desc AS [File Type],
+    Physical_Name AS [Location]
+FROM
+    sys.master_files mf
+INNER JOIN 
+    sys.databases db ON db.database_id = mf.database_id
+&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Jul 2015 02:51:15 +0700</pubDate>
+        <link>http://yourdomain.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>test post</title>
+        <description>&lt;h1 id=&quot;test-post-by-tinypress&quot;&gt;test post by tinypress&lt;/h1&gt;
+
+&lt;p&gt;This is post make by tinypess.co&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Jun 2015 00:00:00 +0700</pubDate>
+        <link>http://yourdomain.com/2015/06/09/test-post.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/06/09/test-post.html</guid>
+        
         
       </item>
     
