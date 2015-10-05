@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Xin chào, tôi là Chung Trịnh. Đây là blog cá nhân của tôi. Nơi tôi chia sẻ những gì tôi tìm hiểu trong quá trình làm việc và nghiên cứu.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Sau nhiều lần chuyển đổi giữa các nền tảng khác nhau, tôi quyết định dừng lại ở đây (hy vọng đủ lâu :), Github Page với Jekyll.

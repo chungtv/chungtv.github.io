@@ -1,42 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Oct 2015 21:42:04 +0700</pubDate>
-    <lastBuildDate>Mon, 05 Oct 2015 21:42:04 +0700</lastBuildDate>
+    <title>Chung Trịnh&#39;s blog</title>
+    <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
+    <link>http://chungtrinh.com/</link>
+    <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 05 Oct 2015 22:22:48 +0700</pubDate>
+    <lastBuildDate>Mon, 05 Oct 2015 22:22:48 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 05 Oct 2015 04:43:51 +0700</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/10/05/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/05/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
     
       <item>
         <title>Cách sửa lỗi conflict collation trong MS SQL Server</title>
@@ -58,8 +29,8 @@
 &lt;p&gt;Chúc các bạn thành công.&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Sep 2015 11:16:35 +0700</pubDate>
-        <link>http://yourdomain.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</guid>
+        <link>http://chungtrinh.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</guid>
         
         
       </item>
@@ -100,8 +71,8 @@ Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Re
 &lt;p&gt;Chúc bạn thành công&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Aug 2015 09:16:52 +0700</pubDate>
-        <link>http://yourdomain.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</guid>
+        <link>http://chungtrinh.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</guid>
         
         
       </item>
@@ -124,8 +95,8 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 
 </description>
         <pubDate>Tue, 14 Jul 2015 05:52:17 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</guid>
+        <link>http://chungtrinh.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</guid>
         
         
       </item>
@@ -144,8 +115,8 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 
 </description>
         <pubDate>Sun, 12 Jul 2015 14:53:50 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/12/macbook-keyboard.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/12/macbook-keyboard.html</guid>
+        <link>http://chungtrinh.com/2015/07/12/macbook-keyboard.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/12/macbook-keyboard.html</guid>
         
         
       </item>
@@ -161,8 +132,8 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
+        <link>http://chungtrinh.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
         
         
       </item>
@@ -180,8 +151,8 @@ FROM   master.dbo.sysdatabases
 &lt;p&gt;Tham khảo thêm tại đây &lt;a href=&quot;https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/&quot;&gt;mssqltips.com&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 03:10:37 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</guid>
+        <link>http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</guid>
         
         
       </item>
@@ -220,8 +191,8 @@ FROM   master.dbo.sysdatabases
 
 </description>
         <pubDate>Fri, 03 Jul 2015 07:24:54 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</guid>
+        <link>http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</guid>
         
         
       </item>
@@ -244,8 +215,8 @@ INNER JOIN
 &lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Jul 2015 02:51:15 +0700</pubDate>
-        <link>http://yourdomain.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
+        <link>http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
         
         
       </item>
@@ -257,8 +228,44 @@ INNER JOIN
 &lt;p&gt;This is post make by tinypess.co&lt;/p&gt;
 </description>
         <pubDate>Tue, 09 Jun 2015 00:00:00 +0700</pubDate>
-        <link>http://yourdomain.com/2015/06/09/test-post.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/06/09/test-post.html</guid>
+        <link>http://chungtrinh.com/2015/06/09/test-post.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/06/09/test-post.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mở nhiều tài khoản Skype trên cùng một máy tính</title>
+        <description>&lt;p&gt;Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
+Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
+# Đối với máy tính windows
+&lt;img src=&quot;http://chungtrinh.com/content/images/2015/05/2015-05-21_142908.png&quot; alt=&quot;&quot; /&gt;
+### Chạy chương trình Skype khác
+1. Vào Start &amp;gt; Run hoặc nhấn tổ hợp phím &lt;kbd&gt;Windows+R&lt;/kbd&gt;
+2. Trong cửa sổ Run, bạn gõ vào: &lt;code&gt;c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary&lt;/code&gt; &lt;strong&gt;(chú ý tham số /secondary)&lt;/strong&gt;
+&lt;img src=&quot;/content/images/2015/05/2015-05-21_141718.png&quot; alt=&quot;&quot; /&gt;
+3. Nhấn &lt;kbd&gt;OK&lt;/kbd&gt;.&lt;/p&gt;
+
+&lt;p&gt;Một cửa sổ Skype mới sẽ hiện ra và bạn có thể đăng nhập bằng tài khoản mới rối.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-shortcut-trn-mn-hnh-desktop&quot;&gt;Tạo shortcut trên màn hình desktop&lt;/h3&gt;
+&lt;p&gt;Mỗi lần muốn chạy chương trình Skype khác, bạn lại phải làm lại thao tác rườm rà như trên. Hãy tạo shortcut trên màn hình desktop của bạn để lần sau truy cập nhanh hơn, làm như sau:
+1. Click chuột phải lên trỗ trống trên màn hình desktop và chọn New &amp;gt; Shortcut.
+2. Trên màn hình &lt;code&gt;[Create Shortcut]&lt;/code&gt;, tải ô &lt;code&gt;[Type the location of the item]&lt;/code&gt;, bạn copy nguyên đoạn sau và paste vào: &lt;code&gt;&quot;C:\Program Files (x86)\Skype\Phone\Skype.exe&quot; /secondary&lt;/code&gt;. Sau đó nhấn nút &lt;kbd&gt;Next&lt;/kbd&gt;
+3. Đặt tên cho shortcut mới, ví dụ &lt;code&gt;Skype 2&lt;/code&gt;. Sau đó nhấn &lt;kbd&gt;Finish&lt;/kbd&gt; là bạn đã hoàn thành.&lt;/p&gt;
+
+&lt;h1 id=&quot;i-vi-my-chy-macos&quot;&gt;Đối với máy chạy MACOS&lt;/h1&gt;
+&lt;p&gt;Mở terminal và gõ vào dòng lệnh sau:
+&lt;code&gt;
+sudo /Applications/Skype.app/Contents/MacOS/Skype
+&lt;/code&gt;
+Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.&lt;/p&gt;
+
+&lt;p&gt;Chúc bạn thành công.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 May 2015 07:32:19 +0700</pubDate>
+        <link>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</guid>
         
         
       </item>
