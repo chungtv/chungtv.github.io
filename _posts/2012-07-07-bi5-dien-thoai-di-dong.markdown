@@ -2,6 +2,7 @@
 layout: post
 title: Bi#5 – Điện thoại di động
 date: '2012-07-07 05:00:00'
+redirect_from: /bi5-dien-thoai-di-dong/
 ---
 
 Ba ơi, cái gì đó ba? Bi chỉ lên chùm dây điện thoại ngoài đường hỏi.

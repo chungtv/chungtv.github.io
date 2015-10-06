@@ -2,6 +2,7 @@
 layout: post
 title: Truy vấn dữ liệu từ xa thông qua MS SQL linked server
 date: '2011-05-25 05:00:00'
+redirect_from: /truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server/
 ---
 
 > *Đôi khi vì một lý do gì đó mà bạn phải truy vấn dữ liệu từ một database đặt tại server khác (hoặc một instance khác của SQL Server) – ví dụ: so sánh dữ liệu giữa 2 database, hay các giải pháp phân tán …*

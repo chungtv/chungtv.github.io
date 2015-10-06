@@ -2,6 +2,7 @@
 layout: post
 title: Mẹ đau bao tử
 date: '2013-01-03 05:00:00'
+redirec_from: /me-dau-bao-tu/
 ---
 
 Hôm nay mẹ bị đau bao tử, đi làm về mệt mẹ nằm nghỉ. Bi thấy vậy hỏi mẹ, mẹ bảo mẹ bị đau bao tử.

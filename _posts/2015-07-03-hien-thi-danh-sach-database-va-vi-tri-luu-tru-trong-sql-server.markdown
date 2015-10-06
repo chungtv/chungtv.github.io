@@ -2,6 +2,7 @@
 layout: post
 title: Hiển thị danh sách database và vị trí lưu trữ trong SQL Server
 date: '2015-07-03 02:51:15'
+redirect_from: /hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/
 ---
 
 Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 

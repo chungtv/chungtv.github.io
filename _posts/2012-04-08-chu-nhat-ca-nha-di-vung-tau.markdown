@@ -2,6 +2,7 @@
 layout: post
 title: Chủ nhật cả nhà đi Vũng Tàu
 date: '2012-04-08 05:00:00'
+redirect_from: /chu-nhat-ca-nha-di-vung-tau/
 ---
 
 Sau chuyến đi mệt phờ, về nhà 2 vợ chồng và 2 thằng con lăn ra ngủ, giờ này vợ con mình vẫn còn đang rất ngon giấc, mình tranh thủ dậy ghi lại vài dòng sau chuyến đi.

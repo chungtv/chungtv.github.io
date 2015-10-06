@@ -2,6 +2,7 @@
 layout: post
 title: Mở nhiều tài khoản Skype trên cùng một máy tính
 date: '2015-05-21 07:32:19'
+redirect_from: /mo-2-tai-khoan-skype-tren-cung-mot-may-tinh/
 ---
 
 Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.

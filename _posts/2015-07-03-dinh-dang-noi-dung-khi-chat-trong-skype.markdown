@@ -2,6 +2,7 @@
 layout: post
 title: Định dạng nội dung khi chat trong skype
 date: '2015-07-03 07:24:54'
+redirect_from: /dinh-dang-noi-dung-khi-chat-trong-skype/
 ---
 
 *[Skype](http://www.skype.com) hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc.*

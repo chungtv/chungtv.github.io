@@ -2,6 +2,7 @@
 layout: post
 title: Hướng dẫn cài đặt Hệ điều hành Mac OSX trên VMWare
 date: '2012-09-03 05:00:00'
+redirect_from: /huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware/
 ---
 
 1. Trước hết bạn cần một máy tính có cấu hình tương đối (Hiện tại tôi đang dùng máy tính cũng CPU Core i3 2,4GHz, RAM 2GB)

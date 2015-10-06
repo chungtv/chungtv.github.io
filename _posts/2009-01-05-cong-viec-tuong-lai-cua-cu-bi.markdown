@@ -2,6 +2,7 @@
 layout: post
 title: Công việc tương lai của cu Bi?!!!
 date: '2009-01-05 05:00:00'
+redirect_from: /cong-viec-tuong-lai-cua-cu-bi/
 ---
 
 ![](https://trinhvanchung.files.wordpress.com/2010/10/ap_20100106055207255.jpg)

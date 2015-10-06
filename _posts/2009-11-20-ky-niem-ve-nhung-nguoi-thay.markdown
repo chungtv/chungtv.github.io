@@ -2,6 +2,7 @@
 layout: post
 title: Kỷ niệm về những người thầy
 date: '2009-11-20 05:00:00'
+redirect_from: /ky-niem-ve-nhung-nguoi-thay/
 ---
 
 > Nhân ngày hiến chương nhà giáo Việt Nam 20/11, xin chân thành gửi tới toàn thể thầy cô giáo, cô gì chú bác, anh chị em, bạn bè, những người đã – đang và sẽ mang trong mình trọng trách hết sức lớn lao mà dân tộc giao phó, trọng trách dìu dắt từng thế hệ học sinh – sinh viên Việt Nam lớn lên, hội nhập lời chúc mừng sức khỏe, hạnh phúc, thành công …

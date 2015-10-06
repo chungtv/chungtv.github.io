@@ -2,6 +2,7 @@
 layout: post
 title: SQL Server - Ctrl + R không làm việc trong SSMS
 date: '2015-05-21 04:10:52'
+redirect_from: /sql-server-ctrl-r-khong-lam-viec-trong-ssms/
 ---
 
 Hôm nay, không biết vì lý do gì mà tổ hợp phím <kbd>Ctrl+R</kbd> không làm việc trên SQL Server Management Studio nữa. `Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)`.

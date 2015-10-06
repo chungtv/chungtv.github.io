@@ -2,6 +2,7 @@
 layout: post
 title: Xóa code trên Forms và Class của Foxpro
 date: '2011-05-16 05:00:00'
+redirect_from: /xoa-code-tren-forms-va-class-cua-foxpro/
 ---
 
 > Tiện có bạn trên DDTH hỏi về vấn đề này, mình viết một bài hướng dẫn:

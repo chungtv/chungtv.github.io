@@ -2,6 +2,7 @@
 layout: post
 title: Lạm bàn về đồng phục
 date: '2011-10-06 05:00:00'
+redirect_from: /lam-ban-ve-dong-phuc/
 ---
 
 Hôm nay, công ty chuẩn bị đợt may đồng phục năm 2011.

@@ -2,6 +2,7 @@
 layout: post
 title: Bạn gái của Bo
 date: '2013-01-03 05:00:00'
+redirect_from: /ban-gai-cua-bo-2/
 ---
 
 

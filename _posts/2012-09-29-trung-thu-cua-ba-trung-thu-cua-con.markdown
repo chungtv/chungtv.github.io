@@ -2,6 +2,7 @@
 layout: post
 title: Trung thu của ba–Trung thu của con
 date: '2012-09-29 05:00:00'
+redirec_from: /trung-thu-cua-ba-trung-thu-cua-con/
 ---
 
 ![](https://chuyengiadinh.files.wordpress.com/2012/09/p1010200.jpg)

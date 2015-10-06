@@ -2,6 +2,7 @@
 layout: post
 title: Chuyện ở siêu thị!
 date: '2010-05-13 05:00:00'
+redirect_from: /chuyen-o-sieu-thi/
 ---
 
 Chiều hôm qua đi làm về chở vợ con đi Big C, mới vào chỗ gửi xe, chuẩn bị tới lượt xe mình vào ghi phiếu thì có một anh chàng ở đâu chạy xe tới chen ngang, bực mình.

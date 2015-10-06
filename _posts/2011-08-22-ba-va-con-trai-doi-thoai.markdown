@@ -2,6 +2,7 @@
 layout: post
 title: Ba và Con trai – Đối thoại!
 date: '2011-08-22 05:00:00'
+redirect_from: /ba-va-con-trai-doi-thoai/
 ---
 
 > Con trai: ba ơi, cái gì đó?

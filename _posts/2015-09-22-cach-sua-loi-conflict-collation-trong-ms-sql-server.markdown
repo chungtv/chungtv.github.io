@@ -2,6 +2,7 @@
 layout: post
 title: "Cách sửa lỗi conflict collation trong MS SQL Server"
 date: 2015-09-22 04:16:35
+redirect_from: /cach-sua-loi-conflict-collation-trong-ms-sql-server/
 ---
 
 > Trong quá trình cài đặt SQL Server, do không chú chọn Collation phù hợp dẫn đến khi vận hành thường bị conflic collation của SQL Server và Database.

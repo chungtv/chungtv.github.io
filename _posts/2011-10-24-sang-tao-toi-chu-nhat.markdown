@@ -2,6 +2,7 @@
 layout: post
 title: Sáng tạo tối chủ nhật
 date: '2011-10-24 05:00:00'
+redirect_from: /sang-tao-toi-chu-nhat/
 ---
 
 ![](https://trinhvanchung.files.wordpress.com/2011/10/p1010719.jpg)

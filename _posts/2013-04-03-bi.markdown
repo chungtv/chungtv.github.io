@@ -2,6 +2,7 @@
 layout: post
 title: '#BI#'
 date: '2013-04-03 05:00:00'
+redirect_from: /bi/
 ---
 
 + Hôm nay ba mẹ chở con với em bo đi ăn gà rán nhé.

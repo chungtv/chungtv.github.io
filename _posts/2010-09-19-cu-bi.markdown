@@ -2,6 +2,7 @@
 layout: post
 title: Cu bi
 date: '2010-09-19 05:00:00'
+redirect_from: /cu-bi/
 ---
 
 Nhà có cậu con trai được 20 tháng. Hôm qua chủ nhật cu cậu cho cả nhà một trận cười vở bụng.

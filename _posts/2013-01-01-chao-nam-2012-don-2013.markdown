@@ -2,6 +2,7 @@
 layout: post
 title: Chào năm 2012, đón 2013
 date: '2013-01-01 08:52:00'
+redirect_from: /chao-nam-2012-don-2013/
 ---
 
 *Còn 1h nữa thời khắc chuyển giao giữa năm cũ 2012 và năm mới 2013 sẽ đến. Có nhiều suy nghĩ đọng lại trong thời khắc này.*

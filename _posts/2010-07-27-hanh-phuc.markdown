@@ -2,6 +2,7 @@
 layout: post
 title: Hạnh phúc
 date: '2010-07-27 05:00:00'
+redirect_from: /hanh-phuc/
 ---
 
 Mỗi ngày mình có 1 nỗi buồn và một niềm hạnh phúc, bắt nguồn từ quan hệ cha – con.

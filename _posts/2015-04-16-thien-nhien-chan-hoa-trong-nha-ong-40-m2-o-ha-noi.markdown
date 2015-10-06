@@ -2,6 +2,7 @@
 layout: post
 title: Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội
 date: '2015-04-16 01:05:00'
+redirect_from: /thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi/
 ---
 
 > Ngôi nhà nằm trong con ngõ nhỏ điển hình cho kiểu nhà ống Hà Nội - những căn nhà để đưa ánh sáng vào là cả một tham vọng.

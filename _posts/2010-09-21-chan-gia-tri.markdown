@@ -2,6 +2,7 @@
 layout: post
 title: Chân giá trị
 date: '2010-09-21 05:00:00'
+redirect_from: /chan-gia-tri/
 ---
 
 ![](https://trinhvanchung.files.wordpress.com/2010/09/tinvaodieukhongcotheposter1.jpg)

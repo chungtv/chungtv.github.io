@@ -2,6 +2,7 @@
 layout: post
 title: 'Bi và bo: Bi kể chuyện'
 date: '2010-09-23 05:00:00'
+redirect_from: /bi-va-bo-bi-ke-chuyen/
 ---
 
 > Lần đầu tiên show hình cu em và 2 anh em bi – bo (anh là Nhất – em là Nhân).

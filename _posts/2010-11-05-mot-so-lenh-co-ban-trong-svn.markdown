@@ -2,6 +2,7 @@
 layout: post
 title: Một số lệnh cơ bản trong SVN
 date: '2010-11-05 05:00:00'
+redirect_from: /mot-so-lenh-co-ban-trong-svn/
 ---
 
 ![Subversion](https://trinhvanchung.files.wordpress.com/2010/11/image_thumb.png?w=396&h=58)

@@ -2,6 +2,7 @@
 layout: post
 title: Hướng dẫn sử dụng Dropbox
 date: '2012-07-21 05:00:00'
+redirect_from: /huong-dan-su-dung-dropbox/
 ---
 
 > Chuyện gì sẽ xảy ra nếu một ngày nào đó cái máy tính của bạn đang dùng bị mất hoặc hư ổ cứng? Toàn bộ dữ liệu sẽ không thể cứu vãn sau? Có nhiều giải pháp nhưng theo tớ, giải pháp tối ưu hiện nay là Cloud Drive. Hiện tại tớ đang dùng [Dropbox](http://dropbox.com), [Google Drive](http://drive.google.com) và cả [SkyDrive](http://onedrive.com) cho nhiều mục đích khác nhau.

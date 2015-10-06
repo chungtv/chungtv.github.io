@@ -2,6 +2,7 @@
 layout: post
 title: Kẹt xe ký sự
 date: '2010-09-18 05:00:00'
+redirect_from: /ket-xe-ky-su/
 ---
 
 Tối hôm qua đi dạy, từ Gò Vấp qua tới Bình Thạnh mà đi hết gần 2 tiếng đồng hồ, trải qua tất cả 5 đoạn kẹt xe. Có cơ hội ngẫm:

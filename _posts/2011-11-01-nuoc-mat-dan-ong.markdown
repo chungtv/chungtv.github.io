@@ -2,6 +2,7 @@
 layout: post
 title: Nước mắt đàn ông
 date: '2011-11-01 05:00:00'
+redirect_from: /nuoc-mat-dan-ong/
 ---
 
 ![Nước mắt đàn ông](https://trinhvanchung.files.wordpress.com/2011/11/image.png)

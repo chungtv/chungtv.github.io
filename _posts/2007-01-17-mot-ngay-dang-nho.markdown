@@ -2,6 +2,7 @@
 layout: post
 title: Một ngày đáng nhớ
 date: '2007-01-17 05:00:00'
+redirec_from: /mot-ngay-dang-nho/
 ---
 
 Thế là mình cũng đã hết chương trình học tại trường đại học rồi. Mình đã kết thúc kỳ thi học kỳ cuối cùng. Cũng đã biết điểm 1 số môn, may wá, chưa có môn nào rớt. Còn mấy môn nữa, cũng chẳng biết như thế nào, hy vọng sẽ đạt kết wả tốt.

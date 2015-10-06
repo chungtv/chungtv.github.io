@@ -2,6 +2,7 @@
 layout: post
 title: Tình anh em
 date: '2012-11-05 05:00:00'
+redirect_from: /tinh-anh-em/
 ---
 
 *Ngày chủ nhật, ba phát hiện được rằng, mặc dù ở nhà các con dành đồ chơi của nhau, đánh nhau nhưng khi đi ra ngoài chơi, hai em em thật sự rất đoàn kết và thương yêu nhau. Thật vui vì điều đó.*

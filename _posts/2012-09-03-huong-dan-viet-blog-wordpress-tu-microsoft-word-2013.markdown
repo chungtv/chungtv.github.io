@@ -2,6 +2,7 @@
 layout: post
 title: Hướng dẫn viết Blog WordPress từ Microsoft Word 2013
 date: '2012-09-03 05:00:00'
+redirect_from: /huong-dan-viet-blog-wordpress-tu-microsoft-word-2013/
 ---
 
 Trước đây, để viết Blog cho WordPress tôi thường dùng [Windows Live Writer](http://www.microsoft.com/vi-vn/download/details.aspx?id=29225) trong bộ [Window Live Essentials](http://explore.live.com/windows-live-essentials) của Microsoft. Hiện nay, với bản MS Word 2013 tôi hoàn toàn có thể viết Blog và publish lên WordPress. Trong bài này, tôi sẽ hướng dẫn các bạn viết và publish Blog cho WordPress trong MS Word 2013. 

@@ -2,6 +2,7 @@
 layout: post
 title: Chuyện của anh & em
 date: '2012-05-15 05:00:00'
+redirect_from: /chuyen-cua-anh-em/
 ---
 
 ![](https://chuyengiadinh.files.wordpress.com/2012/05/p1000394.jpg)

@@ -2,6 +2,7 @@
 layout: post
 title: Tự hào quê hương Thanh Hóa!!
 date: '2010-04-05 05:00:00'
+redirect_from: /tu-hao-que-huong-thanh-hoa/
 ---
 
 Tự hào quê hương Thanh Hóa

@@ -2,6 +2,7 @@
 layout: post
 title: Ta 30
 date: '2014-07-09 08:52:00'
+redirect_from: /toi-30/
 ---
 
 > *Ngày ta 30, thế giới chào đón bằng cơn địa chấn mang tên FIFA Worldcup. Người Đức vỡ òa, người Brazil nức nở (giá hôm nay tỷ số 9-7 thì sẽ có ý nghĩa hơn nhiều).*

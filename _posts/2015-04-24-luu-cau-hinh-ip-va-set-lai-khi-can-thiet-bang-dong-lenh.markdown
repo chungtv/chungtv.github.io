@@ -2,6 +2,7 @@
 layout: post
 title: Lưu cấu hình IP Profile và thiết lập lại khi cần thiết
 date: '2015-04-24 02:23:16'
+redirect_from: /luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh/
 ---
 
 > Đôi khi, chúng ta cần phải thực hiện những công việc mang tính lặp đi lặp lại như việc thay đổi địa chỉ IP trên máy tính cá nhân khi kết nối mạng ở vài nơi. Việc thay đổi này lặp đi lặp lại hàng ngày. 

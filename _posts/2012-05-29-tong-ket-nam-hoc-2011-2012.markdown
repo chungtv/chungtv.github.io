@@ -2,6 +2,7 @@
 layout: post
 title: Tổng kết năm học 2011-2012
 date: '2012-05-29 05:00:00'
+redirect_from: /tong-ket-nam-hoc-2011-2012/
 ---
 
 

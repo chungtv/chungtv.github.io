@@ -2,6 +2,7 @@
 layout: post
 title: Giá trị, giá trị sử dụng và chuyện lãng phí
 date: '2010-09-18 05:00:00'
+redirect_from: /gia-tri-gia-tri-su-dung-va-chuyen-lang-phi/
 ---
 
 Giữa cây viết bi Thiên Long mua với giá 1.200đ và cây viết Packer hay Waterman được mua với giá vài đến vài chục triệu đồng thì có gì khác nhau về giá trị sử dụng? Xét về công năng thì có lẽ nó đều dùng để viết có chăng nó chỉ khác nhau về người sử dụng và môi trường sử dụng nó thôi, hoặc có những đối tượng lại cho rằng ngoài giá trị sử dụng là để viết ra nó còn dùng để trang sức, để thể hiện đẳng cấp …. Về giá trị thì rõ ràng 2 cây viết này khác biệt rất lớn.

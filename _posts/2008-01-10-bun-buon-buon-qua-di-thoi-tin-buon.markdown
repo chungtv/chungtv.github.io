@@ -2,6 +2,7 @@
 layout: post
 title: Bùn, buồn, buồn quá đi thôi. Tin buồn.
 date: '2008-01-10 05:00:00'
+redirect_from: /bun-buon-buon-qua-di-thoi-tin-buon/
 ---
 
 Tính viết tiếp cái đề tài năm mới tổng kết lại những gì đã làm, nhưng có chuyện buồn với lại là câu chuyện cảnh giác, viết lên để mọi người chia buồn cùng và cảnh giác cùng nha.

@@ -2,6 +2,7 @@
 layout: post
 title: Setup, create repository, config, create project, create svn service
 date: '2010-11-04 05:00:00'
+redirect_from: /setup-create-repository-config-create-project-create-svn-service/
 ---
 
 ![Subversion](https://trinhvanchung.files.wordpress.com/2010/11/image.png)

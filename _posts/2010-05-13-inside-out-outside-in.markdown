@@ -2,6 +2,7 @@
 layout: post
 title: Inside out – Outside in
 date: '2010-05-13 05:00:00'
+redirect_from: /inside-out-outside-in/
 ---
 
 Tối hôm qua có dịp trao đổi với vợ về quan điểm sống, mượn ý tưởng về inside out và outside in của một anh bên Fast software viết vài dòng.

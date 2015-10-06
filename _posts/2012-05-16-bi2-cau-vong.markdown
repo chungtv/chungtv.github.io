@@ -2,6 +2,7 @@
 layout: post
 title: Bi#2–Cầu vồng
 date: '2012-05-16 05:00:00'
+redirect_from: /bi2-cau-vong/
 ---
 
 Trên đường về nhà, đi qua đường Tô Ngọc Vân, trời mới mưa xong, mẹ nhìn thấy cầu vồng. `“Ôi, cầu vồng kìa”` – rồi chỉ tay về phía cầu vồng.

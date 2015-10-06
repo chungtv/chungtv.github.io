@@ -2,6 +2,7 @@
 layout: post
 title: Sử dụng Fn key trong VMWare Fusion
 date: '2015-07-14 05:52:17'
+redirect_from: /su-dung-fn-key-trong-vmware-fusion/
 ---
 
 Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion.

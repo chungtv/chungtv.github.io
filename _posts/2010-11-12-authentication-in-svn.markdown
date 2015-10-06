@@ -2,6 +2,7 @@
 layout: post
 title: Authentication in SVN
 date: '2010-11-12 05:00:00'
+redirect_from: /authentication-in-svn/
 ---
 
 Trong các bài trước, tôi đã hướng dẫn các bạn cài đặt, cấu hình đơn giản, tạo repository, sử dụng một số lệnh cơ bản của giao thức SVN để thao tác với Repository.

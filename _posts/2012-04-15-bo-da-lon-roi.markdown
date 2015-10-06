@@ -2,6 +2,7 @@
 layout: post
 title: Bo đã lớn rồi
 date: '2012-04-15 05:00:00'
+redirect_from: /bo-da-lon-roi/
 ---
 
 ![](https://chuyengiadinh.files.wordpress.com/2012/04/img_0179.jpg)

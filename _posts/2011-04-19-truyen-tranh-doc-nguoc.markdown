@@ -2,6 +2,7 @@
 layout: post
 title: Truyện tranh đọc ngược
 date: '2011-04-19 05:00:00'
+redirect_from: /truyen-tranh-doc-nguoc/
 ---
 
 Trưa hôm nay ngồi nói chuyện với mấy anh bạn trong công ty, kể về vụ đọc truyện tranh của con cháu, mới nhớ lại câu chuyện cách đây 2 tuần.
