@@ -5,8 +5,8 @@
     <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
     <link>http://chungtrinh.com/</link>
     <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Oct 2015 22:22:48 +0700</pubDate>
-    <lastBuildDate>Mon, 05 Oct 2015 22:22:48 +0700</lastBuildDate>
+    <pubDate>Tue, 06 Oct 2015 07:32:29 +0700</pubDate>
+    <lastBuildDate>Tue, 06 Oct 2015 07:32:29 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -90,7 +90,7 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
   &lt;li&gt;Chọn Profile bạn đang sử dụng và vào &lt;code&gt;Edit profile&lt;/code&gt; (biểu tượng hình răng cưa)&lt;/li&gt;
   &lt;li&gt;Trên màn hình &lt;code&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;, bạn chọn &lt;code&gt;Mac Host Shotcuts&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Bỏ tùy chọn &lt;code&gt;Enable Mac OS Keyboard Shortcuts&lt;/code&gt;
-&lt;img src=&quot;/content/images/2015/07/aaa.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/2015/07/macos-keyboard-mouse-preferences.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -222,19 +222,6 @@ INNER JOIN
       </item>
     
       <item>
-        <title>test post</title>
-        <description>&lt;h1 id=&quot;test-post-by-tinypress&quot;&gt;test post by tinypress&lt;/h1&gt;
-
-&lt;p&gt;This is post make by tinypess.co&lt;/p&gt;
-</description>
-        <pubDate>Tue, 09 Jun 2015 00:00:00 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/06/09/test-post.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/06/09/test-post.html</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>Mở nhiều tài khoản Skype trên cùng một máy tính</title>
         <description>&lt;p&gt;Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
 Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
@@ -266,6 +253,37 @@ Sau đó nhập Password. Một chương trình Skype thứ 2 đã được ch�
         <pubDate>Thu, 21 May 2015 07:32:19 +0700</pubDate>
         <link>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</link>
         <guid isPermaLink="true">http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
+        <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trong SSMS, &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Khi nhấn &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; thì nhận được kết quả như sau dưới thanh Status bar:
+&lt;img src=&quot;/content/images/2015/05/2015-05-21_105035.png&quot; alt=&quot;&quot; /&gt;
+Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar như sau:
+&lt;img src=&quot;/content/images/2015/05/2015-05-21_105259.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vào menu Window thì thấy đã chuyển thành tổ hợp phím &lt;kbd&gt;Ctrl+Shift+Alt+R&lt;/kbd&gt;
+&lt;img src=&quot;/content/images/2015/05/2015-05-21_105524.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sau đây là các bước để lấy lại phím tắt &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; cho SSMS:
+1. Vào menu Tools, chọn Options…;
+2. Trong cửa sổ Options chọn Environment -&amp;gt; Keyboard -&amp;gt; Keyboard;
+3. Tại Combobox “Apply the following additional keyboard mapping scheme” chọn default. Sau đó nhất nút Reset để trả về mặc định ban đầu.&lt;/p&gt;
+
+&lt;p&gt;Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 21 May 2015 04:10:52 +0700</pubDate>
+        <link>http://chungtrinh.com/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
         
         
       </item>

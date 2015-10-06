@@ -14,5 +14,5 @@ Trong Windows, tôi muốn sử dụng chức năng của phím <kbd>F12</kbd> h
  * Chọn Profile bạn đang sử dụng và vào `Edit profile` (biểu tượng hình răng cưa)
  * Trên màn hình `Keyboard & Mouse`, bạn chọn `Mac Host Shotcuts`
  * Bỏ tùy chọn `Enable Mac OS Keyboard Shortcuts`
-![](/content/images/2015/07/aaa.png)
+![](/images/2015/07/macos-keyboard-mouse-preferences.png)
  
