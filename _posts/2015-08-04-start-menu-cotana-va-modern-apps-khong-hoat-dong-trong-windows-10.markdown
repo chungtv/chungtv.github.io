@@ -3,10 +3,6 @@ layout: post
 title: Start menu, Cotana và Modern Apps không hoạt động trong windows 10
 date: '2015-08-04 09:16:52'
 redirect_from: /start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/
-=======
-title: "Start menu, Cotana và Modern Apps không hoạt động trong windows 10"
-date: "2015-08-04 09:16:52"
-published: true
 ---
 
 
