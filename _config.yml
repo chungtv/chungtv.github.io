@@ -20,3 +20,6 @@ category_dir: categories
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
