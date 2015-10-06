@@ -9,12 +9,12 @@ Hôm nay, không biết vì lý do gì mà tổ hợp phím <kbd>Ctrl+R</kbd> kh
 > Trong SSMS, <kbd>Ctrl+R</kbd> là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.
 
 Khi nhấn <kbd>Ctrl+R</kbd> thì nhận được kết quả như sau dưới thanh Status bar:
-![](/content/images/2015/05/2015-05-21_105035.png)
+![](/images/2015/05/2015-05-21_105035.png)
 Nhấn thêm <kbd>Ctrl+R</kbd> lần nữa thì thanh Status Bar như sau:
-![](/content/images/2015/05/2015-05-21_105259.png)
+![](/images/2015/05/2015-05-21_105259.png)
 
 Vào menu Window thì thấy đã chuyển thành tổ hợp phím <kbd>Ctrl+Shift+Alt+R</kbd>
-![](/content/images/2015/05/2015-05-21_105524.png)
+![](/images/2015/05/2015-05-21_105524.png)
 
 Sau đây là các bước để lấy lại phím tắt <kbd>Ctrl+R</kbd> cho SSMS:
 1. Vào menu Tools, chọn Options...;

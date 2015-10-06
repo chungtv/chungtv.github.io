@@ -7,11 +7,15 @@ date: '2015-05-21 07:32:19'
 Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
 Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
 # Đối với máy tính windows
-![](http://chungtrinh.com/content/images/2015/05/2015-05-21_142908.png)
+
+![](/images/2015/05/2015-05-21_142908.png)
+
 ### Chạy chương trình Skype khác
 1. Vào Start > Run hoặc nhấn tổ hợp phím <kbd>Windows+R</kbd>
 2. Trong cửa sổ Run, bạn gõ vào: `c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary` **(chú ý tham số /secondary)**
-![](/content/images/2015/05/2015-05-21_141718.png)
+
+![](/images/2015/05/2015-05-21_141718.png)
+
 3. Nhấn <kbd>OK</kbd>. 
 
 Một cửa sổ Skype mới sẽ hiện ra và bạn có thể đăng nhập bằng tài khoản mới rối.

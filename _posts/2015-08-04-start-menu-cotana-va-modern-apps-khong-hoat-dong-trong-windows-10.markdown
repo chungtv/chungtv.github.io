@@ -4,7 +4,7 @@ title: Start menu, Cotana và Modern Apps không hoạt động trong windows 10
 date: '2015-08-04 09:16:52'
 ---
 
-![](/content/images/2015/08/windows_10.jpg)
+![](/images/2015/08/windows_10.jpg)
 
 Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không hoạt động trong Windows 10. Sau đây, tôi sẽ hướng dẫn sửa lỗi Start menu, Cortana, Search Box và các ứng dụng Modern không hoạt động trong windows 10.
 

@@ -5,7 +5,7 @@ date: '2015-07-12 14:53:50'
 ---
 
 Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế cho các phím đó.
-![](http://chungtrinh.com/content/images/2015/07/IMG_7845-1.jpg)
+![](/images/2015/07/macbook-pro-keyboard.jpg)
 
  * Phím <kbd>Home</kbd> = <kbd>Fn</kbd>+<kbd>←</kbd>
  * Phím <kbd>End</kbd> = <kbd>Fn</kbd>+<kbd>→</kbd>

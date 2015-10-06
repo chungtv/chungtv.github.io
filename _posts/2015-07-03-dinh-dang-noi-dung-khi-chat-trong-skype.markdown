@@ -16,7 +16,7 @@ Khi chat Skype, mặc định Skype chỉ hiển thị nội dung chat ở đị
  - Tại khung bên phải, bạn check vào tùy chọn *Show advanced text formatting*.
  - Nhấn nút <kbd>Save</kbd> để lưu lại và đóng cửa sổ `Options`
  
-![Show advanced text formatting](/content/images/2015/07/2015-07-03_141930.png)
+![Show advanced text formatting](/images/2015/07/skype-options.png)
 
 ### Cách viết
  - Để **viết đậm nội dung**, bạn hãy sử dụng dấu * trước và sau nội dung `*Đây là nội dung in đậm*`
@@ -26,7 +26,7 @@ Khi chat Skype, mặc định Skype chỉ hiển thị nội dung chat ở đị
  - Để viết toàn bộ nội dung không có format text (tức là bỏ qua các định dạng trên) và cũng không hiển thị các emoticons của Skype, chúng ta đặt 2 ký tự !! trước nội dung, ví dụ `!! Đây là nội dung không có *text format* và cũng không có emoticons :D (monkey)`
  - Đặt 2 ký tự @@ trước nội dung chat, sẽ không có format text nhưng có emoticons, ví dụ `@@ Đây là nội dung không có *text format* nhưng có emoticons :D`
  
-![](/content/images/2015/07/2015-07-03_142227.png)
+![](/images/2015/07/skype-text-format.png)
  
  Thật là thú vị phải không nào, chúc các bạn vui vẻ!
  

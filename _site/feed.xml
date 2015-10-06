@@ -5,8 +5,8 @@
     <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
     <link>http://chungtrinh.com/</link>
     <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Oct 2015 07:32:29 +0700</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2015 07:32:29 +0700</lastBuildDate>
+    <pubDate>Tue, 06 Oct 2015 07:44:30 +0700</pubDate>
+    <lastBuildDate>Tue, 06 Oct 2015 07:44:30 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -37,7 +37,7 @@
     
       <item>
         <title>Start menu, Cotana và Modern Apps không hoạt động trong windows 10</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/content/images/2015/08/windows_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2015/08/windows_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không hoạt động trong Windows 10. Sau đây, tôi sẽ hướng dẫn sửa lỗi Start menu, Cortana, Search Box và các ứng dụng Modern không hoạt động trong windows 10.&lt;/p&gt;
 
@@ -104,7 +104,7 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
       <item>
         <title>Macbook keyboard</title>
         <description>&lt;p&gt;Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế cho các phím đó.
-&lt;img src=&quot;http://chungtrinh.com/content/images/2015/07/IMG_7845-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2015/07/macbook-pro-keyboard.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Phím &lt;kbd&gt;Home&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;←&lt;/kbd&gt;&lt;/li&gt;
@@ -173,7 +173,7 @@ FROM   master.dbo.sysdatabases
   &lt;li&gt;Nhấn nút &lt;kbd&gt;Save&lt;/kbd&gt; để lưu lại và đóng cửa sổ &lt;code&gt;Options&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/content/images/2015/07/2015-07-03_141930.png&quot; alt=&quot;Show advanced text formatting&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2015/07/skype-options.png&quot; alt=&quot;Show advanced text formatting&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;cch-vit&quot;&gt;Cách viết&lt;/h3&gt;
 &lt;ul&gt;
@@ -185,7 +185,7 @@ FROM   master.dbo.sysdatabases
   &lt;li&gt;Đặt 2 ký tự @@ trước nội dung chat, sẽ không có format text nhưng có emoticons, ví dụ &lt;code&gt;@@ Đây là nội dung không có *text format* nhưng có emoticons :D&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/content/images/2015/07/2015-07-03_142227.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2015/07/skype-text-format.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Thật là thú vị phải không nào, chúc các bạn vui vẻ!&lt;/p&gt;
 
@@ -225,13 +225,21 @@ INNER JOIN
         <title>Mở nhiều tài khoản Skype trên cùng một máy tính</title>
         <description>&lt;p&gt;Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
 Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
-# Đối với máy tính windows
-&lt;img src=&quot;http://chungtrinh.com/content/images/2015/05/2015-05-21_142908.png&quot; alt=&quot;&quot; /&gt;
-### Chạy chương trình Skype khác
-1. Vào Start &amp;gt; Run hoặc nhấn tổ hợp phím &lt;kbd&gt;Windows+R&lt;/kbd&gt;
-2. Trong cửa sổ Run, bạn gõ vào: &lt;code&gt;c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary&lt;/code&gt; &lt;strong&gt;(chú ý tham số /secondary)&lt;/strong&gt;
-&lt;img src=&quot;/content/images/2015/05/2015-05-21_141718.png&quot; alt=&quot;&quot; /&gt;
-3. Nhấn &lt;kbd&gt;OK&lt;/kbd&gt;.&lt;/p&gt;
+# Đối với máy tính windows&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_142908.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chy-chng-trnh-skype-khc&quot;&gt;Chạy chương trình Skype khác&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vào Start &amp;gt; Run hoặc nhấn tổ hợp phím &lt;kbd&gt;Windows+R&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Trong cửa sổ Run, bạn gõ vào: &lt;code&gt;c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary&lt;/code&gt; &lt;strong&gt;(chú ý tham số /secondary)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_141718.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Nhấn &lt;kbd&gt;OK&lt;/kbd&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Một cửa sổ Skype mới sẽ hiện ra và bạn có thể đăng nhập bằng tài khoản mới rối.&lt;/p&gt;
 
@@ -266,12 +274,12 @@ Sau đó nhập Password. Một chương trình Skype thứ 2 đã được ch�
 &lt;/blockquote&gt;
 
 &lt;p&gt;Khi nhấn &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; thì nhận được kết quả như sau dưới thanh Status bar:
-&lt;img src=&quot;/content/images/2015/05/2015-05-21_105035.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2015/05/2015-05-21_105035.png&quot; alt=&quot;&quot; /&gt;
 Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar như sau:
-&lt;img src=&quot;/content/images/2015/05/2015-05-21_105259.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2015/05/2015-05-21_105259.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vào menu Window thì thấy đã chuyển thành tổ hợp phím &lt;kbd&gt;Ctrl+Shift+Alt+R&lt;/kbd&gt;
-&lt;img src=&quot;/content/images/2015/05/2015-05-21_105524.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2015/05/2015-05-21_105524.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sau đây là các bước để lấy lại phím tắt &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; cho SSMS:
 1. Vào menu Tools, chọn Options…;
