@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger</title>
-  <meta name="description" content="  Đôi khi, vì lý do gì đó mà triger của bảng trong SQL Server bạn cần phải kiểm tra xem trường nào đang được update trước khi thực thi các lệnh tiếp theo. Xe...">
-
+  <title>Sửa lỗi 9001: The log for database is not available trong MS SQL Server</title>
+  <meta name="description" content="Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính Auto Close đang là True. Tôi cố chuyển ..."> 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://chungtrinh.com/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html">
+  <link rel="canonical" href="http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html">
   <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
 
   
@@ -234,66 +233,18 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger</h1>
-    <p class="post-meta">Apr 24, 2015</p>
+    <h1 class="post-title">Sửa lỗi 9001: The log for database is not available trong MS SQL Server</h1>
+    <p class="post-meta">Jul 7, 2015</p>
   </header>
 
   <article class="post-content">
-    <blockquote>
-  <p>Đôi khi, vì lý do gì đó mà triger của bảng trong SQL Server bạn cần phải kiểm tra xem trường nào đang được update trước khi thực thi các lệnh tiếp theo. <a href="https://trinhvanchung.wordpress.com/2010/11/03/s%e1%bb%ad-d%e1%bb%a5ng-columns_updated-d%e1%bb%83-ki%e1%bb%83m-tra-tr%c6%b0%e1%bb%9dng-d%c6%b0%e1%bb%a3c-update-trong-trigger/">Xem thêm bài viết này của tôi tại đây</a>. Bài này được tôi viết lại từ bài đó.</p>
-</blockquote>
+    <p>Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính <code>Auto Close</code> đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.</p>
 
-<blockquote>
-  <p>Một phương pháp được tôi giới thiệu trong bài này là sử dụng <code>COLUMNS_UPDATED()</code>.</p>
-</blockquote>
-
-<p><img src="https://www.dropbox.com/s/90ymmfk4t8l036g/04-mssql_columns_updated.jpg?dl=1" alt="" /></p>
-
-<h4 id="gii-thiu">Giới thiệu</h4>
-
-<p>Về <code>COLUMNS_UPDATED()</code> các bạn có thể xem chi tiết ở <a href="https://msdn.microsoft.com/en-us/library/ms186329.aspx">site chính chủ</a>. Ở đây, tôi chỉ giới thiệu qua những điểm cơ bản.</p>
-
-<p><code>COLUMNS_UPDATED()</code> là một Build-in Functions của SQL Server trả về một mẫu giá trị dạng nhị phân (varbinary bit pattern) để xác định vị trí cột nào được insert hoặc update. <code>COLUMNS_UPDATED()</code> thường được sử dụng trong INSERT hoặc UPDATE Trigger để kiểm tra vị trí cột được update nhằm xác định có hay không thực thi một số hành động nào đó.</p>
-
-<p>Để kiểm tra vị trí cột nào được thay đổi chúng ta sử dụng các phép toán trên bit (bitwise operators) và bit mặt nạ (bitmask) tương ứng cho vị trí của mỗi cột.</p>
-
-<h4 id="kim-tra-cc-ct-c-v-tr-8">Kiểm tra các cột có vị trí &lt;=8</h4>
-<p>Kiểm tra cột tại vị trí n (n&lt;=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:</p>
-
-<p><code>sql
-COLUMNS_UPDATED() &amp; Power(2,(n-1))
-</code></p>
-
-<p>Nếu biểu thức trả về &gt; 0 thì cột n là cột bị thay đổi, ngược lại cột n không thay đổi.</p>
-
-<p>Trong trường hợp kiểm tra 2 hoặc nhiều cột có thay đổi hay không thì làm tương tự. Ví dụ kiểm tra cột 3 cột thứ i,j,k có thay đổi hay không (i,j,k&lt;=8) thì sử dụng biểu thức sau:</p>
-
-<p><code>sql
-COLUMNS_UPDATED() &amp; (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-</code></p>
-
-<p><em>Chú ý: Để đỡ phải tính toán khi thực thi thì mình nên tính ra giá trị nguyên của các hàm <code>Power()</code> ở ngoài luôn rồi dùng kết quả đó để kiểm tra. Ví dụ thay vì viết như cách trên, mình viết như sau:</em></p>
-
-<p><code>sql
-COLUMNS_UPDATED() &amp; kq 
--- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-</code></p>
-
-<h4 id="kim-tra-cc-ct-c-v-tr-8-1">Kiểm tra các cột có vị trí &gt;8</h4>
-
-<p>Sử dụng hàm <code>SUBSTRING()</code> cho giá trị trả về của <code>COLUMNS_UPDATED()</code>.</p>
-
-<p>Ví dụ cần kiểm tra có update cột 10 hay không, sử dụng biểu thức sau:</p>
-
-<p><code>sql
-SUBSTRING(COLUMNS_UPDATED(),2,1) &amp; Power(2,(10-8-1))
-</code></p>
-
-<p>Còn nếu cột cần kiểm tra &gt; 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:</p>
-
-<p><code>sql
-SUBSTRING(COLUMNS_UPDATED(),3,1) &amp; Power(2,(19-16-1))
-</code></p>
+<ol>
+  <li>Click phải vào Database, chọn <code>Tasks -&gt; Take Offline</code></li>
+  <li>Sau đó Click phải lại vào Database, chọn <code>Tasks -&gt; Bring Online</code></li>
+  <li>Click phải, chọn <code>Properties</code>. Trong màn hình <code>Database Properties</code>, chọn <code>Options</code>. Sau đó thiết lập thuộc tính <code>Auto Close</code> về <strong>False</strong> là xong.</li>
+</ol>
 
   </article>
 

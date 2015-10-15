@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Định dạng nội dung khi chat trong skype
+description: Đôi khi bạn cần nhấn mạnh nội dung bằng cách in đậm, in nghiêng hay format text trong nội dung chat. Thực ra, Skype có thể giúp bạn làm việc này khá dễ dàng, tuy nhiên mặc định thì nó bị ẩn đi. Trong bài viết này, tôi sẽ hướng dẫn các bạn thực hiện việc này.
 date: '2015-07-03 07:24:54'
 redirect_from: /dinh-dang-noi-dung-khi-chat-trong-skype/
 ---

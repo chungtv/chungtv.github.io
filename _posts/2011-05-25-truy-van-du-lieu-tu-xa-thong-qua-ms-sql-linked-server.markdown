@@ -2,6 +2,8 @@
 layout: post
 title: Truy vấn dữ liệu từ xa thông qua MS SQL linked server
 date: '2011-05-25 05:00:00'
+categories: [MS SQL Server]
+tags: [MS SQL Server]
 redirect_from: /truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server/
 ---
 

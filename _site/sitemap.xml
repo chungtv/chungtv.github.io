@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://chungtrinh.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</loc>
-    <lastmod>2015-09-22T11:16:35+07:00</lastmod>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</loc>
+    <lastmod>2015-10-16T05:00:32+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</loc>
+    <lastmod>2015-09-22T04:16:35+07:00</lastmod>
   </url>
   <url>
     <loc>http://chungtrinh.com/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</loc>
@@ -17,7 +21,7 @@
     <lastmod>2015-07-12T14:53:50+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</loc>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</loc>
     <lastmod>2015-07-07T03:15:43+07:00</lastmod>
   </url>
   <url>
@@ -33,19 +37,19 @@
     <lastmod>2015-07-03T02:51:15+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</loc>
-    <lastmod>2015-05-21T07:32:19+07:00</lastmod>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</loc>
+    <lastmod>2015-05-21T11:10:52+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</loc>
-    <lastmod>2015-05-21T04:10:52+07:00</lastmod>
+    <loc>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</loc>
+    <lastmod>2015-05-21T07:32:19+07:00</lastmod>
   </url>
   <url>
     <loc>http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html</loc>
     <lastmod>2015-04-24T02:23:16+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html</loc>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html</loc>
     <lastmod>2015-04-24T01:47:26+07:00</lastmod>
   </url>
   <url>
@@ -125,7 +129,7 @@
     <lastmod>2012-05-29T05:00:00+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2012/05/23/bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server.html</loc>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2012/05/23/bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server.html</loc>
     <lastmod>2012-05-23T05:00:00+07:00</lastmod>
   </url>
   <url>
@@ -189,7 +193,7 @@
     <lastmod>2011-06-01T05:00:00+07:00</lastmod>
   </url>
   <url>
-    <loc>http://chungtrinh.com/2011/05/25/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server.html</loc>
+    <loc>http://chungtrinh.com/ms%20sql%20server/2011/05/25/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server.html</loc>
     <lastmod>2011-05-25T05:00:00+07:00</lastmod>
   </url>
   <url>

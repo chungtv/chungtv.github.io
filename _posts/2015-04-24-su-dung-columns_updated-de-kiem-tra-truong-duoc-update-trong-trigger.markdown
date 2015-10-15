@@ -2,6 +2,8 @@
 layout: post
 title: Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger
 date: '2015-04-24 01:47:26'
+categories: [MS SQL Server]
+tags: [MS SQL Server]
 redirect_from: /su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/
 ---
 

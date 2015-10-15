@@ -5,9 +5,41 @@
     <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
     <link>http://chungtrinh.com/</link>
     <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Oct 2015 18:49:42 +0700</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2015 18:49:42 +0700</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2015 22:04:57 +0700</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2015 22:04:57 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</title>
+        <description>&lt;p&gt;Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:&lt;/p&gt;
+
+&lt;p&gt;```
+- Unable to modify table. 
+Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Đây là cách sửa lỗi này&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Trong SQL Server Management Studio, vào menu &lt;code&gt;Tools \ Options&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Trong cửa sổ &lt;code&gt;Options&lt;/code&gt;, tại danh sách bên tay trái, bạn vào phần &lt;code&gt;Designers&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Tại phần đầu tiên của &lt;code&gt;Table Options&lt;/code&gt; bên tay phải. Bạn check vào tùy chọn &lt;strong&gt;Overrides connections string time-out value for table designer update&lt;/strong&gt;. Tại ô &lt;strong&gt;Transaction time-out after:&lt;/strong&gt;, thường thì mặc định là 30. Bạn sửa lại giá trị lớn hơn (tối đa là 65535).&lt;/li&gt;
+  &lt;li&gt;Sau đó nhấn &lt;code&gt;OK&lt;/code&gt; và thử lại.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Chúc các bạn thành công&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Oct 2015 05:00:32 +0700</pubDate>
+        <link>http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</guid>
+        
+        <category>MS SQL Server</category>
+        
+        
+        <category>ms sql server</category>
+        
+      </item>
     
       <item>
         <title>Cách sửa lỗi conflict collation trong MS SQL Server</title>
@@ -28,10 +60,14 @@
 
 &lt;p&gt;Chúc các bạn thành công.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 22 Sep 2015 11:16:35 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</guid>
+        <pubDate>Tue, 22 Sep 2015 04:16:35 +0700</pubDate>
+        <link>http://chungtrinh.com/ms%20sql%20server/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/09/22/cach-sua-loi-conflict-collation-trong-ms-sql-server.html</guid>
         
+        <category>MS SQL Server</category>
+        
+        
+        <category>ms sql server</category>
         
       </item>
     
@@ -132,9 +168,13 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
+        <link>http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
         
+        <category>MS SQL Server</category>
+        
+        
+        <category>ms sql server</category>
         
       </item>
     
@@ -222,50 +262,6 @@ INNER JOIN
       </item>
     
       <item>
-        <title>Mở nhiều tài khoản Skype trên cùng một máy tính</title>
-        <description>&lt;p&gt;Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
-Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
-# Đối với máy tính windows&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_142908.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;chy-chng-trnh-skype-khc&quot;&gt;Chạy chương trình Skype khác&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Vào Start &amp;gt; Run hoặc nhấn tổ hợp phím &lt;kbd&gt;Windows+R&lt;/kbd&gt;&lt;/li&gt;
-  &lt;li&gt;Trong cửa sổ Run, bạn gõ vào: &lt;code&gt;c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary&lt;/code&gt; &lt;strong&gt;(chú ý tham số /secondary)&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_141718.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Nhấn &lt;kbd&gt;OK&lt;/kbd&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Một cửa sổ Skype mới sẽ hiện ra và bạn có thể đăng nhập bằng tài khoản mới rối.&lt;/p&gt;
-
-&lt;h3 id=&quot;to-shortcut-trn-mn-hnh-desktop&quot;&gt;Tạo shortcut trên màn hình desktop&lt;/h3&gt;
-&lt;p&gt;Mỗi lần muốn chạy chương trình Skype khác, bạn lại phải làm lại thao tác rườm rà như trên. Hãy tạo shortcut trên màn hình desktop của bạn để lần sau truy cập nhanh hơn, làm như sau:
-1. Click chuột phải lên trỗ trống trên màn hình desktop và chọn New &amp;gt; Shortcut.
-2. Trên màn hình &lt;code&gt;[Create Shortcut]&lt;/code&gt;, tải ô &lt;code&gt;[Type the location of the item]&lt;/code&gt;, bạn copy nguyên đoạn sau và paste vào: &lt;code&gt;&quot;C:\Program Files (x86)\Skype\Phone\Skype.exe&quot; /secondary&lt;/code&gt;. Sau đó nhấn nút &lt;kbd&gt;Next&lt;/kbd&gt;
-3. Đặt tên cho shortcut mới, ví dụ &lt;code&gt;Skype 2&lt;/code&gt;. Sau đó nhấn &lt;kbd&gt;Finish&lt;/kbd&gt; là bạn đã hoàn thành.&lt;/p&gt;
-
-&lt;h1 id=&quot;i-vi-my-chy-macos&quot;&gt;Đối với máy chạy MACOS&lt;/h1&gt;
-&lt;p&gt;Mở terminal và gõ vào dòng lệnh sau:
-&lt;code&gt;
-sudo /Applications/Skype.app/Contents/MacOS/Skype
-&lt;/code&gt;
-Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.&lt;/p&gt;
-
-&lt;p&gt;Chúc bạn thành công.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 May 2015 07:32:19 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
         <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
 
@@ -289,10 +285,14 @@ Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar nh�
 &lt;p&gt;Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 21 May 2015 04:10:52 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
+        <pubDate>Thu, 21 May 2015 11:10:52 +0700</pubDate>
+        <link>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
         
+        <category>MS SQL Server</category>
+        
+        
+        <category>ms sql server</category>
         
       </item>
     

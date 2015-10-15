@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Truy vấn dữ liệu từ xa thông qua MS SQL linked server</title>
-  <meta name="description" content="  Đôi khi vì một lý do gì đó mà bạn phải truy vấn dữ liệu từ một database đặt tại server khác (hoặc một instance khác của SQL Server) – ví dụ: so sánh dữ liệ...">
-
+  <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
+  <meta name="description" content="Hôm nay, không biết vì lý do gì mà tổ hợp phím Ctrl+R không làm việc trên SQL Server Management Studio nữa. Hiện tại tôi đang dùng SQL Management Studio 2012..."> 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://chungtrinh.com/2011/05/25/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server.html">
+  <link rel="canonical" href="http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html">
   <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
 
   
@@ -234,140 +233,32 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Truy vấn dữ liệu từ xa thông qua MS SQL linked server</h1>
-    <p class="post-meta">May 25, 2011</p>
+    <h1 class="post-title">SQL Server - Ctrl + R không làm việc trong SSMS</h1>
+    <p class="post-meta">May 21, 2015</p>
   </header>
 
   <article class="post-content">
-    <blockquote>
-  <p><em>Đôi khi vì một lý do gì đó mà bạn phải truy vấn dữ liệu từ một database đặt tại server khác (hoặc một instance khác của SQL Server) – ví dụ: so sánh dữ liệu giữa 2 database, hay các giải pháp phân tán …</em></p>
-</blockquote>
+    <p>Hôm nay, không biết vì lý do gì mà tổ hợp phím <kbd>Ctrl+R</kbd> không làm việc trên SQL Server Management Studio nữa. <code>Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)</code>.</p>
 
 <blockquote>
-  <p><em>Bạn sẽ làm thế nào? Tôi xin giới thiệu với các bạn sử dụng Linked Server để giải quyết vấn đề này.</em></p>
+  <p>Trong SSMS, <kbd>Ctrl+R</kbd> là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.</p>
 </blockquote>
 
-<p>Trong bài này, tôi giả sử tôi đang ở SQL server 2000 máy local (instance là <code>CHUNGTV\SQL2K</code>), tôi cần lấy dữ liệu của bảng DMKH ở database <code>HungLong</code> để tại SQL Server 2008 trên máy chủ (instance là <code>ServerDB\SQL2008</code>)</p>
+<p>Khi nhấn <kbd>Ctrl+R</kbd> thì nhận được kết quả như sau dưới thanh Status bar:
+<img src="/images/2015/05/2015-05-21_105035.png" alt="" />
+Nhấn thêm <kbd>Ctrl+R</kbd> lần nữa thì thanh Status Bar như sau:
+<img src="/images/2015/05/2015-05-21_105259.png" alt="" /></p>
 
-<h3 id="cch-1-cu-hnh-bng-giao-din">Cách 1: Cấu hình bằng giao diện</h3>
+<p>Vào menu Window thì thấy đã chuyển thành tổ hợp phím <kbd>Ctrl+Shift+Alt+R</kbd>
+<img src="/images/2015/05/2015-05-21_105524.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>Mở trình quản lý database lên, hiện tôi đang dùng Microsoft SQL Server Management Studio 2008 (10.x); đối với Microsoft SQL Server Management Studio 2005 (9.x) thì làm tương tự, với Microsoft SQL Enterprise Manager 8 (2000) thì có khác một ít tôi sẽ nói sau.</p>
-  </li>
-  <li>
-    <p>Expand thư mục <code>Server Objects</code>, sẽ thấy thư mục <code>Linked Servers</code></p>
-  </li>
-</ul>
+<p>Sau đây là các bước để lấy lại phím tắt <kbd>Ctrl+R</kbd> cho SSMS:
+1. Vào menu Tools, chọn Options…;
+2. Trong cửa sổ Options chọn Environment -&gt; Keyboard -&gt; Keyboard;
+3. Tại Combobox “Apply the following additional keyboard mapping scheme” chọn default. Sau đó nhất nút Reset để trả về mặc định ban đầu.</p>
 
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image1.png" alt="" /></p>
+<p>Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.</p>
 
-<p><em>Đối với Microsoft SQL Enterprise Manager 8 (2000) thì phần Linked Servers lại nằm trong phần Security</em></p>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image2.png" alt="" /></p>
-
-<ul>
-  <li>Righ-click lên mục <code>Linked Servers</code>, và chọn <code>New Linked Servers…</code>, màn hình <code>New Linked Server</code> sẽ hiện lên</li>
-</ul>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image3.png" alt="" /></p>
-
-<p><strong>Tại phần General, bạn nhập các thông tin:</strong>
-&gt; - <strong>Linked server</strong>: Tên bạn đặt cho linked server sẽ được truy xuất khi bạn thực hiện truy vấn dữ liệu (ở đây tôi đặt là SERVERDB2K8)</p>
-
-<blockquote>
-  <ul>
-    <li><strong>Server type</strong>: Bạn chọn là Other data source</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Provider</strong>: Chọn Microsoft OLE DB Provider for SQL Server (ở đây bạn có thể chọn loại khác tùy vào nguồn dữ liệu bạn sẽ link tới – có thể là Access, Oracle, Excel …)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Product name</strong>: đặt tên product (ở đây tôi đặt là Sql2K8)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Data source</strong>: nhập instance của server bạn muốn link tới (ở đây tôi gõ ServerDB\SQL2008)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Các thông tin khác để mặc định.</li>
-  </ul>
-</blockquote>
-
-<p><strong>Tại phần Security:</strong></p>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image4.png" alt="" /></p>
-
-<blockquote>
-  <ul>
-    <li>Bạn chọn tùy chọn “Be made using this security context”</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Nhập user đăng nhập vào SQL tại <code>Remote login:</code></li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Nhập Password đăng nhập tại <code>With password:</code></li>
-  </ul>
-</blockquote>
-
-<p>Sau đó bạn nhấn <kbd>OK</kbd></p>
-
-<ul>
-  <li>Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:
-<code>sql
-SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-</code></li>
-</ul>
-
-<h3 id="thc-hin-bng-lnh">Thực hiện bằng lệnh</h3>
-<p>Tại cửa sổ query, bạn hoàn toàn có thể thực hiện các công việc như bước 1 bằng cách sau:
-- Tạo mới Linked server bằng lệnh sau:</p>
-
-<p><code>sql
-EXEC master.dbo.sp_addlinkedserver @server = N'SERVERDB2K8', @provider=N'SQLOLEDB', @datasrc=N'ServerDB\SQL2008', @srvproduct=N'Sql2K8'
-</code></p>
-
-<ul>
-  <li>
-    <p>Kiểm tra đã tạo thành công chưa bằng:
-<code>sql
-EXEC sp_linkedservers
-</code>
-kết quả:
-<img src="https://trinhvanchung.files.wordpress.com/2011/05/image_thumb5.png?w=575&amp;h=87" alt="" /></p>
-  </li>
-  <li>
-    <p>Đăng nhập vào Linked server
-<code>sql
-EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'SERVERDB2K8', @useself=N'False', @locallogin=NULL, @rmtuser=N'tentruycap', @rmtpassword='matkhautruycap'
-</code></p>
-  </li>
-  <li>
-    <p>Kiểm tra kết quả
-<code>sql
-SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-</code></p>
-  </li>
-</ul>
-
-<p>Chúc các bạn thành công.</p>
 
   </article>
 

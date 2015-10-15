@@ -1,0 +1,18 @@
+<p>Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:</p>
+
+<p>```
+- Unable to modify table. 
+Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.</p>
+
+<p>```</p>
+
+<p><strong>Đây là cách sửa lỗi này</strong></p>
+
+<ul>
+  <li>Trong SQL Server Management Studio, vào menu <code>Tools \ Options</code></li>
+  <li>Trong cửa sổ <code>Options</code>, tại danh sách bên tay trái, bạn vào phần <code>Designers</code>.</li>
+  <li>Tại phần đầu tiên của <code>Table Options</code> bên tay phải. Bạn check vào tùy chọn <strong>Overrides connections string time-out value for table designer update</strong>. Tại ô <strong>Transaction time-out after:</strong>, thường thì mặc định là 30. Bạn sửa lại giá trị lớn hơn (tối đa là 65535).</li>
+  <li>Sau đó nhấn <code>OK</code> và thử lại.</li>
+</ul>
+
+<p><strong>Chúc các bạn thành công</strong></p>
