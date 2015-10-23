@@ -5,9 +5,37 @@
     <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
     <link>http://chungtrinh.com/</link>
     <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2015 22:04:57 +0700</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2015 22:04:57 +0700</lastBuildDate>
+    <pubDate>Fri, 23 Oct 2015 17:46:47 +0700</pubDate>
+    <lastBuildDate>Fri, 23 Oct 2015 17:46:47 +0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Thay đổi đường dẫn Local trong Team Foundation Server</title>
+        <description>&lt;p&gt;Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn &lt;code&gt;Local path&lt;/code&gt; đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào &lt;code&gt;File / Source Control / Workspaces&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/10/tfs_manage_workspaces.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Trên cửa sổ &lt;code&gt;Manage Workspaces&lt;/code&gt;, bạn chọn Workspace cần thay đổi, nhấn &lt;strong&gt;Edit …&lt;/strong&gt;, chương trình hiển thị màn hình &lt;code&gt;Edit Workspace&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/10/tfs_edit_workspace.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Trên màn hình này, bạn thay đổi đường dẫn mới tại cột &lt;strong&gt;Local Folder&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 23 Oct 2015 15:57:17 +0700</pubDate>
+        <link>http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html</guid>
+        
+        <category>TFS</category>
+        
+        <category>Source Control</category>
+        
+        <category>Visual Studio</category>
+        
+        
+        <category>tfs</category>
+        
+      </item>
     
       <item>
         <title>Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</title>
@@ -258,41 +286,6 @@ INNER JOIN
         <link>http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
         <guid isPermaLink="true">http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
-        <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Trong SSMS, &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Khi nhấn &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; thì nhận được kết quả như sau dưới thanh Status bar:
-&lt;img src=&quot;/images/2015/05/2015-05-21_105035.png&quot; alt=&quot;&quot; /&gt;
-Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar như sau:
-&lt;img src=&quot;/images/2015/05/2015-05-21_105259.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Vào menu Window thì thấy đã chuyển thành tổ hợp phím &lt;kbd&gt;Ctrl+Shift+Alt+R&lt;/kbd&gt;
-&lt;img src=&quot;/images/2015/05/2015-05-21_105524.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sau đây là các bước để lấy lại phím tắt &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; cho SSMS:
-1. Vào menu Tools, chọn Options…;
-2. Trong cửa sổ Options chọn Environment -&amp;gt; Keyboard -&amp;gt; Keyboard;
-3. Tại Combobox “Apply the following additional keyboard mapping scheme” chọn default. Sau đó nhất nút Reset để trả về mặc định ban đầu.&lt;/p&gt;
-
-&lt;p&gt;Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 21 May 2015 11:10:52 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
-        
-        <category>MS SQL Server</category>
-        
-        
-        <category>ms sql server</category>
         
       </item>
     

@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</title>
-  <meta name="description" content="Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hà..."> 
+  <title>Thay đổi đường dẫn Local trong Team Foundation Server</title>
+  <meta name="description" content="Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn Local path đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Stud..."> 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html">
+  <link rel="canonical" href="http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html">
   <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
 
   
@@ -233,29 +233,21 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</h1>
-    <p class="post-meta">Oct 16, 2015</p>
+    <h1 class="post-title">Thay đổi đường dẫn Local trong Team Foundation Server</h1>
+    <p class="post-meta">Oct 23, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:</p>
+    <p>Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn <code>Local path</code> đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào <code>File / Source Control / Workspaces</code>.</p>
 
-<p>```
-- Unable to modify table. 
-Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.</p>
+<p><img src="/images/2015/10/tfs_manage_workspaces.png" alt="" /></p>
 
-<p>```</p>
+<p>Trên cửa sổ <code>Manage Workspaces</code>, bạn chọn Workspace cần thay đổi, nhấn <strong>Edit …</strong>, chương trình hiển thị màn hình <code>Edit Workspace</code></p>
 
-<p><strong>Đây là cách sửa lỗi này</strong></p>
+<p><img src="/images/2015/10/tfs_edit_workspace.png" alt="" /></p>
 
-<ul>
-  <li>Trong SQL Server Management Studio, vào menu <code>Tools \ Options</code></li>
-  <li>Trong cửa sổ <code>Options</code>, tại danh sách bên tay trái, bạn vào phần <code>Designers</code>.</li>
-  <li>Tại phần đầu tiên của <code>Table Options</code> bên tay phải. Bạn check vào tùy chọn <strong>Overrides connections string time-out value for table designer update</strong>. Tại ô <strong>Transaction time-out after:</strong>, thường thì mặc định là 30. Bạn sửa lại giá trị lớn hơn (tối đa là 65535).</li>
-  <li>Sau đó nhấn <code>OK</code> và thử lại.</li>
-</ul>
+<p>Trên màn hình này, bạn thay đổi đường dẫn mới tại cột <strong>Local Folder</strong></p>
 
-<p><strong>Chúc các bạn thành công</strong></p>
 
   </article>
 

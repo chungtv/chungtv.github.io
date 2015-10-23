@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html</loc>
+    <lastmod>2015-10-23T15:57:17+07:00</lastmod>
+  </url>
+  <url>
     <loc>http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</loc>
     <lastmod>2015-10-16T05:00:32+07:00</lastmod>
   </url>
