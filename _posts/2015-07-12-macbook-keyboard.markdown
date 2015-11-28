@@ -2,6 +2,7 @@
 layout: post
 title: Macbook keyboard
 date: '2015-07-12 14:53:50'
+categories: [MacOS]
 redirect_from: /macbook-keyboard/
 ---
 
