@@ -1,8 +1,249 @@
 <!DOCTYPE html>
-<meta charset=utf-8>
-<title>Redirecting...</title>
-<link rel=canonical href="/2010/11/12/authentication-in-svn.html">
-<meta http-equiv=refresh content="0; url=/2010/11/12/authentication-in-svn.html">
-<h1>Redirecting...</h1>
-<a href="/2010/11/12/authentication-in-svn.html">Click here if you are not redirected.</a>
-<script>location='/2010/11/12/authentication-in-svn.html'</script>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Authentication in SVN</title>
+  <meta name="description" content="Trong các bài trước, tôi đã hướng dẫn các bạn cài đặt, cấu hình đơn giản, tạo repository, sử dụng một số lệnh cơ bản của giao thức SVN để thao tác với Reposi..."> 
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://chungtrinh.com/authentication-in-svn/">
+  <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
+
+  
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/565950dcd6412f5177b912b3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Chung Trịnh's blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Authentication in SVN</h1>
+    <p class="post-meta">Nov 12, 2010</p>
+  </header>
+
+  <article class="post-content">
+    <p>Trong các bài trước, tôi đã hướng dẫn các bạn cài đặt, cấu hình đơn giản, tạo repository, sử dụng một số lệnh cơ bản của giao thức SVN để thao tác với Repository.</p>
+
+<p>Vấn đề đặt ra là trong trường hợp dự án có nhiều thành viên tham gia, có nhiều team cùng tham gia dự án và role của mỗi team hoặc mỗi thành viên là khác nhau trên từng dự án, thậm chí trên từng thư mục con của dự án.</p>
+
+<p>Vậy làm sao để phân quyền truy cập cho các thành viên, các team đó trong SVN.</p>
+
+<p>Với VisualSVN, mọi việc rất dễ dàng, tuy nhiên trong bài này tôi không có ý định hướng dẫn các bạn tạo user và cấu hình xác thực trong VisualSVN. Trong phạm vi bài này, tôi sẽ giới thiệu với các bạn cách cấu hình Authentication cho các user, các team truy cập vào Repository và các dự án bằng text file.</p>
+
+<p>Để thực hiện việc phân quyền trong SVN, các bạn sử dụng file <code class="highlighter-rouge">authz</code> trong thư mục <code class="highlighter-rouge">conf</code> của repository. Để chỉ định việc kiểm tra quyền được cấu hình trong file <code class="highlighter-rouge">authz</code>, bạn phải mở chỉ thị trong <code class="highlighter-rouge">authz-db</code> trong file <code class="highlighter-rouge">svnserve.conf</code> ra. Khi đó, bạn có được file <code class="highlighter-rouge">svnserve.conf</code> như sau:</p>
+
+<p><code class="highlighter-rouge">
+[general]
+anon-access = read
+auth-access = write
+password-db = passwd
+authz-db = authz
+</code></p>
+
+<p>Để bất đầu hãy mở file <code class="highlighter-rouge">authz</code> bằng notepad và xóa trắng nó đi.</p>
+
+<h3 id="phn-nhm-user">Phân nhóm user</h3>
+
+<p>Trong svn, việc phân nhóm user trong file <code class="highlighter-rouge">authz</code> được thực hiện trong 1 session, dòng đầu tiên của session này là <code class="highlighter-rouge">[groups]</code>. Các dòng tiếp theo của session này là định nghĩa các nhóm tham gia vào dự án (sẽ được phân quyền để truy cập vào repository). Cấu trúc của 1 dòng như sau:</p>
+
+<p><code class="highlighter-rouge">
+    group_name = user_name1, user_name2
+</code>
+&gt; <em>Các user name ngăn cách nhau bởi dấu phẩy (,) và hãy chắc chắn rằng các user này đã được tạo trong file passwd.</em></p>
+
+<p>Ví dụ, bạn tạo ra 2 nhóm tham gia dự án, khi đó session groups sẽ như sau:</p>
+
+<p><code class="highlighter-rouge">
+    [groups]
+    dev_team = dev1, dev2, dev3
+    test_team = test1, test2
+</code></p>
+
+<h3 id="phn-quyn-cho-user-hoc-nhm-user">Phân quyền cho user hoặc nhóm user</h3>
+
+<p>Trước khi phân quyền, bạn cần biết: Trong SVN, quyền truy cập vào 1 thư mục nào đó có 2 mức: <code class="highlighter-rouge">read (r)</code> và <code class="highlighter-rouge">write(w)</code>. Việc phân quyền cho user được access vào thư mục ở quyền nào được gán bởi các ký tự đại diện <code class="highlighter-rouge">r</code> hoặc <code class="highlighter-rouge">w</code>.</p>
+
+<p>Để gán quyền cho các user hoặc group access vào một thư mục nào đó trong repository, bạn hãy tạo ra 1 session với tên session là đường dẫn tới thư mục cần phân quyền <code class="highlighter-rouge">[đường dẫn]</code> (trong trường hợp phân quyền truy cập cho repository (thư mục gốc) thì tên session sẽ để trống <code class="highlighter-rouge">[/]</code>). Trong 1 file <code class="highlighter-rouge">authz</code> có thể có nhiều session phân quyền khác nhau.</p>
+
+<p>Ngay phía dưới tên, các dòng tiếp theo trong session sẽ thể hiện quyền của user hay nhóm.</p>
+
+<p>Ví dụ, tôi phân quyền cho user <code class="highlighter-rouge">admin</code> toàn quyền trên toàn repository này thì sử dụng thì sử dụng session <code class="highlighter-rouge">[/]</code> như sau:</p>
+
+<p><code class="highlighter-rouge">
+[/]
+admin = rw
+</code>
+Phân quyền cho <code class="highlighter-rouge">user1</code> có toàn quyền trên dự án <code class="highlighter-rouge">AP</code> thì như sau:</p>
+
+<p><code class="highlighter-rouge">
+[/ap]
+user1=rw
+</code></p>
+
+<p>Phân quyền cho nhóm <code class="highlighter-rouge">dev</code> đã tạo ở trên toàn quyền trên thư mục <code class="highlighter-rouge">src</code> của dự án <code class="highlighter-rouge">AP</code> và nhóm <code class="highlighter-rouge">test</code> chỉ có quyền <code class="highlighter-rouge">read</code> trên thư mục src này. (chú ý đặt đấu @ trước tên nhóm)</p>
+
+<p><code class="highlighter-rouge">
+[/ap/src]
+@dev=rw
+@test=r
+</code></p>
+
+<p>Phân quyền cho tất cả mọi người đều được truy cập vào thư mục <code class="highlighter-rouge">docs</code> của dự án <code class="highlighter-rouge">AP</code>.</p>
+
+<p><code class="highlighter-rouge">
+[/ap/docs]
+*=rw
+</code></p>
+
+<p>Kết quả, file <code class="highlighter-rouge">authz</code> sẽ như sau:</p>
+
+<p>```
+[groups]
+dev=dev1,dev2,dev3
+test=test1,test2</p>
+
+<p>[/]
+admin=rw</p>
+
+<p>[/ap]
+user1=rw</p>
+
+<p>[/ap/src]
+@dev=rw
+@test=r</p>
+
+<p>[/ap/docs]
+*=rw
+```</p>
+
+<p>Bạn hãy thử sử dụng lệnh <code class="highlighter-rouge">ls</code> để kiểm tra hiệu lực của quyền <code class="highlighter-rouge">read</code>, lệnh <code class="highlighter-rouge">mkdir</code> để kiểm tra hiệu lực của lệnh <code class="highlighter-rouge">write</code> xem sao nhé. Cách sử dụng cách lệnh thì đã được giới thiệu trong các bài trước rồi.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chung Trịnh's blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chung Trịnh's blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Personal website of Chung Trinh.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chung Trịnh&#39;s blog</title>
-    <description>Chung Trịnh, Trịnh Văn Chung, SQL Server, C#, Tutorials, Windows, WPF, Windows Phone</description>
+    <description>Personal website of Chung Trinh.</description>
     <link>http://chungtrinh.com/</link>
     <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Dec 2015 18:09:04 +0700</pubDate>
-    <lastBuildDate>Wed, 02 Dec 2015 18:09:04 +0700</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Sun, 10 Apr 2016 13:27:50 +0700</pubDate>
+    <lastBuildDate>Sun, 10 Apr 2016 13:27:50 +0700</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
     
       <item>
         <title>Thay đổi đường dẫn Local trong Team Foundation Server</title>
-        <description>&lt;p&gt;Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn &lt;code&gt;Local path&lt;/code&gt; đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào &lt;code&gt;File / Source Control / Workspaces&lt;/code&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn &lt;code class=&quot;highlighter-rouge&quot;&gt;Local path&lt;/code&gt; đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào &lt;code class=&quot;highlighter-rouge&quot;&gt;File / Source Control / Workspaces&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2015/10/tfs_manage_workspaces.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Trên cửa sổ &lt;code&gt;Manage Workspaces&lt;/code&gt;, bạn chọn Workspace cần thay đổi, nhấn &lt;strong&gt;Edit …&lt;/strong&gt;, chương trình hiển thị màn hình &lt;code&gt;Edit Workspace&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Trên cửa sổ &lt;code class=&quot;highlighter-rouge&quot;&gt;Manage Workspaces&lt;/code&gt;, bạn chọn Workspace cần thay đổi, nhấn &lt;strong&gt;Edit …&lt;/strong&gt;, chương trình hiển thị màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Edit Workspace&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2015/10/tfs_edit_workspace.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -23,8 +23,8 @@
 
 </description>
         <pubDate>Fri, 23 Oct 2015 15:57:17 +0700</pubDate>
-        <link>http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91o%CC%82%CC%89i-%C4%91u%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%83n-local-trong-team-foundation-server.html</guid>
+        <link>http://chungtrinh.com/tfs/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/tfs/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server/</guid>
         
         <category>TFS</category>
         
@@ -33,7 +33,7 @@
         <category>Visual Studio</category>
         
         
-        <category>tfs</category>
+        <category>TFS</category>
         
       </item>
     
@@ -50,22 +50,22 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 &lt;p&gt;&lt;strong&gt;Đây là cách sửa lỗi này&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Trong SQL Server Management Studio, vào menu &lt;code&gt;Tools \ Options&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Trong cửa sổ &lt;code&gt;Options&lt;/code&gt;, tại danh sách bên tay trái, bạn vào phần &lt;code&gt;Designers&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Tại phần đầu tiên của &lt;code&gt;Table Options&lt;/code&gt; bên tay phải. Bạn check vào tùy chọn &lt;strong&gt;Overrides connections string time-out value for table designer update&lt;/strong&gt;. Tại ô &lt;strong&gt;Transaction time-out after:&lt;/strong&gt;, thường thì mặc định là 30. Bạn sửa lại giá trị lớn hơn (tối đa là 65535).&lt;/li&gt;
-  &lt;li&gt;Sau đó nhấn &lt;code&gt;OK&lt;/code&gt; và thử lại.&lt;/li&gt;
+  &lt;li&gt;Trong SQL Server Management Studio, vào menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Tools \ Options&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Trong cửa sổ &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;, tại danh sách bên tay trái, bạn vào phần &lt;code class=&quot;highlighter-rouge&quot;&gt;Designers&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Tại phần đầu tiên của &lt;code class=&quot;highlighter-rouge&quot;&gt;Table Options&lt;/code&gt; bên tay phải. Bạn check vào tùy chọn &lt;strong&gt;Overrides connections string time-out value for table designer update&lt;/strong&gt;. Tại ô &lt;strong&gt;Transaction time-out after:&lt;/strong&gt;, thường thì mặc định là 30. Bạn sửa lại giá trị lớn hơn (tối đa là 65535).&lt;/li&gt;
+  &lt;li&gt;Sau đó nhấn &lt;code class=&quot;highlighter-rouge&quot;&gt;OK&lt;/code&gt; và thử lại.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Chúc các bạn thành công&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 16 Oct 2015 05:00:32 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/10/16/su%CC%9B%CC%89a-lo%CC%82%CC%83i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</guid>
+        <link>http://chungtrinh.com/ms%20sql%20server/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/</guid>
         
         <category>MS SQL Server</category>
         
         
-        <category>ms sql server</category>
+        <category>MS SQL Server</category>
         
       </item>
     
@@ -81,20 +81,20 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 
 &lt;ul&gt;
   &lt;li&gt;Nhấn tổ hợp phím &lt;kbd&gt;Windows + R&lt;/kbd&gt;&lt;/li&gt;
-  &lt;li&gt;Gõ &lt;code&gt;Powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
-  &lt;li&gt;Sau khi Powershell đã chạy, Click phải lên icon PowerShell dưới thanh Taskbar và chọn &lt;code&gt;Run as Administrator &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Gõ &lt;code class=&quot;highlighter-rouge&quot;&gt;Powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Sau khi Powershell đã chạy, Click phải lên icon PowerShell dưới thanh Taskbar và chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Run as Administrator &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;b. Cách 2:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Click phải lên nút &lt;code&gt;Start&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Chọn &lt;code&gt;Command prompt (Admin)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Trong màn hình &lt;code&gt;Administrator: Command Prompt&lt;/code&gt;, gõ &lt;code&gt;powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Click phải lên nút &lt;code class=&quot;highlighter-rouge&quot;&gt;Start&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Command prompt (Admin)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Trong màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Administrator: Command Prompt&lt;/code&gt;, gõ &lt;code class=&quot;highlighter-rouge&quot;&gt;powershell&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;2.- Copy và Paste đoạn sau vào màn hình &lt;code&gt;Administrator: Windows PowerShell window&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;:
-&lt;code&gt;
+&lt;p&gt;2.- Copy và Paste đoạn sau vào màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Administrator: Windows PowerShell window&lt;/code&gt; và nhấn &lt;kbd&gt;Enter&lt;/kbd&gt;:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
 Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}
 &lt;/code&gt;&lt;/p&gt;
 
@@ -105,11 +105,11 @@ Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Re
 &lt;p&gt;Chúc bạn thành công&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Aug 2015 09:16:52 +0700</pubDate>
-        <link>http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</guid>
+        <link>http://chungtrinh.com/windows/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/windows/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/</guid>
         
         
-        <category>windows</category>
+        <category>Windows</category>
         
       </item>
     
@@ -121,21 +121,21 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;p&gt;Trong Windows, tôi muốn sử dụng chức năng của phím &lt;kbd&gt;F12&lt;/kbd&gt; hay các phím Funtions khác. Tôi làm như sau:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Mở của sổ &lt;code&gt;Settings&lt;/code&gt; của máy ảo windows bằng cách vào menu &lt;code&gt;Virtual Machine -&amp;gt; Settings&lt;/code&gt; hoặc nhấn tổ hợp phím &lt;kbd&gt;command + E&lt;/kbd&gt;&lt;/li&gt;
-  &lt;li&gt;Vào &lt;code&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Chọn Profile bạn đang sử dụng và vào &lt;code&gt;Edit profile&lt;/code&gt; (biểu tượng hình răng cưa)&lt;/li&gt;
-  &lt;li&gt;Trên màn hình &lt;code&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;, bạn chọn &lt;code&gt;Mac Host Shotcuts&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Bỏ tùy chọn &lt;code&gt;Enable Mac OS Keyboard Shortcuts&lt;/code&gt;
+  &lt;li&gt;Mở của sổ &lt;code class=&quot;highlighter-rouge&quot;&gt;Settings&lt;/code&gt; của máy ảo windows bằng cách vào menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Virtual Machine -&amp;gt; Settings&lt;/code&gt; hoặc nhấn tổ hợp phím &lt;kbd&gt;command + E&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Vào &lt;code class=&quot;highlighter-rouge&quot;&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Chọn Profile bạn đang sử dụng và vào &lt;code class=&quot;highlighter-rouge&quot;&gt;Edit profile&lt;/code&gt; (biểu tượng hình răng cưa)&lt;/li&gt;
+  &lt;li&gt;Trên màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Keyboard &amp;amp; Mouse&lt;/code&gt;, bạn chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Mac Host Shotcuts&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Bỏ tùy chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable Mac OS Keyboard Shortcuts&lt;/code&gt;
 &lt;img src=&quot;/images/2015/07/macos-keyboard-mouse-preferences.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         <pubDate>Tue, 14 Jul 2015 05:52:17 +0700</pubDate>
-        <link>http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</guid>
+        <link>http://chungtrinh.com/macos/su-dung-fn-key-trong-vmware-fusion/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/macos/su-dung-fn-key-trong-vmware-fusion/</guid>
         
         
-        <category>macos</category>
+        <category>MacOS</category>
         
       </item>
     
@@ -153,32 +153,32 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 
 </description>
         <pubDate>Sun, 12 Jul 2015 14:53:50 +0700</pubDate>
-        <link>http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html</guid>
+        <link>http://chungtrinh.com/macos/macbook-keyboard/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/macos/macbook-keyboard/</guid>
         
         
-        <category>macos</category>
+        <category>MacOS</category>
         
       </item>
     
       <item>
         <title>Sửa lỗi 9001: The log for database is not available trong MS SQL Server</title>
-        <description>&lt;p&gt;Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính &lt;code&gt;Auto Close&lt;/code&gt; đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.&lt;/p&gt;
+        <description>&lt;p&gt;Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Click phải vào Database, chọn &lt;code&gt;Tasks -&amp;gt; Take Offline&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Sau đó Click phải lại vào Database, chọn &lt;code&gt;Tasks -&amp;gt; Bring Online&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Click phải, chọn &lt;code&gt;Properties&lt;/code&gt;. Trong màn hình &lt;code&gt;Database Properties&lt;/code&gt;, chọn &lt;code&gt;Options&lt;/code&gt;. Sau đó thiết lập thuộc tính &lt;code&gt;Auto Close&lt;/code&gt; về &lt;strong&gt;False&lt;/strong&gt; là xong.&lt;/li&gt;
+  &lt;li&gt;Click phải vào Database, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks -&amp;gt; Take Offline&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Sau đó Click phải lại vào Database, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks -&amp;gt; Bring Online&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Click phải, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties&lt;/code&gt;. Trong màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Database Properties&lt;/code&gt;, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;. Sau đó thiết lập thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; về &lt;strong&gt;False&lt;/strong&gt; là xong.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
+        <link>http://chungtrinh.com/ms%20sql%20server/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/</guid>
         
         <category>MS SQL Server</category>
         
         
-        <category>ms sql server</category>
+        <category>MS SQL Server</category>
         
       </item>
     
@@ -186,7 +186,7 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
         <title>[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server</title>
         <description>&lt;p&gt;Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 SELECT name, 
        DATABASEPROPERTYEX(name, &#39;IsAutoClose&#39;)
 FROM   master.dbo.sysdatabases
@@ -195,8 +195,8 @@ FROM   master.dbo.sysdatabases
 &lt;p&gt;Tham khảo thêm tại đây &lt;a href=&quot;https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/&quot;&gt;mssqltips.com&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 03:10:37 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</guid>
+        <link>http://chungtrinh.com/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/</guid>
         
         
       </item>
@@ -211,22 +211,22 @@ FROM   master.dbo.sysdatabases
 &lt;p&gt;Đầu tiên, bạn cần mở tùy chọn hiển thị nội dung có định dạng này lên.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Vào menu &lt;code&gt;Tools -&amp;gt; Options...&lt;/code&gt; (hoặc nhấn tổ hợp phím &lt;kbd&gt;Ctrl + ,&lt;/kbd&gt;&lt;/li&gt;
-  &lt;li&gt;Trên màn hình &lt;code&gt;Options&lt;/code&gt;, bạn tìm đến phần &lt;code&gt;IM &amp;amp; SMS -&amp;gt; IM appearance&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Vào menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Tools -&amp;gt; Options...&lt;/code&gt; (hoặc nhấn tổ hợp phím &lt;kbd&gt;Ctrl + ,&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Trên màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;, bạn tìm đến phần &lt;code class=&quot;highlighter-rouge&quot;&gt;IM &amp;amp; SMS -&amp;gt; IM appearance&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;Tại khung bên phải, bạn check vào tùy chọn &lt;em&gt;Show advanced text formatting&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Nhấn nút &lt;kbd&gt;Save&lt;/kbd&gt; để lưu lại và đóng cửa sổ &lt;code&gt;Options&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Nhấn nút &lt;kbd&gt;Save&lt;/kbd&gt; để lưu lại và đóng cửa sổ &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2015/07/skype-options.png&quot; alt=&quot;Show advanced text formatting&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;cch-vit&quot;&gt;Cách viết&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Để &lt;strong&gt;viết đậm nội dung&lt;/strong&gt;, bạn hãy sử dụng dấu * trước và sau nội dung &lt;code&gt;*Đây là nội dung in đậm*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Để &lt;em&gt;in nghiêng nội dung&lt;/em&gt;, bạn sử dụng dấu _ trước và sau nội dung &lt;code&gt;_Còn đây là nội dung in nghiêng_&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Để ~~gạch ngang nội dung~~, bạn sử dụng dấu ~ trước và sau nội dung &lt;code&gt;~Nội dung gạch ngang~&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Để hiển thị nội dung dạng mã nguồn, bạn đặt nội dung muốn hiển thị vào cặp {code}, kiểu thế này &lt;code&gt;{code} public class HelloWorld { } {code}&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Để viết toàn bộ nội dung không có format text (tức là bỏ qua các định dạng trên) và cũng không hiển thị các emoticons của Skype, chúng ta đặt 2 ký tự !! trước nội dung, ví dụ &lt;code&gt;!! Đây là nội dung không có *text format* và cũng không có emoticons :D (monkey)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Đặt 2 ký tự @@ trước nội dung chat, sẽ không có format text nhưng có emoticons, ví dụ &lt;code&gt;@@ Đây là nội dung không có *text format* nhưng có emoticons :D&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để &lt;strong&gt;viết đậm nội dung&lt;/strong&gt;, bạn hãy sử dụng dấu * trước và sau nội dung &lt;code class=&quot;highlighter-rouge&quot;&gt;*Đây là nội dung in đậm*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để &lt;em&gt;in nghiêng nội dung&lt;/em&gt;, bạn sử dụng dấu _ trước và sau nội dung &lt;code class=&quot;highlighter-rouge&quot;&gt;_Còn đây là nội dung in nghiêng_&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để ~~gạch ngang nội dung~~, bạn sử dụng dấu ~ trước và sau nội dung &lt;code class=&quot;highlighter-rouge&quot;&gt;~Nội dung gạch ngang~&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để hiển thị nội dung dạng mã nguồn, bạn đặt nội dung muốn hiển thị vào cặp {code}, kiểu thế này &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Để viết toàn bộ nội dung không có format text (tức là bỏ qua các định dạng trên) và cũng không hiển thị các emoticons của Skype, chúng ta đặt 2 ký tự !! trước nội dung, ví dụ &lt;code class=&quot;highlighter-rouge&quot;&gt;!! Đây là nội dung không có *text format* và cũng không có emoticons :D (monkey)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Đặt 2 ký tự @@ trước nội dung chat, sẽ không có format text nhưng có emoticons, ví dụ &lt;code class=&quot;highlighter-rouge&quot;&gt;@@ Đây là nội dung không có *text format* nhưng có emoticons :D&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2015/07/skype-text-format.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -235,8 +235,8 @@ FROM   master.dbo.sysdatabases
 
 </description>
         <pubDate>Fri, 03 Jul 2015 07:24:54 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</guid>
+        <link>http://chungtrinh.com/dinh-dang-noi-dung-khi-chat-trong-skype/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/dinh-dang-noi-dung-khi-chat-trong-skype/</guid>
         
         
       </item>
@@ -246,7 +246,7 @@ FROM   master.dbo.sysdatabases
         <description>&lt;p&gt;Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
 Đây là Query sẽ trả về kết quả mong muốn.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 SELECT
     db.name AS [DB Name],
     mf.name AS [Logical Name],
@@ -259,15 +259,15 @@ INNER JOIN
 &lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Jul 2015 02:51:15 +0700</pubDate>
-        <link>http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
+        <link>http://chungtrinh.com/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/</guid>
         
         
       </item>
     
       <item>
         <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
-        <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code class=&quot;highlighter-rouge&quot;&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Trong SSMS, &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.&lt;/p&gt;
@@ -290,13 +290,13 @@ Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar nh�
 
 </description>
         <pubDate>Thu, 21 May 2015 11:10:52 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
+        <link>http://chungtrinh.com/ms%20sql%20server/sql-server-ctrl-r-khong-lam-viec-trong-ssms/</link>
+        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/sql-server-ctrl-r-khong-lam-viec-trong-ssms/</guid>
         
         <category>MS SQL Server</category>
         
         
-        <category>ms sql server</category>
+        <category>MS SQL Server</category>
         
       </item>
     

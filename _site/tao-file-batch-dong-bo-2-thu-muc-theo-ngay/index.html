@@ -1,8 +1,197 @@
 <!DOCTYPE html>
-<meta charset=utf-8>
-<title>Redirecting...</title>
-<link rel=canonical href="/2012/04/05/tao-file-batch-dong-bo-2-thu-muc-theo-ngay.html">
-<meta http-equiv=refresh content="0; url=/2012/04/05/tao-file-batch-dong-bo-2-thu-muc-theo-ngay.html">
-<h1>Redirecting...</h1>
-<a href="/2012/04/05/tao-file-batch-dong-bo-2-thu-muc-theo-ngay.html">Click here if you are not redirected.</a>
-<script>location='/2012/04/05/tao-file-batch-dong-bo-2-thu-muc-theo-ngay.html'</script>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tạo file Batch đồng bộ 2 thư mục theo ngày</title>
+  <meta name="description" content="Trong quá trình triển khai phần mềm, việc sửa đổi chương trình theo yêu cầu người dùng là không tránh khỏi. Thường đội triển khai sẽ hiệu chỉnh chương trình ..."> 
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://chungtrinh.com/tao-file-batch-dong-bo-2-thu-muc-theo-ngay/">
+  <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
+
+  
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/565950dcd6412f5177b912b3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Chung Trịnh's blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Tạo file Batch đồng bộ 2 thư mục theo ngày</h1>
+    <p class="post-meta">Apr 5, 2012</p>
+  </header>
+
+  <article class="post-content">
+    <p>Trong quá trình triển khai phần mềm, việc sửa đổi chương trình theo yêu cầu người dùng là không tránh khỏi. Thường đội triển khai sẽ hiệu chỉnh chương trình trực tiếp trên server và client sẽ update xuống.</p>
+
+<p>Việc update từ server xuống client cũng có nhiều giải pháp. Sau đây là giải pháp mình đang sử dụng:</p>
+
+<p>Giải pháp của mình là sử dụng 1 <a href="http://en.wikipedia.org/wiki/Batch_file">batch file window</a> để thực hiện việc này. Batch file này làm nhiệm vụ copy file từ server về client và chỉ copy những file nào có ngày modify &gt;= ngày update gần nhất. Để xác định ngày update gần nhất mình dùng 1 file text lưu giá trị ngày update.</p>
+
+<p>```
+	:: Author | Chungtv
+	:: Purpose | Synchronize files from server to client
+	@echo off
+	:: Lay ngay hien tai
+	call :GetDate y m d
+	echo TODAY: %m%-%d%-%y%
+	set ud=%m%-%d%-%y%
+	:: Neu ton tai file update thi gan ngay update la ngay luu trong file
+	if exist “D:\Asiasoft\AE81\LastSyn.txt” set /p ud = &lt;”D:\Asiasoft\AE81\LastSyn.txt”
+	::Thuc hien viec copy
+	net use “\server\AsiaSoft\AE81” password /user:user
+	xcopy “\server\AsiaSoft\AE81” “D:\Asiasoft\AE81” /D:%ud% /I /Y /E
+	::Sau khi copy xong thi luu lai ngay update
+	set ud=%m%-%d%-%y%
+	if exist “D:\Asiasoft\AE81\LastSyn.txt” del “D:\Asiasoft\AE81\LastSyn.txt”
+	echo %ud% &gt; “D:\Asiasoft\AE81\LastSyn.txt”
+	if errorlevel 5 goto writeerror
+	if errorlevel 0 goto eof
+	:writeerror
+	pause Disk write error occurred.
+	goto eof
+	:GetDate yy mm dd
+	setlocal ENABLEEXTENSIONS
+	set t=2&amp;if “%date%z” LSS “A” set t=1
+	for /f “skip=1 tokens=2-4 delims=(-)” %%a in (‘echo/^|date’) do (
+	    for /f “tokens=%t%-4 delims=.-/ “ %%d in (‘date/t’) do (</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    set %%a=%%d&amp;set %%b=%%e&amp;set %%c=%%f))
+
+    endlocal&amp;set %1=%yy%&amp;set %2=%mm%&amp;set %3=%dd%&amp;goto :eof
+
+    :eof
+</code></pre>
+</div>
+
+<p>```</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chung Trịnh's blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chung Trịnh's blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Personal website of Chung Trinh.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

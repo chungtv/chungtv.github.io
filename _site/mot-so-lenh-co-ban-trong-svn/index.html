@@ -1,8 +1,285 @@
 <!DOCTYPE html>
-<meta charset=utf-8>
-<title>Redirecting...</title>
-<link rel=canonical href="/2010/11/05/mot-so-lenh-co-ban-trong-svn.html">
-<meta http-equiv=refresh content="0; url=/2010/11/05/mot-so-lenh-co-ban-trong-svn.html">
-<h1>Redirecting...</h1>
-<a href="/2010/11/05/mot-so-lenh-co-ban-trong-svn.html">Click here if you are not redirected.</a>
-<script>location='/2010/11/05/mot-so-lenh-co-ban-trong-svn.html'</script>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Một số lệnh cơ bản trong SVN</title>
+  <meta name="description" content=""> 
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://chungtrinh.com/mot-so-lenh-co-ban-trong-svn/">
+  <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
+
+  
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/565950dcd6412f5177b912b3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Chung Trịnh's blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Một số lệnh cơ bản trong SVN</h1>
+    <p class="post-meta">Nov 5, 2010</p>
+  </header>
+
+  <article class="post-content">
+    <p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image_thumb.png?w=396&amp;h=58" alt="Subversion" /></p>
+
+<p>Trong bài trước, các bạn đã cài đặt được SVN và làm quen với SVN. Trong bài này, xin giới thiệu với các bạn một số lệnh cơ bản để thao tác với SVN.</p>
+
+<p>Bạn có thể dễ dàng thấy các lệnh được hỗ trợ trong SVN bằng cách trong của sổ Cmd, gõ dòng lệnh sau:</p>
+
+<p><code class="highlighter-rouge">
+svn help hoặc svn ?
+</code></p>
+
+<p>Một số lệnh cơ bản, ý nghĩa và cách sử dụng chúng:</p>
+
+<p><em>Chú ý: trong cấu trúc các lệnh dưới đây tôi luôn kèm theo các tham số <code class="highlighter-rouge">Username</code> và <code class="highlighter-rouge">password</code>, tuy nhiên trên thực tế thì có những lệnh không cần, tùy vào cấu hình truy cập (bài sau sẽ nói về vấn đề này). ví dụ, trong file <code class="highlighter-rouge">svnserve.conf</code> ở bài trước, chúng ta cấu hình <code class="highlighter-rouge">nanon-access = read</code> thì thực chất trong lệnh <code class="highlighter-rouge">list</code> ở dưới không cần kèm theo tham số <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code>. Tham số <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code> thậm chí cũng chỉ cần gõ 1 lần ở lệnh đầu tiên, trong các lệnh tiếp theo svn sẽ tự nhận lại tham số ở lệnh trước đó.</em></p>
+
+<h3 id="mkdir--lnh-to-th-mc">mkdir | Lệnh tạo thư mục</h3>
+<p>###### Ý nghĩa
+Lệnh này sử dụng để tạo thư mục trong <code class="highlighter-rouge">repository</code> của bạn. (giống lệnh MD trong Doc command)</p>
+
+<h6 id="cu-trc-lnh">Cấu trúc lệnh</h6>
+
+<p><code class="highlighter-rouge">
+svn mkdir &lt;đường dẫn thư mục mới tạo&gt; –m &lt;Mô tả về dự án&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code></p>
+
+<p>Trong trường hợp bạn ko gõ tham số –m, chương trình sẽ hiển thị màn hình để các bạn nhập comment vào (chương trình này được thiết lập trong biến SVN_EDITOR ở bài trước)</p>
+
+<h6 id="v-d">Ví dụ</h6>
+<ul>
+  <li>Tạo dự án mới:</li>
+</ul>
+
+<p><code class="highlighter-rouge">
+svn mkdir svn://localhost/as –m “Asia standard, a product of asiasoft” ––username admin ––password nimda
+</code></p>
+
+<ul>
+  <li>Tạo thư mục con của dự án mới tạo:</li>
+</ul>
+
+<p>Tạo thư mục chứa Source của dự án</p>
+
+<p><code class="highlighter-rouge">
+svn mkdir svn://localhost/as/Src –m “Source code store here” ––username admin ––password nimda
+</code>
+Tạo thư mục chứa tài liệu
+<code class="highlighter-rouge">
+svn mkdir svn://localhost/as/Docs –m “Documents of project store here” ––username admin ––password nimda
+</code></p>
+
+<p>Tạo các thư mục con của thư mục chứa tài liệu</p>
+
+<p>```
+svn mkdir svn://localhost/as/Docs/TechDocs –m “Documents for Technical” ––username admin ––password nimda</p>
+
+<p>svn mkdir svn://localhost/as/Docs/UserDocs –m “Documents for End-User” ––username admin ––password nimda
+```</p>
+
+<h3 id="delete-del-remove-rm--xa-th-mc">delete (del, remove, rm) | Xóa thư mục</h3>
+<p>###### Ý nghĩa
+Xóa thư mục (cái này thì giống RD trong dos command)</p>
+
+<h6 id="cu-trc-lnh-1">Cấu trúc lệnh</h6>
+
+<p><code class="highlighter-rouge">
+svn delete &lt;đường dẫn tới thư mục cần xóa&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code>
+Có thể thay thế lệnh <code class="highlighter-rouge">delete</code> bằng <code class="highlighter-rouge">del</code>, <code class="highlighter-rouge">remove</code> hoặc <code class="highlighter-rouge">rm</code></p>
+
+<h6 id="v-d-1">Ví dụ</h6>
+
+<p>Xóa thư mục Docs</p>
+
+<p><code class="highlighter-rouge">
+svn delete svn://localhost/as/docs ––username admin ––password nimda
+</code></p>
+
+<h3 id="list-ls--lnh-lit-k-th-mc-file">list (ls) | Lệnh liệt kê thư mục, file</h3>
+<p>######Ý nghĩa</p>
+
+<p>Dùng để liệt kê danh sách các thư mục và file bên trong thư mục đang được list (giống DIR trong Dos command)</p>
+
+<h6 id="cu-trc-lnh-2">Cấu trúc lệnh</h6>
+
+<p><code class="highlighter-rouge">
+svn list &lt;đường dẫn đến thư mục cần xem danh sách thư mục và file&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code>
+###### Ví dụ</p>
+
+<p>Trong ví dụ này, tôi đã thử dùng SVN để liệt kê các thư mục và file bên trong dự án của nhóm <code class="highlighter-rouge">Quản lý xây dựng</code> trên google code (tại thời điểm 14h41 ngày 05/11/2010) và nhận được kết quả như sau:</p>
+
+<p>```
+C:\svn-win32-1.5.6\bin&gt;svn ls https://quanlyxaydung.googlecode.com/svn/trunk/code/</p>
+
+<p>NhanVien/
+congtrinh/
+khachhang/
+main/
+quanlykho/
+quanlyvattu/
+```</p>
+
+<p>Trong ví dụ trên, các bạn có thể thay lệnh list bằng lệnh ls</p>
+
+<h3 id="checkout-co">checkout (co)</h3>
+<p>###### Ý nghĩa
+Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ thư mục dự án trên repository về thư mục trên máy trạm.</p>
+
+<h6 id="cu-trc-lnh-3">Cấu trúc lệnh</h6>
+<p><code class="highlighter-rouge">
+svn checkout &lt;đường dẫn thư mục trên máy chủ&gt; &lt;đường dẫn thư mục trên máy trạm&gt; ––username &lt;username&gt; ––password  &lt;password&gt;
+</code></p>
+
+<p>Các bạn có thể thay thế lệnh checkout ở trên bằng lệnh co.</p>
+
+<h6 id="v-d-2">Ví dụ</h6>
+
+<p>Trong ví dụ này, tôi sẽ lấy mã nguồn mới nhất từ thư mục Src của dự án AS đã tạo ở trên về thư mục <code class="highlighter-rouge">D:/dev/as/src/</code> trên máy trạm.</p>
+
+<p><code class="highlighter-rouge">
+svn checkout svn://localhost/as/src d:/dev/as/src ––username admin ––password nimda
+</code></p>
+
+<p>Nếu thành công, chương trình sẽ có thông báo:</p>
+
+<p><code class="highlighter-rouge">
+Checked out revision n. //(n là số phiên bản hiện tại mới nhất)
+</code></p>
+
+<p>Trong trường hợp thư mục <code class="highlighter-rouge">d:/dev/as/src</code> chưa có, SVN sẽ tự tạo.</p>
+
+<p><em>Phù, tạm tới đây đã. Tôi sẽ cố gắng viết tiếp để các bạn tham khảo.</em></p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chung Trịnh's blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chung Trịnh's blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Personal website of Chung Trinh.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
