@@ -4,6 +4,25 @@ body {
 	width: 100%;
 	background-color: $body-color;
 }
+//Chungtv
+.author-img {
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.hentry-dark {
+	background-color: $header-color;
+}
 
 // Main
 // --------------------------------------------------
