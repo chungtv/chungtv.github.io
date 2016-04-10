@@ -2,6 +2,8 @@
 layout: post
 title: Tôi đã  xây dựng lại blog với Ghost
 date: '2015-04-07 05:00:00'
+categories: [Work, Life, Blogging]
+tags: [Blogging, Ghost]
 redirect_from: /welcome-to-chung-trinh-blog-with-ghost/
 ---
 

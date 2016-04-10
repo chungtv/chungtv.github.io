@@ -2,7 +2,7 @@
 layout: post
 title: Bảng tạm trong MS SQL Server – Temporary tables in MS SQL Server
 date: '2012-05-23 05:00:00'
-categories: [MS SQL Server]
+categories: [Work, Tutorials]
 tags: [MS SQL Server]
 redirect_from: /bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server/
 ---

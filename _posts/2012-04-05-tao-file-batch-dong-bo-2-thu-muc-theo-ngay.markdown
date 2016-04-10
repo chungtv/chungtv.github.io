@@ -2,6 +2,8 @@
 layout: post
 title: Tạo file Batch đồng bộ 2 thư mục theo ngày
 date: '2012-04-05 05:00:00'
+categories: [Work, Tips and tricks]
+tags: [Batch, Sync]
 redirect_from: /tao-file-batch-dong-bo-2-thu-muc-theo-ngay/
 ---
 

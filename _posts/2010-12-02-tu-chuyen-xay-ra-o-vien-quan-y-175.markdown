@@ -2,6 +2,7 @@
 layout: post
 title: Từ chuyện xảy ra ở viện Quân y 175
 date: '2010-12-02 05:00:00'
+categories: [Life]
 redirect_from: /tu-chuyen-xay-ra-o-vien-quan-y-175/
 ---
 

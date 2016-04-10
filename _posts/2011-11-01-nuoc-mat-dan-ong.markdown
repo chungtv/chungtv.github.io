@@ -2,6 +2,8 @@
 layout: post
 title: Nước mắt đàn ông
 date: '2011-11-01 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /nuoc-mat-dan-ong/
 ---
 

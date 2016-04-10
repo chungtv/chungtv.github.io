@@ -2,6 +2,7 @@
 layout: post
 title: Áo dài – Nhớ!!!
 date: '2010-04-17 05:00:00'
+categories: [Life]
 ---
 
 ![](https://trinhvanchung.files.wordpress.com/2010/10/ap_20100417010237590.jpg)

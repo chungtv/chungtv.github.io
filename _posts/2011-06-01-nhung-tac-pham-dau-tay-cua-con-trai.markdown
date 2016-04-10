@@ -2,6 +2,8 @@
 layout: post
 title: Những tác phẩm đầu tay của con trai
 date: '2011-06-01 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /nhung-tac-pham-dau-tay-cua-con-trai/
 ---
 

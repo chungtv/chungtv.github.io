@@ -2,7 +2,8 @@
 layout: post
 title: Start menu, Cotana và Modern Apps không hoạt động trong windows 10
 date: '2015-08-04 09:16:52'
-categories: Windows
+categories: [Work, Tips and tricks]
+tags: [Windows]
 redirect_from: /start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/
 ---
 

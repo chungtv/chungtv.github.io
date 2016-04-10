@@ -2,6 +2,8 @@
 layout: post
 title: Chủ nhật cả nhà đi Vũng Tàu
 date: '2012-04-08 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /chu-nhat-ca-nha-di-vung-tau/
 ---
 

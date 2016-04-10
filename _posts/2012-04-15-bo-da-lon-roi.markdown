@@ -2,6 +2,8 @@
 layout: post
 title: Bo đã lớn rồi
 date: '2012-04-15 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /bo-da-lon-roi/
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title: Bạn gái của Bo
 date: '2013-01-03 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /ban-gai-cua-bo-2/
 ---
 

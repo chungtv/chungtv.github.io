@@ -2,6 +2,8 @@
 layout: post
 title: 3 ngày đầu tiên đi học của con trai!!!
 date: '2010-04-04 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /3-ngay-dau-tien-di-hoc-cua-con-trai/
 ---
 

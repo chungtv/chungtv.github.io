@@ -148,124 +148,7 @@
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2010-11-12T05:00:00+07:00"><a href="http://chungtrinh.com/2010/11/12/authentication-in-svn.html">November 12, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
-      
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        
-Reading time ~3 minutes
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://chungtrinh.com/2010/11/12/authentication-in-svn.html" rel="bookmark" title="Authentication in SVN" itemprop="url">Authentication in SVN</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Trong các bài trước, tôi đã hướng dẫn các bạn cài đặt, cấu hình đơn giản, tạo repository, sử dụng một số lệnh cơ bản của giao thức SVN để thao tác với Repository.</p>
-
-<p>Vấn đề đặt ra là trong trường hợp dự án có nhiều thành viên tham gia, có nhiều team cùng tham gia dự án và role của mỗi team hoặc mỗi thành viên là khác nhau trên từng dự án, thậm chí trên từng thư mục con của dự án.</p>
-
-<p>Vậy làm sao để phân quyền truy cập cho các thành viên, các team đó trong SVN.</p>
-
-<p>Với VisualSVN, mọi việc rất dễ dàng, tuy nhiên trong bài này tôi không có ý định hướng dẫn các bạn tạo user và cấu hình xác thực trong VisualSVN. Trong phạm vi bài này, tôi sẽ giới thiệu với các bạn cách cấu hình Authentication cho các user, các team truy cập vào Repository và các dự án bằng text file.</p>
-
-<p>Để thực hiện việc phân quyền trong SVN, các bạn sử dụng file <code class="highlighter-rouge">authz</code> trong thư mục <code class="highlighter-rouge">conf</code> của repository. Để chỉ định việc kiểm tra quyền được cấu hình trong file <code class="highlighter-rouge">authz</code>, bạn phải mở chỉ thị trong <code class="highlighter-rouge">authz-db</code> trong file <code class="highlighter-rouge">svnserve.conf</code> ra. Khi đó, bạn có được file <code class="highlighter-rouge">svnserve.conf</code> như sau:</p>
-
-<p><code class="highlighter-rouge">
-[general]
-anon-access = read
-auth-access = write
-password-db = passwd
-authz-db = authz
-</code></p>
-
-<p>Để bất đầu hãy mở file <code class="highlighter-rouge">authz</code> bằng notepad và xóa trắng nó đi.</p>
-
-<h3 id="phn-nhm-user">Phân nhóm user</h3>
-
-<p>Trong svn, việc phân nhóm user trong file <code class="highlighter-rouge">authz</code> được thực hiện trong 1 session, dòng đầu tiên của session này là <code class="highlighter-rouge">[groups]</code>. Các dòng tiếp theo của session này là định nghĩa các nhóm tham gia vào dự án (sẽ được phân quyền để truy cập vào repository). Cấu trúc của 1 dòng như sau:</p>
-
-<p><code class="highlighter-rouge">
-    group_name = user_name1, user_name2
-</code>
-&gt; <em>Các user name ngăn cách nhau bởi dấu phẩy (,) và hãy chắc chắn rằng các user này đã được tạo trong file passwd.</em></p>
-
-<p>Ví dụ, bạn tạo ra 2 nhóm tham gia dự án, khi đó session groups sẽ như sau:</p>
-
-<p><code class="highlighter-rouge">
-    [groups]
-    dev_team = dev1, dev2, dev3
-    test_team = test1, test2
-</code></p>
-
-<h3 id="phn-quyn-cho-user-hoc-nhm-user">Phân quyền cho user hoặc nhóm user</h3>
-
-<p>Trước khi phân quyền, bạn cần biết: Trong SVN, quyền truy cập vào 1 thư mục nào đó có 2 mức: <code class="highlighter-rouge">read (r)</code> và <code class="highlighter-rouge">write(w)</code>. Việc phân quyền cho user được access vào thư mục ở quyền nào được gán bởi các ký tự đại diện <code class="highlighter-rouge">r</code> hoặc <code class="highlighter-rouge">w</code>.</p>
-
-<p>Để gán quyền cho các user hoặc group access vào một thư mục nào đó trong repository, bạn hãy tạo ra 1 session với tên session là đường dẫn tới thư mục cần phân quyền <code class="highlighter-rouge">[đường dẫn]</code> (trong trường hợp phân quyền truy cập cho repository (thư mục gốc) thì tên session sẽ để trống <code class="highlighter-rouge">[/]</code>). Trong 1 file <code class="highlighter-rouge">authz</code> có thể có nhiều session phân quyền khác nhau.</p>
-
-<p>Ngay phía dưới tên, các dòng tiếp theo trong session sẽ thể hiện quyền của user hay nhóm.</p>
-
-<p>Ví dụ, tôi phân quyền cho user <code class="highlighter-rouge">admin</code> toàn quyền trên toàn repository này thì sử dụng thì sử dụng session <code class="highlighter-rouge">[/]</code> như sau:</p>
-
-<p><code class="highlighter-rouge">
-[/]
-admin = rw
-</code>
-Phân quyền cho <code class="highlighter-rouge">user1</code> có toàn quyền trên dự án <code class="highlighter-rouge">AP</code> thì như sau:</p>
-
-<p><code class="highlighter-rouge">
-[/ap]
-user1=rw
-</code></p>
-
-<p>Phân quyền cho nhóm <code class="highlighter-rouge">dev</code> đã tạo ở trên toàn quyền trên thư mục <code class="highlighter-rouge">src</code> của dự án <code class="highlighter-rouge">AP</code> và nhóm <code class="highlighter-rouge">test</code> chỉ có quyền <code class="highlighter-rouge">read</code> trên thư mục src này. (chú ý đặt đấu @ trước tên nhóm)</p>
-
-<p><code class="highlighter-rouge">
-[/ap/src]
-@dev=rw
-@test=r
-</code></p>
-
-<p>Phân quyền cho tất cả mọi người đều được truy cập vào thư mục <code class="highlighter-rouge">docs</code> của dự án <code class="highlighter-rouge">AP</code>.</p>
-
-<p><code class="highlighter-rouge">
-[/ap/docs]
-*=rw
-</code></p>
-
-<p>Kết quả, file <code class="highlighter-rouge">authz</code> sẽ như sau:</p>
-
-<p>```
-[groups]
-dev=dev1,dev2,dev3
-test=test1,test2</p>
-
-<p>[/]
-admin=rw</p>
-
-<p>[/ap]
-user1=rw</p>
-
-<p>[/ap/src]
-@dev=rw
-@test=r</p>
-
-<p>[/ap/docs]
-*=rw
-```</p>
-
-<p>Bạn hãy thử sử dụng lệnh <code class="highlighter-rouge">ls</code> để kiểm tra hiệu lực của quyền <code class="highlighter-rouge">read</code>, lệnh <code class="highlighter-rouge">mkdir</code> để kiểm tra hiệu lực của lệnh <code class="highlighter-rouge">write</code> xem sao nhé. Cách sử dụng cách lệnh thì đã được giới thiệu trong các bài trước rồi.</p>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2010-11-11T05:00:00+07:00"><a href="http://chungtrinh.com/2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html">November 11, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2010-11-11T05:00:00+07:00"><a href="http://chungtrinh.com/work/tips%20and%20tricks/2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html">November 11, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -275,7 +158,7 @@ Reading time ~1 minute
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://chungtrinh.com/2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html" rel="bookmark" title="Hàm đếm số ngày thứ trong 1 khoảng thời gian" itemprop="url">Hàm đếm số ngày thứ trong 1 khoảng thời gian</a></h1>
+      <h1 class="entry-title"><a href="http://chungtrinh.com/work/tips%20and%20tricks/2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html" rel="bookmark" title="Hàm đếm số ngày thứ trong 1 khoảng thời gian" itemprop="url">Hàm đếm số ngày thứ trong 1 khoảng thời gian</a></h1>
     
   </header>
   <div class="entry-content">
@@ -325,7 +208,7 @@ END
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2010-11-05T05:00:00+07:00"><a href="http://chungtrinh.com/2010/11/05/mot-so-lenh-co-ban-trong-svn.html">November 05, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2010-11-05T05:00:00+07:00"><a href="http://chungtrinh.com/work/tutorials/2010/11/05/mot-so-lenh-co-ban-trong-svn.html">November 05, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -335,7 +218,7 @@ Reading time ~3 minutes
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://chungtrinh.com/2010/11/05/mot-so-lenh-co-ban-trong-svn.html" rel="bookmark" title="Một số lệnh cơ bản trong SVN" itemprop="url">Một số lệnh cơ bản trong SVN</a></h1>
+      <h1 class="entry-title"><a href="http://chungtrinh.com/work/tutorials/2010/11/05/mot-so-lenh-co-ban-trong-svn.html" rel="bookmark" title="Một số lệnh cơ bản trong SVN" itemprop="url">Một số lệnh cơ bản trong SVN</a></h1>
     
   </header>
   <div class="entry-content">
@@ -478,7 +361,7 @@ Checked out revision n. //(n là số phiên bản hiện tại mới nhất)
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2010-11-04T05:00:00+07:00"><a href="http://chungtrinh.com/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html">November 04, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2010-11-04T05:00:00+07:00"><a href="http://chungtrinh.com/work/tutorials/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html">November 04, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -488,7 +371,7 @@ Reading time ~8 minutes
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://chungtrinh.com/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html" rel="bookmark" title="Setup, create repository, config, create project, create svn service" itemprop="url">Setup, create repository, config, create project, create svn service</a></h1>
+      <h1 class="entry-title"><a href="http://chungtrinh.com/work/tutorials/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html" rel="bookmark" title="Setup, create repository, config, create project, create svn service" itemprop="url">Setup, create repository, config, create project, create svn service</a></h1>
     
   </header>
   <div class="entry-content">
@@ -696,7 +579,7 @@ sc start ARDSVN
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2010-10-09T05:00:00+07:00"><a href="http://chungtrinh.com/2010/10/09/loi-khi-go-bo-microsoft-office-2007.html">October 09, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2010-10-09T05:00:00+07:00"><a href="http://chungtrinh.com/work/2010/10/09/loi-khi-go-bo-microsoft-office-2007.html">October 09, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -706,7 +589,7 @@ Reading time ~1 minute
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://chungtrinh.com/2010/10/09/loi-khi-go-bo-microsoft-office-2007.html" rel="bookmark" title="Lỗi khi gỡ bỏ Microsoft Office 2007" itemprop="url">Lỗi khi gỡ bỏ Microsoft Office 2007</a></h1>
+      <h1 class="entry-title"><a href="http://chungtrinh.com/work/2010/10/09/loi-khi-go-bo-microsoft-office-2007.html" rel="bookmark" title="Lỗi khi gỡ bỏ Microsoft Office 2007" itemprop="url">Lỗi khi gỡ bỏ Microsoft Office 2007</a></h1>
     
   </header>
   <div class="entry-content">
@@ -735,6 +618,69 @@ Reading time ~1 minute
 </ol>
 
 <p>Chúc các bạn may mắn.</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2010-09-23T05:00:00+07:00"><a href="http://chungtrinh.com/life/2010/09/23/bi-va-bo-bi-ke-chuyen.html">September 23, 2010</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/life/2010/09/23/bi-va-bo-bi-ke-chuyen.html" rel="bookmark" title="Bi và bo: Bi kể chuyện" itemprop="url">Bi và bo: Bi kể chuyện</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <blockquote>
+  <p>Lần đầu tiên show hình cu em và 2 anh em bi – bo (anh là Nhất – em là Nhân).</p>
+</blockquote>
+
+<p>Chào các cô, chú. Con là Trịnh Ngọc Nhất, mọi người thường gọi con là Bi. Con là con trai đầu của ba Chung và mẹ Hồng. Con được 20 tháng rồi đó.</p>
+
+<p><img src="http://trinhvanchung.files.wordpress.com/2010/09/img_0037.jpg" alt="" /></p>
+
+<p>Còn đây là em trai của con, Trịnh Ngọc Nhân, ở nhà mọi người gọi em con là Bo. Em con mới sinh được có 2 tháng à.</p>
+
+<p><img src="http://trinhvanchung.files.wordpress.com/2010/09/img_0179.jpg" alt="" /></p>
+
+<p>Thường ngày, đi học về là con phụ ba Chung tưới và chăm sóc cây.</p>
+
+<p><img src="http://trinhvanchung.files.wordpress.com/2010/09/img_0134.jpg" alt="" /></p>
+
+<p>Tưới xong rồi, làm điệu tí.</p>
+
+<p><img src="http://trinhvanchung.files.wordpress.com/2010/09/img_0135.jpg" alt="" /></p>
+
+<p>Sau khi tưới cây xong, còn vào  nhà tắm rửa, thay đồ rồi chơi với em Bo. Con hát và kể chuyện cho em nghe.</p>
+
+<p><img src="http://trinhvanchung.files.wordpress.com/2010/09/img_0146.jpg" alt="" /></p>
+
+<p>Những lúc rảnh rỗi, hai anh em con thường tâm sự chuyện đời, chuyện người.</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/09/img_0148.jpg" alt="" /></p>
+
+<p>Ngoài ra, con còn phụ bà nội và mẹ chăm sóc em nữa. Ẵm em chẳng hạn.</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/09/img_0151.jpg" alt="" /></p>
+
+<p>và dỗ em mỗi khi em khóc.</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/09/img_0154.jpg" alt="" /></p>
+
+<p>Con ngoan nên hôm nay mẹ mới mua cho con đồ mới nè (nói nhỏ, con thích mặc đồ mới lắm đó).</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/09/img_0189.jpg" alt="" /></p>
+
+<p>cảm ơn các cô chú đã nghe con kể chuyện ạ!</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

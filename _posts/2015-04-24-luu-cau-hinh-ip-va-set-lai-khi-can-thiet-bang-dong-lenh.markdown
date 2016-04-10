@@ -2,6 +2,8 @@
 layout: post
 title: Lưu cấu hình IP Profile và thiết lập lại khi cần thiết
 date: '2015-04-24 02:23:16'
+categories: [Work, Tips and tricks]
+tags: [Windows, Network]
 redirect_from: /luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh/
 ---
 

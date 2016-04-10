@@ -2,7 +2,7 @@
 layout: post
 title: Thay đổi đường dẫn Local trong Team Foundation Server
 date: 2015-10-23 08:57:17
-categories: [TFS]
+categories: [Work, Tips and tricks]
 tags: [TFS,Source Control,Visual Studio]
 published: True
 ---

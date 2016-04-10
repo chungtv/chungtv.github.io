@@ -2,6 +2,8 @@
 layout: post
 title: Sáng tạo tối chủ nhật
 date: '2011-10-24 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /sang-tao-toi-chu-nhat/
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: ÔI !!! Lo quá
 date: '2007-04-04 05:00:00'
+categories: [Life]
 redirect_from: /oi-lo-qua/
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title: Authentication in SVN
 date: '2010-11-12 05:00:00'
+categories: [Work, Tutorials]
+tags: [SVN, Source Control]
 redirect_from: /authentication-in-svn/
 ---
 

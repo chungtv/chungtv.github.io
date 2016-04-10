@@ -2,6 +2,8 @@
 layout: post
 title: Trường mầm non con chó
 date: '2012-08-18 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /truong-mam-non-con-cho/
 ---
 

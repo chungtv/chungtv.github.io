@@ -2,6 +2,8 @@
 layout: post
 title: Truyện tranh đọc ngược
 date: '2011-04-19 05:00:00'
+categories: [Life]
+tags: [Book]
 redirect_from: /truyen-tranh-doc-nguoc/
 ---
 

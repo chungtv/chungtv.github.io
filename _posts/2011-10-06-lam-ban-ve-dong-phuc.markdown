@@ -2,6 +2,7 @@
 layout: post
 title: Lạm bàn về đồng phục
 date: '2011-10-06 05:00:00'
+categories: [Life]
 redirect_from: /lam-ban-ve-dong-phuc/
 ---
 

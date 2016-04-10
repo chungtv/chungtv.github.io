@@ -2,7 +2,7 @@
 layout: post
 title: Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio
 date: 2015-10-15 22:00:32
-categories: [MS SQL Server]
+categories: [Work, Tips and tricks]
 tags: [MS SQL Server]
 published: True
 

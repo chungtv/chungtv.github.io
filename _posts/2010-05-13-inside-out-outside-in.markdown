@@ -2,6 +2,7 @@
 layout: post
 title: Inside out – Outside in
 date: '2010-05-13 05:00:00'
+categories: [Life]
 redirect_from: /inside-out-outside-in/
 ---
 

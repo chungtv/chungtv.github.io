@@ -2,6 +2,8 @@
 layout: post
 title: Setup, create repository, config, create project, create svn service
 date: '2010-11-04 05:00:00'
+categories: [Work, Tutorials]
+tags: [SVN, Source Control]
 redirect_from: /setup-create-repository-config-create-project-create-svn-service/
 ---
 

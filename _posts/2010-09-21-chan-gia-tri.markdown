@@ -2,6 +2,7 @@
 layout: post
 title: Chân giá trị
 date: '2010-09-21 05:00:00'
+categories: [Life]
 redirect_from: /chan-gia-tri/
 ---
 

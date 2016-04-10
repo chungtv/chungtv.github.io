@@ -2,6 +2,8 @@
 layout: post
 title: 'Bi và bo: Bi kể chuyện'
 date: '2010-09-23 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /bi-va-bo-bi-ke-chuyen/
 ---
 

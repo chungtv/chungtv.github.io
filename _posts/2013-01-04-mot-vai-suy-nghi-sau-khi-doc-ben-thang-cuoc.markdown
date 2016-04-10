@@ -2,6 +2,7 @@
 layout: post
 title: Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”
 date: '2013-01-04 08:52:00'
+categories: [Life]
 redirect_from: /mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc/
 ---
 

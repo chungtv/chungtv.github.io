@@ -2,6 +2,8 @@
 layout: post
 title: Tình anh em
 date: '2012-11-05 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /tinh-anh-em/
 ---
 

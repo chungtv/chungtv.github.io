@@ -2,6 +2,7 @@
 layout: post
 title: Bùn, buồn, buồn quá đi thôi. Tin buồn.
 date: '2008-01-10 05:00:00'
+categories: [Life]
 redirect_from: /bun-buon-buon-qua-di-thoi-tin-buon/
 ---
 

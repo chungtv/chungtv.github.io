@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://chungtrinh.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://chungtrinh.com" />
-<updated>2016-04-10T14:33:26+07:00</updated>
+<updated>2016-04-10T14:57:38+07:00</updated>
 <id>http://chungtrinh.com/</id>
 <author>
   <name>Chung Trịnh</name>
@@ -15,8 +15,8 @@
 
 <entry>
   <title type="html"><![CDATA[Thay đổi đường dẫn Local trong Team Foundation Server]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html" />
-  <id>http://chungtrinh.com/tfs/2015/10/23/thay-đổi-đường-dẫn-local-trong-team-foundation-server</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/10/23/thay-đổi-đường-dẫn-local-trong-team-foundation-server</id>
   <published>2015-10-23T15:57:17+07:00</published>
   <updated>2015-10-23T15:57:17+07:00</updated>
   <author>
@@ -65,17 +65,17 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Link link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Link link&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html&quot;&gt;Thay đổi đường dẫn Local trong Team Foundation Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 23, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html&quot;&gt;Thay đổi đường dẫn Local trong Team Foundation Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 23, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html" />
-  <id>http://chungtrinh.com/ms%20sql%20server/2015/10/16/sửa-lỗi-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/10/16/sửa-lỗi-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio</id>
   <published>2015-10-16T05:00:32+07:00</published>
   <updated>2015-10-16T05:00:32+07:00</updated>
   <author>
@@ -103,15 +103,15 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 
 &lt;p&gt;&lt;strong&gt;Chúc các bạn thành công&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html&quot;&gt;Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 16, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html&quot;&gt;Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 16, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Start menu, Cotana và Modern Apps không hoạt động trong windows 10]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html" />
-  <id>http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10</id>
   <published>2015-08-04T09:16:52+07:00</published>
   <updated>2015-08-04T09:16:52+07:00</updated>
   <author>
@@ -153,15 +153,15 @@ Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Re
 
 &lt;p&gt;Chúc bạn thành công&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html&quot;&gt;Start menu, Cotana và Modern Apps không hoạt động trong windows 10&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on August 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html&quot;&gt;Start menu, Cotana và Modern Apps không hoạt động trong windows 10&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on August 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sử dụng Fn key trong VMWare Fusion]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html" />
-  <id>http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion</id>
   <published>2015-07-14T05:52:17+07:00</published>
   <updated>2015-07-14T05:52:17+07:00</updated>
   <author>
@@ -185,15 +185,15 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html&quot;&gt;Sử dụng Fn key trong VMWare Fusion&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html&quot;&gt;Sử dụng Fn key trong VMWare Fusion&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Macbook keyboard]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html" />
-  <id>http://chungtrinh.com/macos/2015/07/12/macbook-keyboard</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/07/12/macbook-keyboard.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/07/12/macbook-keyboard</id>
   <published>2015-07-12T14:53:50+07:00</published>
   <updated>2015-07-12T14:53:50+07:00</updated>
   <author>
@@ -213,15 +213,15 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html&quot;&gt;Macbook keyboard&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 12, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/07/12/macbook-keyboard.html&quot;&gt;Macbook keyboard&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 12, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sửa lỗi 9001: The log for database is not available trong MS SQL Server]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html" />
-  <id>http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server</id>
   <published>2015-07-07T03:15:43+07:00</published>
   <updated>2015-07-07T03:15:43+07:00</updated>
   <author>
@@ -238,15 +238,15 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
   &lt;li&gt;Click phải, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties&lt;/code&gt;. Trong màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Database Properties&lt;/code&gt;, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;. Sau đó thiết lập thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; về &lt;strong&gt;False&lt;/strong&gt; là xong.&lt;/li&gt;
 &lt;/ol&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html&quot;&gt;Sửa lỗi 9001: The log for database is not available trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html&quot;&gt;Sửa lỗi 9001: The log for database is not available trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html" />
-  <id>http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2</id>
   <published>2015-07-07T03:10:37+07:00</published>
   <updated>2015-07-07T03:10:37+07:00</updated>
   <author>
@@ -268,15 +268,15 @@ print(“hello, world”)&lt;/p&gt;
 
 &lt;p&gt;Tham khảo thêm tại đây &lt;a href=&quot;https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/&quot;&gt;mssqltips.com&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html&quot;&gt;[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html&quot;&gt;[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Định dạng nội dung khi chat trong skype]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html" />
-  <id>http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html" />
+  <id>http://chungtrinh.com/work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype</id>
   <published>2015-07-03T07:24:54+07:00</published>
   <updated>2015-07-03T07:24:54+07:00</updated>
   <author>
@@ -316,15 +316,15 @@ print(“hello, world”)&lt;/p&gt;
 &lt;p&gt;Thật là thú vị phải không nào, chúc các bạn vui vẻ!&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html&quot;&gt;Định dạng nội dung khi chat trong skype&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html&quot;&gt;Định dạng nội dung khi chat trong skype&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Hiển thị danh sách database và vị trí lưu trữ trong SQL Server]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html" />
-  <id>http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server</id>
   <published>2015-07-03T02:51:15+07:00</published>
   <updated>2015-07-03T02:51:15+07:00</updated>
   <author>
@@ -348,15 +348,15 @@ INNER JOIN
     sys.databases db ON db.database_id = mf.database_id
 &lt;/code&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html&quot;&gt;Hiển thị danh sách database và vị trí lưu trữ trong SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html&quot;&gt;Hiển thị danh sách database và vị trí lưu trữ trong SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[SQL Server - Ctrl + R không làm việc trong SSMS]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html" />
-  <id>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms</id>
   <published>2015-05-21T11:10:52+07:00</published>
   <updated>2015-05-21T11:10:52+07:00</updated>
   <author>
@@ -387,15 +387,15 @@ Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar nh�
 &lt;p&gt;Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html&quot;&gt;SQL Server - Ctrl + R không làm việc trong SSMS&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html&quot;&gt;SQL Server - Ctrl + R không làm việc trong SSMS&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Mở nhiều tài khoản Skype trên cùng một máy tính]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html" />
-  <id>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh</id>
   <published>2015-05-21T07:32:19+07:00</published>
   <updated>2015-05-21T07:32:19+07:00</updated>
   <author>
@@ -439,15 +439,15 @@ Sau đó nhập Password. Một chương trình Skype thứ 2 đã được ch�
 
 &lt;p&gt;Chúc bạn thành công.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Mở nhiều tài khoản Skype trên cùng một máy tính&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Mở nhiều tài khoản Skype trên cùng một máy tính&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Lưu cấu hình IP Profile và thiết lập lại khi cần thiết]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html" />
-  <id>http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html" />
+  <id>http://chungtrinh.com/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh</id>
   <published>2015-04-24T02:23:16+07:00</published>
   <updated>2015-04-24T02:23:16+07:00</updated>
   <author>
@@ -480,15 +480,15 @@ netsh –f D:\\profileIp1.txt
   &lt;p&gt;Để thuận tiện hơn (mổi lần thực hiện lại phải mở cửa sổ dòng lệnh ra gõ), bạn có thể tạo file bash (.bat) để thực hiện việc này.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html&quot;&gt;Lưu cấu hình IP Profile và thiết lập lại khi cần thiết&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html&quot;&gt;Lưu cấu hình IP Profile và thiết lập lại khi cần thiết&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html" />
-  <id>http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html" />
+  <id>http://chungtrinh.com/work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger</id>
   <published>2015-04-24T01:47:26+07:00</published>
   <updated>2015-04-24T01:47:26+07:00</updated>
   <author>
@@ -553,15 +553,15 @@ SUBSTRING(COLUMNS_UPDATED(),2,1) &amp;amp; Power(2,(10-8-1))
 SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 &lt;/code&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html&quot;&gt;Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html&quot;&gt;Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html" />
-  <id>http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html" />
+  <id>http://chungtrinh.com/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi</id>
   <published>2015-04-16T01:05:00+07:00</published>
   <updated>2015-04-16T01:05:00+07:00</updated>
   <author>
@@ -632,15 +632,15 @@ SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 
 &lt;p&gt;&lt;a href=&quot;http://doisong.vnexpress.net/photo/khong-gian-song/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi-3022144.html&quot;&gt;Theo VNExpress&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html&quot;&gt;Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 16, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html&quot;&gt;Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 16, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Tôi đã  xây dựng lại blog với Ghost]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html" />
-  <id>http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/work/life/blogging/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html" />
+  <id>http://chungtrinh.com/work/life/blogging/2015/04/07/welcome-to-chung-trinh-blog-with-ghost</id>
   <published>2015-04-07T05:00:00+07:00</published>
   <updated>2015-04-07T05:00:00+07:00</updated>
   <author>
@@ -666,15 +666,15 @@ SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 &lt;p&gt;Rất vui được bạn ghé thăm nhà mới của tôi, mong nhận được ý kiến chia sẽ của các bạn.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html&quot;&gt;Tôi đã  xây dựng lại blog với Ghost&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 07, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/work/life/blogging/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html&quot;&gt;Tôi đã  xây dựng lại blog với Ghost&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 07, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Ta 30]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2014/07/09/toi-30.html" />
-  <id>http://chungtrinh.com/2014/07/09/toi-30</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2014/07/09/toi-30.html" />
+  <id>http://chungtrinh.com/life/2014/07/09/toi-30</id>
   <published>2014-07-09T08:52:00+07:00</published>
   <updated>2014-07-09T08:52:00+07:00</updated>
   <author>
@@ -699,15 +699,15 @@ SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 
 &lt;p&gt;Hôm nay, ta 30.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2014/07/09/toi-30.html&quot;&gt;Ta 30&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 09, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2014/07/09/toi-30.html&quot;&gt;Ta 30&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 09, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[#BI#]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/04/03/bi.html" />
-  <id>http://chungtrinh.com/2013/04/03/bi</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2013/04/03/bi.html" />
+  <id>http://chungtrinh.com/life/2013/04/03/bi</id>
   <published>2013-04-03T05:00:00+07:00</published>
   <updated>2013-04-03T05:00:00+07:00</updated>
   <author>
@@ -729,15 +729,15 @@ SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 – Vậy sao ba biết???? :( hixhix, pó hand :D&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/04/03/bi.html&quot;&gt;#BI#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2013/04/03/bi.html&quot;&gt;#BI#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[#Bi#]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/04/03/bi-2.html" />
-  <id>http://chungtrinh.com/2013/04/03/bi-2</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2013/04/03/bi-2.html" />
+  <id>http://chungtrinh.com/life/2013/04/03/bi-2</id>
   <published>2013-04-03T05:00:00+07:00</published>
   <updated>2013-04-03T05:00:00+07:00</updated>
   <author>
@@ -760,15 +760,15 @@ SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
 Ba: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ba cũng sẽ nói nhỏ nhẹ, nhưng nếu ba nói nhỏ nhẹ con có nghe lời ba ko?&lt;/code&gt;
 Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dạ có.&lt;/code&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/04/03/bi-2.html&quot;&gt;#Bi#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2013/04/03/bi-2.html&quot;&gt;#Bi#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html" />
-  <id>http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html" />
+  <id>http://chungtrinh.com/life/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc</id>
   <published>2013-01-04T08:52:00+07:00</published>
   <updated>2013-01-04T08:52:00+07:00</updated>
   <author>
@@ -793,15 +793,15 @@ Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dạ có.&lt;/code&gt;&lt;/p
 
 &lt;p&gt;Suy cho cùng, thể chế chính trị nào cũng có ưu điểm, nhược điểm, cái tốt, cái xấu. Vấn để này còn rất nhiều tranh cãi của rất nhiều độc giả sau khi đọc BTC, bạn có thể google với từ khóa “Bên thắng cuộc” sẽ ra rất nhiều. Quan điểm của mình là tìm ra những cái hay, cái tốt của sự việc mà vui, mà sướng. Mình cũng chẳng đủ trình độ để đi sâu vào phân tích cũng như đánh giá về các vấn đề đó. Cứ coi như đây là một nguồn tư liệu lịch sử đáng tham khảo.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html&quot;&gt;Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 04, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html&quot;&gt;Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 04, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Mẹ đau bao tử]]></title>
- <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/01/03/me-dau-bao-tu.html" />
-  <id>http://chungtrinh.com/2013/01/03/me-dau-bao-tu</id>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/life/2013/01/03/me-dau-bao-tu.html" />
+  <id>http://chungtrinh.com/life/2013/01/03/me-dau-bao-tu</id>
   <published>2013-01-03T05:00:00+07:00</published>
   <updated>2013-01-03T05:00:00+07:00</updated>
   <author>
@@ -817,7 +817,7 @@ Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dạ có.&lt;/code&gt;&lt;/p
 &lt;p&gt;– Mẹ bị đau bao tử, mẹ ăn cơm đi, đừng coi tivi. Mẹ ăn xong rồi hãy coi, vừa ăn vừa coi đai bao tử đó :D&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/01/03/me-dau-bao-tu.html&quot;&gt;Mẹ đau bao tử&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 03, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/life/2013/01/03/me-dau-bao-tu.html&quot;&gt;Mẹ đau bao tử&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 03, 2013.&lt;/p&gt;
   </content>
 </entry>
 

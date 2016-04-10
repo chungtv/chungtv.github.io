@@ -2,6 +2,8 @@
 layout: post
 title: Hàm đếm số ngày thứ trong 1 khoảng thời gian
 date: '2010-11-11 05:00:00'
+categories: [Work, Tips and tricks]
+tags: [MS SQL Server]
 redirect_from: /ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/
 ---
 

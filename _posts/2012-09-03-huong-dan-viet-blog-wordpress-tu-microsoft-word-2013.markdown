@@ -2,6 +2,8 @@
 layout: post
 title: Hướng dẫn viết Blog WordPress từ Microsoft Word 2013
 date: '2012-09-03 05:00:00'
+categories: [Work, Blogging]
+tags: [MS Office, Blogging, Wordpress]
 redirect_from: /huong-dan-viet-blog-wordpress-tu-microsoft-word-2013/
 ---
 

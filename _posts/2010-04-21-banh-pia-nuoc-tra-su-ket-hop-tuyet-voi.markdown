@@ -2,6 +2,7 @@
 layout: post
 title: Bánh Pía + nước trà => Sự kết hợp tuyệt vời!!!
 date: '2010-04-21 05:00:00'
+categories: [Life]
 redirect_from: /banh-pia-nuoc-tra-su-ket-hop-tuyet-voi/
 ---
 

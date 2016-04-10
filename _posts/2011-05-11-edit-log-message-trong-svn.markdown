@@ -2,6 +2,8 @@
 layout: post
 title: Edit log message in SVN
 date: '2011-05-11 05:00:00'
+categories: [Work, Tips and tricks]
+tags: [SVN, Source Control]
 redirect_from: /edit-log-message-trong-svn/
 ---
 

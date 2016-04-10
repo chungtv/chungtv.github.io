@@ -2,6 +2,8 @@
 layout: post
 title: Một số lệnh cơ bản trong SVN
 date: '2010-11-05 05:00:00'
+categories: [Work, Tutorials]
+tags: [SVN, Source Control]
 redirect_from: /mot-so-lenh-co-ban-trong-svn/
 ---
 

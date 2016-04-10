@@ -2,6 +2,8 @@
 layout: post
 title: Mẹ đau bao tử
 date: '2013-01-03 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirec_from: /me-dau-bao-tu/
 ---
 

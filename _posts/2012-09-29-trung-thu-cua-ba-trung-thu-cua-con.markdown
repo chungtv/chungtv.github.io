@@ -2,6 +2,8 @@
 layout: post
 title: Trung thu của ba–Trung thu của con
 date: '2012-09-29 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirec_from: /trung-thu-cua-ba-trung-thu-cua-con/
 ---
 

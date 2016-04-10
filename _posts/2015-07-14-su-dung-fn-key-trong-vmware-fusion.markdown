@@ -2,7 +2,8 @@
 layout: post
 title: Sử dụng Fn key trong VMWare Fusion
 date: '2015-07-14 05:52:17'
-categories: [MacOS]
+categories: [Work, Tips and tricks]
+tags: [MacOSX, Macbook, VMWare]
 redirect_from: /su-dung-fn-key-trong-vmware-fusion/
 ---
 

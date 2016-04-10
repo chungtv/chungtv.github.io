@@ -2,6 +2,8 @@
 layout: post
 title: '[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server'
 date: '2015-07-07 03:10:37'
+categories: [Work, Tips and tricks]
+tags: [MS SQL Server]
 redirect_from: /tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/
 ---
 

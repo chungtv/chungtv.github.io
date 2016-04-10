@@ -2,6 +2,8 @@
 layout: post
 title: Chuyện của anh & em
 date: '2012-05-15 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /chuyen-cua-anh-em/
 ---
 

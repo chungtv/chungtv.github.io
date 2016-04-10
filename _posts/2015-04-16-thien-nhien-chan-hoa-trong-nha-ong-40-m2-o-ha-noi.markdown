@@ -2,6 +2,7 @@
 layout: post
 title: Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội
 date: '2015-04-16 01:05:00'
+categories: [Life]
 redirect_from: /thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi/
 ---
 

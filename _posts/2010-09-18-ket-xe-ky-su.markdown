@@ -2,6 +2,7 @@
 layout: post
 title: Kẹt xe ký sự
 date: '2010-09-18 05:00:00'
+categories: [Life]
 redirect_from: /ket-xe-ky-su/
 ---
 

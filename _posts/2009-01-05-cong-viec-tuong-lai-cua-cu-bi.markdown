@@ -2,6 +2,8 @@
 layout: post
 title: Công việc tương lai của cu Bi?!!!
 date: '2009-01-05 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /cong-viec-tuong-lai-cua-cu-bi/
 ---
 

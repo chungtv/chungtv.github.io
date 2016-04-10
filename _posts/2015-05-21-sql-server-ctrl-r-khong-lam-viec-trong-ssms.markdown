@@ -2,7 +2,7 @@
 layout: post
 title: SQL Server - Ctrl + R không làm việc trong SSMS
 date: 2015-05-21 04:10:52
-categories: [MS SQL Server]
+categories: [Work, Tips and tricks]
 tags: [MS SQL Server]
 redirect_from: /sql-server-ctrl-r-khong-lam-viec-trong-ssms/
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: Chuyện ở siêu thị!
 date: '2010-05-13 05:00:00'
+categories: [Life]
 redirect_from: /chuyen-o-sieu-thi/
 ---
 

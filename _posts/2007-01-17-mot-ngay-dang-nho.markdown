@@ -2,6 +2,7 @@
 layout: post
 title: Một ngày đáng nhớ
 date: '2007-01-17 05:00:00'
+categories: [Life]
 redirec_from: /mot-ngay-dang-nho/
 ---
 

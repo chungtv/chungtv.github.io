@@ -2,6 +2,8 @@
 layout: post
 title: Hướng dẫn sử dụng Dropbox
 date: '2012-07-21 05:00:00'
+categories: [Work, Tutorials]
+tags: [Cloud, Dropbox]
 redirect_from: /huong-dan-su-dung-dropbox/
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Giá trị, giá trị sử dụng và chuyện lãng phí
 date: '2010-09-18 05:00:00'
+categories: [Life]
 redirect_from: /gia-tri-gia-tri-su-dung-va-chuyen-lang-phi/
 ---
 

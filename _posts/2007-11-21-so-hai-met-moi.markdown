@@ -2,6 +2,7 @@
 layout: post
 title: Sợ hãi, mệt mỏi!!!
 date: '2007-11-21 05:00:00'
+categories: [Life]
 redirect_from: /so-hai-met-moi/
 ---
 

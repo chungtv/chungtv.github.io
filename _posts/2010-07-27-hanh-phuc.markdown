@@ -2,6 +2,8 @@
 layout: post
 title: Hạnh phúc
 date: '2010-07-27 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /hanh-phuc/
 ---
 

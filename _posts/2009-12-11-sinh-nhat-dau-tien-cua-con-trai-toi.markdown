@@ -2,6 +2,8 @@
 layout: post
 title: Sinh nhật đầu tiên của con trai tôi.
 date: '2009-12-11 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /sinh-nhat-dau-tien-cua-con-trai-toi/
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title: Mọi người ơi, hôm qua tui đốt sách
 date: '2007-05-13 05:00:00'
+categories: [Life]
+tags: [Book]
 redirect_from: /moi-nguoi-oi-hom-qua-tui-dot-sach/
 ---
 

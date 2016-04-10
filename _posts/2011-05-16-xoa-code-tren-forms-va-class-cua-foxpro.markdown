@@ -2,6 +2,8 @@
 layout: post
 title: Xóa code trên Forms và Class của Foxpro
 date: '2011-05-16 05:00:00'
+categories: [Work, Tips and tricks]
+tags: [VFP]
 redirect_from: /xoa-code-tren-forms-va-class-cua-foxpro/
 ---
 

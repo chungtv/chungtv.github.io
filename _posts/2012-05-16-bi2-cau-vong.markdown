@@ -2,6 +2,8 @@
 layout: post
 title: Bi#2–Cầu vồng
 date: '2012-05-16 05:00:00'
+categories: [Life]
+tags: [My Family]
 redirect_from: /bi2-cau-vong/
 ---
 

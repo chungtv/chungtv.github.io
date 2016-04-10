@@ -2,6 +2,7 @@
 layout: post
 title: Kỷ niệm về những người thầy
 date: '2009-11-20 05:00:00'
+categories: [Life]
 redirect_from: /ky-niem-ve-nhung-nguoi-thay/
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title: Nhân ngày sách nói chuyện về sách của tôi
 date: '2011-04-23 05:00:00'
+categories: [Life]
+tags: [Book]
 redirect_from: /nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi/
 ---
 

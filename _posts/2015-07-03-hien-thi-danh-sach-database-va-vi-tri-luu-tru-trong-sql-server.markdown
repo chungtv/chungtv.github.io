@@ -2,6 +2,8 @@
 layout: post
 title: Hiển thị danh sách database và vị trí lưu trữ trong SQL Server
 date: '2015-07-03 02:51:15'
+categories: [Work, Tips and tricks]
+tags: [MS SQL Server]
 redirect_from: /hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/
 ---
 
