@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Lưu cấu hình IP Profile và thiết lập lại khi cần thiết">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -155,16 +162,18 @@ Reading time ~1 minute
 </blockquote>
 
 <h5 id="lu-cu-hnh-ip-ra-file-text">Lưu cấu hình IP ra file text</h5>
-<p>Gõ lệnh sau:
-<code class="highlighter-rouge">
-netsh –c interface dump &gt; D:\\profileIp1.txt
-</code></p>
+<p>Gõ lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>netsh –c interface dump &gt; D:<span class="se">\\</span>profileIp1.txt
+</code></pre>
+</div>
 
 <h5 id="thit-lp-li-cu-hnh-ip-t-file-text">Thiết lập lại cấu hình IP từ file text</h5>
-<p>Gõ lệnh sau:
-<code class="highlighter-rouge">
-netsh –f D:\\profileIp1.txt 
-</code></p>
+<p>Gõ lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>netsh –f D:<span class="se">\\</span>profileIp1.txt 
+</code></pre>
+</div>
 
 <blockquote>
   <p>Để thuận tiện hơn (mổi lần thực hiện lại phải mở cửa sổ dòng lệnh ra gõ), bạn có thể tạo file bash (.bat) để thực hiện việc này.</p>

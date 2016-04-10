@@ -250,43 +250,41 @@ Reading time ~1 minute
 
 <p>Giải pháp của mình là sử dụng 1 <a href="http://en.wikipedia.org/wiki/Batch_file">batch file window</a> để thực hiện việc này. Batch file này làm nhiệm vụ copy file từ server về client và chỉ copy những file nào có ngày modify &gt;= ngày update gần nhất. Để xác định ngày update gần nhất mình dùng 1 file text lưu giá trị ngày update.</p>
 
-<p>```
-	:: Author | Chungtv
+<div class="highlighter-rouge"><pre class="highlight"><code>	:: Author | Chungtv
 	:: Purpose | Synchronize files from server to client
 	@echo off
 	:: Lay ngay hien tai
 	call :GetDate y m d
-	echo TODAY: %m%-%d%-%y%
-	set ud=%m%-%d%-%y%
+	<span class="nb">echo </span>TODAY: %m%-%d%-%y%
+	<span class="nb">set </span><span class="nv">ud</span><span class="o">=</span>%m%-%d%-%y%
 	:: Neu ton tai file update thi gan ngay update la ngay luu trong file
-	if exist “D:\Asiasoft\AE81\LastSyn.txt” set /p ud = &lt;”D:\Asiasoft\AE81\LastSyn.txt”
+	<span class="k">if </span>exist <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span> <span class="nb">set</span> /p ud <span class="o">=</span> &lt;<span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
 	::Thuc hien viec copy
-	net use “\server\AsiaSoft\AE81” password /user:user
-	xcopy “\server\AsiaSoft\AE81” “D:\Asiasoft\AE81” /D:%ud% /I /Y /E
+	net use <span class="s2">"</span><span class="se">\\</span><span class="s2">server</span><span class="se">\A</span><span class="s2">siaSoft</span><span class="se">\A</span><span class="s2">E81"</span> password /user:user
+	xcopy <span class="s2">"</span><span class="se">\\</span><span class="s2">server</span><span class="se">\A</span><span class="s2">siaSoft</span><span class="se">\A</span><span class="s2">E81"</span> <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81"</span> /D:%ud% /I /Y /E
 	::Sau khi copy xong thi luu lai ngay update
-	set ud=%m%-%d%-%y%
-	if exist “D:\Asiasoft\AE81\LastSyn.txt” del “D:\Asiasoft\AE81\LastSyn.txt”
-	echo %ud% &gt; “D:\Asiasoft\AE81\LastSyn.txt”
-	if errorlevel 5 goto writeerror
-	if errorlevel 0 goto eof
+	<span class="nb">set </span><span class="nv">ud</span><span class="o">=</span>%m%-%d%-%y%
+	<span class="k">if </span>exist <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span> del <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
+	<span class="nb">echo</span> %ud% &gt; <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
+	<span class="k">if </span>errorlevel 5 goto writeerror
+	<span class="k">if </span>errorlevel 0 goto eof
 	:writeerror
 	pause Disk write error occurred.
 	goto eof
 	:GetDate yy mm dd
 	setlocal ENABLEEXTENSIONS
-	set t=2&amp;if “%date%z” LSS “A” set t=1
-	for /f “skip=1 tokens=2-4 delims=(-)” %%a in (‘echo/^|date’) do (
-	    for /f “tokens=%t%-4 delims=.-/ “ %%d in (‘date/t’) do (</p>
+	<span class="nb">set </span><span class="nv">t</span><span class="o">=</span>2&amp;if <span class="s2">"%date%z"</span> LSS <span class="s2">"A"</span> <span class="nb">set </span><span class="nv">t</span><span class="o">=</span>1
+	<span class="k">for</span> /f <span class="s2">"skip=1 tokens=2-4 delims=(-)"</span> %%a <span class="k">in</span> <span class="o">(</span>‘echo/^|date’<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+	    <span class="k">for</span> /f <span class="s2">"tokens=%t%-4 delims=.-/ "</span> %%d <span class="k">in</span> <span class="o">(</span>‘date/t’<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    set %%a=%%d&amp;set %%b=%%e&amp;set %%c=%%f))
+	    <span class="nb">set</span> %%a<span class="o">=</span>%%d&amp;set %%b<span class="o">=</span>%%e&amp;set %%c<span class="o">=</span>%%f<span class="o">))</span>
 
-    endlocal&amp;set %1=%yy%&amp;set %2=%mm%&amp;set %3=%dd%&amp;goto :eof
+	    endlocal&amp;set %1<span class="o">=</span>%yy%&amp;set %2<span class="o">=</span>%mm%&amp;set %3<span class="o">=</span>%dd%&amp;goto :eof
 
-    :eof
+	    :eof
+
 </code></pre>
 </div>
-
-<p>```</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

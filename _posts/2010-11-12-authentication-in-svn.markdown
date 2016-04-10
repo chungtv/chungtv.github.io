@@ -17,13 +17,13 @@ Với VisualSVN, mọi việc rất dễ dàng, tuy nhiên trong bài này tôi 
 
 Để thực hiện việc phân quyền trong SVN, các bạn sử dụng file `authz` trong thư mục `conf` của repository. Để chỉ định việc kiểm tra quyền được cấu hình trong file `authz`, bạn phải mở chỉ thị trong `authz-db` trong file `svnserve.conf` ra. Khi đó, bạn có được file `svnserve.conf` như sau:
 
-```
+~~~ config
 [general]
 anon-access = read
 auth-access = write
 password-db = passwd
 authz-db = authz
-```
+~~~
 
 Để bất đầu hãy mở file `authz` bằng notepad và xóa trắng nó đi.
 
@@ -31,18 +31,19 @@ authz-db = authz
 
 Trong svn, việc phân nhóm user trong file `authz` được thực hiện trong 1 session, dòng đầu tiên của session này là `[groups]`. Các dòng tiếp theo của session này là định nghĩa các nhóm tham gia vào dự án (sẽ được phân quyền để truy cập vào repository). Cấu trúc của 1 dòng như sau:
 
-```
+~~~ config
     group_name = user_name1, user_name2
-```
+~~~
+
 > *Các user name ngăn cách nhau bởi dấu phẩy (,) và hãy chắc chắn rằng các user này đã được tạo trong file passwd.*
 
 Ví dụ, bạn tạo ra 2 nhóm tham gia dự án, khi đó session groups sẽ như sau:
 
-```
+~~~ config
     [groups]
     dev_team = dev1, dev2, dev3
     test_team = test1, test2
-```
+~~~
 
 ### Phân quyền cho user hoặc nhóm user
 
@@ -54,35 +55,36 @@ Ngay phía dưới tên, các dòng tiếp theo trong session sẽ thể hiện 
 
 Ví dụ, tôi phân quyền cho user `admin` toàn quyền trên toàn repository này thì sử dụng thì sử dụng session `[/]` như sau:
 
-```
+~~~ config
 [/]
 admin = rw
-```
+~~~
+
 Phân quyền cho `user1` có toàn quyền trên dự án `AP` thì như sau:
 
-```
+~~~ config
 [/ap]
 user1=rw
-```
+~~~
 
 Phân quyền cho nhóm `dev` đã tạo ở trên toàn quyền trên thư mục `src` của dự án `AP` và nhóm `test` chỉ có quyền `read` trên thư mục src này. (chú ý đặt đấu @ trước tên nhóm)
 
-```
+~~~ config
 [/ap/src]
 @dev=rw
 @test=r
-```
+~~~
 
 Phân quyền cho tất cả mọi người đều được truy cập vào thư mục `docs` của dự án `AP`.
 
-```
+~~~ config
 [/ap/docs]
 *=rw
-```
+~~~
 
 Kết quả, file `authz` sẽ như sau:
 
-```
+~~~ config
 [groups]
 dev=dev1,dev2,dev3
 test=test1,test2
@@ -99,6 +101,6 @@ user1=rw
 
 [/ap/docs]
 *=rw
-```
+~~~
 
 Bạn hãy thử sử dụng lệnh `ls` để kiểm tra hiệu lực của quyền `read`, lệnh `mkdir` để kiểm tra hiệu lực của lệnh `write` xem sao nhé. Cách sử dụng cách lệnh thì đã được giới thiệu trong các bài trước rồi. 

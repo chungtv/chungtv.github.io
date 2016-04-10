@@ -52,13 +52,14 @@ Kho lưu trữ tài liệu, mã nguồn (Repository) là thư mục chứa dữ 
 
 Để tạo kho lưu dữ liệu, bạn sử dụng `svnadmin`, trong cửa sổ cmd của window, gõ lệnh sau:
 
-```
+~~~ bash
 svnadmin create <đường dẫn kho lưu>
-```
+~~~
+
 Ví dụ:
-```
+~~~ bash
 svnadmin create C:\ARDRepository\
-```
+~~~
 
 Sau khi thực hiện xong, SVN sẽ tạo ra trong ổ đĩa của bạn thư mục kho lưu (thư mục chứa dữ liệu các phiên bản tài liệu, mã nguồn, các cấu hình truy cập kho). Bên trong thư mục kho lưu, SVN đã tạo sẳn ra một số thư mục. Là người quản trị, bạn quan tâm đến thư mục Conf.
 
@@ -76,12 +77,12 @@ Các bạn có thể đọc hoặc xóa trắng file `svnserve.conf` đi và c�
 
 Trong phạm vi bài này, bạn chỉ quan tâm đến 4 dòng sau:
 
-```
+~~~ config
     [general]
     anon-access = read
     auth-access = write
     password-db = passwd
-```
+~~~
 
 - **[general]**: đánh dấu bắt đầu session
 - **anon-access**: Cấu hình truy cập khi truy cập vào repository lưu không xác thực (không thông qua đăng nhập username, password). Có các giá trị hiệu lực tăng dần: none, read, write (chắc ko cần nói ý nghĩa của các giá trị này nhỉ :) )
@@ -93,21 +94,24 @@ Bạn có thể xóa trắng file `svnserve.conf` và copy 4 dòng trên paste v
 ***Việc tiếp theo bạn làm là tạo ra một vài user truy cập vào repository.***
 Để tạo user truy cập vào repository, bạn mở file `passwd`  đã có sẵn trong thư mục `conf` (mở bằng trình soạn thảo văn bản) và xóa trắng đi, gõ lại từ đầu (cho nó chuyên nghiệp ;) )
 
-Tạo một vài user (trong ví dụ sau tôi sẽ tạo user `admin` mật khẩu là `nimda`, `user1` mật khẩu `1resu`, `user2` có mật khẩu `2resu`
-```
+Tạo một vài user (trong ví dụ sau tôi sẽ tạo user `admin` mật khẩu là `nimda`, `user1` mật khẩu `1resu`, `user2` có mật khẩu `2resu`  
+
+~~~ config
 [users]
 admin = nimda
 user1 = 1resu
 user2 = 2resu
-```
+~~~
+
 Bắt đầu bằng dòng báo hiệu session cấu hình User `[users]`, mỗi dòng tiếp theo sẽ là `username` và `password` của mỗi user. Cấu trúc `Username = password`
 
 *Phù, như thế là xong phần cấu hình đơn giản.*
 
-Hãy test lại xem cấu hình của bạn có OK hay không, hãy mở cmd lên, gõ lệnh sau vào để chạy `service` của SVN.
-```
+Hãy test lại xem cấu hình của bạn có OK hay không, hãy mở cmd lên, gõ lệnh sau vào để chạy `service` của SVN.  
+
+~~~ bash
 svnserve –d –r C:\ARDRepository
-```
+~~~
 
 <kbd>Enter</kbd>, nếu không có báo gì thì là OK (đừng hụt hẫng nhé, không báo gì lại nghĩ cấu hình sai)
 
@@ -115,36 +119,45 @@ svnserve –d –r C:\ARDRepository
 
 Giữ nguyên cửa sổ cmd đang chạy service SVN ở trên (đừng tắt đi nhé) và mở một cửa sổ CMD khác để thao tác với các lệnh của giao thức SVN.
 
-Mở 1 cửa sở cmd khác, gõ lệnh sau để tạo mới 1 Project lưu trong `ARDRepository`.
-```
-svn mkdir svn://localhost/<tên dự án> –m “<Mô tả thông tin về dự án>” ––username  <tên user> ––password <password>
-```
-Ví dụ:
-```
-svn mkdir svn://localhost/AS –m “Asia Standard” ––username admin ––password nimda
-```
-Khi đó, nếu thành công bạn sẽ nhận được:
-```
-Committed revision 1.
-```
-Có thể không cần sử dụng tham số password
-```
-svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
-```
-Khi đó, sau khi <kbd>Enter</kbd>, SVN yêu cầu bạn phải nhập password cho `admin`, bạn nhập mật khẩu xong, nếu thành công nó cũng sẽ báo `commited`.
+Mở 1 cửa sở cmd khác, gõ lệnh sau để tạo mới 1 Project lưu trong `ARDRepository`.  
 
-```
+~~~ bash
+svn mkdir svn://localhost/<tên dự án> –m “<Mô tả thông tin về dự án>” ––username  <tên user> ––password <password>
+~~~
+
+Ví dụ:  
+
+~~~ bash
+svn mkdir svn://localhost/AS –m “Asia Standard” ––username admin ––password nimda
+~~~
+
+Khi đó, nếu thành công bạn sẽ nhận được:  
+
+~~~ 
+Committed revision 1.
+~~~
+
+Có thể không cần sử dụng tham số password  
+
+~~~ bash
+svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
+~~~
+
+Khi đó, sau khi <kbd>Enter</kbd>, SVN yêu cầu bạn phải nhập password cho `admin`, bạn nhập mật khẩu xong, nếu thành công nó cũng sẽ báo `commited`.  
+
+~~~ bash
 C:\Documents and Settings\Chungtv>svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
 Authentication realm: <svn://localhost:3690> 58a7a8ca-296d-2d48-a4a5-f5420ae2ca80
-Password for ‘admin': *****
+Password for ‘admin‘: *****
 
 Committed revision 2.
-```
+~~~ 
 
 Kiểm tra lại danh sách dự án bạn mới tạo bằng lệnh list (hoặc ls) của SVN.
-```
+
+~~~ bash
 svn ls svn://localhost
-```
+~~~
 
 
 ## Tạo service trong window để chạy svn service
@@ -158,10 +171,11 @@ Bạn tắt của sổ cmd đang chạy service SVN đi để tiếp tục.
 
 Để tạo service, bạn sử dụng lệnh `SC` (chú ý là bạn phải có quyền admin trên máy này nhé, nhất là các bạn đang dùng win7, hãy righ-click vào cmd.exe và `Run as Administrator` trước khi tiếp tục).
 
-Trong cửa sổ cmd, bạn gõ lệnh sau để tạo service.
-```
+Trong cửa sổ cmd, bạn gõ lệnh sau để tạo service.  
+
+~~~ bash
 sc create <ARDSVN> binpath= “c:\svn-win32-3.5.6\bin\svnserve.exe ––service –r C:\ARDRepository” displayname= “ARD SVN Server” depend= TCPIP start= auto
-```
+~~~
 
 > + **ARDSVN**: Tên của service.
 > + **binpath= “…”**: Đường dẫn thực thi service và chỉ định các tham số (chú ý là sau dấu = có khoảng trắng còn trước nó thì không nhé)
@@ -169,19 +183,19 @@ sc create <ARDSVN> binpath= “c:\svn-win32-3.5.6\bin\svnserve.exe ––service
 > + **depend = TCPIP**: Danh sách các service Dependencies, cần thiết để sử dụng service svn (trong trường hợp này cần phải có service TCPIP)|
 > + **start= auto**: Xác định service này sẽ tự động chạy khi khởi động window.
 
-OK, nếu không có gì sai sót thì sau khi <kbd>ENTER</kbd>, bạn sẽ nhận được thông báo:
+OK, nếu không có gì sai sót thì sau khi <kbd>ENTER</kbd>, bạn sẽ nhận được thông báo:  
 
-```
+~~~
 [SC] CreateService SUCCESS
-```
+~~~
 
 Tạo xong chưa chắc đã chạy được (vì có thể cấu trúc trong binpath của bạn sau – thiếu dấu “-“ trước service chẳng hạn)
 
-Bây giờ bạn thử chạy service đó lên bằng lệnh sau:
+Bây giờ bạn thử chạy service đó lên bằng lệnh sau:  
 
-```
+~~~ bash
 sc start ARDSVN
-```
+~~~
 
 Nếu thành công bạn sẽ nhận được thông báo thông tin của service.
 

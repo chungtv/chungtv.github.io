@@ -14,7 +14,7 @@ Việc update từ server xuống client cũng có nhiều giải pháp. Sau đ�
 Giải pháp của mình là sử dụng 1 [batch file window](http://en.wikipedia.org/wiki/Batch_file) để thực hiện việc này. Batch file này làm nhiệm vụ copy file từ server về client và chỉ copy những file nào có ngày modify >= ngày update gần nhất. Để xác định ngày update gần nhất mình dùng 1 file text lưu giá trị ngày update.
 
 
-```
+~~~ bash
 	:: Author | Chungtv
 	:: Purpose | Synchronize files from server to client
 	@echo off
@@ -48,4 +48,4 @@ Giải pháp của mình là sử dụng 1 [batch file window](http://en.wikiped
 
 	    :eof
 
-```
+~~~

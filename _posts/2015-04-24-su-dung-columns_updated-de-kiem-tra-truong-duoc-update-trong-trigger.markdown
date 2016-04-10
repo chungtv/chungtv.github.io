@@ -23,26 +23,26 @@ Về `COLUMNS_UPDATED()` các bạn có thể xem chi tiết ở [site chính ch
 Để kiểm tra vị trí cột nào được thay đổi chúng ta sử dụng các phép toán trên bit (bitwise operators) và bit mặt nạ (bitmask) tương ứng cho vị trí của mỗi cột.
 
 #### Kiểm tra các cột có vị trí <=8
-Kiểm tra cột tại vị trí n (n<=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:
+Kiểm tra cột tại vị trí n (n<=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:  
 
-```sql
+~~~ sql
 COLUMNS_UPDATED() & Power(2,(n-1))
-```
+~~~
 
 Nếu biểu thức trả về > 0 thì cột n là cột bị thay đổi, ngược lại cột n không thay đổi.
 
 Trong trường hợp kiểm tra 2 hoặc nhiều cột có thay đổi hay không thì làm tương tự. Ví dụ kiểm tra cột 3 cột thứ i,j,k có thay đổi hay không (i,j,k<=8) thì sử dụng biểu thức sau:
 
-```sql
+~~~ sql
 COLUMNS_UPDATED() & (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-```
+~~~
 
 *Chú ý: Để đỡ phải tính toán khi thực thi thì mình nên tính ra giá trị nguyên của các hàm `Power()` ở ngoài luôn rồi dùng kết quả đó để kiểm tra. Ví dụ thay vì viết như cách trên, mình viết như sau:*
 
-```sql
+~~~ sql
 COLUMNS_UPDATED() & kq 
 -- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-```
+~~~
 
 #### Kiểm tra các cột có vị trí >8
 
@@ -50,12 +50,12 @@ Sử dụng hàm `SUBSTRING()` cho giá trị trả về của `COLUMNS_UPDATED(
 
 Ví dụ cần kiểm tra có update cột 10 hay không, sử dụng biểu thức sau:
 
-```sql
+~~~ sql
 SUBSTRING(COLUMNS_UPDATED(),2,1) & Power(2,(10-8-1))
-```
+~~~
 
-Còn nếu cột cần kiểm tra > 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:
+Còn nếu cột cần kiểm tra > 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:  
 
-```sql
+~~~ sql
 SUBSTRING(COLUMNS_UPDATED(),3,1) & Power(2,(19-16-1))
-```
+~~~

@@ -453,42 +453,47 @@ Reading time ~2 minutes
 <p>Sau đó bạn nhấn <kbd>OK</kbd></p>
 
 <ul>
-  <li>Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:
-<code class="highlighter-rouge">sql
-SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-</code></li>
+  <li>Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:</li>
 </ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">100</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">SERVERDB2K8</span><span class="p">.</span><span class="n">HungLong</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">DMKH</span>
+</code></pre>
+</div>
 
 <h3 id="thc-hin-bng-lnh">Thực hiện bằng lệnh</h3>
 <p>Tại cửa sổ query, bạn hoàn toàn có thể thực hiện các công việc như bước 1 bằng cách sau:
 - Tạo mới Linked server bằng lệnh sau:</p>
 
-<p><code class="highlighter-rouge">sql
-EXEC master.dbo.sp_addlinkedserver @server = N'SERVERDB2K8', @provider=N'SQLOLEDB', @datasrc=N'ServerDB\SQL2008', @srvproduct=N'Sql2K8'
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sp_addlinkedserver</span> <span class="o">@</span><span class="n">server</span> <span class="o">=</span> <span class="n">N</span><span class="s1">'SERVERDB2K8'</span><span class="p">,</span> <span class="o">@</span><span class="n">provider</span><span class="o">=</span><span class="n">N</span><span class="s1">'SQLOLEDB'</span><span class="p">,</span> <span class="o">@</span><span class="n">datasrc</span><span class="o">=</span><span class="n">N</span><span class="s1">'ServerDB</span><span class="se">\S</span><span class="s1">QL2008'</span><span class="p">,</span> <span class="o">@</span><span class="n">srvproduct</span><span class="o">=</span><span class="n">N</span><span class="s1">'Sql2K8'</span>
+</code></pre>
+</div>
 
 <ul>
-  <li>
-    <p>Kiểm tra đã tạo thành công chưa bằng:
-<code class="highlighter-rouge">sql
-EXEC sp_linkedservers
-</code>
-kết quả:
-<img src="https://trinhvanchung.files.wordpress.com/2011/05/image_thumb5.png?w=575&amp;h=87" alt="" /></p>
-  </li>
-  <li>
-    <p>Đăng nhập vào Linked server
-<code class="highlighter-rouge">sql
-EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'SERVERDB2K8', @useself=N'False', @locallogin=NULL, @rmtuser=N'tentruycap', @rmtpassword='matkhautruycap'
-</code></p>
-  </li>
-  <li>
-    <p>Kiểm tra kết quả
-<code class="highlighter-rouge">sql
-SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-</code></p>
-  </li>
+  <li>Kiểm tra đã tạo thành công chưa bằng:</li>
 </ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">sp_linkedservers</span>
+</code></pre>
+</div>
+
+<p>kết quả:
+<img src="https://trinhvanchung.files.wordpress.com/2011/05/image_thumb5.png?w=575&amp;h=87" alt="" /></p>
+
+<ul>
+  <li>Đăng nhập vào Linked server</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sp_addlinkedsrvlogin</span> <span class="o">@</span><span class="n">rmtsrvname</span><span class="o">=</span><span class="n">N</span><span class="s1">'SERVERDB2K8'</span><span class="p">,</span> <span class="o">@</span><span class="n">useself</span><span class="o">=</span><span class="n">N</span><span class="s1">'False'</span><span class="p">,</span> <span class="o">@</span><span class="n">locallogin</span><span class="o">=</span><span class="k">NULL</span><span class="p">,</span> <span class="o">@</span><span class="n">rmtuser</span><span class="o">=</span><span class="n">N</span><span class="s1">'tentruycap'</span><span class="p">,</span> <span class="o">@</span><span class="n">rmtpassword</span><span class="o">=</span><span class="s1">'matkhautruycap'</span>
+</code></pre>
+</div>
+
+<ul>
+  <li>Kiểm tra kết quả</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">100</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">SERVERDB2K8</span><span class="p">.</span><span class="n">HungLong</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">DMKH</span>
+</code></pre>
+</div>
 
 <p>Chúc các bạn thành công.</p>
 
@@ -527,23 +532,21 @@ Reading time ~1 minute
 
 <p>Sau đây là ví dụ dùng để xóa code của form cactpc1</p>
 
-<p>```
-	USE ../Forms/Cactpc1.scx</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Forms/Cactpc1.scx
 
-<div class="highlighter-rouge"><pre class="highlight"><code>REPLACE ALL Methods WITH []
+REPLACE ALL Methods WITH []
 
-USE IN cactpc1 ```
+USE IN cactpc1
 </code></pre>
 </div>
 
 <p>Hay xóa code trong class lib Startup</p>
 
-<p>```
-    USE ../Libs/Startup.vcx</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Libs/Startup.vcx
 
-<div class="highlighter-rouge"><pre class="highlight"><code>REPLACE ALL Methods
+REPLACE ALL Methods
 
-WITH [] USE IN startup ```
+WITH [] USE IN startup
 </code></pre>
 </div>
 

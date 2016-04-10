@@ -31,9 +31,11 @@ Mỗi lần muốn chạy chương trình Skype khác, bạn lại phải làm l
 
 # Đối với máy chạy MACOS
 Mở terminal và gõ vào dòng lệnh sau:
-```
+
+~~~ sh
 sudo /Applications/Skype.app/Contents/MacOS/Skype
-```
+~~~
+
 Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.
 
 Chúc bạn thành công.

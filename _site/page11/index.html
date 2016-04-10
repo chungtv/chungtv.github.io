@@ -174,12 +174,12 @@ Reading time ~1 minute
   <li>Mở file trên bằng notepad và gõ nội dung sau vào file:</li>
 </ul>
 
-<p><code class="highlighter-rouge">bash
-REM Only allow log messages to be changed
-if "%4" == "svn:log" exit 0
-echo Property "%4" cannot be changed &gt;&amp;2
+<div class="highlighter-rouge"><pre class="highlight"><code>REM Only allow log messages to be changed
+<span class="k">if</span> <span class="s2">"%4"</span> <span class="o">==</span> <span class="s2">"svn:log"</span> <span class="nb">exit </span>0
+<span class="nb">echo </span>Property <span class="s2">"%4"</span> cannot be changed &gt;&amp;2
 exit1
-</code></p>
+</code></pre>
+</div>
 
 <p><strong>Tham khảo:</strong></p>
 
@@ -393,13 +393,13 @@ Reading time ~3 minutes
 
 <p>Để thực hiện việc phân quyền trong SVN, các bạn sử dụng file <code class="highlighter-rouge">authz</code> trong thư mục <code class="highlighter-rouge">conf</code> của repository. Để chỉ định việc kiểm tra quyền được cấu hình trong file <code class="highlighter-rouge">authz</code>, bạn phải mở chỉ thị trong <code class="highlighter-rouge">authz-db</code> trong file <code class="highlighter-rouge">svnserve.conf</code> ra. Khi đó, bạn có được file <code class="highlighter-rouge">svnserve.conf</code> như sau:</p>
 
-<p><code class="highlighter-rouge">
-[general]
-anon-access = read
-auth-access = write
-password-db = passwd
-authz-db = authz
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[<span class="n">general</span>]
+<span class="n">anon</span>-<span class="n">access</span> = <span class="n">read</span>
+<span class="n">auth</span>-<span class="n">access</span> = <span class="n">write</span>
+<span class="n">password</span>-<span class="n">db</span> = <span class="n">passwd</span>
+<span class="n">authz</span>-<span class="n">db</span> = <span class="n">authz</span>
+</code></pre>
+</div>
 
 <p>Để bất đầu hãy mở file <code class="highlighter-rouge">authz</code> bằng notepad và xóa trắng nó đi.</p>
 
@@ -407,18 +407,21 @@ authz-db = authz
 
 <p>Trong svn, việc phân nhóm user trong file <code class="highlighter-rouge">authz</code> được thực hiện trong 1 session, dòng đầu tiên của session này là <code class="highlighter-rouge">[groups]</code>. Các dòng tiếp theo của session này là định nghĩa các nhóm tham gia vào dự án (sẽ được phân quyền để truy cập vào repository). Cấu trúc của 1 dòng như sau:</p>
 
-<p><code class="highlighter-rouge">
-    group_name = user_name1, user_name2
-</code>
-&gt; <em>Các user name ngăn cách nhau bởi dấu phẩy (,) và hãy chắc chắn rằng các user này đã được tạo trong file passwd.</em></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>    <span class="n">group_name</span> = <span class="n">user_name1</span>, <span class="n">user_name2</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p><em>Các user name ngăn cách nhau bởi dấu phẩy (,) và hãy chắc chắn rằng các user này đã được tạo trong file passwd.</em></p>
+</blockquote>
 
 <p>Ví dụ, bạn tạo ra 2 nhóm tham gia dự án, khi đó session groups sẽ như sau:</p>
 
-<p><code class="highlighter-rouge">
-    [groups]
-    dev_team = dev1, dev2, dev3
-    test_team = test1, test2
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>    [<span class="n">groups</span>]
+    <span class="n">dev_team</span> = <span class="n">dev1</span>, <span class="n">dev2</span>, <span class="n">dev3</span>
+    <span class="n">test_team</span> = <span class="n">test1</span>, <span class="n">test2</span>
+</code></pre>
+</div>
 
 <h3 id="phn-quyn-cho-user-hoc-nhm-user">Phân quyền cho user hoặc nhóm user</h3>
 
@@ -430,52 +433,53 @@ authz-db = authz
 
 <p>Ví dụ, tôi phân quyền cho user <code class="highlighter-rouge">admin</code> toàn quyền trên toàn repository này thì sử dụng thì sử dụng session <code class="highlighter-rouge">[/]</code> như sau:</p>
 
-<p><code class="highlighter-rouge">
-[/]
-admin = rw
-</code>
-Phân quyền cho <code class="highlighter-rouge">user1</code> có toàn quyền trên dự án <code class="highlighter-rouge">AP</code> thì như sau:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[/]
+<span class="n">admin</span> = <span class="n">rw</span>
+</code></pre>
+</div>
 
-<p><code class="highlighter-rouge">
-[/ap]
-user1=rw
-</code></p>
+<p>Phân quyền cho <code class="highlighter-rouge">user1</code> có toàn quyền trên dự án <code class="highlighter-rouge">AP</code> thì như sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[/<span class="n">ap</span>]
+<span class="n">user1</span>=<span class="n">rw</span>
+</code></pre>
+</div>
 
 <p>Phân quyền cho nhóm <code class="highlighter-rouge">dev</code> đã tạo ở trên toàn quyền trên thư mục <code class="highlighter-rouge">src</code> của dự án <code class="highlighter-rouge">AP</code> và nhóm <code class="highlighter-rouge">test</code> chỉ có quyền <code class="highlighter-rouge">read</code> trên thư mục src này. (chú ý đặt đấu @ trước tên nhóm)</p>
 
-<p><code class="highlighter-rouge">
-[/ap/src]
-@dev=rw
-@test=r
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[/<span class="n">ap</span>/<span class="n">src</span>]
+@<span class="n">dev</span>=<span class="n">rw</span>
+@<span class="n">test</span>=<span class="n">r</span>
+</code></pre>
+</div>
 
 <p>Phân quyền cho tất cả mọi người đều được truy cập vào thư mục <code class="highlighter-rouge">docs</code> của dự án <code class="highlighter-rouge">AP</code>.</p>
 
-<p><code class="highlighter-rouge">
-[/ap/docs]
-*=rw
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[/<span class="n">ap</span>/<span class="n">docs</span>]
+*=<span class="n">rw</span>
+</code></pre>
+</div>
 
 <p>Kết quả, file <code class="highlighter-rouge">authz</code> sẽ như sau:</p>
 
-<p>```
-[groups]
-dev=dev1,dev2,dev3
-test=test1,test2</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[<span class="n">groups</span>]
+<span class="n">dev</span>=<span class="n">dev1</span>,<span class="n">dev2</span>,<span class="n">dev3</span>
+<span class="n">test</span>=<span class="n">test1</span>,<span class="n">test2</span>
 
-<p>[/]
-admin=rw</p>
+[/]
+<span class="n">admin</span>=<span class="n">rw</span>
 
-<p>[/ap]
-user1=rw</p>
+[/<span class="n">ap</span>]
+<span class="n">user1</span>=<span class="n">rw</span>
 
-<p>[/ap/src]
-@dev=rw
-@test=r</p>
+[/<span class="n">ap</span>/<span class="n">src</span>]
+@<span class="n">dev</span>=<span class="n">rw</span>
+@<span class="n">test</span>=<span class="n">r</span>
 
-<p>[/ap/docs]
-*=rw
-```</p>
+[/<span class="n">ap</span>/<span class="n">docs</span>]
+*=<span class="n">rw</span>
+</code></pre>
+</div>
 
 <p>Bạn hãy thử sử dụng lệnh <code class="highlighter-rouge">ls</code> để kiểm tra hiệu lực của quyền <code class="highlighter-rouge">read</code>, lệnh <code class="highlighter-rouge">mkdir</code> để kiểm tra hiệu lực của lệnh <code class="highlighter-rouge">write</code> xem sao nhé. Cách sử dụng cách lệnh thì đã được giới thiệu trong các bài trước rồi.</p>
 

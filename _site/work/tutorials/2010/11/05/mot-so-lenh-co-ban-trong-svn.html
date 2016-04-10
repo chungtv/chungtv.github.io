@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Một số lệnh cơ bản trong SVN">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -152,9 +159,9 @@ Reading time ~3 minutes
 
 <p>Bạn có thể dễ dàng thấy các lệnh được hỗ trợ trong SVN bằng cách trong của sổ Cmd, gõ dòng lệnh sau:</p>
 
-<p><code class="highlighter-rouge">
-svn help hoặc svn ?
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn <span class="nb">help </span>hoặc svn ?
+</code></pre>
+</div>
 
 <p>Một số lệnh cơ bản, ý nghĩa và cách sử dụng chúng:</p>
 
@@ -166,9 +173,9 @@ Lệnh này sử dụng để tạo thư mục trong <code class="highlighter-ro
 
 <h6 id="cu-trc-lnh">Cấu trúc lệnh</h6>
 
-<p><code class="highlighter-rouge">
-svn mkdir &lt;đường dẫn thư mục mới tạo&gt; –m &lt;Mô tả về dự án&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir &lt;đường dẫn thư mục mới tạo&gt; –m &lt;Mô tả về dự án&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code></pre>
+</div>
 
 <p>Trong trường hợp bạn ko gõ tham số –m, chương trình sẽ hiển thị màn hình để các bạn nhập comment vào (chương trình này được thiết lập trong biến SVN_EDITOR ở bài trước)</p>
 
@@ -177,9 +184,9 @@ svn mkdir &lt;đường dẫn thư mục mới tạo&gt; –m &lt;Mô tả về 
   <li>Tạo dự án mới:</li>
 </ul>
 
-<p><code class="highlighter-rouge">
-svn mkdir svn://localhost/as –m “Asia standard, a product of asiasoft” ––username admin ––password nimda
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as –m “Asia standard, a product of asiasoft” ––username admin ––password nimda
+</code></pre>
+</div>
 
 <ul>
   <li>Tạo thư mục con của dự án mới tạo:</li>
@@ -187,21 +194,23 @@ svn mkdir svn://localhost/as –m “Asia standard, a product of asiasoft” –
 
 <p>Tạo thư mục chứa Source của dự án</p>
 
-<p><code class="highlighter-rouge">
-svn mkdir svn://localhost/as/Src –m “Source code store here” ––username admin ––password nimda
-</code>
-Tạo thư mục chứa tài liệu
-<code class="highlighter-rouge">
-svn mkdir svn://localhost/as/Docs –m “Documents of project store here” ––username admin ––password nimda
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Src –m “Source code store here” ––username admin ––password nimda
+</code></pre>
+</div>
+
+<p>Tạo thư mục chứa tài liệu</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Docs –m “Documents of project store here” ––username admin ––password nimda
+</code></pre>
+</div>
 
 <p>Tạo các thư mục con của thư mục chứa tài liệu</p>
 
-<p>```
-svn mkdir svn://localhost/as/Docs/TechDocs –m “Documents for Technical” ––username admin ––password nimda</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Docs/TechDocs –m “Documents <span class="k">for </span>Technical” ––username admin ––password nimda
 
-<p>svn mkdir svn://localhost/as/Docs/UserDocs –m “Documents for End-User” ––username admin ––password nimda
-```</p>
+svn mkdir svn://localhost/as/Docs/UserDocs –m “Documents <span class="k">for </span>End-User” ––username admin ––password nimda
+</code></pre>
+</div>
 
 <h3 id="delete-del-remove-rm--xa-th-mc">delete (del, remove, rm) | Xóa thư mục</h3>
 <p>###### Ý nghĩa
@@ -209,18 +218,19 @@ Xóa thư mục (cái này thì giống RD trong dos command)</p>
 
 <h6 id="cu-trc-lnh-1">Cấu trúc lệnh</h6>
 
-<p><code class="highlighter-rouge">
-svn delete &lt;đường dẫn tới thư mục cần xóa&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code>
-Có thể thay thế lệnh <code class="highlighter-rouge">delete</code> bằng <code class="highlighter-rouge">del</code>, <code class="highlighter-rouge">remove</code> hoặc <code class="highlighter-rouge">rm</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn delete &lt;đường dẫn tới thư mục cần xóa&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code></pre>
+</div>
+
+<p>Có thể thay thế lệnh <code class="highlighter-rouge">delete</code> bằng <code class="highlighter-rouge">del</code>, <code class="highlighter-rouge">remove</code> hoặc <code class="highlighter-rouge">rm</code></p>
 
 <h6 id="v-d-1">Ví dụ</h6>
 
 <p>Xóa thư mục Docs</p>
 
-<p><code class="highlighter-rouge">
-svn delete svn://localhost/as/docs ––username admin ––password nimda
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn delete svn://localhost/as/docs ––username admin ––password nimda
+</code></pre>
+</div>
 
 <h3 id="list-ls--lnh-lit-k-th-mc-file">list (ls) | Lệnh liệt kê thư mục, file</h3>
 <p>######Ý nghĩa</p>
@@ -229,23 +239,23 @@ svn delete svn://localhost/as/docs ––username admin ––password nimda
 
 <h6 id="cu-trc-lnh-2">Cấu trúc lệnh</h6>
 
-<p><code class="highlighter-rouge">
-svn list &lt;đường dẫn đến thư mục cần xem danh sách thư mục và file&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code>
-###### Ví dụ</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn list &lt;đường dẫn đến thư mục cần xem danh sách thư mục và file&gt; ––username &lt;username&gt; ––password &lt;password&gt;
+</code></pre>
+</div>
+<p>###### Ví dụ</p>
 
 <p>Trong ví dụ này, tôi đã thử dùng SVN để liệt kê các thư mục và file bên trong dự án của nhóm <code class="highlighter-rouge">Quản lý xây dựng</code> trên google code (tại thời điểm 14h41 ngày 05/11/2010) và nhận được kết quả như sau:</p>
 
-<p>```
-C:\svn-win32-1.5.6\bin&gt;svn ls https://quanlyxaydung.googlecode.com/svn/trunk/code/</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>C:<span class="se">\s</span>vn-win32-1.5.6<span class="se">\b</span><span class="k">in</span>&gt;svn ls https://quanlyxaydung.googlecode.com/svn/trunk/code/
 
-<p>NhanVien/
+NhanVien/
 congtrinh/
 khachhang/
 main/
 quanlykho/
 quanlyvattu/
-```</p>
+</code></pre>
+</div>
 
 <p>Trong ví dụ trên, các bạn có thể thay lệnh list bằng lệnh ls</p>
 
@@ -254,9 +264,9 @@ quanlyvattu/
 Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ thư mục dự án trên repository về thư mục trên máy trạm.</p>
 
 <h6 id="cu-trc-lnh-3">Cấu trúc lệnh</h6>
-<p><code class="highlighter-rouge">
-svn checkout &lt;đường dẫn thư mục trên máy chủ&gt; &lt;đường dẫn thư mục trên máy trạm&gt; ––username &lt;username&gt; ––password  &lt;password&gt;
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn checkout &lt;đường dẫn thư mục trên máy chủ&gt; &lt;đường dẫn thư mục trên máy trạm&gt; ––username &lt;username&gt; ––password  &lt;password&gt;
+</code></pre>
+</div>
 
 <p>Các bạn có thể thay thế lệnh checkout ở trên bằng lệnh co.</p>
 
@@ -264,15 +274,15 @@ svn checkout &lt;đường dẫn thư mục trên máy chủ&gt; &lt;đường d
 
 <p>Trong ví dụ này, tôi sẽ lấy mã nguồn mới nhất từ thư mục Src của dự án AS đã tạo ở trên về thư mục <code class="highlighter-rouge">D:/dev/as/src/</code> trên máy trạm.</p>
 
-<p><code class="highlighter-rouge">
-svn checkout svn://localhost/as/src d:/dev/as/src ––username admin ––password nimda
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>svn checkout svn://localhost/as/src d:/dev/as/src ––username admin ––password nimda
+</code></pre>
+</div>
 
 <p>Nếu thành công, chương trình sẽ có thông báo:</p>
 
-<p><code class="highlighter-rouge">
-Checked out revision n. //(n là số phiên bản hiện tại mới nhất)
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Checked out revision n. //<span class="o">(</span>n là số phiên bản hiện tại mới nhất<span class="o">)</span>
+</code></pre>
+</div>
 
 <p>Trong trường hợp thư mục <code class="highlighter-rouge">d:/dev/as/src</code> chưa có, SVN sẽ tự tạo.</p>
 

@@ -7,8 +7,8 @@
 {% include head.html %}
 </head>
 
-<body id="post" {% if page.image.feature %}class="feature"{% endif %}>
-
+<!-- <body id="post" {% if page.image.feature %}class="feature"{% endif %}> -->
+<body id="post" class="feature">
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 
@@ -19,7 +19,14 @@
     <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
+{% else %}
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="{{ site.url }}/images/{{ site.image.default-post }}" alt="{{ page.title }}">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
 {% endif %}
+
 
 <div id="main" role="main">
   <article class="hentry">

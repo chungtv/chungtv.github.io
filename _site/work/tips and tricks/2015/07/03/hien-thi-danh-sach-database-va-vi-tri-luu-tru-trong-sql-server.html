@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Hiển thị danh sách database và vị trí lưu trữ trong SQL Server">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -149,17 +156,17 @@ Reading time ~1 minute
       <p>Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
 Đây là Query sẽ trả về kết quả mong muốn.</p>
 
-<p><code class="highlighter-rouge">
-SELECT
-    db.name AS [DB Name],
-    mf.name AS [Logical Name],
-    type_desc AS [File Type],
-    Physical_Name AS [Location]
-FROM
-    sys.master_files mf
-INNER JOIN 
-    sys.databases db ON db.database_id = mf.database_id
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">db</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="p">[</span><span class="n">DB</span> <span class="n">Name</span><span class="p">],</span>
+    <span class="n">mf</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Logical</span> <span class="n">Name</span><span class="p">],</span>
+    <span class="n">type_desc</span> <span class="k">AS</span> <span class="p">[</span><span class="n">File</span> <span class="k">Type</span><span class="p">],</span>
+    <span class="n">Physical_Name</span> <span class="k">AS</span> <span class="p">[</span><span class="k">Location</span><span class="p">]</span>
+<span class="k">FROM</span>
+    <span class="n">sys</span><span class="p">.</span><span class="n">master_files</span> <span class="n">mf</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> 
+    <span class="n">sys</span><span class="p">.</span><span class="n">databases</span> <span class="n">db</span> <span class="k">ON</span> <span class="n">db</span><span class="p">.</span><span class="n">database_id</span> <span class="o">=</span> <span class="n">mf</span><span class="p">.</span><span class="n">database_id</span>
+</code></pre>
+</div>
 
       <footer class="entry-meta">
         <span class="entry-tags"><a href="http://chungtrinh.com/tags/#MS SQL Server" title="Pages tagged MS SQL Server" class="tag"><span class="term">MS SQL Server</span></a></span>

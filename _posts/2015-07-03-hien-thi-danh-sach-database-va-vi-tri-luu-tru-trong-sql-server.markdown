@@ -10,7 +10,7 @@ redirect_from: /hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/
 Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
 Đây là Query sẽ trả về kết quả mong muốn.
 
-```
+~~~ sql
 SELECT
     db.name AS [DB Name],
     mf.name AS [Logical Name],
@@ -20,4 +20,4 @@ FROM
     sys.master_files mf
 INNER JOIN 
     sys.databases db ON db.database_id = mf.database_id
-```
+~~~

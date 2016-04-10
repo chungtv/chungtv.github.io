@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -125,6 +125,13 @@
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
 
+
+
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Setup, create repository, config, create project, create svn service">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
 
 
 
@@ -193,13 +200,14 @@ Download SVN tại: <a href="http://subverion.tigris.org">http://subverion.tigri
 
 <p>Để tạo kho lưu dữ liệu, bạn sử dụng <code class="highlighter-rouge">svnadmin</code>, trong cửa sổ cmd của window, gõ lệnh sau:</p>
 
-<p><code class="highlighter-rouge">
-svnadmin create &lt;đường dẫn kho lưu&gt;
-</code>
-Ví dụ:
-<code class="highlighter-rouge">
+<div class="highlighter-rouge"><pre class="highlight"><code>svnadmin create &lt;đường dẫn kho lưu&gt;
+</code></pre>
+</div>
+
+<p>Ví dụ:
+~~~ bash
 svnadmin create C:\ARDRepository\
-</code></p>
+~~~</p>
 
 <p>Sau khi thực hiện xong, SVN sẽ tạo ra trong ổ đĩa của bạn thư mục kho lưu (thư mục chứa dữ liệu các phiên bản tài liệu, mã nguồn, các cấu hình truy cập kho). Bên trong thư mục kho lưu, SVN đã tạo sẳn ra một số thư mục. Là người quản trị, bạn quan tâm đến thư mục Conf.</p>
 
@@ -217,12 +225,12 @@ svnadmin create C:\ARDRepository\
 
 <p>Trong phạm vi bài này, bạn chỉ quan tâm đến 4 dòng sau:</p>
 
-<p><code class="highlighter-rouge">
-    [general]
-    anon-access = read
-    auth-access = write
-    password-db = passwd
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>    [<span class="n">general</span>]
+    <span class="n">anon</span>-<span class="n">access</span> = <span class="n">read</span>
+    <span class="n">auth</span>-<span class="n">access</span> = <span class="n">write</span>
+    <span class="n">password</span>-<span class="n">db</span> = <span class="n">passwd</span>
+</code></pre>
+</div>
 
 <ul>
   <li><strong>[general]</strong>: đánh dấu bắt đầu session</li>
@@ -236,21 +244,24 @@ svnadmin create C:\ARDRepository\
 <p><strong><em>Việc tiếp theo bạn làm là tạo ra một vài user truy cập vào repository.</em></strong>
 Để tạo user truy cập vào repository, bạn mở file <code class="highlighter-rouge">passwd</code>  đã có sẵn trong thư mục <code class="highlighter-rouge">conf</code> (mở bằng trình soạn thảo văn bản) và xóa trắng đi, gõ lại từ đầu (cho nó chuyên nghiệp ;) )</p>
 
-<p>Tạo một vài user (trong ví dụ sau tôi sẽ tạo user <code class="highlighter-rouge">admin</code> mật khẩu là <code class="highlighter-rouge">nimda</code>, <code class="highlighter-rouge">user1</code> mật khẩu <code class="highlighter-rouge">1resu</code>, <code class="highlighter-rouge">user2</code> có mật khẩu <code class="highlighter-rouge">2resu</code>
-<code class="highlighter-rouge">
-[users]
-admin = nimda
-user1 = 1resu
-user2 = 2resu
-</code>
-Bắt đầu bằng dòng báo hiệu session cấu hình User <code class="highlighter-rouge">[users]</code>, mỗi dòng tiếp theo sẽ là <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code> của mỗi user. Cấu trúc <code class="highlighter-rouge">Username = password</code></p>
+<p>Tạo một vài user (trong ví dụ sau tôi sẽ tạo user <code class="highlighter-rouge">admin</code> mật khẩu là <code class="highlighter-rouge">nimda</code>, <code class="highlighter-rouge">user1</code> mật khẩu <code class="highlighter-rouge">1resu</code>, <code class="highlighter-rouge">user2</code> có mật khẩu <code class="highlighter-rouge">2resu</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[<span class="n">users</span>]
+<span class="n">admin</span> = <span class="n">nimda</span>
+<span class="n">user1</span> = <span class="m">1</span><span class="n">resu</span>
+<span class="n">user2</span> = <span class="m">2</span><span class="n">resu</span>
+</code></pre>
+</div>
+
+<p>Bắt đầu bằng dòng báo hiệu session cấu hình User <code class="highlighter-rouge">[users]</code>, mỗi dòng tiếp theo sẽ là <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code> của mỗi user. Cấu trúc <code class="highlighter-rouge">Username = password</code></p>
 
 <p><em>Phù, như thế là xong phần cấu hình đơn giản.</em></p>
 
-<p>Hãy test lại xem cấu hình của bạn có OK hay không, hãy mở cmd lên, gõ lệnh sau vào để chạy <code class="highlighter-rouge">service</code> của SVN.
-<code class="highlighter-rouge">
-svnserve –d –r C:\ARDRepository
-</code></p>
+<p>Hãy test lại xem cấu hình của bạn có OK hay không, hãy mở cmd lên, gõ lệnh sau vào để chạy <code class="highlighter-rouge">service</code> của SVN.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svnserve –d –r C:<span class="se">\A</span>RDRepository
+</code></pre>
+</div>
 
 <p><kbd>Enter</kbd>, nếu không có báo gì thì là OK (đừng hụt hẫng nhé, không báo gì lại nghĩ cấu hình sai)</p>
 
@@ -258,36 +269,45 @@ svnserve –d –r C:\ARDRepository
 
 <p>Giữ nguyên cửa sổ cmd đang chạy service SVN ở trên (đừng tắt đi nhé) và mở một cửa sổ CMD khác để thao tác với các lệnh của giao thức SVN.</p>
 
-<p>Mở 1 cửa sở cmd khác, gõ lệnh sau để tạo mới 1 Project lưu trong <code class="highlighter-rouge">ARDRepository</code>.
-<code class="highlighter-rouge">
-svn mkdir svn://localhost/&lt;tên dự án&gt; –m “&lt;Mô tả thông tin về dự án&gt;” ––username  &lt;tên user&gt; ––password &lt;password&gt;
-</code>
-Ví dụ:
-<code class="highlighter-rouge">
-svn mkdir svn://localhost/AS –m “Asia Standard” ––username admin ––password nimda
-</code>
-Khi đó, nếu thành công bạn sẽ nhận được:
-<code class="highlighter-rouge">
-Committed revision 1.
-</code>
-Có thể không cần sử dụng tham số password
-<code class="highlighter-rouge">
-svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
-</code>
-Khi đó, sau khi <kbd>Enter</kbd>, SVN yêu cầu bạn phải nhập password cho <code class="highlighter-rouge">admin</code>, bạn nhập mật khẩu xong, nếu thành công nó cũng sẽ báo <code class="highlighter-rouge">commited</code>.</p>
+<p>Mở 1 cửa sở cmd khác, gõ lệnh sau để tạo mới 1 Project lưu trong <code class="highlighter-rouge">ARDRepository</code>.</p>
 
-<p>```
-C:\Documents and Settings\Chungtv&gt;svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/&lt;tên dự án&gt; –m “&lt;Mô tả thông tin về dự án&gt;” ––username  &lt;tên user&gt; ––password &lt;password&gt;
+</code></pre>
+</div>
+
+<p>Ví dụ:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/AS –m “Asia Standard” ––username admin ––password nimda
+</code></pre>
+</div>
+
+<p>Khi đó, nếu thành công bạn sẽ nhận được:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Committed revision 1.
+</code></pre>
+</div>
+
+<p>Có thể không cần sử dụng tham số password</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
+</code></pre>
+</div>
+
+<p>Khi đó, sau khi <kbd>Enter</kbd>, SVN yêu cầu bạn phải nhập password cho <code class="highlighter-rouge">admin</code>, bạn nhập mật khẩu xong, nếu thành công nó cũng sẽ báo <code class="highlighter-rouge">commited</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>C:<span class="se">\D</span>ocuments and Settings<span class="se">\C</span>hungtv&gt;svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
 Authentication realm: &lt;svn://localhost:3690&gt; 58a7a8ca-296d-2d48-a4a5-f5420ae2ca80
-Password for ‘admin’: *****</p>
+Password <span class="k">for</span> ‘admin‘: <span class="k">*****</span>
 
-<p>Committed revision 2.
-```</p>
+Committed revision 2.
+</code></pre>
+</div>
 
-<p>Kiểm tra lại danh sách dự án bạn mới tạo bằng lệnh list (hoặc ls) của SVN.
-<code class="highlighter-rouge">
-svn ls svn://localhost
-</code></p>
+<p>Kiểm tra lại danh sách dự án bạn mới tạo bằng lệnh list (hoặc ls) của SVN.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn ls svn://localhost
+</code></pre>
+</div>
 
 <h2 id="to-service-trong-window--chy-svn-service">Tạo service trong window để chạy svn service</h2>
 <p>Bước tiếp theo, các bạn tạo 1 service để chạy svn service cho repository bạn đã tạo.</p>
@@ -300,10 +320,11 @@ svn ls svn://localhost
 
 <p>Để tạo service, bạn sử dụng lệnh <code class="highlighter-rouge">SC</code> (chú ý là bạn phải có quyền admin trên máy này nhé, nhất là các bạn đang dùng win7, hãy righ-click vào cmd.exe và <code class="highlighter-rouge">Run as Administrator</code> trước khi tiếp tục).</p>
 
-<p>Trong cửa sổ cmd, bạn gõ lệnh sau để tạo service.
-<code class="highlighter-rouge">
-sc create &lt;ARDSVN&gt; binpath= “c:\svn-win32-3.5.6\bin\svnserve.exe ––service –r C:\ARDRepository” displayname= “ARD SVN Server” depend= TCPIP start= auto
-</code></p>
+<p>Trong cửa sổ cmd, bạn gõ lệnh sau để tạo service.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sc create &lt;ARDSVN&gt; <span class="nv">binpath</span><span class="o">=</span> “c:<span class="se">\s</span>vn-win32-3.5.6<span class="se">\b</span><span class="k">in</span><span class="se">\s</span>vnserve.exe ––service –r C:<span class="se">\A</span>RDRepository” <span class="nv">displayname</span><span class="o">=</span> “ARD SVN Server” <span class="nv">depend</span><span class="o">=</span> TCPIP <span class="nv">start</span><span class="o">=</span> auto
+</code></pre>
+</div>
 
 <blockquote>
   <ul>
@@ -325,17 +346,17 @@ sc create &lt;ARDSVN&gt; binpath= “c:\svn-win32-3.5.6\bin\svnserve.exe ––s
 
 <p>OK, nếu không có gì sai sót thì sau khi <kbd>ENTER</kbd>, bạn sẽ nhận được thông báo:</p>
 
-<p><code class="highlighter-rouge">
-[SC] CreateService SUCCESS
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[SC] CreateService SUCCESS
+</code></pre>
+</div>
 
 <p>Tạo xong chưa chắc đã chạy được (vì có thể cấu trúc trong binpath của bạn sau – thiếu dấu “-“ trước service chẳng hạn)</p>
 
 <p>Bây giờ bạn thử chạy service đó lên bằng lệnh sau:</p>
 
-<p><code class="highlighter-rouge">
-sc start ARDSVN
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>sc start ARDSVN
+</code></pre>
+</div>
 
 <p>Nếu thành công bạn sẽ nhận được thông báo thông tin của service.</p>
 

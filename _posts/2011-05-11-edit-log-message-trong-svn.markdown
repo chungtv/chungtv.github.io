@@ -17,12 +17,12 @@ Hôm nay, vào show log của dự án (Click phải lên dự án –> Tortoise
 - Trong thư mục này, tạo file `pre-revprop-change.bat`
 - Mở file trên bằng notepad và gõ nội dung sau vào file:
 
-```bash
+~~~ bash
 REM Only allow log messages to be changed
 if "%4" == "svn:log" exit 0
 echo Property "%4" cannot be changed >&2
 exit1
-```
+~~~
 
 **Tham khảo:**
 

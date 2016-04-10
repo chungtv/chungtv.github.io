@@ -11,11 +11,12 @@ published: True
 Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu ... Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:
 
 
-```
+~~~
+
 - Unable to modify table. 
 Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.
 
-```
+~~~
 
 
 **Đây là cách sửa lỗi này**

@@ -54,34 +54,39 @@ Trong bài này, tôi giả sử tôi đang ở SQL server 2000 máy local (inst
 
 Sau đó bạn nhấn <kbd>OK</kbd>
 
-- Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:
-```sql
+- Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:  
+
+~~~sql
 SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-```
+~~~
 
 ### Thực hiện bằng lệnh
 Tại cửa sổ query, bạn hoàn toàn có thể thực hiện các công việc như bước 1 bằng cách sau:
-- Tạo mới Linked server bằng lệnh sau:
+- Tạo mới Linked server bằng lệnh sau:  
 
-```sql
+~~~ sql
 EXEC master.dbo.sp_addlinkedserver @server = N'SERVERDB2K8', @provider=N'SQLOLEDB', @datasrc=N'ServerDB\SQL2008', @srvproduct=N'Sql2K8'
-```
+~~~
 
-- Kiểm tra đã tạo thành công chưa bằng:
-```sql
+- Kiểm tra đã tạo thành công chưa bằng:  
+
+~~~ sql
 EXEC sp_linkedservers
-```
+~~~
+
 kết quả:
 ![](https://trinhvanchung.files.wordpress.com/2011/05/image_thumb5.png?w=575&h=87)
 
-- Đăng nhập vào Linked server
-```sql
-EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'SERVERDB2K8', @useself=N'False', @locallogin=NULL, @rmtuser=N'tentruycap', @rmtpassword='matkhautruycap'
-```
+- Đăng nhập vào Linked server  
 
-- Kiểm tra kết quả
-```sql
+~~~ sql
+EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'SERVERDB2K8', @useself=N'False', @locallogin=NULL, @rmtuser=N'tentruycap', @rmtpassword='matkhautruycap'
+~~~
+
+- Kiểm tra kết quả  
+
+~~~ sql
 SELECT TOP 100 * FROM SERVERDB2K8.HungLong.dbo.DMKH
-```
+~~~
 
 Chúc các bạn thành công.

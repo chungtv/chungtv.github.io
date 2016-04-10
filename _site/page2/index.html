@@ -193,14 +193,11 @@ Reading time ~1 minute
   <div class="entry-content">
     <p>Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này:</p>
 
-<p>SELECT name, 
-       DATABASEPROPERTYEX(name, ‘IsAutoClose’)
-FROM   master.dbo.sysdatabases</p>
-
-<p>```
-print(“hello, world”)</p>
-
-<p>```</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> 
+       <span class="n">DATABASEPROPERTYEX</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">'IsAutoClose'</span><span class="p">)</span>
+<span class="k">FROM</span>   <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sysdatabases</span>
+</code></pre>
+</div>
 
 <p>Tham khảo thêm tại đây <a href="https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/">mssqltips.com</a></p>
 
@@ -280,17 +277,17 @@ Reading time ~1 minute
     <p>Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
 Đây là Query sẽ trả về kết quả mong muốn.</p>
 
-<p><code class="highlighter-rouge">
-SELECT
-    db.name AS [DB Name],
-    mf.name AS [Logical Name],
-    type_desc AS [File Type],
-    Physical_Name AS [Location]
-FROM
-    sys.master_files mf
-INNER JOIN 
-    sys.databases db ON db.database_id = mf.database_id
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">db</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="p">[</span><span class="n">DB</span> <span class="n">Name</span><span class="p">],</span>
+    <span class="n">mf</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Logical</span> <span class="n">Name</span><span class="p">],</span>
+    <span class="n">type_desc</span> <span class="k">AS</span> <span class="p">[</span><span class="n">File</span> <span class="k">Type</span><span class="p">],</span>
+    <span class="n">Physical_Name</span> <span class="k">AS</span> <span class="p">[</span><span class="k">Location</span><span class="p">]</span>
+<span class="k">FROM</span>
+    <span class="n">sys</span><span class="p">.</span><span class="n">master_files</span> <span class="n">mf</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> 
+    <span class="n">sys</span><span class="p">.</span><span class="n">databases</span> <span class="n">db</span> <span class="k">ON</span> <span class="n">db</span><span class="p">.</span><span class="n">database_id</span> <span class="o">=</span> <span class="n">mf</span><span class="p">.</span><span class="n">database_id</span>
+</code></pre>
+</div>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

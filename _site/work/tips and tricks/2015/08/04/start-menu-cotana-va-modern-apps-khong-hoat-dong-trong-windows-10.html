@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Start menu, Cotana và Modern Apps không hoạt động trong windows 10">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -168,10 +175,11 @@ Reading time ~1 minute
   <li>Trong màn hình <code class="highlighter-rouge">Administrator: Command Prompt</code>, gõ <code class="highlighter-rouge">powershell</code> và nhấn <kbd>Enter</kbd></li>
 </ul>
 
-<p>2.- Copy và Paste đoạn sau vào màn hình <code class="highlighter-rouge">Administrator: Windows PowerShell window</code> và nhấn <kbd>Enter</kbd>:
-<code class="highlighter-rouge">
-Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-</code></p>
+<p>2.- Copy và Paste đoạn sau vào màn hình <code class="highlighter-rouge">Administrator: Windows PowerShell window</code> và nhấn <kbd>Enter</kbd>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Get-AppXPackage -AllUsers | <span class="k">Foreach</span> <span class="o">{</span>Add-AppxPackage -DisableDevelopmentMode -Register <span class="s2">"</span><span class="k">$(</span><span class="nv">$_</span>.InstallLocation<span class="k">)</span><span class="se">\A</span><span class="s2">ppXManifest.xml"</span><span class="o">}</span>
+</code></pre>
+</div>
 
 <p>3.- Bỏ qua một số thông báo lỗi màu đỏ và đợi Power Shell thực hiện xong đoạn lệnh trên.</p>
 

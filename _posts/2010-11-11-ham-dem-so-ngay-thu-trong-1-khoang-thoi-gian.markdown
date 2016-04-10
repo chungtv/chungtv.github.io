@@ -11,7 +11,7 @@ redirect_from: /ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/
 
 `User Defined Function` sau đây nhận vào 3 tham số ngày bắt đầu, ngày kết thúc và ngày thứ cần đếm. Trả về số ngày thứ trong khoảng thời gian truyền vào (từ ngày bắt đầu đến ngày kết thúc)
 
-```sql
+~~~ sql
 -- =============================================
 -- Author:        Chungtv
 -- Create date: 11/11/2010
@@ -42,4 +42,4 @@ BEGIN
         set @d2 = @pWeekday + 7 - @iBeginWd
     return (@d1 - @d2) / 7 + 1
 END
-```
+~~~

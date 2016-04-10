@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Thay đổi đường dẫn Local trong Team Foundation Server">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -155,38 +162,6 @@ Reading time ~1 minute
 <p><img src="/images/2015/10/tfs_edit_workspace.png" alt="" /></p>
 
 <p>Trên màn hình này, bạn thay đổi đường dẫn mới tại cột <strong>Local Folder</strong></p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
-
-<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">abc</span> <span class="k">where</span> <span class="n">t</span> <span class="o">=</span> <span class="s1">'11'</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">module</span> <span class="nn">Jekyll</span>
-  <span class="k">class</span> <span class="nc">TagIndex</span> <span class="o">&lt;</span> <span class="no">Page</span>
-    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
-      <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
-      <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
-      <span class="vi">@dir</span> <span class="o">=</span> <span class="n">dir</span>
-      <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'index.html'</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">'_layouts'</span><span class="p">),</span> <span class="s1">'tag_index.html'</span><span class="p">)</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">tag</span>
-      <span class="n">tag_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'tag_title_prefix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'Tagged: '</span>
-      <span class="n">tag_title_suffix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'tag_title_suffix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'&amp;#8211;'</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">tag_title_prefix</span><span class="si">}#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">"</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'description'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"An archive of posts tagged </span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">."</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre>
-</div>
-
-<p><a href="/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html">Link link</a></p>
 
       <footer class="entry-meta">
         <span class="entry-tags"><a href="http://chungtrinh.com/tags/#TFS" title="Pages tagged TFS" class="tag"><span class="term">TFS</span></a><a href="http://chungtrinh.com/tags/#Source Control" title="Pages tagged Source Control" class="tag"><span class="term">Source Control</span></a><a href="http://chungtrinh.com/tags/#Visual Studio" title="Pages tagged Visual Studio" class="tag"><span class="term">Visual Studio</span></a></span>

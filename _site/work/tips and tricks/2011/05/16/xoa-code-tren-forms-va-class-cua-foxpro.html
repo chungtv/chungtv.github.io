@@ -64,8 +64,8 @@
 
 </head>
 
-<body id="post" >
-
+<!-- <body id="post" > -->
+<body id="post" class="feature">
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
@@ -127,6 +127,13 @@
 
 
 
+<div class="entry-header">
+  <div class="entry-image">
+    <img src="http://chungtrinh.com/images/feature.jpg" alt="Xóa code trên Forms và Class của Foxpro">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
 
 <div id="main" role="main">
   <article class="hentry">
@@ -160,23 +167,21 @@ Reading time ~1 minute
 
 <p>Sau đây là ví dụ dùng để xóa code của form cactpc1</p>
 
-<p>```
-	USE ../Forms/Cactpc1.scx</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Forms/Cactpc1.scx
 
-<div class="highlighter-rouge"><pre class="highlight"><code>REPLACE ALL Methods WITH []
+REPLACE ALL Methods WITH []
 
-USE IN cactpc1 ```
+USE IN cactpc1
 </code></pre>
 </div>
 
 <p>Hay xóa code trong class lib Startup</p>
 
-<p>```
-    USE ../Libs/Startup.vcx</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Libs/Startup.vcx
 
-<div class="highlighter-rouge"><pre class="highlight"><code>REPLACE ALL Methods
+REPLACE ALL Methods
 
-WITH [] USE IN startup ```
+WITH [] USE IN startup
 </code></pre>
 </div>
 

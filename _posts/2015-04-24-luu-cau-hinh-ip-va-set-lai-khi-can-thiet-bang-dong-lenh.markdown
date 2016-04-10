@@ -12,15 +12,17 @@ redirect_from: /luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh/
 > Sau khi tìm hiểu, tôi tìm được cách khá đơn giản để làm việc đó.
 
 ##### Lưu cấu hình IP ra file text
-Gõ lệnh sau:
-```
+Gõ lệnh sau:  
+
+~~~ bash
 netsh –c interface dump > D:\\profileIp1.txt
-```
+~~~
 
 ##### Thiết lập lại cấu hình IP từ file text
-Gõ lệnh sau:
-```
+Gõ lệnh sau:  
+
+~~~ bash
 netsh –f D:\\profileIp1.txt 
-```
+~~~
 
 > Để thuận tiện hơn (mổi lần thực hiện lại phải mở cửa sổ dòng lệnh ra gõ), bạn có thể tạo file bash (.bat) để thực hiện việc này.

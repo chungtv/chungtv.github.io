@@ -189,11 +189,13 @@ Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập b
 3. Đặt tên cho shortcut mới, ví dụ <code class="highlighter-rouge">Skype 2</code>. Sau đó nhấn <kbd>Finish</kbd> là bạn đã hoàn thành.</p>
 
 <h1 id="i-vi-my-chy-macos">Đối với máy chạy MACOS</h1>
-<p>Mở terminal và gõ vào dòng lệnh sau:
-<code class="highlighter-rouge">
-sudo /Applications/Skype.app/Contents/MacOS/Skype
-</code>
-Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.</p>
+<p>Mở terminal và gõ vào dòng lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo /Applications/Skype.app/Contents/MacOS/Skype
+</code></pre>
+</div>
+
+<p>Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.</p>
 
 <p>Chúc bạn thành công.</p>
 
@@ -227,16 +229,18 @@ Reading time ~1 minute
 </blockquote>
 
 <h5 id="lu-cu-hnh-ip-ra-file-text">Lưu cấu hình IP ra file text</h5>
-<p>Gõ lệnh sau:
-<code class="highlighter-rouge">
-netsh –c interface dump &gt; D:\\profileIp1.txt
-</code></p>
+<p>Gõ lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>netsh –c interface dump &gt; D:<span class="se">\\</span>profileIp1.txt
+</code></pre>
+</div>
 
 <h5 id="thit-lp-li-cu-hnh-ip-t-file-text">Thiết lập lại cấu hình IP từ file text</h5>
-<p>Gõ lệnh sau:
-<code class="highlighter-rouge">
-netsh –f D:\\profileIp1.txt 
-</code></p>
+<p>Gõ lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>netsh –f D:<span class="se">\\</span>profileIp1.txt 
+</code></pre>
+</div>
 
 <blockquote>
   <p>Để thuận tiện hơn (mổi lần thực hiện lại phải mở cửa sổ dòng lệnh ra gõ), bạn có thể tạo file bash (.bat) để thực hiện việc này.</p>
@@ -284,24 +288,24 @@ Reading time ~2 minutes
 <h4 id="kim-tra-cc-ct-c-v-tr-8">Kiểm tra các cột có vị trí &lt;=8</h4>
 <p>Kiểm tra cột tại vị trí n (n&lt;=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:</p>
 
-<p><code class="highlighter-rouge">sql
-COLUMNS_UPDATED() &amp; Power(2,(n-1))
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+</div>
 
 <p>Nếu biểu thức trả về &gt; 0 thì cột n là cột bị thay đổi, ngược lại cột n không thay đổi.</p>
 
 <p>Trong trường hợp kiểm tra 2 hoặc nhiều cột có thay đổi hay không thì làm tương tự. Ví dụ kiểm tra cột 3 cột thứ i,j,k có thay đổi hay không (i,j,k&lt;=8) thì sử dụng biểu thức sau:</p>
 
-<p><code class="highlighter-rouge">sql
-COLUMNS_UPDATED() &amp; (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+</code></pre>
+</div>
 
 <p><em>Chú ý: Để đỡ phải tính toán khi thực thi thì mình nên tính ra giá trị nguyên của các hàm <code class="highlighter-rouge">Power()</code> ở ngoài luôn rồi dùng kết quả đó để kiểm tra. Ví dụ thay vì viết như cách trên, mình viết như sau:</em></p>
 
-<p><code class="highlighter-rouge">sql
-COLUMNS_UPDATED() &amp; kq 
--- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">kq</span> 
+<span class="c1">-- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
+</span></code></pre>
+</div>
 
 <h4 id="kim-tra-cc-ct-c-v-tr-8-1">Kiểm tra các cột có vị trí &gt;8</h4>
 
@@ -309,15 +313,15 @@ COLUMNS_UPDATED() &amp; kq
 
 <p>Ví dụ cần kiểm tra có update cột 10 hay không, sử dụng biểu thức sau:</p>
 
-<p><code class="highlighter-rouge">sql
-SUBSTRING(COLUMNS_UPDATED(),2,1) &amp; Power(2,(10-8-1))
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">COLUMNS_UPDATED</span><span class="p">(),</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="mi">10</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+</div>
 
 <p>Còn nếu cột cần kiểm tra &gt; 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:</p>
 
-<p><code class="highlighter-rouge">sql
-SUBSTRING(COLUMNS_UPDATED(),3,1) &amp; Power(2,(19-16-1))
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">COLUMNS_UPDATED</span><span class="p">(),</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="mi">19</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+</div>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

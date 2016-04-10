@@ -172,38 +172,6 @@ Reading time ~1 minute
 
 <p>Trên màn hình này, bạn thay đổi đường dẫn mới tại cột <strong>Local Folder</strong></p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
-
-<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">abc</span> <span class="k">where</span> <span class="n">t</span> <span class="o">=</span> <span class="s1">'11'</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">module</span> <span class="nn">Jekyll</span>
-  <span class="k">class</span> <span class="nc">TagIndex</span> <span class="o">&lt;</span> <span class="no">Page</span>
-    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
-      <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
-      <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
-      <span class="vi">@dir</span> <span class="o">=</span> <span class="n">dir</span>
-      <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'index.html'</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">'_layouts'</span><span class="p">),</span> <span class="s1">'tag_index.html'</span><span class="p">)</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">tag</span>
-      <span class="n">tag_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'tag_title_prefix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'Tagged: '</span>
-      <span class="n">tag_title_suffix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'tag_title_suffix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'&amp;#8211;'</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">tag_title_prefix</span><span class="si">}#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">"</span>
-      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'description'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"An archive of posts tagged </span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">."</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre>
-</div>
-
-<p><a href="/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html">Link link</a></p>
-
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
@@ -227,11 +195,12 @@ Reading time ~1 minute
   <div class="entry-content">
     <p>Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:</p>
 
-<p>```
+<div class="highlighter-rouge"><pre class="highlight"><code>
 - Unable to modify table. 
-Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.</p>
+Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.
 
-<p>```</p>
+</code></pre>
+</div>
 
 <p><strong>Đây là cách sửa lỗi này</strong></p>
 
@@ -287,10 +256,11 @@ Reading time ~1 minute
   <li>Trong màn hình <code class="highlighter-rouge">Administrator: Command Prompt</code>, gõ <code class="highlighter-rouge">powershell</code> và nhấn <kbd>Enter</kbd></li>
 </ul>
 
-<p>2.- Copy và Paste đoạn sau vào màn hình <code class="highlighter-rouge">Administrator: Windows PowerShell window</code> và nhấn <kbd>Enter</kbd>:
-<code class="highlighter-rouge">
-Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-</code></p>
+<p>2.- Copy và Paste đoạn sau vào màn hình <code class="highlighter-rouge">Administrator: Windows PowerShell window</code> và nhấn <kbd>Enter</kbd>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Get-AppXPackage -AllUsers | <span class="k">Foreach</span> <span class="o">{</span>Add-AppxPackage -DisableDevelopmentMode -Register <span class="s2">"</span><span class="k">$(</span><span class="nv">$_</span>.InstallLocation<span class="k">)</span><span class="se">\A</span><span class="s2">ppXManifest.xml"</span><span class="o">}</span>
+</code></pre>
+</div>
 
 <p>3.- Bỏ qua một số thông báo lỗi màu đỏ và đợi Power Shell thực hiện xong đoạn lệnh trên.</p>
 

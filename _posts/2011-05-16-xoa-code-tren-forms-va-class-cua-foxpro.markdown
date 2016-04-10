@@ -19,21 +19,21 @@ Khi run form hay class, VFP sẽ thực hiện từ cái đã compile chứ khô
 
 Sau đây là ví dụ dùng để xóa code của form cactpc1
 
-```
-	USE ../Forms/Cactpc1.scx
+~~~
+USE ../Forms/Cactpc1.scx
 
-	REPLACE ALL Methods WITH []
+REPLACE ALL Methods WITH []
 
-	USE IN cactpc1
-```
+USE IN cactpc1
+~~~
 
 Hay xóa code trong class lib Startup
 
-```
-    USE ../Libs/Startup.vcx
+~~~
+USE ../Libs/Startup.vcx
 
-    REPLACE ALL Methods
+REPLACE ALL Methods
 
-    WITH [] USE IN startup
-```
+WITH [] USE IN startup
+~~~
 

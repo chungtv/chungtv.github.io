@@ -27,9 +27,10 @@ Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không 
 - Trong màn hình `Administrator: Command Prompt`, gõ `powershell` và nhấn <kbd>Enter</kbd>
 
 2.- Copy và Paste đoạn sau vào màn hình `Administrator: Windows PowerShell window` và nhấn <kbd>Enter</kbd>:
-```
+
+~~~ posh
 Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-```
+~~~
 
 3.- Bỏ qua một số thông báo lỗi màu đỏ và đợi Power Shell thực hiện xong đoạn lệnh trên.
 
