@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Chung Trịnh&#39;s blog</title>
-    <description>Personal website of Chung Trinh.</description>
-    <link>http://chungtrinh.com/</link>
-    <atom:link href="http://chungtrinh.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Apr 2016 13:27:50 +0700</pubDate>
-    <lastBuildDate>Sun, 10 Apr 2016 13:27:50 +0700</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
-    
-      <item>
-        <title>Thay đổi đường dẫn Local trong Team Foundation Server</title>
-        <description>&lt;p&gt;Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn &lt;code class=&quot;highlighter-rouge&quot;&gt;Local path&lt;/code&gt; đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào &lt;code class=&quot;highlighter-rouge&quot;&gt;File / Source Control / Workspaces&lt;/code&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Chung Trịnh's Blog</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://chungtrinh.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://chungtrinh.com" />
+<updated>2016-04-10T13:57:38+07:00</updated>
+<id>http://chungtrinh.com/</id>
+<author>
+  <name>Chung Trịnh</name>
+  <uri>http://chungtrinh.com/</uri>
+  <email>aschungtv@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Thay đổi đường dẫn Local trong Team Foundation Server]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html" />
+  <id>http://chungtrinh.com/tfs/2015/10/23/thay-đổi-đường-dẫn-local-trong-team-foundation-server</id>
+  <published>2015-10-23T15:57:17+07:00</published>
+  <updated>2015-10-23T15:57:17+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn &lt;code class=&quot;highlighter-rouge&quot;&gt;Local path&lt;/code&gt; đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào &lt;code class=&quot;highlighter-rouge&quot;&gt;File / Source Control / Workspaces&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2015/10/tfs_manage_workspaces.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -21,25 +35,56 @@
 
 &lt;p&gt;Trên màn hình này, bạn thay đổi đường dẫn mới tại cột &lt;strong&gt;Local Folder&lt;/strong&gt;&lt;/p&gt;
 
-</description>
-        <pubDate>Fri, 23 Oct 2015 15:57:17 +0700</pubDate>
-        <link>http://chungtrinh.com/tfs/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/tfs/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server/</guid>
-        
-        <category>TFS</category>
-        
-        <category>Source Control</category>
-        
-        <category>Visual Studio</category>
-        
-        
-        <category>TFS</category>
-        
-      </item>
-    
-      <item>
-        <title>Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</title>
-        <description>&lt;p&gt;Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;foo&#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;abc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;11&#39;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TagIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Page&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;index.html&#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;read_yaml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;_layouts&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;tag_index.html&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;tag&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;tag_title_prefix&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Tagged: &#39;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;tag_title_suffix&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&amp;amp;#8211;&#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;title&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;description&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;An archive of posts tagged &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Link link&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/tfs/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html&quot;&gt;Thay đổi đường dẫn Local trong Team Foundation Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 23, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html" />
+  <id>http://chungtrinh.com/ms%20sql%20server/2015/10/16/sửa-lỗi-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio</id>
+  <published>2015-10-16T05:00:32+07:00</published>
+  <updated>2015-10-16T05:00:32+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:&lt;/p&gt;
 
 &lt;p&gt;```
 - Unable to modify table. 
@@ -57,21 +102,25 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Chúc các bạn thành công&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Oct 2015 05:00:32 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/</guid>
-        
-        <category>MS SQL Server</category>
-        
-        
-        <category>MS SQL Server</category>
-        
-      </item>
-    
-      <item>
-        <title>Start menu, Cotana và Modern Apps không hoạt động trong windows 10</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/2015/08/windows_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html&quot;&gt;Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on October 16, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Start menu, Cotana và Modern Apps không hoạt động trong windows 10]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html" />
+  <id>http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10</id>
+  <published>2015-08-04T09:16:52+07:00</published>
+  <updated>2015-08-04T09:16:52+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;/images/2015/08/windows_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không hoạt động trong Windows 10. Sau đây, tôi sẽ hướng dẫn sửa lỗi Start menu, Cortana, Search Box và các ứng dụng Modern không hoạt động trong windows 10.&lt;/p&gt;
 
@@ -103,19 +152,25 @@ Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Re
 &lt;p&gt;4.- Kiểm tra sẽ thấy Start menu đã hoạt động trở lại.&lt;/p&gt;
 
 &lt;p&gt;Chúc bạn thành công&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Aug 2015 09:16:52 +0700</pubDate>
-        <link>http://chungtrinh.com/windows/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/windows/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/</guid>
-        
-        
-        <category>Windows</category>
-        
-      </item>
-    
-      <item>
-        <title>Sử dụng Fn key trong VMWare Fusion</title>
-        <description>&lt;p&gt;Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion.
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/windows/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html&quot;&gt;Start menu, Cotana và Modern Apps không hoạt động trong windows 10&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on August 04, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sử dụng Fn key trong VMWare Fusion]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html" />
+  <id>http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion</id>
+  <published>2015-07-14T05:52:17+07:00</published>
+  <updated>2015-07-14T05:52:17+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion.
 Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt; để thực hiện một số chức năng. Ví dụng &lt;kbd&gt;Fn+F12&lt;/kbd&gt; để hiển thị Dashboard.&lt;/p&gt;
 
 &lt;p&gt;Trong Windows, tôi muốn sử dụng chức năng của phím &lt;kbd&gt;F12&lt;/kbd&gt; hay các phím Funtions khác. Tôi làm như sau:&lt;/p&gt;
@@ -129,19 +184,25 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
 &lt;img src=&quot;/images/2015/07/macos-keyboard-mouse-preferences.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-        <pubDate>Tue, 14 Jul 2015 05:52:17 +0700</pubDate>
-        <link>http://chungtrinh.com/macos/su-dung-fn-key-trong-vmware-fusion/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/macos/su-dung-fn-key-trong-vmware-fusion/</guid>
-        
-        
-        <category>MacOS</category>
-        
-      </item>
-    
-      <item>
-        <title>Macbook keyboard</title>
-        <description>&lt;p&gt;Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế cho các phím đó.
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html&quot;&gt;Sử dụng Fn key trong VMWare Fusion&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Macbook keyboard]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html" />
+  <id>http://chungtrinh.com/macos/2015/07/12/macbook-keyboard</id>
+  <published>2015-07-12T14:53:50+07:00</published>
+  <updated>2015-07-12T14:53:50+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế cho các phím đó.
 &lt;img src=&quot;/images/2015/07/macbook-pro-keyboard.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -151,59 +212,80 @@ Macbook pro sử dụng các tổ hợp phím &lt;kbd&gt;Fn+Funtions&lt;/kbd&gt;
   &lt;li&gt;Phím &lt;kbd&gt;Page Down&lt;/kbd&gt; = &lt;kbd&gt;Fn&lt;/kbd&gt;+&lt;kbd&gt;↓&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-        <pubDate>Sun, 12 Jul 2015 14:53:50 +0700</pubDate>
-        <link>http://chungtrinh.com/macos/macbook-keyboard/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/macos/macbook-keyboard/</guid>
-        
-        
-        <category>MacOS</category>
-        
-      </item>
-    
-      <item>
-        <title>Sửa lỗi 9001: The log for database is not available trong MS SQL Server</title>
-        <description>&lt;p&gt;Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/macos/2015/07/12/macbook-keyboard.html&quot;&gt;Macbook keyboard&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 12, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sửa lỗi 9001: The log for database is not available trong MS SQL Server]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html" />
+  <id>http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server</id>
+  <published>2015-07-07T03:15:43+07:00</published>
+  <updated>2015-07-07T03:15:43+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Click phải vào Database, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks -&amp;gt; Take Offline&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Sau đó Click phải lại vào Database, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks -&amp;gt; Bring Online&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Click phải, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties&lt;/code&gt;. Trong màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;Database Properties&lt;/code&gt;, chọn &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;. Sau đó thiết lập thuộc tính &lt;code class=&quot;highlighter-rouge&quot;&gt;Auto Close&lt;/code&gt; về &lt;strong&gt;False&lt;/strong&gt; là xong.&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-        <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/</guid>
-        
-        <category>MS SQL Server</category>
-        
-        
-        <category>MS SQL Server</category>
-        
-      </item>
-    
-      <item>
-        <title>[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server</title>
-        <description>&lt;p&gt;Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-SELECT name, 
-       DATABASEPROPERTYEX(name, &#39;IsAutoClose&#39;)
-FROM   master.dbo.sysdatabases
-&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html&quot;&gt;Sửa lỗi 9001: The log for database is not available trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html" />
+  <id>http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2</id>
+  <published>2015-07-07T03:10:37+07:00</published>
+  <updated>2015-07-07T03:10:37+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này:&lt;/p&gt;
+
+&lt;p&gt;SELECT name, 
+       DATABASEPROPERTYEX(name, ‘IsAutoClose’)
+FROM   master.dbo.sysdatabases&lt;/p&gt;
+
+&lt;p&gt;```
+print(“hello, world”)&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
 
 &lt;p&gt;Tham khảo thêm tại đây &lt;a href=&quot;https://www.mssqltips.com/sqlservertip/1033/retrieving-sql-server-database-properties-with-databasepropertyex/&quot;&gt;mssqltips.com&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 07 Jul 2015 03:10:37 +0700</pubDate>
-        <link>http://chungtrinh.com/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Định dạng nội dung khi chat trong skype</title>
-        <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.skype.com&quot;&gt;Skype&lt;/a&gt; hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc.&lt;/em&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html&quot;&gt;[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Định dạng nội dung khi chat trong skype]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html" />
+  <id>http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype</id>
+  <published>2015-07-03T07:24:54+07:00</published>
+  <updated>2015-07-03T07:24:54+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.skype.com&quot;&gt;Skype&lt;/a&gt; hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Khi chat Skype, mặc định Skype chỉ hiển thị nội dung chat ở định dạng chữ thường. Đôi khi bạn cần nhấn mạnh nội dung bằng cách in đậm, in nghiêng hay format text trong nội dung chat. Thực ra, Skype có thể giúp bạn làm việc này khá dễ dàng, tuy nhiên mặc định thì nó bị ẩn đi. Trong bài viết này, tôi sẽ hướng dẫn các bạn thực hiện việc này.&lt;/p&gt;
 
@@ -233,17 +315,25 @@ FROM   master.dbo.sysdatabases
 
 &lt;p&gt;Thật là thú vị phải không nào, chúc các bạn vui vẻ!&lt;/p&gt;
 
-</description>
-        <pubDate>Fri, 03 Jul 2015 07:24:54 +0700</pubDate>
-        <link>http://chungtrinh.com/dinh-dang-noi-dung-khi-chat-trong-skype/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/dinh-dang-noi-dung-khi-chat-trong-skype/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hiển thị danh sách database và vị trí lưu trữ trong SQL Server</title>
-        <description>&lt;p&gt;Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html&quot;&gt;Định dạng nội dung khi chat trong skype&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Hiển thị danh sách database và vị trí lưu trữ trong SQL Server]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html" />
+  <id>http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server</id>
+  <published>2015-07-03T02:51:15+07:00</published>
+  <updated>2015-07-03T02:51:15+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. 
 Đây là Query sẽ trả về kết quả mong muốn.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
@@ -257,17 +347,25 @@ FROM
 INNER JOIN 
     sys.databases db ON db.database_id = mf.database_id
 &lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Jul 2015 02:51:15 +0700</pubDate>
-        <link>http://chungtrinh.com/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
-        <description>&lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code class=&quot;highlighter-rouge&quot;&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html&quot;&gt;Hiển thị danh sách database và vị trí lưu trữ trong SQL Server&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 03, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[SQL Server - Ctrl + R không làm việc trong SSMS]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html" />
+  <id>http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms</id>
+  <published>2015-05-21T11:10:52+07:00</published>
+  <updated>2015-05-21T11:10:52+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Hôm nay, không biết vì lý do gì mà tổ hợp phím &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; không làm việc trên SQL Server Management Studio nữa. &lt;code class=&quot;highlighter-rouge&quot;&gt;Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Trong SSMS, &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của SQL.&lt;/p&gt;
@@ -288,17 +386,439 @@ Nhấn thêm &lt;kbd&gt;Ctrl+R&lt;/kbd&gt; lần nữa thì thanh Status Bar nh�
 
 &lt;p&gt;Hoặc bạn có thể chọn Window.ShowResultsPane ở danh sách phía dưới và thiết lập phím tắt tại ô “Press shortcut keys:”.&lt;/p&gt;
 
-</description>
-        <pubDate>Thu, 21 May 2015 11:10:52 +0700</pubDate>
-        <link>http://chungtrinh.com/ms%20sql%20server/sql-server-ctrl-r-khong-lam-viec-trong-ssms/</link>
-        <guid isPermaLink="true">http://chungtrinh.com/ms%20sql%20server/sql-server-ctrl-r-khong-lam-viec-trong-ssms/</guid>
-        
-        <category>MS SQL Server</category>
-        
-        
-        <category>MS SQL Server</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html&quot;&gt;SQL Server - Ctrl + R không làm việc trong SSMS&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Mở nhiều tài khoản Skype trên cùng một máy tính]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html" />
+  <id>http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh</id>
+  <published>2015-05-21T07:32:19+07:00</published>
+  <updated>2015-05-21T07:32:19+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.
+Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều hơn một chương trình Skype khác và đăng nhập vào tài khoản khác, bạn làm như sau:
+# Đối với máy tính windows&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_142908.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chy-chng-trnh-skype-khc&quot;&gt;Chạy chương trình Skype khác&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vào Start &amp;gt; Run hoặc nhấn tổ hợp phím &lt;kbd&gt;Windows+R&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;Trong cửa sổ Run, bạn gõ vào: &lt;code class=&quot;highlighter-rouge&quot;&gt;c:\Program Files (x86)\Skype\Phone\Skype.exe /secondary&lt;/code&gt; &lt;strong&gt;(chú ý tham số /secondary)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2015/05/2015-05-21_141718.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Nhấn &lt;kbd&gt;OK&lt;/kbd&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Một cửa sổ Skype mới sẽ hiện ra và bạn có thể đăng nhập bằng tài khoản mới rối.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-shortcut-trn-mn-hnh-desktop&quot;&gt;Tạo shortcut trên màn hình desktop&lt;/h3&gt;
+&lt;p&gt;Mỗi lần muốn chạy chương trình Skype khác, bạn lại phải làm lại thao tác rườm rà như trên. Hãy tạo shortcut trên màn hình desktop của bạn để lần sau truy cập nhanh hơn, làm như sau:
+1. Click chuột phải lên trỗ trống trên màn hình desktop và chọn New &amp;gt; Shortcut.
+2. Trên màn hình &lt;code class=&quot;highlighter-rouge&quot;&gt;[Create Shortcut]&lt;/code&gt;, tải ô &lt;code class=&quot;highlighter-rouge&quot;&gt;[Type the location of the item]&lt;/code&gt;, bạn copy nguyên đoạn sau và paste vào: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;C:\Program Files (x86)\Skype\Phone\Skype.exe&quot; /secondary&lt;/code&gt;. Sau đó nhấn nút &lt;kbd&gt;Next&lt;/kbd&gt;
+3. Đặt tên cho shortcut mới, ví dụ &lt;code class=&quot;highlighter-rouge&quot;&gt;Skype 2&lt;/code&gt;. Sau đó nhấn &lt;kbd&gt;Finish&lt;/kbd&gt; là bạn đã hoàn thành.&lt;/p&gt;
+
+&lt;h1 id=&quot;i-vi-my-chy-macos&quot;&gt;Đối với máy chạy MACOS&lt;/h1&gt;
+&lt;p&gt;Mở terminal và gõ vào dòng lệnh sau:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+sudo /Applications/Skype.app/Contents/MacOS/Skype
+&lt;/code&gt;
+Sau đó nhập Password. Một chương trình Skype thứ 2 đã được chạy lên.&lt;/p&gt;
+
+&lt;p&gt;Chúc bạn thành công.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html&quot;&gt;Mở nhiều tài khoản Skype trên cùng một máy tính&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Lưu cấu hình IP Profile và thiết lập lại khi cần thiết]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html" />
+  <id>http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh</id>
+  <published>2015-04-24T02:23:16+07:00</published>
+  <updated>2015-04-24T02:23:16+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;Đôi khi, chúng ta cần phải thực hiện những công việc mang tính lặp đi lặp lại như việc thay đổi địa chỉ IP trên máy tính cá nhân khi kết nối mạng ở vài nơi. Việc thay đổi này lặp đi lặp lại hàng ngày.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sau khi tìm hiểu, tôi tìm được cách khá đơn giản để làm việc đó.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;lu-cu-hnh-ip-ra-file-text&quot;&gt;Lưu cấu hình IP ra file text&lt;/h5&gt;
+&lt;p&gt;Gõ lệnh sau:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+netsh –c interface dump &amp;gt; D:\\profileIp1.txt
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;thit-lp-li-cu-hnh-ip-t-file-text&quot;&gt;Thiết lập lại cấu hình IP từ file text&lt;/h5&gt;
+&lt;p&gt;Gõ lệnh sau:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+netsh –f D:\\profileIp1.txt 
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Để thuận tiện hơn (mổi lần thực hiện lại phải mở cửa sổ dòng lệnh ra gõ), bạn có thể tạo file bash (.bat) để thực hiện việc này.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html&quot;&gt;Lưu cấu hình IP Profile và thiết lập lại khi cần thiết&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html" />
+  <id>http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger</id>
+  <published>2015-04-24T01:47:26+07:00</published>
+  <updated>2015-04-24T01:47:26+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;Đôi khi, vì lý do gì đó mà triger của bảng trong SQL Server bạn cần phải kiểm tra xem trường nào đang được update trước khi thực thi các lệnh tiếp theo. &lt;a href=&quot;https://trinhvanchung.wordpress.com/2010/11/03/s%e1%bb%ad-d%e1%bb%a5ng-columns_updated-d%e1%bb%83-ki%e1%bb%83m-tra-tr%c6%b0%e1%bb%9dng-d%c6%b0%e1%bb%a3c-update-trong-trigger/&quot;&gt;Xem thêm bài viết này của tôi tại đây&lt;/a&gt;. Bài này được tôi viết lại từ bài đó.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Một phương pháp được tôi giới thiệu trong bài này là sử dụng &lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS_UPDATED()&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.dropbox.com/s/90ymmfk4t8l036g/04-mssql_columns_updated.jpg?dl=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;gii-thiu&quot;&gt;Giới thiệu&lt;/h4&gt;
+
+&lt;p&gt;Về &lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS_UPDATED()&lt;/code&gt; các bạn có thể xem chi tiết ở &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/ms186329.aspx&quot;&gt;site chính chủ&lt;/a&gt;. Ở đây, tôi chỉ giới thiệu qua những điểm cơ bản.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS_UPDATED()&lt;/code&gt; là một Build-in Functions của SQL Server trả về một mẫu giá trị dạng nhị phân (varbinary bit pattern) để xác định vị trí cột nào được insert hoặc update. &lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS_UPDATED()&lt;/code&gt; thường được sử dụng trong INSERT hoặc UPDATE Trigger để kiểm tra vị trí cột được update nhằm xác định có hay không thực thi một số hành động nào đó.&lt;/p&gt;
+
+&lt;p&gt;Để kiểm tra vị trí cột nào được thay đổi chúng ta sử dụng các phép toán trên bit (bitwise operators) và bit mặt nạ (bitmask) tương ứng cho vị trí của mỗi cột.&lt;/p&gt;
+
+&lt;h4 id=&quot;kim-tra-cc-ct-c-v-tr-8&quot;&gt;Kiểm tra các cột có vị trí &amp;lt;=8&lt;/h4&gt;
+&lt;p&gt;Kiểm tra cột tại vị trí n (n&amp;lt;=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+COLUMNS_UPDATED() &amp;amp; Power(2,(n-1))
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Nếu biểu thức trả về &amp;gt; 0 thì cột n là cột bị thay đổi, ngược lại cột n không thay đổi.&lt;/p&gt;
+
+&lt;p&gt;Trong trường hợp kiểm tra 2 hoặc nhiều cột có thay đổi hay không thì làm tương tự. Ví dụ kiểm tra cột 3 cột thứ i,j,k có thay đổi hay không (i,j,k&amp;lt;=8) thì sử dụng biểu thức sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+COLUMNS_UPDATED() &amp;amp; (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chú ý: Để đỡ phải tính toán khi thực thi thì mình nên tính ra giá trị nguyên của các hàm &lt;code class=&quot;highlighter-rouge&quot;&gt;Power()&lt;/code&gt; ở ngoài luôn rồi dùng kết quả đó để kiểm tra. Ví dụ thay vì viết như cách trên, mình viết như sau:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+COLUMNS_UPDATED() &amp;amp; kq 
+-- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;kim-tra-cc-ct-c-v-tr-8-1&quot;&gt;Kiểm tra các cột có vị trí &amp;gt;8&lt;/h4&gt;
+
+&lt;p&gt;Sử dụng hàm &lt;code class=&quot;highlighter-rouge&quot;&gt;SUBSTRING()&lt;/code&gt; cho giá trị trả về của &lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS_UPDATED()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ví dụ cần kiểm tra có update cột 10 hay không, sử dụng biểu thức sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+SUBSTRING(COLUMNS_UPDATED(),2,1) &amp;amp; Power(2,(10-8-1))
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Còn nếu cột cần kiểm tra &amp;gt; 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+SUBSTRING(COLUMNS_UPDATED(),3,1) &amp;amp; Power(2,(19-16-1))
+&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html&quot;&gt;Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html" />
+  <id>http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi</id>
+  <published>2015-04-16T01:05:00+07:00</published>
+  <updated>2015-04-16T01:05:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;Ngôi nhà nằm trong con ngõ nhỏ điển hình cho kiểu nhà ống Hà Nội - những căn nhà để đưa ánh sáng vào là cả một tham vọng.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f14.img.vnecdn.net/2014/07/24/a1a-1406191904_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ngôi nhà 4 tầng có diện tích mặt bằng 3,8 x 10,7 m, tổng diện tích sử dụng khoảng 120 m2. Chi phí xây dựng là 800 triệu đồng, bao gồm cả nội thất. Nằm trong con ngõ hẹp, chỉ cách nhà đối diện 2 m, ngôi nhà có không gian hướng nội nhưng vẫn có ánh sáng tự nhiên cho các phòng.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f14.img.vnecdn.net/2014/07/24/IMG-9798-1406190888_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Không chỉ tìm kiếm một giải pháp ánh sáng và trao đổi khí cho căn nhà, chủ nhà còn muốn dành cho cậu con trai mới sinh trải nghiệm tự nhiên ngay trong ngôi nhà phố.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f16.img.vnecdn.net/2014/07/24/IMG-9783-1406190888_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tầng 1 được sử dụng làm chỗ để xe, không gian ăn và bếp. Gạch gốm Bát Tràng được sử dụng để trang trí bếp và vách ngăn phòng tắm. Những viên gạch được làm thủ công tạo điểm nhấn đắt giá.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f14.img.vnecdn.net/2014/07/24/IMG-9665-1406190887_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;KTS Lê Tấn Kỳ, người thiết kế căn nhà, đưa ra giải pháp cắt lại 5 m2 mỗi tầng để làm giếng trời, đủ không gian và ánh sáng để trồng một cây khế và biến nó trở thành trung tâm của căn nhà, khiến ngôi nhà tràn đầy sức sống.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f16.img.vnecdn.net/2014/07/24/IMG-9672-1406190887_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ngôi nhà chan hòa ánh sáng từ 7h đến 17h. Với mái kính được điều khiển tự động, chủ nhà có thể điều tiết mưa rơi tùy thích. Bàn ăn đặt ngay cạnh gốc cây, tạo cảm giác mỗi bữa ăn như một buổi picnic ngoài trời.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/24/IMG-9875-1406190889_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nơi thư giãn ở giếng trời, dưới gốc cây khế.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/24/IMG-9719-1406190888_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Các phòng được phân chia rõ chức năng giúp tận dụng tốt nhất không gian. Những mặt tiếp xúc với giếng trời được làm tường kính lấy sáng và tạo cảm giác không gian mở, giảm diện tích tường ngăn trong nhà.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/28/phong-kach-1406542114_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tầng 2 là phòng khách, không gian thư giãn và phòng trẻ con. Từ phòng khách, bạn có thể nhìn thấy màu xanh của của cây khế.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f16.img.vnecdn.net/2014/07/24/IMG-9824-1406190889_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dù chiều cao mỗi tầng chỉ là 2,7 m nhưng tường và trần sơn trắng khiến ngôi nhà cao và rộng rãi hơn. Giảm chiều cao so với quan niệm “nhà cao cửa rộng” thông thường giúp tiết kiệm đáng kể chi phí vật liệu xây dựng và điện vận hành.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/28/phong-cua-be-1406541859_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nhờ có giếng trời và cửa kính, từ phòng khách, bố mẹ vẫn có thể dễ dàng quan sát cậu con trai nhỏ đang chơi trong phòng.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f14.img.vnecdn.net/2014/07/24/IMG-9833-1406190889_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Cầu thang lên thẳng, chỉ có 15 bậc mỗi tầng, không mất nhiều diện tích và giúp cảm giác leo tầng nhẹ nhàng. Tất cả bề mặt tường, trần không trát mà đều tôn trọng hình thể của bề mặt vật liệu: gạch, bê tông, cót ép tạo nên họa tiết trang trí tự nhiên mà độc đáo.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/24/IMG-9743-1406190888_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tầng 3 là nơi làm việc và đặt phòng ngủ lớn. Tầng 4 là phòng thờ, khu giặt, phơi và góc trồng giàn cây làm nơi hóng gió.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f14.img.vnecdn.net/2014/07/28/phong-ngu-1406542446_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Phòng ngủ đơn giản của cặp vợ chồng trẻ.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s.f15.img.vnecdn.net/2014/07/28/TRANGIDEM-TANG3-1406542446_660x0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Trong khu vực rửa tay, trang điểm, hệ tủ được làm bằng gỗ thông ép công nghiệp, giá thành rẻ.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://doisong.vnexpress.net/photo/khong-gian-song/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi-3022144.html&quot;&gt;Theo VNExpress&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html&quot;&gt;Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 16, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Tôi đã  xây dựng lại blog với Ghost]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html" />
+  <id>http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost</id>
+  <published>2015-04-07T05:00:00+07:00</published>
+  <updated>2015-04-07T05:00:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Một thời gian dài tôi khá bận bịu với công việc và nhiều biến cố xảy ra cho gia đình.&lt;/p&gt;
+
+&lt;p&gt;Một thời gian dài 2 blog của tôi trên wordpress là &lt;a href=&quot;http://chuyengiadinh.wordpress.com&quot;&gt;Chuyện gia đình&lt;/a&gt; và &lt;a href=&quot;http://trinhvanchung.wordpress.com&quot;&gt;Trịnh Văn Chung&lt;/a&gt; dường như đã đi vào quên lãng.&lt;/p&gt;
+
+&lt;p&gt;Qua quá trình đọc và tìm hiểu về các kỹ thuật, ngôn ngữ lập trình cũng như xu hướng trong thời gian sắp tới. Tôi biết được &lt;a href=&quot;https://nodejs.org/&quot;&gt;nodejs&lt;/a&gt; - một trong những xu hướng đã và sẽ tiếp tục rất phát triển trong thời gian sắp tới.&lt;/p&gt;
+
+&lt;p&gt;Từ nodejs, tôi biết đến &lt;a href=&quot;http://ghost.org/&quot;&gt;Ghost&lt;/a&gt; một cách khá tình cờ khi tìm hiểu về các nền tảng mã mở để xây dựng web với nodejs.&lt;/p&gt;
+
+&lt;p&gt;Rồi tôi thử &lt;a href=&quot;https://ghost.org/download/&quot;&gt;download&lt;/a&gt; về cài đặt, rồi thử nghiệm. Tôi đã hoàn toàn bị cám dỗ bởi vẻ trong trắng, tinh khôi, vô cùng đơn giản của Ghost. Tôi càng bị cám dỗ hơn bởi trình soạn thảo &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;, bởi tốc độ xử lý và truy cập tuyệt vời của Ghost. (Về Ghost, Markdown, tôi sẽ có &lt;a href=&quot;http://localhost:2368/tag/ghost-tag/&quot;&gt;các bài giới thiệu sâu hơn&lt;/a&gt; tại blog này.&lt;/p&gt;
+
+&lt;p&gt;Tôi quyết định xây dựng blog &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh - chungtrinh.com&lt;/a&gt; với Ghost (Domain này tôi mới mua luôn). Mua domain, VPS, cài đặt Ghost, tìm kiếm Themes phù hợp, thời gian diển ra chóng vánh. Tôi đã tin vào cái cảm đầu tiên với Ghost. Và chỉ trong thời gian rất ngắn, blog này đã được dựng lên.&lt;/p&gt;
+
+&lt;p&gt;Tôi cũng không quên chuyển toàn bộ các bài viết về bản thân, gia đình, quan điểm sống … (nói chung là trừ các bài chia sẽ về công nghệ liên quan đến công việc) từ 2 blog cũ sang đây. Đọc lại các bài viết cũ mắc cười thật, nhưng vẫn chuyển sang đây, coi như là kỷ niệm.&lt;/p&gt;
+
+&lt;p&gt;Rất vui được bạn ghé thăm nhà mới của tôi, mong nhận được ý kiến chia sẽ của các bạn.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html&quot;&gt;Tôi đã  xây dựng lại blog với Ghost&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 07, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Ta 30]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2014/07/09/toi-30.html" />
+  <id>http://chungtrinh.com/2014/07/09/toi-30</id>
+  <published>2014-07-09T08:52:00+07:00</published>
+  <updated>2014-07-09T08:52:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Ngày ta 30, thế giới chào đón bằng cơn địa chấn mang tên FIFA Worldcup. Người Đức vỡ òa, người Brazil nức nở (giá hôm nay tỷ số 9-7 thì sẽ có ý nghĩa hơn nhiều).&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;30 tuổi, quãng thời gian tuổi trẻ, của tuổi thanh xuân căng tràn sức sống, tràn đầy nhiệt huyết. Đã cống hiến, đã hết mình cho tuổi trẻ. Đã từng có quảng thời gian ta sống vì người vì đời hơn vì mình, nhưng có lẽ bấy nhiêu đâu đã là đủ. Để rồi nhiều lúc ngẫm lại thấy rằng cuộc đời thật quá bất công khi ở cái quãng thời gian đẹp nhất của mỗi con người đó, ta mãi bị cuốn theo vòng xoáy với đủ thứ lo toan, của cơm áo gạo tiền.&lt;/p&gt;
+
+&lt;p&gt;30 tuổi, ta không còn liều lĩnh, không còn mơ ước viễn vông như lúc còn trai trẻ, lúc chưa bước chân vào đời, lúc còn nhìn đời bằng cặp mắt của kẻ nhìn bầu trời qua miệng giếng.  Cuộc sống nhiều vấp ngã cũng cho ta nhiều bài học cũng khiến ta e dè hơn khi nhìn đời, nhìn người, nhìn vào những mối quan hệ giữa người với người. Ở tuổi này, ta bắt đầu sợ những bước đi trong cuộc sống, sợ mắc sai lần, ta sợ mất đi những gì mình đang có.&lt;/p&gt;
+
+&lt;p&gt;30 tuổi, 1 vợ, 2 con, 1 gia đình hạnh phúc, một công việc ổn định. Bấy nhiêu có lẽ ổn cho ta, đàn ông 30. Ta hạnh phúc  khi nghĩ về những gì mình đang có, ta hạnh phúc mỗi khi được trở về với gia đình nhỏ, hạnh phúc khi được lo toan, chăm sóc cho những người mình thương yêu. Ta trẻ hơn mỗi khi vui đùa cùng con, tự thấy mình thật trẻ mỗi khi ba cha con cười sảng khoái khi cùng xem 1 bộ phim hoạt hình. Ta trân trọng những gì mình đang có.&lt;/p&gt;
+
+&lt;p&gt;Nửa đời người trôi vèo qua như gió thoảng. 30 tuổi cũng chưa hẳn đã già nhưng với ngần ấy thời gian dạo chơi trong cuộc đời này, cũng đủ trải nghiệm để ta thấy thấm thía sự ngắn ngủi trong cuộc đời của con người.  30 tuổi, ta đã phải trải qua những mất mát lớn nhất của cuộc đời. Năm 29, bà nội, rồi đến Bố, những người thân yêu nhất của ta lần lượt ra đi. Để lại cho ta và gia đình những nỗi đau tưởng chừng không thể lành. Nhưng rồi ta cũng phải đứng lên, không cho phép mình suy sụp, đó cũng là điều mà bố đã dạy ta, ta học được từ người ý chí vươn lên, vượt trên mọi khó khăn. Lúc vào đời, bố còn khó khăn, gian khổ hơn ta rất nhiều. Có lẽ ở nơi rất xa đó, bố cũng sẽ rất buồn nếu nhìn thấy ta gục ngã.&lt;/p&gt;
+
+&lt;p&gt;30 tuổi, ta biết quý trọng thời gian hơn, ta hiểu rằng ta chẳng còn nhiều thời gian để tận hưởng cuộc sống cùng gia đình, bạn bè, vợ con ta. Ta nhận ra ta vẫn còn nhiều dự định chưa làm được, còn nhiều lo toan cho cuộc sống. Nhưng với ta, có lẽ chậm rãi tận hưởng, chậm rãi bước đi rồi mọi chuyện sẽ ổn.&lt;/p&gt;
+
+&lt;p&gt;Hôm nay, ta 30.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2014/07/09/toi-30.html&quot;&gt;Ta 30&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on July 09, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[#BI#]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/04/03/bi.html" />
+  <id>http://chungtrinh.com/2013/04/03/bi</id>
+  <published>2013-04-03T05:00:00+07:00</published>
+  <updated>2013-04-03T05:00:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;Hôm nay ba mẹ chở con với em bo đi ăn gà rán nhé.
+– Ăn gà rán trong siêu thị hả Ba.&lt;/li&gt;
+  &lt;li&gt;Không, mình đi ăn ở chỗ khác (thường thì sẽ vào Coop Phan Văn Trị nhưng sợ Bi và Bo ham đòi vào chơi game nên hôm nay trốn chỗ khác :D)
+– Vậy ăn gà rán ở đâu ba?&lt;/li&gt;
+  &lt;li&gt;Mình ăn chỗ gần ngã năm Chuồng Chó đó (hixhix, biết là Bi không biết chỗ đó nhưng cứ trả lời đại)
+– Chỗ đó người ta có nuôi chó không ba. (hixhix, sao nó biết nhỉ :D)&lt;/li&gt;
+  &lt;li&gt;Có, nhưng người ta nuôi từ lâu rồi, giờ này hết nuôi rồi.
+– Từ hồi con còn nhỏ hả ba.&lt;/li&gt;
+  &lt;li&gt;Không, từ lúc chưa đẻ ra ra con nữa, ba cũng chưa đẻ luôn, lâu lắm rồi.
+– Vậy sao ba biết???? :( hixhix, pó hand :D&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/04/03/bi.html&quot;&gt;#BI#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[#Bi#]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/04/03/bi-2.html" />
+  <id>http://chungtrinh.com/2013/04/03/bi-2</id>
+  <published>2013-04-03T05:00:00+07:00</published>
+  <updated>2013-04-03T05:00:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;… …&lt;/p&gt;
+
+&lt;p&gt;Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ba ơi, ở lớp bạn nào chọc con là con la bạn đó. Ở nhà em Bo mà chọc con con cũng la em Bo luôn.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ba: &lt;code class=&quot;highlighter-rouge&quot;&gt;Sao lại la, con chỉ cần nói nhẹ là các bạn và em nghe thôi.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Sao lại nói nhẹ?&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ba: &lt;code class=&quot;highlighter-rouge&quot;&gt;Thì mình nói nhẹ, em Bo sẽ nghe. Mình mà la lớn là em càng không nghe đó. Với lại la lớn là không tốt, cái gì cũng phải nhẹ nhàng thôi.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Vậy ba mẹ có la con ko? (hixhix, bị gài. Đến đây thì không biết phải trả lời sao vì thường ngày cũng hay la Bi vì không nghe lời)&lt;/code&gt;
+Ba: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ba cũng sẽ nói nhỏ nhẹ, nhưng nếu ba nói nhỏ nhẹ con có nghe lời ba ko?&lt;/code&gt;
+Bi: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dạ có.&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/04/03/bi-2.html&quot;&gt;#Bi#&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on April 03, 2013.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html" />
+  <id>http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc</id>
+  <published>2013-01-04T08:52:00+07:00</published>
+  <updated>2013-01-04T08:52:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Tranh thủ mấy ngày nghỉ cuối năm, mình đọc xong cuốn Bên Thắng Cuộc – Phần 1: Giải phóng của nhà báo Huy Đức.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://trinhvanchung.files.wordpress.com/2013/01/benthangcuoc_cover_thumb.jpg?w=404&amp;amp;h=270&quot; alt=&quot;Bên thắng cuộc&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Là người trẻ, thuộc thế hệ 8x, tuổi thơ gắn với phần cuối giai đoạn mà BTC đề cập, lại sinh ra và lớn lên tại Miền Bắc nên cảm nhận về những gì đã diễn ra trong thời kỳ đó không được rõ nét lắm. Không đủ kiến thức về lý thuyết cũng như thực tế để đưa ra nhận xét Đúng/Sai về những gì được viết trong BTC. Những gì viết trong bài này hoàn toàn là những cảm nhận cá nhân trong quá trình đọc BTC.&lt;/p&gt;
+
+&lt;p&gt;BTC mang đến cho mình nhiều cảm xúc khi đọc. Hừng hực khi thế khi đọc đoạn đầu, giai đoạn thực hiện chiến dịch HCM lịch sử; Có phần thất vọng khi đọc về những gì diễn ra trong giai đoạn sau 75 tại Sài Gòn; Đau đớn, căm phẫn đến chảy nước mắt đối với Pol Pot, Trung Quốc khi theo dõi 2 cuộc chiến tranh: Chiến tranh biên giới Tây Nam và Chiến tranh biên giới phía Bắc; Vui, thỏa mãn dõi theo những chính sách “xé rào” của cố Thủ tướng Võ Văn Kiệt; hồi hội dõi theo từng bước đi của lịch sử nước nhà …&lt;/p&gt;
+
+&lt;p&gt;Đọc BTC, mỗi người sẽ có mỗi cảm nhận khác nhau tùy theo quan điểm, hoàn cảnh lịch sửa của bản thân mỗi người, riêng mình thì sau khi đọc BTC, có một số điểm nhận ra như sau:&lt;/p&gt;
+
+&lt;p&gt;Điều đầu tiên mình cảm nhận được là lòng yêu nước, truyền thống đấu tranh bảo vệ tổ quốc, đánh đuổi giặc ngoại xâm của dân tộc ta từ bao đời nay thực sự đáng tự hào. BTC kể về 2 cuộc chiến tranh biên giới, về những trận đánh mà quân và dân ta chống lại giặc ngoại xâm. Về những mất mát, hy sinh nhưng không làm nao núng tinh thần của quân dân ta …&lt;/p&gt;
+
+&lt;p&gt;Ở trong cái hoàn cảnh mà Đảng áp dụng các chính sách kinh tế XHCN cho cả nước, may mắn thay vẫn còn những nhà lãnh đạo có tầm, có tâm với nhân dân, với đất nước. Đó là những chính sách xé rào của cố thủ tướng Võ Văn Kiệt đã kéo theo nhiều thay đổi trong chính sách của Đảng, đó là cái quyết tâm đổi mới của cố Tổng Bí thư Trường Chinh đã đưa nền kinh tế nước ta từ tập trung quan liêu bao cấp sang nền kinh tế thị trường …&lt;/p&gt;
+
+&lt;p&gt;Suy cho cùng, thể chế chính trị nào cũng có ưu điểm, nhược điểm, cái tốt, cái xấu. Vấn để này còn rất nhiều tranh cãi của rất nhiều độc giả sau khi đọc BTC, bạn có thể google với từ khóa “Bên thắng cuộc” sẽ ra rất nhiều. Quan điểm của mình là tìm ra những cái hay, cái tốt của sự việc mà vui, mà sướng. Mình cũng chẳng đủ trình độ để đi sâu vào phân tích cũng như đánh giá về các vấn đề đó. Cứ coi như đây là một nguồn tư liệu lịch sử đáng tham khảo.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html&quot;&gt;Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 04, 2013.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Mẹ đau bao tử]]></title>
+ <link rel="alternate" type="text/html" href="http://chungtrinh.com/2013/01/03/me-dau-bao-tu.html" />
+  <id>http://chungtrinh.com/2013/01/03/me-dau-bao-tu</id>
+  <published>2013-01-03T05:00:00+07:00</published>
+  <updated>2013-01-03T05:00:00+07:00</updated>
+  <author>
+    <name>Chung Trịnh</name>
+    <uri>http://chungtrinh.com</uri>
+    <email>aschungtv@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Hôm nay mẹ bị đau bao tử, đi làm về mệt mẹ nằm nghỉ. Bi thấy vậy hỏi mẹ, mẹ bảo mẹ bị đau bao tử.&lt;/p&gt;
+
+&lt;p&gt;Đế giờ ăn cơm, ba mẹ ăn cơm, Bi ngồi xem phim hoạt hình. Mẹ cũng vừa ăn vừa coi. Bi thấy vậy liền cảnh cáo:&lt;/p&gt;
+
+&lt;p&gt;– Mẹ bị đau bao tử, mẹ ăn cơm đi, đừng coi tivi. Mẹ ăn xong rồi hãy coi, vừa ăn vừa coi đai bao tử đó :D&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://chungtrinh.com/2013/01/03/me-dau-bao-tu.html&quot;&gt;Mẹ đau bao tử&lt;/a&gt; was originally published by Chung Trịnh at &lt;a href=&quot;http://chungtrinh.com&quot;&gt;Chung Trịnh's Blog&lt;/a&gt; on January 03, 2013.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>

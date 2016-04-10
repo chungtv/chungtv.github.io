@@ -1,809 +1,460 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Chung Trịnh's Blog</title>
+<meta name="description" content="Describe this nonsense.">
+<meta name="keywords" content="Windows, MacOSX, C#, VB.NET, MS SQL Server, Blogging">
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://chungtrinh.com/images/Blog-Cover-31.jpg">
 
-  <title>Chung Trịnh's blog</title>
-  <meta name="description" content="Personal website of Chung Trinh."> 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://chungtrinh.com/page5/">
-  <link rel="alternate" type="application/rss+xml" title="Chung Trịnh's blog" href="http://chungtrinh.com/feed.xml" />
+<meta name="twitter:title" content="Chung Trịnh's Blog">
+<meta name="twitter:description" content="Describe this nonsense.">
+<meta name="twitter:creator" content="@trinhvanchung">
 
-  
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chung Trịnh's Blog">
+<meta property="og:description" content="Describe this nonsense.">
+<meta property="og:url" content="http://chungtrinh.com/page5/">
+<meta property="og:site_name" content="Chung Trịnh's Blog">
 
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/565950dcd6412f5177b912b3/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
+
+
+
+<link rel="canonical" href="http://chungtrinh.com/page5/">
+<link href="http://chungtrinh.com/feed.xml" type="application/atom+xml" rel="alternate" title="Chung Trịnh's Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://chungtrinh.com/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://chungtrinh.com/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://chungtrinh.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://chungtrinh.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://chungtrinh.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://chungtrinh.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://chungtrinh.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://chungtrinh.com/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
 </head>
 
+<body id="post-index" class="feature">
 
-  <body>
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://chungtrinh.com/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://chungtrinh.com/images/avatar.jpg" alt="Chung Trịnh photo" class="author-photo">
+					<h4>Chung Trịnh</h4>
+					<p>Business software Developer and Bloger.</p>
+				</li>
+				<li><a href="http://chungtrinh.com/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:aschungtv@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/trinhvanchung"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://chungtrinh.com/posts/">All Posts</a></li>
+				<li><a href="http://chungtrinh.com/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="http://chungtrinh.com/categories/#Work" >Works</a></li>
+	  
+	    
+	    <li><a href="http://chungtrinh.com/categories/#Life" >Life</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
 
-    <header class="site-header">
 
-  <div class="wrapper">
+<div class="entry-header">
+  
+  
+    <div class="entry-image">
+      <img src="http://chungtrinh.com/images/Blog-Cover-31.jpg" alt="">
+    </div><!-- /.entry-image -->
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>Chung Trịnh's Blog</h1>
+      <h2></h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
 
-    <a class="site-title" href="/">Chung Trịnh's blog</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
+<div id="main" role="main">
+  
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2013-01-03T05:00:00+07:00"><a href="http://chungtrinh.com/2013/01/03/ban-gai-cua-bo-2.html">January 03, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
         
-          
-          <a class="page-link" href="/about/">About</a>
-          
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/2013/01/03/ban-gai-cua-bo-2.html" rel="bookmark" title="Bạn gái của Bo" itemprop="url">Bạn gái của Bo</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Tối hôm qua, về nhà Bo nói với mẹ:</p>
+
+<p>– Bo giận Quỳnh Anh rồi, bo không thèm chơi với QA nữa đâu.</p>
+
+<p>Mẹ hỏi: Sao vậy con?</p>
+
+<p>– QA kỳ quá à, Bo giận QA rồi.</p>
+
+<p>Chiều hôm nay, ra trường đón Bo, mẹ hỏi cô giáo của Bo.</p>
+
+<p>Cô kể: Bo ngồi kế bên, vuốt tóc bạn QA, bạn QA đẩy ra nhưng Bo vẫn cứ vuốt. Xong bạn QA mét với cô giáo. Cô bảo Bo không vuốt tóc bạn, như thế là không tốt.</p>
+
+<p>Bo bảo: Bo đâu có vuốt tóc QA đâu, Bo chỉ sờ đầu QA thôi mà Smile</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2013-01-01T08:52:00+07:00"><a href="http://chungtrinh.com/2013/01/01/chao-nam-2012-don-2013.html">January 01, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
         
-          
+Reading time ~4 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/2013/01/01/chao-nam-2012-don-2013.html" rel="bookmark" title="Chào năm 2012, đón 2013" itemprop="url">Chào năm 2012, đón 2013</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p><em>Còn 1h nữa thời khắc chuyển giao giữa năm cũ 2012 và năm mới 2013 sẽ đến. Có nhiều suy nghĩ đọng lại trong thời khắc này.</em></p>
+
+<p>Cũng như mọi năm, năm 2012 cũng VUI, cũng BUỒN cũng ĐƯỢC và cũng MẤT. Nhưng cái VUI – BUỒN, ĐƯỢC – MẤT thì chả năm nào giống năm nào cả. 2012 BUỒN nhiều hơn VUI, MẤT nhiều hơn ĐƯỢC. Âu cũng là tình hình chung của thế giới (cứ tự an ủi mình thế đi cho nó thanh thản).</p>
+
+<h4 id="bun--mt">BUỒN – MẤT</h4>
+<p>######Trước hết là sự nghiệp và công việc.</p>
+
+<p>Chưa năm nào buồn và mất nhiều như năm 2012. Kế hoạch đặt ra từ đầu năm bị bỏ dỡ; anh em đồng nghiệp trong phòng khăn gói tìm đường ra đi; công việc trì trệ; cảm hứng trong công việc xuống dốc, càng về cuối năm càng xuống. Không còn máu lửa, không còn hừng hực như thời trai trẻ, nguyên nhân thì có lẽ nằm ở một vài điểm: Sức ỳ vì nhàm chán; tâm lý từ sự ra đi của đồng nghiệp; tâm lý từ ảnh hưởng của tình hình kinh tế; … mà theo mình, quan trọng nhất, nguyên nhân chính nhất vẫn là do tâm lý.</p>
+
+<p><em>Có lẽ sẽ cần dừng lại, xác định lại đam mê thực sự, mục tiêu thực sự và cần 1 hành động, cần F5 để Refresh tất cả. Hy vọng, đầu năm 2013 sẽ tìm ra cái cần tìm.</em></p>
+
+<h6 id="d-n-c-nhn-v-cc-k-hoch-pht-trin-bn-thn">Dự án cá nhân và các kế hoạch phát triển bản thân.</h6>
+
+<p>Một số dự án cá nhân đặt ra từ đầu năm không hoàn thành. Mặc dù đã có những tiến triển hơn so với thời gian trước. Trước đây mình thường nghĩ và tính nhiều hơn là bắt tay làm. Năm 2012 đã biết hành động thay vì tính toán quá nhiều, tất nhiên trong quá trình hành động cũng đã nếm mùi thất bại. Tuy nhiên, kế hoạch không hoàn thành thì vẫn do bản tính cá nhân. Cá nhân mình quá đam mê sự cầu toàn, đam mê sự hoàn hảo, cái gì làm gia thì phải đẹp, phải đầy đủ, phải hoàn hảo … (dù chỉ là đẹp, đầy đủ và hoàn hảo trong mắt cá nhân mình Cười hở miệng). Cũng chính vì sự cầu toàn đó mà thời gian bị kéo dài, vừa làm vừa nghiên cứu, nghiên cứu rồi làm rồi không OK lại đập đi làm lại … mất quá nhiều thời gian. Làm hoài mà không thấy kết quả đâu đâm ra chán, nản rồi lại tự trách bản thân …</p>
+
+<p>Riêng về vấn đề này thì đã nghe lời khuyên từ một vài người bạn, có lẽ mình sẽ cần phải thay đổi lại cách thực hiện các dự án này.</p>
+
+<p>Các kế hoạch phát triển bản thân cũng vì nhiều lý do mà trong năm và nhiều năm trước chưa bắt tay vào thực hiện được. Lý do quan trong nhất vẫn là <strong>CHIẾN THẮNG BẢN THÂN</strong>.</p>
+
+<h4 id="vui--c">VUI – ĐƯỢC</h4>
+<p>######Một vài sở thích cá nhất</p>
+
+<p>Cũng vì công việc, dự án cá nhân làm hoài không xong đâm ra chán nản, sợ mình buồn nên vợ duyệt cho mua một vài máy móc về đóng đồ gỗ trong nhà để đỡ buồn và tự sướng với bản thân nhằm xốc lại tinh thần.</p>
+
+<p>Cũng là ước mơ từ lâu, cuối năm nhân lúc cao hứng vợ duyệt cho mua 1 em Kindle Paper White để thỏa mãn cái sở thích đọc sách trên giường lúc nữa đêm của mình. Sướng.</p>
+
+<h6 id="s-hin-din-ca-facebook">Sự hiện diện của Facebook</h6>
+
+<p>Trong năm, sự hiện diện của Facebook trong đời sống của mình nhiều hơn. Ai bảo tham gia FB mất thời gian chứ mình thấy nó được nhiều đó chứ. Với khoảng 1h đọc feeds mỗi ngày, có thể biết được cuộc sống của bạn bè anh em mình, hỉ nộ ái ố ra sao, cuộc sống, gia đình của họ thế nào cũng rất đáng mà. Với ngần ấy thời gian liệu có thể gọi điện hỏi thăm hết? Cũng nhờ FB mà tìm lại được rất nhiều người bạn cũ đã từ mất liên lạc từ rất nhiều nằm =&gt; Vui.</p>
+
+<h6 id="gia-nh-hnh-phc">GIA ĐÌNH HẠNH PHÚC</h6>
+
+<p>Niềm vui, cái được lớn nhất đối với mình vẫn là hạnh phúc gia đình. Tự an ủi bản thân, cũng may mình chưa thành công, cũng may mình chưa bị cuốn quá nhiều vào công việc và sự nghiệp nên vẫn còn nhiều thời gian để chơi với các con, để giành thời gian cho gia đình, để chờ vợ con đi chơi, đi thăm anh em họ hàng. Tất nhiên, gia đình cũng có lúc này lúc khác nhưng mình vui và thỏa mãn cho đến lúc này con cái vẫn mạnh khỏe, vợ cũng có bệnh nhưng cũng đã qua, bố mẹ ba má gia đình 2 bên vẫn còn mạnh khỏe, gia đình đoàn kết, nói chung là HẠNH PHÚC.</p>
+
+<p><em>Thôi thì năm cũ đã qua, không quan tâm chuyện cũ nữa, hướng đến năm mới 2013 với nhiều thay đổi tích cực hơn, nhằm đãm bảo cho cuộc sống bản thân và gia đình hạnh phúc hơn, sung sướng hơn.</em></p>
+
+<p><em>Qua năm mới, chúc tất cả mọi người Hạnh phúc, làm gì thì làm, tiền nhiều tiền ít không quan trọng, cứ <strong>HẠNH PHÚC</strong> là sướng rồi.</em></p>
+
+<p><em>TP. HCM, 01/01/2013</em></p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2012-11-08T05:00:00+07:00"><a href="http://chungtrinh.com/2012/11/08/hanh-phuc-2.html">November 08, 2012</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
         
-          
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/2012/11/08/hanh-phuc-2.html" rel="bookmark" title="Hạnh phúc" itemprop="url">Hạnh phúc</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Bi-Bo: Về đến nhà rồi!</p>
+
+<p>Mẹ: Nhà ai zợ?</p>
+
+<p>Bi: Nhà của bi.</p>
+
+<p>Bo: Không phải, nhà của Bo mà.</p>
+
+<p>Mẹ: Không phải, nhà của ba mẹ đó.</p>
+
+<p>Bi: Vậy nhà của Bi đâu?</p>
+
+<p>Mẹ: Mốt lớn giống ba mẹ thì Bi mua nhà của Bi.</p>
+
+<p>Bi: Không, Bi thích mua đồ chơi, không thích mua nhà đâu.</p>
+
+<p>Mẹ: Vậy bi mua đồ chơi với mua nhà luôn.</p>
+
+<p>Bi: Không, bi không thích mua nhà đâu.</p>
+
+<p>Mẹ: Sao vậy?</p>
+
+<p>Bi: Bi thích ở chung nhà với ba mẹ thôi.</p>
+
+<p>Mẹ: Sao vậy?</p>
+
+<p>Bi: Vì Bi yêu ba mẹ lắm. :)</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2012-11-05T05:00:00+07:00"><a href="http://chungtrinh.com/2012/11/05/tinh-anh-em.html">November 05, 2012</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
         
-          
+Reading time ~2 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/2012/11/05/tinh-anh-em.html" rel="bookmark" title="Tình anh em" itemprop="url">Tình anh em</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p><em>Ngày chủ nhật, ba phát hiện được rằng, mặc dù ở nhà các con dành đồ chơi của nhau, đánh nhau nhưng khi đi ra ngoài chơi, hai em em thật sự rất đoàn kết và thương yêu nhau. Thật vui vì điều đó.</em></p>
+
+<p><img src="https://chuyengiadinh.files.wordpress.com/2012/11/p10008681.jpg" alt="" /></p>
+
+<p>Sáng chủ nhật, ba mẹ chở hai con đi ăn sáng xong, ra quán cafe ba hay uống, gần đó có công viên nhỏ và khu vui chơi dành cho trẻ em, hai anh em đòi ra đó chơi, ba mẹ cho phép nhưng là hai anh em phải tự đi. Trước khi đi, mẹ dặn dò: “Anh hai nhớ dẫn em đi sát vào lề không có xe đó nhé”. Hai anh em dạ xong rồi anh hai nắm tay em dẫn đi (tất nhiên, ngồi từ xa ba mẹ vẫn quan sát được 2 con). Từ xa, ba thấy anh 2 nắm tay em đi sát vào lề, còn nhắc nhở em “Em bo nhớ đi sát vào lề nhé”. Hai anh em lon ton đi trên đoạn đường nhìn rất vui. Đến công viên, ba để ý thấy 2 anh em đi theo nhau như hình với bóng, đặc biệt không có chuyện bạn nào thích trò nào thì chơi trò đó. Anh hai đi cưỡi thú nhún thì em bo cũng chạy theo. Em bo thích ra chơi cầu trượt thì gọi anh hai đi theo. Hai anh em nhường nhịn nhau chơi rất đoàn kết chứ không như ở nhà tí nào.</p>
+
+<p>Buổi chiều, ba mẹ chờ hai anh em đi vào khu vui chơi thiếu nhi trong siêu thị (vụ này ba hứa từ hôm thứ 6 nên nhất quyết chủ nhật phải chở hai anh em đi). Đến nơi, ba mẹ mua vé xong đưa hai anh em vào và dặn dò “Hai anh em chơi nhớ bảo ban nhau, dặn anh hai chơi nhớ trông em nhé”. Xong rồi ba mẹ đi lòng vòng để các con tự chơi. Thỉnh thoảng ba quay lại để mắt tới các con thấy hai anh em vẫn chơi rất ngoan, vừa chơi lại còn vừa trò truyện rất tình cảm nữa. Một lát sau, ba mẹ quay lại lần nữa để bảo các con ra về thì nhìn quanh khu vực chơi không thấy hai anh em đâu. Tìm kỹ lại khu ghế chờ thì thấy anh hai đang ngồi khóc còn em bo thì mặt buồn hiu ngồi nhìn anh hai. Ba mẹ chạy lại hỏi thì biết được rằng trong lúc chơi, có một anh lớn hơn tới ôm anh hai không cho chạy nên anh hai khóc. Mặc dù em bo không bị ôm hay gì cả nhưng thấy anh hai khóc nên cũng không vui vẻ gì để chơi cả nên ra ghế ngồi cùng với anh hai và đợi ba mẹ tới đón.</p>
+
+<p>Rõ ràng ở nhà có ba mẹ hai anh em nhõng nhẽo, dành đồ chơi của nhau thậm chí đánh nhau, nhưng khi ra ngoài, không có sự can thiệp của ba mẹ thì thấy hai bạn rất ngoan và đoàn kết. Ba mẹ ước gì ở nhà 2 con cũng như thế thì đỡ mệt biết mấy :D</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2012-09-29T05:00:00+07:00"><a href="http://chungtrinh.com/2012/09/29/trung-thu-cua-ba-trung-thu-cua-con.html">September 29, 2012</a></time></span><span class="author vcard"><span class="fn"><a href="http://chungtrinh.com/about/" title="About Chung Trịnh">Chung Trịnh</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
         
-          
+Reading time ~3 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://chungtrinh.com/2012/09/29/trung-thu-cua-ba-trung-thu-cua-con.html" rel="bookmark" title="Trung thu của ba–Trung thu của con" itemprop="url">Trung thu của ba–Trung thu của con</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p><img src="https://chuyengiadinh.files.wordpress.com/2012/09/p1010200.jpg" alt="" /></p>
+
+<p>Con thân yêu, một mùa trung thu nữa lại về. Mùa trung thu này, con đã lớn hơn, đã biết đòi ba chở đi chơi trung thu, đi xem múa lân và rước đèn trung thu trong khu phố.</p>
+
+<p>Ký ức về trung thu của tuổi thơ của ba bỗng ùa về, ngây thơ và giản dị.</p>
+
+<p>Ngày đó quê nội của các con nghèo lắm, cái ăn còn thiếu thốn nói gì đến đèn hay bánh trung thu. Đứa trẻ nào có bố hay mẹ làm ở cơ quan thì may ra mới được chơi đèn ngôi sao. Đèn trung thu của lũ trẻ như ba lúc đó chỉ là những sâu hạt bưởi phôi khô mà ba đã phải cố gắng bảo quản suốt một mùa hè. Những hạt bưởi được phơi khô, xâu thành chuỗi dài và buộc vào 1 cái que. Đêm trung thu tới ba đốt lên, những hạt bưởi cháy tạo ra ánh sáng rất đẹp và những tiếng nổ lách tách rất vui tai. Có đứa còn dùng hộp xà phòng hay vỏ lon sửa ông thọ buộc vào cái que rồi cắm nến ở giữa và đốt lên nhập cùng với nhóm đèn hạt bưởi cùng nhau đi dọc đường làng, nhìn cũng lung linh lắm con ạ.</p>
+
+<p>Mâm cỗ trung thu tuổi thơ của ba cũng có bánh quy, có kẹo, có trái cây trồng được và dạt dào tình thương yêu của ông bà, cha mẹ và người lớn dành cho lũ trẻ trong làng.</p>
+
+<p>Các con được sống trong cái thời hiện đại hơn, cái thời mà trước trung thu cả tháng người ta đã bầy bán bánh trung thu, lồng đèn và đồ trước khắp mọi nơi. Bánh trung thu đa dạng, lồng đèn cũng đủ loại từ đèn ông sao, đèn cá chép đến cả những loại đèn bằng nhựa nhập từ Trung Quốc về. Màu sắc phong phú hơn, đẹp mắt vui tai hơn. Cũng như bao đứa trẻ khác, nhìn thấy mấy thứ đồ chơi đó là các con đã ham và đòi ba mẹ mua. Như ba mẹ đã không mua và hứa sẽ làm lồng đèn cho các con. Có thể lúc đó con cũng rất buồn, rất giận ba mẹ nhưng thực sự một phần ba mẹ lo cho sức khỏe của con phần khác ba không muốn con đòi gì được nấy.</p>
+
+<p>Trung thu này ba mẹ đã quyết tâm lồng đèn cho các con. Từ nhỏ đến giờ chưa bao giờ tự tay ba làm lồng đèn cả. Chiều thứ 7 đi làm về, ba chở mẹ đi mua đồ về làm lồng đèn, ba ngồi chuốt từng que tre, cố chuốt thật nhẵn để con chơi không bị đứt tay, mẹ tỉ mẩn cố gắng  ngồi dán làm sao để giấy bóng kiếng không bị nhăn. Cảm giác khi tự tay làm một cái gì đó cho con thật hạnh phúc. Đèn của ba mẹ làm cho con chắc chắn không đẹp, không sặc sỡ bằng những cái đèn bày bán ngoài đường nhưng ít nhất con sẽ không bị lem tay vì phẩm màu, không lo bị chất độc, và đặc biệt chắc chắn nó chứa đựng đầy tình yêu thương mà ba mẹ đã dành cho con, chứa đựng cả tuổi thơ của ba nhiều thiếu thốn trong đó.</p>
+
+<p>Nhìn 2 con vui vẻ nô đùa cùng chơi với lồng đèn, ba mẹ cảm thấy thật hạnh phúc. Ba hạnh phúc hơn khi con mang đèn lên trường và tự hào khoe với các bạn rằng đèn này do ba mẹ làm. Ba hỏi con đèn này ai mua cho con? Con tự hào nói đèn ba làm cho con đó. Còn vui hơn nữa khi ba hỏi đèn này có đẹp bằng cái đèn kia không? (ba chỉ cái đèn người ta bán ngoài đường). Con vô tư trả lời: dạ đẹp hơn. Có lẽ cái đẹp của con là như thế. Dù biết chắc chắn không đẹp bằng như nghe như thế ba cũng đã rất vui :)</p>
+
+<p>Có một điều ba rất buồn và sợ trung thu của con không trọn vẹn như trung thu của ba. Con sống ở đô thị, đèn đường sáng hơn đèn trời, lại gặp phải mùa mưa nên cơ hội ngắm trăng và tận hưởng cảm giác yên bình dưới ánh trăng như  ba sẽ không có. Nếu có cơ hội, đêm trung thu ba sẽ chở con đi ngắm trăng, con nhé.</p>
+
+<p>Ba mẹ hứa sẽ làm hết sức để tuổi thơ của các con sẽ tràn đầy tình thương, trọn vẹn và đầy kỷ niệm. Ba mẹ yêu các con còn nhiều.</p>
+
+<p><em>TP.HCM, 29/09/2012</em></p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+
+
+<div class="pagination">
+  <ul class="inline-list">
+    
+    
+      
+        <li><a href="http://chungtrinh.com/page4/" class="btn">Previous</a></li>
+      
+    
+
+    
+    
+      <li><a href="http://chungtrinh.com">1</a></li>
+    
+
+    
+    
+      
+      
+      <li>…</li>
+    
+
+    
+    
+    
+
+    
+      
         
-          
         
-          
         
-          
+        <li><a href="http://chungtrinh.com/page3/">3</a></li>
+      
+    
+      
         
-          
         
-          
         
-          
+        <li><a href="http://chungtrinh.com/page4/">4</a></li>
+      
+    
+      
+        <li><strong class="current-page">5</strong></li>
+      
+    
+      
         
-          
         
-          
         
-          
+        <li><a href="http://chungtrinh.com/page6/">6</a></li>
+      
+    
+      
         
-          
         
-          
         
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Oct 23, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/tfs/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server/">Thay đổi đường dẫn Local trong Team Foundation Server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 16, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/">Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 4, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/windows/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/">Start menu, Cotana và Modern Apps không hoạt động trong windows 10</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 14, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/macos/su-dung-fn-key-trong-vmware-fusion/">Sử dụng Fn key trong VMWare Fusion</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 12, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/macos/macbook-keyboard/">Macbook keyboard</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 7, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/">Sửa lỗi 9001: The log for database is not available trong MS SQL Server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 7, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/">[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 3, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/dinh-dang-noi-dung-khi-chat-trong-skype/">Định dạng nội dung khi chat trong skype</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 3, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/">Hiển thị danh sách database và vị trí lưu trữ trong SQL Server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 21, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/sql-server-ctrl-r-khong-lam-viec-trong-ssms/">SQL Server - Ctrl + R không làm việc trong SSMS</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 21, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh/">Mở nhiều tài khoản Skype trên cùng một máy tính</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 24, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh/">Lưu cấu hình IP Profile và thiết lập lại khi cần thiết</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 24, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/">Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 16, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi/">Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 7, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/welcome-to-chung-trinh-blog-with-ghost/">Tôi đã  xây dựng lại blog với Ghost</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 9, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/toi-30/">Ta 30</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 3, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/bi/">#BI#</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 3, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/bi-2/">#Bi#</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 4, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc/">Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 3, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/me-dau-bao-tu/">Mẹ đau bao tử</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 3, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/ban-gai-cua-bo-2/">Bạn gái của Bo</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 1, 2013</span>
-
-        <h2>
-          <a class="post-link" href="/chao-nam-2012-don-2013/">Chào năm 2012, đón 2013</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 8, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/hanh-phuc-2/">Hạnh phúc</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 5, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/tinh-anh-em/">Tình anh em</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 29, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/trung-thu-cua-ba-trung-thu-cua-con/">Trung thu của ba–Trung thu của con</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 3, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/huong-dan-viet-blog-wordpress-tu-microsoft-word-2013/">Hướng dẫn viết Blog WordPress từ Microsoft Word 2013</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 3, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware/">Hướng dẫn cài đặt Hệ điều hành Mac OSX trên VMWare</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 18, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/truong-mam-non-con-cho/">Trường mầm non con chó</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 21, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/huong-dan-su-dung-dropbox/">Hướng dẫn sử dụng Dropbox</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 7, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bi5-dien-thoai-di-dong/">Bi#5 – Điện thoại di động</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 21, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bi-4/">Bi # 4</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 29, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/tong-ket-nam-hoc-2011-2012/">Tổng kết năm học 2011-2012</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 23, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server/">Bảng tạm trong MS SQL Server – Temporary tables in MS SQL Server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 18, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bi3-oc-sen/">Bi#3–Ốc sên</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 16, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bi2-cau-vong/">Bi#2–Cầu vồng</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 15, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/chuyen-cua-anh-em/">Chuyện của anh & em</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 15, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bo1/">Bo#1</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 15, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bi1/">Bi#1</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 14, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/entry-for-may-14-2012/">Entry for May 14, 2012</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 15, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/bo-da-lon-roi/">Bo đã lớn rồi</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 8, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/chu-nhat-ca-nha-di-vung-tau/">Chủ nhật cả nhà đi Vũng Tàu</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 5, 2012</span>
-
-        <h2>
-          <a class="post-link" href="/tao-file-batch-dong-bo-2-thu-muc-theo-ngay/">Tạo file Batch đồng bộ 2 thư mục theo ngày</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 10, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/ve-tau/">Vé tàu</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 1, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/nuoc-mat-dan-ong/">Nước mắt đàn ông</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 24, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/sang-tao-toi-chu-nhat/">Sáng tạo tối chủ nhật</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 6, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/lam-ban-ve-dong-phuc/">Lạm bàn về đồng phục</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 22, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/ba-va-con-trai-doi-thoai/">Ba và Con trai – Đối thoại!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 1, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/nhung-tac-pham-dau-tay-cua-con-trai/">Những tác phẩm đầu tay của con trai</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 25, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/ms%20sql%20server/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server/">Truy vấn dữ liệu từ xa thông qua MS SQL linked server</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 16, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/xoa-code-tren-forms-va-class-cua-foxpro/">Xóa code trên Forms và Class của Foxpro</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 11, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/edit-log-message-trong-svn/">Edit log message in SVN</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 23, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi/">Nhân ngày sách nói chuyện về sách của tôi</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 19, 2011</span>
-
-        <h2>
-          <a class="post-link" href="/truyen-tranh-doc-nguoc/">Truyện tranh đọc ngược</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 2, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/tu-chuyen-xay-ra-o-vien-quan-y-175/">Từ chuyện xảy ra ở viện Quân y 175</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 12, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/authentication-in-svn/">Authentication in SVN</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 11, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/">Hàm đếm số ngày thứ trong 1 khoảng thời gian</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 5, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/mot-so-lenh-co-ban-trong-svn/">Một số lệnh cơ bản trong SVN</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 4, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/setup-create-repository-config-create-project-create-svn-service/">Setup, create repository, config, create project, create svn service</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 9, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/loi-khi-go-bo-microsoft-office-2007/">Lỗi khi gỡ bỏ Microsoft Office 2007</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 23, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/bi-va-bo-bi-ke-chuyen/">Bi và bo: Bi kể chuyện</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 21, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/chan-gia-tri/">Chân giá trị</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 19, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/cu-bi/">Cu bi</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 18, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/ket-xe-ky-su/">Kẹt xe ký sự</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 18, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/gia-tri-gia-tri-su-dung-va-chuyen-lang-phi/">Giá trị, giá trị sử dụng và chuyện lãng phí</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 27, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/hanh-phuc/">Hạnh phúc</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 13, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/ket-xe/">Kẹt xe!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 13, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/inside-out-outside-in/">Inside out – Outside in</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 13, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/chuyen-o-sieu-thi/">Chuyện ở siêu thị!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 21, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/banh-pia-nuoc-tra-su-ket-hop-tuyet-voi/">Bánh Pía + nước trà => Sự kết hợp tuyệt vời!!!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 17, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/ao-dai-nho/">Áo dài – Nhớ!!!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 5, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/tu-hao-que-huong-thanh-hoa/">Tự hào quê hương Thanh Hóa!!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 4, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/3-ngay-dau-tien-di-hoc-cua-con-trai/">3 ngày đầu tiên đi học của con trai!!!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 11, 2009</span>
-
-        <h2>
-          <a class="post-link" href="/sinh-nhat-dau-tien-cua-con-trai-toi/">Sinh nhật đầu tiên của con trai tôi.</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 20, 2009</span>
-
-        <h2>
-          <a class="post-link" href="/ky-niem-ve-nhung-nguoi-thay/">Kỷ niệm về những người thầy</a>
-        </h2>
-      </li>
+        <li><a href="http://chungtrinh.com/page7/">7</a></li>
+      
     
-      <li>
-        <span class="post-meta">Mar 6, 2009</span>
 
-        <h2>
-          <a class="post-link" href="/cu-bi-2/">Cu bi</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">Jan 5, 2009</span>
-
-        <h2>
-          <a class="post-link" href="/cong-viec-tuong-lai-cua-cu-bi/">Công việc tương lai của cu Bi?!!!</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">Jan 10, 2008</span>
-
-        <h2>
-          <a class="post-link" href="/bun-buon-buon-qua-di-thoi-tin-buon/">Bùn, buồn, buồn quá đi thôi. Tin buồn.</a>
-        </h2>
-      </li>
+      <li>…</li>
     
-      <li>
-        <span class="post-meta">Jan 4, 2008</span>
 
-        <h2>
-          <a class="post-link" href="/nam-moi/">Năm mới!!!</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">Nov 21, 2007</span>
-
-        <h2>
-          <a class="post-link" href="/so-hai-met-moi/">Sợ hãi, mệt mỏi!!!</a>
-        </h2>
-      </li>
+      <li><a href="http://chungtrinh.com/page17/">17</a></li>
     
-      <li>
-        <span class="post-meta">May 13, 2007</span>
 
-        <h2>
-          <a class="post-link" href="/moi-nguoi-oi-hom-qua-tui-dot-sach/">Mọi người ơi, hôm qua tui đốt sách</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">Apr 4, 2007</span>
-
-        <h2>
-          <a class="post-link" href="/oi-lo-qua/">ÔI !!! Lo quá</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">Jan 17, 2007</span>
-
-        <h2>
-          <a class="post-link" href="/mot-ngay-dang-nho/">Một ngày đáng nhớ</a>
-        </h2>
-      </li>
+      <li><a href="http://chungtrinh.com/page6/" class="btn">Next</a></li>
     
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS 123 </a></p>
-
 </div>
 
-      </div>
-    </div>
+</div><!-- /#main -->
 
-    <footer class="site-footer">
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Chung Trịnh. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
 
-  <div class="wrapper">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://chungtrinh.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://chungtrinh.com/assets/js/scripts.min.js"></script>
 
-    <h2 class="footer-heading">Chung Trịnh's blog</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Chung Trịnh's blog</li>
-          <li><a href="mailto:"></a></li>
-        </ul>
-      </div>
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
+  ga('create', 'UA-62079859-1', 'auto');  
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
           
 
-          
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-3">
-        <p class="text">Personal website of Chung Trinh.</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-
-
-  </body>
-
+</body>
 </html>
