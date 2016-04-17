@@ -335,6 +335,7 @@
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -347,6 +348,9 @@
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -387,130 +391,6 @@
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <p>Khi làm việc với MS SQL Server, hẳn bạn cũng khá quen thuộc với khái niệm bảng tạm (Temporary table). Ít nhiều bạn đã từng làm hoặc từng gặp các đoạn:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Col1</span><span class="p">,</span> <span class="n">Col2</span> <span class="k">INTO</span> <span class="o">#</span><span class="n">tTmpTable</span> <span class="k">FROM</span> <span class="n">TableName</span> <span class="k">WHERE</span> <span class="p">...</span>
-</code></pre>
-</div>
-
-<p>hay</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">#</span><span class="n">tTmpTable</span> <span class="p">(</span><span class="n">col1</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="p">...)</span>
-</code></pre>
-</div>
-
-<p>Trong bài viết này mình xin trình bày với các bạn cái nhìn tổng quan về Temporary table.</p>
-
-<h3 id="cc-loi-bng-tm">Các loại bảng tạm</h3>
-<p>MS SQL Server cung cấp cho chúng ta 2 loại bảng tạm là <strong>Local Temporary table</strong> và <strong>Global Temporary table</strong>. Mỗi loại bảng tạm có phạm vi ảnh hưởng và truy cập khác nhau.</p>
-
-<p><strong>Local temporary table</strong> là bảng tạm được tạo ra và tồn tại trong 1 kết nối. Khi kết thúc kết nối thì bảng tạm này sẽ tự động được xóa. Tên của bảng tạm kiểu Local được bắt đầu bằng ký tự #.</p>
-
-<p><strong>Global temporary table</strong> là bảng tạm có phạm vi ảnh hưởng trong tất cả các kết nối và nó chỉ tự động được xóa đi khi tất cà kết nối đã được ngắt. Tên bảng tạm kiểu Global được bắt đầu  bằng ##.</p>
-
-<p>Để minh chứng cho 2 loại bảng tạm này, các bạn hãy làm thử ví dụ sau:</p>
-
-<ul>
-  <li>Mở Microsoft SQL Server Management Studio (SSMS) và chọn <kbd>New Query</kbd></li>
-  <li>Gõ đoạn lệnh sau:</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">#</span><span class="n">LocalTmpTable</span>
-<span class="p">(</span>
-    <span class="n">ID</span> <span class="n">int</span><span class="p">,</span>
-    <span class="n">Name</span> <span class="n">nvarchar</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
-<span class="p">)</span>
-</code></pre>
-</div>
-
-<p>Đoạn lệnh này sẽ tạo ra trong Database <strong>tempdb</strong> một bảng có tên là #LocalTmpTable____000002</p>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2012/04/image.png" alt="" /></p>
-
-<p>SQL Server sẽ tự động tăng số thứ tự vào phía sau tên bảng nhằm quản lý việc nhiều kết nối tạo bảng tạm có cùng tên.</p>
-
-<ul>
-  <li>Gõ đoạn sau và <kbd>F5</kbd> để kiểm tra, bạn sẽ nhận được kết quả là ID của bảng tạm đã tạo.</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">PRINT</span> <span class="n">OBJECT_ID</span><span class="p">(</span><span class="s1">'Tempdb.dbo.#LocalTmpTable'</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<ul>
-  <li>Mở 1 cửa sổ Query khác bằng <kbd>New Query</kbd>, gõ lại đoạn lệnh trên và <kbd>F5</kbd> bạn sẽ không nhận được kết quả.</li>
-</ul>
-
-<p>Để Test về phạm vi của <strong>Global Temp table</strong>, bạn hãy thực hiện lại các thao tác trên với tên bảng là ##GlobalTmpTable.</p>
-
-<h3 id="to-v-thao-tc-trn-bng-tm">Tạo và thao tác trên bảng tạm</h3>
-<p>Để tạo bảng tạm, bạn có thể sử dụng lệnh <code class="highlighter-rouge">CREATE TABLE</code></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">#</span><span class="n">LocalTmpTable</span> <span class="p">(</span> <span class="n">ID</span> <span class="n">int</span><span class="p">,</span> <span class="n">Name</span> <span class="n">nvarchar</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
-</code></pre>
-</div>
-
-<p>hoặc sử dụng lệnh SELECT INTO</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Ma</span><span class="p">,</span> <span class="n">Ten</span> <span class="k">INTO</span> <span class="o">##</span><span class="n">GlobalTmpTable</span> <span class="k">FROM</span> <span class="n">TableName</span> <span class="k">WHERE</span> <span class="p">...</span>
-</code></pre>
-</div>
-
-<p>Với <code class="highlighter-rouge">Temporary Table</code>, bạn  hoàn toàn có thể truy vấn, thao tác dữ liệu như đối với các table bình thường.</p>
-
-<h3 id="s-dng-bng-tm">Sử dụng bảng tạm</h3>
-<p>Bảng tạm và biến bảng thường được sử dụng khi cần xử lý một tập dữ liệu con trong tạp dữ liệu lớn được lưu trữ trong Table của Database hoặc từ nhiều Tables. (Đặc biệt là khi viết các Store procedures xử lý báo cáo).</p>
-
-<p>Bảng tạm được tạo ra trong Database Tempdb khác với Database của bạn vì thế có thể gây ra các vấn đề về hiệu suất. Do đó, bạn cần tính toán kỹ số lượng các Fields cần thiết phải lấy ra.</p>
-
-<h3 id="tham-kho">Tham khảo</h3>
-<ul>
-  <li><a href="http://www.codeproject.com/Articles/42553/Quick-Overview-Temporary-Tables-in-SQL-Server-2005">Quick Overview: Temporary Tables in SQL Server 2005</a></li>
-</ul>
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/life/2012/05/18/bi3-oc-sen.html" data-toggle="tooltip" data-placement="top" title="Bi#3–Ốc sên">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/life/2012/05/29/tong-ket-nam-hoc-2011-2012.html" data-toggle="tooltip" data-placement="top" title="Tổng kết năm học 2011-2012">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 

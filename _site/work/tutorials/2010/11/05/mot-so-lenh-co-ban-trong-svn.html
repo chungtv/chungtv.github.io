@@ -389,6 +389,7 @@ Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ t
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -401,6 +402,9 @@ Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ t
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -441,184 +445,6 @@ Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ t
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image_thumb.png?w=396&amp;h=58" alt="Subversion" /></p>
-
-<p>Trong bài trước, các bạn đã cài đặt được SVN và làm quen với SVN. Trong bài này, xin giới thiệu với các bạn một số lệnh cơ bản để thao tác với SVN.</p>
-
-<p>Bạn có thể dễ dàng thấy các lệnh được hỗ trợ trong SVN bằng cách trong của sổ Cmd, gõ dòng lệnh sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn <span class="nb">help </span>hoặc svn ?
-</code></pre>
-</div>
-
-<p>Một số lệnh cơ bản, ý nghĩa và cách sử dụng chúng:</p>
-
-<p><em>Chú ý: trong cấu trúc các lệnh dưới đây tôi luôn kèm theo các tham số <code class="highlighter-rouge">Username</code> và <code class="highlighter-rouge">password</code>, tuy nhiên trên thực tế thì có những lệnh không cần, tùy vào cấu hình truy cập (bài sau sẽ nói về vấn đề này). ví dụ, trong file <code class="highlighter-rouge">svnserve.conf</code> ở bài trước, chúng ta cấu hình <code class="highlighter-rouge">nanon-access = read</code> thì thực chất trong lệnh <code class="highlighter-rouge">list</code> ở dưới không cần kèm theo tham số <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code>. Tham số <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code> thậm chí cũng chỉ cần gõ 1 lần ở lệnh đầu tiên, trong các lệnh tiếp theo svn sẽ tự nhận lại tham số ở lệnh trước đó.</em></p>
-
-<h3 id="mkdir--lnh-to-th-mc">mkdir | Lệnh tạo thư mục</h3>
-<p>###### Ý nghĩa<br />
-Lệnh này sử dụng để tạo thư mục trong <code class="highlighter-rouge">repository</code> của bạn. (giống lệnh MD trong Doc command)</p>
-
-<h6 id="cu-trc-lnh">Cấu trúc lệnh</h6>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir &lt;đường dẫn thư mục mới tạo&gt; –m &lt;Mô tả về dự án&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code></pre>
-</div>
-
-<p>Trong trường hợp bạn ko gõ tham số –m, chương trình sẽ hiển thị màn hình để các bạn nhập comment vào (chương trình này được thiết lập trong biến SVN_EDITOR ở bài trước)</p>
-
-<h6 id="v-d">Ví dụ</h6>
-<ul>
-  <li>Tạo dự án mới:</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as –m “Asia standard, a product of asiasoft” ––username admin ––password nimda
-</code></pre>
-</div>
-
-<ul>
-  <li>Tạo thư mục con của dự án mới tạo:</li>
-</ul>
-
-<p>Tạo thư mục chứa Source của dự án</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Src –m “Source code store here” ––username admin ––password nimda
-</code></pre>
-</div>
-
-<p>Tạo thư mục chứa tài liệu</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Docs –m “Documents of project store here” ––username admin ––password nimda
-</code></pre>
-</div>
-
-<p>Tạo các thư mục con của thư mục chứa tài liệu</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/as/Docs/TechDocs –m “Documents <span class="k">for </span>Technical” ––username admin ––password nimda
-
-svn mkdir svn://localhost/as/Docs/UserDocs –m “Documents <span class="k">for </span>End-User” ––username admin ––password nimda
-</code></pre>
-</div>
-
-<h3 id="delete-del-remove-rm--xa-th-mc">delete (del, remove, rm) | Xóa thư mục</h3>
-<p>###### Ý nghĩa<br />
-Xóa thư mục (cái này thì giống RD trong dos command)</p>
-
-<h6 id="cu-trc-lnh-1">Cấu trúc lệnh</h6>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn delete &lt;đường dẫn tới thư mục cần xóa&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code></pre>
-</div>
-
-<p>Có thể thay thế lệnh <code class="highlighter-rouge">delete</code> bằng <code class="highlighter-rouge">del</code>, <code class="highlighter-rouge">remove</code> hoặc <code class="highlighter-rouge">rm</code></p>
-
-<h6 id="v-d-1">Ví dụ</h6>
-
-<p>Xóa thư mục Docs</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn delete svn://localhost/as/docs ––username admin ––password nimda
-</code></pre>
-</div>
-
-<h3 id="list-ls--lnh-lit-k-th-mc-file">list (ls) | Lệnh liệt kê thư mục, file</h3>
-<p>######Ý nghĩa</p>
-
-<p>Dùng để liệt kê danh sách các thư mục và file bên trong thư mục đang được list (giống DIR trong Dos command)</p>
-
-<h6 id="cu-trc-lnh-2">Cấu trúc lệnh</h6>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn list &lt;đường dẫn đến thư mục cần xem danh sách thư mục và file&gt; ––username &lt;username&gt; ––password &lt;password&gt;
-</code></pre>
-</div>
-<p>###### Ví dụ</p>
-
-<p>Trong ví dụ này, tôi đã thử dùng SVN để liệt kê các thư mục và file bên trong dự án của nhóm <code class="highlighter-rouge">Quản lý xây dựng</code> trên google code (tại thời điểm 14h41 ngày 05/11/2010) và nhận được kết quả như sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>C:<span class="se">\s</span>vn-win32-1.5.6<span class="se">\b</span><span class="k">in</span>&gt;svn ls https://quanlyxaydung.googlecode.com/svn/trunk/code/
-
-NhanVien/
-congtrinh/
-khachhang/
-main/
-quanlykho/
-quanlyvattu/
-</code></pre>
-</div>
-
-<p>Trong ví dụ trên, các bạn có thể thay lệnh list bằng lệnh ls</p>
-
-<h3 id="checkout-co">checkout (co)</h3>
-<p>###### Ý nghĩa<br />
-Lệnh này sử dụng để lấy phiên bản mã nguồn mới nhất từ thư mục dự án trên repository về thư mục trên máy trạm.</p>
-
-<h6 id="cu-trc-lnh-3">Cấu trúc lệnh</h6>
-<div class="highlighter-rouge"><pre class="highlight"><code>svn checkout &lt;đường dẫn thư mục trên máy chủ&gt; &lt;đường dẫn thư mục trên máy trạm&gt; ––username &lt;username&gt; ––password  &lt;password&gt;
-</code></pre>
-</div>
-
-<p>Các bạn có thể thay thế lệnh checkout ở trên bằng lệnh co.</p>
-
-<h6 id="v-d-2">Ví dụ</h6>
-
-<p>Trong ví dụ này, tôi sẽ lấy mã nguồn mới nhất từ thư mục Src của dự án AS đã tạo ở trên về thư mục <code class="highlighter-rouge">D:/dev/as/src/</code> trên máy trạm.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>svn checkout svn://localhost/as/src d:/dev/as/src ––username admin ––password nimda
-</code></pre>
-</div>
-
-<p>Nếu thành công, chương trình sẽ có thông báo:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>Checked out revision n. //<span class="o">(</span>n là số phiên bản hiện tại mới nhất<span class="o">)</span>
-</code></pre>
-</div>
-
-<p>Trong trường hợp thư mục <code class="highlighter-rouge">d:/dev/as/src</code> chưa có, SVN sẽ tự tạo.</p>
-
-<p><em>Phù, tạm tới đây đã. Tôi sẽ cố gắng viết tiếp để các bạn tham khảo.</em></p>
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/work/tutorials/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html" data-toggle="tooltip" data-placement="top" title="Setup, create repository, config, create project, create svn service">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/work/tips%20and%20tricks/2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html" data-toggle="tooltip" data-placement="top" title="Hàm đếm số ngày thứ trong 1 khoảng thời gian">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 

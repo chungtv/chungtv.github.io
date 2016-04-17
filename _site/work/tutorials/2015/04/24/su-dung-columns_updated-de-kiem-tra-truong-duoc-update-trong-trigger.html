@@ -310,6 +310,7 @@
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -322,6 +323,9 @@
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -362,105 +366,6 @@
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <blockquote>
-  <p>Đôi khi, vì lý do gì đó mà triger của bảng trong SQL Server bạn cần phải kiểm tra xem trường nào đang được update trước khi thực thi các lệnh tiếp theo. <a href="https://trinhvanchung.wordpress.com/2010/11/03/s%e1%bb%ad-d%e1%bb%a5ng-columns_updated-d%e1%bb%83-ki%e1%bb%83m-tra-tr%c6%b0%e1%bb%9dng-d%c6%b0%e1%bb%a3c-update-trong-trigger/">Xem thêm bài viết này của tôi tại đây</a>. Bài này được tôi viết lại từ bài đó.</p>
-</blockquote>
-
-<blockquote>
-  <p>Một phương pháp được tôi giới thiệu trong bài này là sử dụng <code class="highlighter-rouge">COLUMNS_UPDATED()</code>.</p>
-</blockquote>
-
-<p><img src="https://www.dropbox.com/s/90ymmfk4t8l036g/04-mssql_columns_updated.jpg?dl=1" alt="" /></p>
-
-<h4 id="gii-thiu">Giới thiệu</h4>
-
-<p>Về <code class="highlighter-rouge">COLUMNS_UPDATED()</code> các bạn có thể xem chi tiết ở <a href="https://msdn.microsoft.com/en-us/library/ms186329.aspx">site chính chủ</a>. Ở đây, tôi chỉ giới thiệu qua những điểm cơ bản.</p>
-
-<p><code class="highlighter-rouge">COLUMNS_UPDATED()</code> là một Build-in Functions của SQL Server trả về một mẫu giá trị dạng nhị phân (varbinary bit pattern) để xác định vị trí cột nào được insert hoặc update. <code class="highlighter-rouge">COLUMNS_UPDATED()</code> thường được sử dụng trong INSERT hoặc UPDATE Trigger để kiểm tra vị trí cột được update nhằm xác định có hay không thực thi một số hành động nào đó.</p>
-
-<p>Để kiểm tra vị trí cột nào được thay đổi chúng ta sử dụng các phép toán trên bit (bitwise operators) và bit mặt nạ (bitmask) tương ứng cho vị trí của mỗi cột.</p>
-
-<h4 id="kim-tra-cc-ct-c-v-tr-8">Kiểm tra các cột có vị trí &lt;=8</h4>
-<p>Kiểm tra cột tại vị trí n (n&lt;=8) có phải là cột thay đổi hay không thì sử dụng biểu thức sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-</code></pre>
-</div>
-
-<p>Nếu biểu thức trả về &gt; 0 thì cột n là cột bị thay đổi, ngược lại cột n không thay đổi.</p>
-
-<p>Trong trường hợp kiểm tra 2 hoặc nhiều cột có thay đổi hay không thì làm tương tự. Ví dụ kiểm tra cột 3 cột thứ i,j,k có thay đổi hay không (i,j,k&lt;=8) thì sử dụng biểu thức sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
-</code></pre>
-</div>
-
-<p><em>Chú ý: Để đỡ phải tính toán khi thực thi thì mình nên tính ra giá trị nguyên của các hàm <code class="highlighter-rouge">Power()</code> ở ngoài luôn rồi dùng kết quả đó để kiểm tra. Ví dụ thay vì viết như cách trên, mình viết như sau:</em></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">COLUMNS_UPDATED</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">kq</span> 
-<span class="c1">-- với kq = (Power(2,(i-1)) + Power(2,(j-1)) + Power(2,(k-1)))
-</span></code></pre>
-</div>
-
-<h4 id="kim-tra-cc-ct-c-v-tr-8-1">Kiểm tra các cột có vị trí &gt;8</h4>
-
-<p>Sử dụng hàm <code class="highlighter-rouge">SUBSTRING()</code> cho giá trị trả về của <code class="highlighter-rouge">COLUMNS_UPDATED()</code>.</p>
-
-<p>Ví dụ cần kiểm tra có update cột 10 hay không, sử dụng biểu thức sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">COLUMNS_UPDATED</span><span class="p">(),</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="mi">10</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-</code></pre>
-</div>
-
-<p>Còn nếu cột cần kiểm tra &gt; 16 thì làm tương tự. Ví dụ cần kiểm tra cột 19 có Update không thì sử dụng biểu thức:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">COLUMNS_UPDATED</span><span class="p">(),</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">Power</span><span class="p">(</span><span class="mi">2</span><span class="p">,(</span><span class="mi">19</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-</code></pre>
-</div>
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html" data-toggle="tooltip" data-placement="top" title="Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html" data-toggle="tooltip" data-placement="top" title="Lưu cấu hình IP Profile và thiết lập lại khi cần thiết">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 

@@ -296,6 +296,7 @@
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -308,6 +309,9 @@
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -348,91 +352,6 @@
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <p>Trong quá trình triển khai phần mềm, việc sửa đổi chương trình theo yêu cầu người dùng là không tránh khỏi. Thường đội triển khai sẽ hiệu chỉnh chương trình trực tiếp trên server và client sẽ update xuống.</p>
-
-<p>Việc update từ server xuống client cũng có nhiều giải pháp. Sau đây là giải pháp mình đang sử dụng:</p>
-
-<p>Giải pháp của mình là sử dụng 1 <a href="http://en.wikipedia.org/wiki/Batch_file">batch file window</a> để thực hiện việc này. Batch file này làm nhiệm vụ copy file từ server về client và chỉ copy những file nào có ngày modify &gt;= ngày update gần nhất. Để xác định ngày update gần nhất mình dùng 1 file text lưu giá trị ngày update.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>	:: Author | Chungtv
-	:: Purpose | Synchronize files from server to client
-	@echo off
-	:: Lay ngay hien tai
-	call :GetDate y m d
-	<span class="nb">echo </span>TODAY: %m%-%d%-%y%
-	<span class="nb">set </span><span class="nv">ud</span><span class="o">=</span>%m%-%d%-%y%
-	:: Neu ton tai file update thi gan ngay update la ngay luu trong file
-	<span class="k">if </span>exist <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span> <span class="nb">set</span> /p ud <span class="o">=</span> &lt;<span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
-	::Thuc hien viec copy
-	net use <span class="s2">"</span><span class="se">\\</span><span class="s2">server</span><span class="se">\A</span><span class="s2">siaSoft</span><span class="se">\A</span><span class="s2">E81"</span> password /user:user
-	xcopy <span class="s2">"</span><span class="se">\\</span><span class="s2">server</span><span class="se">\A</span><span class="s2">siaSoft</span><span class="se">\A</span><span class="s2">E81"</span> <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81"</span> /D:%ud% /I /Y /E
-	::Sau khi copy xong thi luu lai ngay update
-	<span class="nb">set </span><span class="nv">ud</span><span class="o">=</span>%m%-%d%-%y%
-	<span class="k">if </span>exist <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span> del <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
-	<span class="nb">echo</span> %ud% &gt; <span class="s2">"D:</span><span class="se">\A</span><span class="s2">siasoft</span><span class="se">\A</span><span class="s2">E81</span><span class="se">\L</span><span class="s2">astSyn.txt"</span>
-	<span class="k">if </span>errorlevel 5 goto writeerror
-	<span class="k">if </span>errorlevel 0 goto eof
-	:writeerror
-	pause Disk write error occurred.
-	goto eof
-	:GetDate yy mm dd
-	setlocal ENABLEEXTENSIONS
-	<span class="nb">set </span><span class="nv">t</span><span class="o">=</span>2&amp;if <span class="s2">"%date%z"</span> LSS <span class="s2">"A"</span> <span class="nb">set </span><span class="nv">t</span><span class="o">=</span>1
-	<span class="k">for</span> /f <span class="s2">"skip=1 tokens=2-4 delims=(-)"</span> %%a <span class="k">in</span> <span class="o">(</span>‘echo/^|date’<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
-	    <span class="k">for</span> /f <span class="s2">"tokens=%t%-4 delims=.-/ "</span> %%d <span class="k">in</span> <span class="o">(</span>‘date/t’<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
-
-	    <span class="nb">set</span> %%a<span class="o">=</span>%%d&amp;set %%b<span class="o">=</span>%%e&amp;set %%c<span class="o">=</span>%%f<span class="o">))</span>
-
-	    endlocal&amp;set %1<span class="o">=</span>%yy%&amp;set %2<span class="o">=</span>%mm%&amp;set %3<span class="o">=</span>%dd%&amp;goto :eof
-
-	    :eof
-
-</code></pre>
-</div>
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/life/2011/12/10/ve-tau.html" data-toggle="tooltip" data-placement="top" title="Vé tàu">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/life/2012/04/08/chu-nhat-ca-nha-di-vung-tau.html" data-toggle="tooltip" data-placement="top" title="Chủ nhật cả nhà đi Vũng Tàu">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 

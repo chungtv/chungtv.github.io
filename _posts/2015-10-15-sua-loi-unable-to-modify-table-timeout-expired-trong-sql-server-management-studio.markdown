@@ -5,7 +5,7 @@ date: 2015-10-15 22:00:32
 categories: [Work, Tips and tricks]
 tags: [MS SQL Server]
 published: True
-
+share: True
 ---
 
 Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu ... Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận được thông báo:

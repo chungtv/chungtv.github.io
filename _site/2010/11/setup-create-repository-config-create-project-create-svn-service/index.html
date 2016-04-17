@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Setup, create repository, config, create project, create svn service</title>
+  <meta name="author" content="Chung Trịnh" />  
+  
+  <link rel="canonical" href="/2010/11/setup-create-repository-config-create-project-create-svn-service/">
+  <link href="http://chungtrinh.com/feed.xml" type="application/atom+xml" rel="alternate" title="Chung Trịnh's Blog Feed">
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> 
+  
+   <link rel="stylesheet" href="/css/bootstrap.min.css" /><link rel="stylesheet" href="/css/main.css" /> 
+  
+   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" /><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /> 
+  
+  
+  
+  
+  
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://chungtrinh.com/img/logo.png">
+  <meta name="twitter:title" content="Setup, create repository, config, create project, create svn service">
+  <meta name="twitter:description" content="Business Software Developer and Bloger!">
+  <meta name="twitter:creator" content="@trinhvanchung">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Setup, create repository, config, create project, create svn service">
+  <meta property="og:description" content="Business Software Developer and Bloger!">
+  <meta property="og:url" content="http://chungtrinh.com/2010/11/setup-create-repository-config-create-project-create-svn-service//" />
+    
+  <meta property="og:site_name" content="Chung Trịnh's Blog">
+  <meta property="og:image" content="http://chungtrinh.com/img/logo.png" />
+  <!-- Icons -->
+  <link rel="shortcut icon" href="http://chungtrinh.com/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="http://chungtrinh.com/img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://chungtrinh.com/img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://chungtrinh.com/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://chungtrinh.com/img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://chungtrinh.com/img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://chungtrinh.com/img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://chungtrinh.com/img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://chungtrinh.com/img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://chungtrinh.com/img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://chungtrinh.com/img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="http://chungtrinh.com/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://chungtrinh.com/img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://chungtrinh.com/img/android-chrome-192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="http://chungtrinh.com/img/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="http://chungtrinh.com/img/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="http://chungtrinh.com/img/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="http://chungtrinh.com/img/largetile.png" />
+</head>
+
+
+  <body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://chungtrinh.com/">Chung Trịnh's Blog</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+           
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/">Home</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+            <div class="navlinks-children">
+              
+                
+                  
+            
+
+
+
+
+
+<a href="/categories">All Categories</a>
+
+                
+              
+                
+                  
+            
+
+
+
+
+
+<a href="/categories#work">Works</a>
+
+                
+              
+                
+                  
+            
+
+
+
+
+
+<a href="/categories#life">Life</a>
+
+                
+              
+                
+                  
+            
+
+
+
+
+
+<a href="/categories#tutorials">Tutorials</a>
+
+                
+              
+                
+                  
+            
+
+
+
+
+
+<a href="/categories#tips-and-tricks">Tips & tricks</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/tags">Tags</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/pages/tools">Tools</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/about">About</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://chungtrinh.com ">
+	      <img class="avatar-img" src="/img/avatar.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Setup, create repository, config, create project, create svn service</h1>
+		  
+		  
+		  
+		  <span class="post-meta">Posted on November 4, 2010. Tagged:  <a href="/tags#svn"> • Svn</a><a href="/tags#source-control"> • Source control</a></span>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container">
+  <article>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image.png" alt="Subversion" /></p>
+
+<h2 id="t-vn-">Đặt vấn đề</h2>
+<p>Kỳ này có tham gia tại trường học phần Công cụ và môi trường Phát triển phần mềm, trong đó có giới thiệu với các bạn công cụ quản lý mã nguồn Subversion.</p>
+
+<p>Rằng thì là chẳng bao giờ dùng SVN nên nhiều khi demo cứ hay quên mấy cái 1 trừ hay 2 trừ.  Viết cái chủ đề này phần để cho các bạn tham khảo phần để tra cứu lại khi cần thiết.</p>
+
+<h2 id="gii-thiu-v-subversion">Giới thiệu về Subversion</h2>
+<p>Anh em chịu khó wiki hay nhờ <a href="https://www.google.com/?gws_rd=ssl#q=subversion">“anh hai google”</a> cho nó rõ nghĩa nhé. Mình chỉ đại khái thôi.</p>
+
+<p><strong>Subversion</strong> là một phần mềm cung cấp các chức năng quản lý phiên bản mã nguồn và tài liệu. Hiểu đơn giản nó cũng chỉ là một trình quản lý file, thư mục. Tuy nhiên, nó cao cấp hơn ở chỗ nó cho phép quản lý nhiều phiên bản của cùng 1 file, có thể rollback lại khi có sai sót; quản lý lịch sử sửa đổi; quản lý người dùng . Hỗ trợ giải quyết đụng độ, tranh chấp … và nhiều thứ mà nói thật mình cũng chưa tìm hiểu hết.</p>
+
+<p>Tóm lại, anh em cứ google là ra hết hoặc là vào trang chủ của nó mà nghiên cứu <a href="http://subverion.tigris.org">http://subverion.tigris.org</a></p>
+
+<h2 id="ci-t-svn">Cài đặt SVN</h2>
+<p>### Download và cài đặt.<br />
+Download SVN tại: <a href="http://subverion.tigris.org">http://subverion.tigris.org</a> (đừng có nói là vào đó xong hổng biết download ở đâu nhé :), còn nếu không biết thật thì vào đây <a href="http://sourceforge.net/projects/win32svn/">http://sourceforge.net/projects/win32svn/</a>). Sau khi download về máy ta được file svn-win32-3.5.6.zip (phiên bản có thể khác, nhưng cách cài thì như nhau).</p>
+
+<p>Có thể dùng VisualSVN cũng được, nhưng để hiểu rõ hơn bản chất của nó mình sẽ giới thiệu về svn-win32 và quản lý nó bằng Command-line và text file.</p>
+
+<p>Giải nén svn-win32-3.5.6.zip vào đâu đó (trong ví dụ này mình giải nén vào ổ C), được thư mục C:\svn-win32-3.5.6\</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image1.png" alt="" /></p>
+
+<h3 id="thit-lp-bin-mi-trng">Thiết lập biến môi trường</h3>
+<p>Mục đích của việc thiết lập biến môi trường là để trên cửa sổ command có thể truy xuất trực tiếp tới các thư viện của svn mà không cần phải gõ đường dẫn.</p>
+
+<p>Thêm các biến môi trường như sau:</p>
+
+<ul>
+  <li>Right-click lên My Computer, chọn Properties.</li>
+  <li>Trong màn hình System Properties chọn tab Advanced.</li>
+  <li>Trong tab Advanced Click vào nút lệnh Environtment Variables.</li>
+  <li>Tại cửa sổ Environtment Variables có 2 phần (user variables và system variables).</li>
+  <li>Trong phần system variables, tìm đến dòng có tên Variable là “Path”, chọn dòng đó và nhấn nút edit.  (ở đây bạn có thể thêm vào user variable hoặc system variable đều được).</li>
+  <li>Sau khi nhấn nút Edit, trong màn hình Edit system variable, tại ô Variable value, bạn đưa con trỏ tới cuối ô; trong trường hợp cuối ô chưa có dấu “;” thì bạn thêm dấu “;” vào, sau đó thêm đường dẫn tới thư mục Bin của svn (thêm C:\svn-win32-1.5.6\bin). Đây là thư mục chứa các tập tin exe của svn.</li>
+  <li>Tiếp theo các bạn thêm biến SVN_EDITOR bằng cách tại vùng User variables hoặc System variables trên của sổ Environment variables, nhấn nút New</li>
+  <li>Trong cửa sổ New variable, thêm như hình sau, sau đó nhấn nút OK.</li>
+</ul>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image2.png" alt="" /></p>
+
+<h2 id="to-kho-lu-tr-ti-liu-m-ngun-repository">Tạo kho lưu trữ tài liệu, mã nguồn (Repository)</h2>
+<p>Kho lưu trữ tài liệu, mã nguồn (Repository) là thư mục chứa dữ liệu về dự án của bạn và các cấu hình truy cập các dữ liệu đó.</p>
+
+<p>Để tạo kho lưu dữ liệu, bạn sử dụng <code class="highlighter-rouge">svnadmin</code>, trong cửa sổ cmd của window, gõ lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svnadmin create &lt;đường dẫn kho lưu&gt;
+</code></pre>
+</div>
+
+<p>Ví dụ:<br />
+~~~ bash<br />
+svnadmin create C:\ARDRepository\<br />
+~~~</p>
+
+<p>Sau khi thực hiện xong, SVN sẽ tạo ra trong ổ đĩa của bạn thư mục kho lưu (thư mục chứa dữ liệu các phiên bản tài liệu, mã nguồn, các cấu hình truy cập kho). Bên trong thư mục kho lưu, SVN đã tạo sẳn ra một số thư mục. Là người quản trị, bạn quan tâm đến thư mục Conf.</p>
+
+<p><img src="https://trinhvanchung.files.wordpress.com/2010/11/image3.png" alt="" /></p>
+
+<h2 id="cu-hnh-n-gin-trong-repository">Cấu hình đơn giản trong Repository</h2>
+
+<p>Trong phạm vi bài này, tôi chỉ giới thiệu các bạn tạo user và phân quyền đơn giản cho repository. (Bài sau sẽ giới thiệu chi tiết hơn về <code class="highlighter-rouge">Authentication</code> trong SVN)</p>
+
+<p>Như phần trên tôi đã nói, các bạn quan tâm đến thư mục <code class="highlighter-rouge">conf</code>. Trong thư mục <code class="highlighter-rouge">conf</code>, SVN đã tạo sẵn cho các bạn 3 file: <code class="highlighter-rouge">svnserve.conf</code>, <code class="highlighter-rouge">passwd</code>, <code class="highlighter-rouge">authz</code>.</p>
+
+<p>Điều đầu tiên các bạn làm là chỉnh sửa file <code class="highlighter-rouge">svnserve.conf</code></p>
+
+<p>Các bạn có thể đọc hoặc xóa trắng file <code class="highlighter-rouge">svnserve.conf</code> đi và cấu hình lại từ đầu (vì thực chất nó cũng đơn giản – có mấy dòng thôi).</p>
+
+<p>Trong phạm vi bài này, bạn chỉ quan tâm đến 4 dòng sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    [<span class="n">general</span>]
+    <span class="n">anon</span>-<span class="n">access</span> = <span class="n">read</span>
+    <span class="n">auth</span>-<span class="n">access</span> = <span class="n">write</span>
+    <span class="n">password</span>-<span class="n">db</span> = <span class="n">passwd</span>
+</code></pre>
+</div>
+
+<ul>
+  <li><strong>[general]</strong>: đánh dấu bắt đầu session</li>
+  <li><strong>anon-access</strong>: Cấu hình truy cập khi truy cập vào repository lưu không xác thực (không thông qua đăng nhập username, password). Có các giá trị hiệu lực tăng dần: none, read, write (chắc ko cần nói ý nghĩa của các giá trị này nhỉ :) )</li>
+  <li><strong>auth-access</strong>: Cấu hình khi truy cập vào repository có xác thực (đăng nhập bằng username, password). Các giá trị tương tự như trên</li>
+  <li><strong>password-db</strong>: Tên file chứa thông tin username và password truy cập vào kho lưu. Trong trường hợp trên là file passwd (đã được svn tạo sẵn).</li>
+</ul>
+
+<p>Bạn có thể xóa trắng file <code class="highlighter-rouge">svnserve.conf</code> và copy 4 dòng trên paste vào là ok.</p>
+
+<p><strong><em>Việc tiếp theo bạn làm là tạo ra một vài user truy cập vào repository.</em></strong><br />
+Để tạo user truy cập vào repository, bạn mở file <code class="highlighter-rouge">passwd</code>  đã có sẵn trong thư mục <code class="highlighter-rouge">conf</code> (mở bằng trình soạn thảo văn bản) và xóa trắng đi, gõ lại từ đầu (cho nó chuyên nghiệp ;) )</p>
+
+<p>Tạo một vài user (trong ví dụ sau tôi sẽ tạo user <code class="highlighter-rouge">admin</code> mật khẩu là <code class="highlighter-rouge">nimda</code>, <code class="highlighter-rouge">user1</code> mật khẩu <code class="highlighter-rouge">1resu</code>, <code class="highlighter-rouge">user2</code> có mật khẩu <code class="highlighter-rouge">2resu</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[<span class="n">users</span>]
+<span class="n">admin</span> = <span class="n">nimda</span>
+<span class="n">user1</span> = <span class="m">1</span><span class="n">resu</span>
+<span class="n">user2</span> = <span class="m">2</span><span class="n">resu</span>
+</code></pre>
+</div>
+
+<p>Bắt đầu bằng dòng báo hiệu session cấu hình User <code class="highlighter-rouge">[users]</code>, mỗi dòng tiếp theo sẽ là <code class="highlighter-rouge">username</code> và <code class="highlighter-rouge">password</code> của mỗi user. Cấu trúc <code class="highlighter-rouge">Username = password</code></p>
+
+<p><em>Phù, như thế là xong phần cấu hình đơn giản.</em></p>
+
+<p>Hãy test lại xem cấu hình của bạn có OK hay không, hãy mở cmd lên, gõ lệnh sau vào để chạy <code class="highlighter-rouge">service</code> của SVN.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svnserve –d –r C:<span class="se">\A</span>RDRepository
+</code></pre>
+</div>
+
+<p><kbd>Enter</kbd>, nếu không có báo gì thì là OK (đừng hụt hẫng nhé, không báo gì lại nghĩ cấu hình sai)</p>
+
+<h2 id="to-d-n--lu-tr-trong-repository">Tạo dự án để lưu trữ trong Repository</h2>
+
+<p>Giữ nguyên cửa sổ cmd đang chạy service SVN ở trên (đừng tắt đi nhé) và mở một cửa sổ CMD khác để thao tác với các lệnh của giao thức SVN.</p>
+
+<p>Mở 1 cửa sở cmd khác, gõ lệnh sau để tạo mới 1 Project lưu trong <code class="highlighter-rouge">ARDRepository</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/&lt;tên dự án&gt; –m “&lt;Mô tả thông tin về dự án&gt;” ––username  &lt;tên user&gt; ––password &lt;password&gt;
+</code></pre>
+</div>
+
+<p>Ví dụ:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/AS –m “Asia Standard” ––username admin ––password nimda
+</code></pre>
+</div>
+
+<p>Khi đó, nếu thành công bạn sẽ nhận được:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Committed revision 1.
+</code></pre>
+</div>
+
+<p>Có thể không cần sử dụng tham số password</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
+</code></pre>
+</div>
+
+<p>Khi đó, sau khi <kbd>Enter</kbd>, SVN yêu cầu bạn phải nhập password cho <code class="highlighter-rouge">admin</code>, bạn nhập mật khẩu xong, nếu thành công nó cũng sẽ báo <code class="highlighter-rouge">commited</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>C:<span class="se">\D</span>ocuments and Settings<span class="se">\C</span>hungtv&gt;svn mkdir svn://localhost/AP –m “Asia Professional” ––username admin
+Authentication realm: &lt;svn://localhost:3690&gt; 58a7a8ca-296d-2d48-a4a5-f5420ae2ca80
+Password <span class="k">for</span> ‘admin‘: <span class="k">*****</span>
+
+Committed revision 2.
+</code></pre>
+</div>
+
+<p>Kiểm tra lại danh sách dự án bạn mới tạo bằng lệnh list (hoặc ls) của SVN.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn ls svn://localhost
+</code></pre>
+</div>
+
+<h2 id="to-service-trong-window--chy-svn-service">Tạo service trong window để chạy svn service</h2>
+<p>Bước tiếp theo, các bạn tạo 1 service để chạy svn service cho repository bạn đã tạo.</p>
+
+<p>Tại sao phải tạo service? ở bước trên, các bạn để ý là muốn sử dụng được các lệnh của giao thức <code class="highlighter-rouge">SVN (mkdir, list …)</code> thì không được tắt cửa sổ cmd đang chạy lệnh <code class="highlighter-rouge">svnserve –d –r C:\ARDRepository</code></p>
+
+<p>Như vậy là mỗi khi khởi động lại máy chủ, muốn cho các máy trạm có thể truy cập vào repository của bạn thì bạn phải lên server và chạy lệnh đó để start service svn (bất tiện quá đúng không). Bước này, bạn sẽ tạo 1 service khởi động cùng window.</p>
+
+<p>Bạn tắt của sổ cmd đang chạy service SVN đi để tiếp tục.</p>
+
+<p>Để tạo service, bạn sử dụng lệnh <code class="highlighter-rouge">SC</code> (chú ý là bạn phải có quyền admin trên máy này nhé, nhất là các bạn đang dùng win7, hãy righ-click vào cmd.exe và <code class="highlighter-rouge">Run as Administrator</code> trước khi tiếp tục).</p>
+
+<p>Trong cửa sổ cmd, bạn gõ lệnh sau để tạo service.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sc create &lt;ARDSVN&gt; <span class="nv">binpath</span><span class="o">=</span> “c:<span class="se">\s</span>vn-win32-3.5.6<span class="se">\b</span><span class="k">in</span><span class="se">\s</span>vnserve.exe ––service –r C:<span class="se">\A</span>RDRepository” <span class="nv">displayname</span><span class="o">=</span> “ARD SVN Server” <span class="nv">depend</span><span class="o">=</span> TCPIP <span class="nv">start</span><span class="o">=</span> auto
+</code></pre>
+</div>
+
+<blockquote>
+  <ul>
+    <li><strong>ARDSVN</strong>: Tên của service.</li>
+    <li><strong>binpath= “…”</strong>: Đường dẫn thực thi service và chỉ định các tham số (chú ý là sau dấu = có khoảng trắng còn trước nó thì không nhé)</li>
+    <li><strong>displayname= “…”</strong>: Tên của service sẽ hiện thị trong Services Management (cũng chú ý khoảng trắng sau dấu ‘=).</li>
+    <li>
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>depend = TCPIP</strong>: Danh sách các service Dependencies, cần thiết để sử dụng service svn (trong trường hợp này cần phải có service TCPIP)</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>start= auto</strong>: Xác định service này sẽ tự động chạy khi khởi động window.</li>
+  </ul>
+</blockquote>
+
+<p>OK, nếu không có gì sai sót thì sau khi <kbd>ENTER</kbd>, bạn sẽ nhận được thông báo:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[SC] CreateService SUCCESS
+</code></pre>
+</div>
+
+<p>Tạo xong chưa chắc đã chạy được (vì có thể cấu trúc trong binpath của bạn sau – thiếu dấu “-“ trước service chẳng hạn)</p>
+
+<p>Bây giờ bạn thử chạy service đó lên bằng lệnh sau:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sc start ARDSVN
+</code></pre>
+</div>
+
+<p>Nếu thành công bạn sẽ nhận được thông báo thông tin của service.</p>
+
+<p>Trong trường hợp không thành công, bạn có thể xóa service đi bằng lệnh <code class="highlighter-rouge">sc delete ARDSVN</code> và tạo lại từ đầu.</p>
+
+<p>Chúc các bạn thành công.</p>
+
+    </div>
+    </div>
+  </article>
+  
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+       <hr>
+<h4>Share this:</h2>
+<ul class="share-buttons">
+  <li><a href="https://facebook.com/sharer.php?u=http://chungtrinh.com/2010/11/setup-create-repository-config-create-project-create-svn-service/" title="Share on Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+  <li><a href="https://twitter.com/intent/tweet?text=Setup, create repository, config, create project, create svn service&url=http://chungtrinh.com/2010/11/setup-create-repository-config-create-project-create-svn-service/" target="_blank" title="Tweet"><i class="fa fa-twitter fa-fw"></i></a></li>
+  <li><a href="https://plus.google.com/share?url=http://chungtrinh.com/2010/11/setup-create-repository-config-create-project-create-svn-service/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus fa-fw"></i></a></li>
+</ul>
+<hr>
+    </div>
+  </div>
+  
+
+  
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="/2010/10/loi-khi-go-bo-microsoft-office-2007/" data-toggle="tooltip" data-placement="top" title="Lỗi khi gỡ bỏ Microsoft Office 2007">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="/2010/11/mot-so-lenh-co-ban-trong-svn/" data-toggle="tooltip" data-placement="top" title="Một số lệnh cơ bản trong SVN">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'chungtrinh';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          <li>
+            <a href="https://www.facebook.com/chungtv" title="Facebook" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://github.com/chungtv" title="GitHub" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/trinhvanchung" title="Twitter" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="mailto:aschungtv@gmail.com" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+		  
+		  <li>
+			<a href="/feed.xml" title="RSS" target="_blank">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>		
+          		  
+        </ul>
+        <p class="copyright text-muted">
+		  Chung Trịnh
+		  &nbsp;&bull;&nbsp;
+		  2016
+		  
+		  
+		  &nbsp;&bull;&nbsp;
+		  <a href="http://chungtrinh.com">chungtrinh.com</a>
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/"  target="_blank">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-62079859-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  
+  </body>
+</html>

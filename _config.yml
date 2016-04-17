@@ -79,7 +79,7 @@ kramdown:
   syntax_highlighter: rouge
 
 #highlighter: rouge #pygments #rouge
-#permalink: /:year-:month-:day-:title/
+permalink: /:year/:month/:title/
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
@@ -91,6 +91,7 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
+      share: true
   -
     scope:
       path: "" # all files

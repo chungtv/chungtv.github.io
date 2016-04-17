@@ -389,6 +389,7 @@
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -401,6 +402,9 @@
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -441,184 +445,6 @@
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <blockquote>
-  <p><em>Đôi khi vì một lý do gì đó mà bạn phải truy vấn dữ liệu từ một database đặt tại server khác (hoặc một instance khác của SQL Server) – ví dụ: so sánh dữ liệu giữa 2 database, hay các giải pháp phân tán …</em></p>
-</blockquote>
-
-<blockquote>
-  <p><em>Bạn sẽ làm thế nào? Tôi xin giới thiệu với các bạn sử dụng Linked Server để giải quyết vấn đề này.</em></p>
-</blockquote>
-
-<p>Trong bài này, tôi giả sử tôi đang ở SQL server 2000 máy local (instance là <code class="highlighter-rouge">CHUNGTV\SQL2K</code>), tôi cần lấy dữ liệu của bảng DMKH ở database <code class="highlighter-rouge">HungLong</code> để tại SQL Server 2008 trên máy chủ (instance là <code class="highlighter-rouge">ServerDB\SQL2008</code>)</p>
-
-<h3 id="cch-1-cu-hnh-bng-giao-din">Cách 1: Cấu hình bằng giao diện</h3>
-
-<ul>
-  <li>
-    <p>Mở trình quản lý database lên, hiện tôi đang dùng Microsoft SQL Server Management Studio 2008 (10.x); đối với Microsoft SQL Server Management Studio 2005 (9.x) thì làm tương tự, với Microsoft SQL Enterprise Manager 8 (2000) thì có khác một ít tôi sẽ nói sau.</p>
-  </li>
-  <li>
-    <p>Expand thư mục <code class="highlighter-rouge">Server Objects</code>, sẽ thấy thư mục <code class="highlighter-rouge">Linked Servers</code></p>
-  </li>
-</ul>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image1.png" alt="" /></p>
-
-<p><em>Đối với Microsoft SQL Enterprise Manager 8 (2000) thì phần Linked Servers lại nằm trong phần Security</em></p>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image2.png" alt="" /></p>
-
-<ul>
-  <li>Righ-click lên mục <code class="highlighter-rouge">Linked Servers</code>, và chọn <code class="highlighter-rouge">New Linked Servers…</code>, màn hình <code class="highlighter-rouge">New Linked Server</code> sẽ hiện lên</li>
-</ul>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image3.png" alt="" /></p>
-
-<p><strong>Tại phần General, bạn nhập các thông tin:</strong><br />
-&gt; - <strong>Linked server</strong>: Tên bạn đặt cho linked server sẽ được truy xuất khi bạn thực hiện truy vấn dữ liệu (ở đây tôi đặt là SERVERDB2K8)</p>
-
-<blockquote>
-  <ul>
-    <li><strong>Server type</strong>: Bạn chọn là Other data source</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Provider</strong>: Chọn Microsoft OLE DB Provider for SQL Server (ở đây bạn có thể chọn loại khác tùy vào nguồn dữ liệu bạn sẽ link tới – có thể là Access, Oracle, Excel …)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Product name</strong>: đặt tên product (ở đây tôi đặt là Sql2K8)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li><strong>Data source</strong>: nhập instance của server bạn muốn link tới (ở đây tôi gõ ServerDB\SQL2008)</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Các thông tin khác để mặc định.</li>
-  </ul>
-</blockquote>
-
-<p><strong>Tại phần Security:</strong></p>
-
-<p><img src="http://trinhvanchung.files.wordpress.com/2011/05/image4.png" alt="" /></p>
-
-<blockquote>
-  <ul>
-    <li>Bạn chọn tùy chọn “Be made using this security context”</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Nhập user đăng nhập vào SQL tại <code class="highlighter-rouge">Remote login:</code></li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Nhập Password đăng nhập tại <code class="highlighter-rouge">With password:</code></li>
-  </ul>
-</blockquote>
-
-<p>Sau đó bạn nhấn <kbd>OK</kbd></p>
-
-<ul>
-  <li>Thực hiện truy vấn dữ liệu: bạn chọn <kbd>New Query</kbd> và gõ câu truy vấn dữ liệu thử. Ví dụ:</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">100</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">SERVERDB2K8</span><span class="p">.</span><span class="n">HungLong</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">DMKH</span>
-</code></pre>
-</div>
-
-<h3 id="thc-hin-bng-lnh">Thực hiện bằng lệnh</h3>
-<p>Tại cửa sổ query, bạn hoàn toàn có thể thực hiện các công việc như bước 1 bằng cách sau:<br />
-- Tạo mới Linked server bằng lệnh sau:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sp_addlinkedserver</span> <span class="o">@</span><span class="n">server</span> <span class="o">=</span> <span class="n">N</span><span class="s1">'SERVERDB2K8'</span><span class="p">,</span> <span class="o">@</span><span class="n">provider</span><span class="o">=</span><span class="n">N</span><span class="s1">'SQLOLEDB'</span><span class="p">,</span> <span class="o">@</span><span class="n">datasrc</span><span class="o">=</span><span class="n">N</span><span class="s1">'ServerDB</span><span class="se">\S</span><span class="s1">QL2008'</span><span class="p">,</span> <span class="o">@</span><span class="n">srvproduct</span><span class="o">=</span><span class="n">N</span><span class="s1">'Sql2K8'</span>
-</code></pre>
-</div>
-
-<ul>
-  <li>Kiểm tra đã tạo thành công chưa bằng:</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">sp_linkedservers</span>
-</code></pre>
-</div>
-
-<p>kết quả:<br />
-<img src="https://trinhvanchung.files.wordpress.com/2011/05/image_thumb5.png?w=575&amp;h=87" alt="" /></p>
-
-<ul>
-  <li>Đăng nhập vào Linked server</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">EXEC</span> <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sp_addlinkedsrvlogin</span> <span class="o">@</span><span class="n">rmtsrvname</span><span class="o">=</span><span class="n">N</span><span class="s1">'SERVERDB2K8'</span><span class="p">,</span> <span class="o">@</span><span class="n">useself</span><span class="o">=</span><span class="n">N</span><span class="s1">'False'</span><span class="p">,</span> <span class="o">@</span><span class="n">locallogin</span><span class="o">=</span><span class="k">NULL</span><span class="p">,</span> <span class="o">@</span><span class="n">rmtuser</span><span class="o">=</span><span class="n">N</span><span class="s1">'tentruycap'</span><span class="p">,</span> <span class="o">@</span><span class="n">rmtpassword</span><span class="o">=</span><span class="s1">'matkhautruycap'</span>
-</code></pre>
-</div>
-
-<ul>
-  <li>Kiểm tra kết quả</li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">100</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">SERVERDB2K8</span><span class="p">.</span><span class="n">HungLong</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">DMKH</span>
-</code></pre>
-</div>
-
-<p>Chúc các bạn thành công.</p>
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/work/tips%20and%20tricks/2011/05/16/xoa-code-tren-forms-va-class-cua-foxpro.html" data-toggle="tooltip" data-placement="top" title="Xóa code trên Forms và Class của Foxpro">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/life/2011/06/01/nhung-tac-pham-dau-tay-cua-con-trai.html" data-toggle="tooltip" data-placement="top" title="Những tác phẩm đầu tay của con trai">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 

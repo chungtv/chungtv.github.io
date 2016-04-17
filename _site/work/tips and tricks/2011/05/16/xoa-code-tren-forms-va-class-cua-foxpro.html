@@ -287,6 +287,7 @@ WITH [] USE IN startup
     </div>
     </div>
   </article>
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
        <hr>
@@ -299,6 +300,9 @@ WITH [] USE IN startup
 <hr>
     </div>
   </div>
+  
+
+  
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <ul class="pager blog-pager">
@@ -339,82 +343,6 @@ WITH [] USE IN startup
   </div>
 </div>
 
-  <!-- 
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-	      <blockquote>
-  <p>Tiện có bạn trên DDTH hỏi về vấn đề này, mình viết một bài hướng dẫn:</p>
-</blockquote>
-
-<p>Các bạn có thể thấy, phần lớn các sản phẩm Fox thương mại đều bị xóa code trên form và class vì thế nên khi modify lên mọi người đều không thể đọc được code.</p>
-
-<p>Vậy tôi đã làm như thế nào để có thể xóa code trên form và class?</p>
-
-<p>Bản chất các đối tượng trong VFP đều là table. Form, class hay report cũng đều là table cả thôi. Khi code trên form và class, sau khi lưu lại toàn bộ nội dung code sẽ được vfp compile và lưu vào trường ObjCode, còn nội dung code thì sẽ được lưu tại trường Methods.</p>
-
-<p>Khi run form hay class, VFP sẽ thực hiện từ cái đã compile chứ không bao giờ lại đi compile lại. Vì thế, bạn có thể yên tâm khi xóa nội dung của trường Methods đi mà không sợ chương trình không chạy được và cũng không sợ người khác đọc được bạn đã code gì trên form đó (tất nhiên, bạn phải backup project của mình trước).</p>
-
-<p>Sau đây là ví dụ dùng để xóa code của form cactpc1</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Forms/Cactpc1.scx
-
-REPLACE ALL Methods WITH []
-
-USE IN cactpc1
-</code></pre>
-</div>
-
-<p>Hay xóa code trong class lib Startup</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>USE ../Libs/Startup.vcx
-
-REPLACE ALL Methods
-
-WITH [] USE IN startup
-</code></pre>
-</div>
-
-
-	    </article>
-	  	  
-      <ul class="pager blog-pager">
-        
-        <li class="previous">
-          <a href="/work/tips%20and%20tricks/2011/05/11/edit-log-message-trong-svn.html" data-toggle="tooltip" data-placement="top" title="Edit log message in SVN">&larr; Previous Post</a>
-        </li>
-        
-        
-        <li class="next">
-          <a href="/work/tutorials/2011/05/25/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server.html" data-toggle="tooltip" data-placement="top" title="Truy vấn dữ liệu từ xa thông qua MS SQL linked server">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-      
-	    
-        <div class="disqus-comments">
-	        
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'chungtrinh';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-        </div>
-	    
-    </div>
-  </div> -->
 </div>
 
 
