@@ -1,0 +1,39 @@
+---
+layout: page
+title: Tags archive
+subtitle: 
+---
+<ul class="tag-cloud">
+{% for tag in site.tags %}
+  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+    <a href="#{{ tag | first | slugify  }}">
+      {{ tag | first }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+{% for tag in site.tags %}
+  <div class="archive-group">
+    <h2 class='tag-header' id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <ul>
+      {% assign pages_list = tag[1] %}
+
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if group == null or group == node.group %}
+            {% if page.url == node.url %}
+            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+            <li><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign pages_list = nil %}
+      {% assign group = nil %}
+    </ul>
+  </div>
+{% endfor %}
+

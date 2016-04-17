@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chung Trịnh&#39;s Blog</title>
+    <description>Business Software Developer and Bloger!</description>
+    <link>http://chungtrinh.com"</link>
+    <atom:link href="http://chungtrinh.com"/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Thay đổi đường dẫn Local trong Team Foundation Server</title>
+        <description>
+          
+          Đôi khi vì lý do gì đó bạn cần thay đổi đường dẫn Local path đã được map bởi Team Foundation Server Source control. Để thực hiện việc này, bạn mở Visual Studio, vào File / Source Control / Workspaces. Trên cửa sổ Manage Workspaces, bạn chọn Workspace cần thay...
+        </description>
+        <pubDate>Fri, 23 Oct 2015 15:57:17 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/10/23/thay-%C4%91%E1%BB%95i-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BA%ABn-local-trong-team-foundation-server.html</guid>
+      </item>
+    
+      <item>
+        <title>Sửa lỗi Unable to modify table. Timeout expired trong SQL Server Management Studio</title>
+        <description>
+          
+          Trong SQL Server Management Studio, khi làm việc với bảng dữ liệu lớn hoặc vì lý do gì đó, bạn phải sửa lại cấu trúc bảng, sửa kiểu dữ liệu … Sau khi tiến hành thay đổi cấu trúc bảng xong, lưu bản lại, nhiều khả năng bạn sẽ nhận...
+        </description>
+        <pubDate>Fri, 16 Oct 2015 05:00:32 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/10/16/s%E1%BB%ADa-l%E1%BB%97i-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio.html</guid>
+      </item>
+    
+      <item>
+        <title>Start menu, Cotana và Modern Apps không hoạt động trong windows 10</title>
+        <description>
+          
+          Có rất nhiều lý do khiến Start menu hay các ứng dụng Modern không hoạt động trong Windows 10. Sau đây, tôi sẽ hướng dẫn sửa lỗi Start menu, Cortana, Search Box và các ứng dụng Modern không hoạt động trong windows 10. 1.- Mở Windows Powershell dưới quyền Administator...
+        </description>
+        <pubDate>Tue, 04 Aug 2015 09:16:52 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/08/04/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10.html</guid>
+      </item>
+    
+      <item>
+        <title>Sử dụng Fn key trong VMWare Fusion</title>
+        <description>
+          
+          Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion. Macbook pro sử dụng các tổ hợp phím Fn+Funtions để thực hiện một số chức năng. Ví dụng Fn+F12 để hiển thị Dashboard. Trong Windows, tôi muốn sử dụng chức năng của phím...
+        </description>
+        <pubDate>Tue, 14 Jul 2015 05:52:17 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html</guid>
+      </item>
+    
+      <item>
+        <title>Macbook keyboard</title>
+        <description>
+          
+          Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thường dùng trong máy tính chạy hệ điều hành Windows hoàn toàn không có trên bàn phím của Macbook. Bài này tôi note lại danh sách các tổ hợp phím kết hợp để sử dụng thay thế...
+        </description>
+        <pubDate>Sun, 12 Jul 2015 14:53:50 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/12/macbook-keyboard.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/12/macbook-keyboard.html</guid>
+      </item>
+    
+      <item>
+        <title>Sửa lỗi 9001: The log for database is not available trong MS SQL Server</title>
+        <description>
+          
+          Một số Database của tôi bị lỗi 9001 khi thực hiện thao tác dữ liệu (Insert, update). Tôi kiểm tra thì thấy thuộc tính Auto Close đang là True. Tôi cố chuyển nó sang False nhưng không được. Sau khi nghiên cứu, thì đây là cách tôi giải quyết. Click...
+        </description>
+        <pubDate>Tue, 07 Jul 2015 03:15:43 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html</guid>
+      </item>
+    
+      <item>
+        <title>[Tips] Lấy thuộc tính của tất cả Database trong MS SQL Server</title>
+        <description>
+          
+          Trong quá trình quản lý Cơ sở dữ liệu MS SQL Server, tôi cần kiểm tra thuộc tính bất kỳ của tất cả Database đang có trong MS SQL Server. Đây là câu truy vấn làm việc này: SELECT name, DATABASEPROPERTYEX(name, &#39;IsAutoClose&#39;) FROM master.dbo.sysdatabases Tham khảo thêm tại đây mssqltips.com...
+        </description>
+        <pubDate>Tue, 07 Jul 2015 03:10:37 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2.html</guid>
+      </item>
+    
+      <item>
+        <title>Định dạng nội dung khi chat trong skype</title>
+        <description>
+          
+          Skype hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc. Khi chat Skype, mặc định Skype chỉ hiển thị nội dung chat ở định dạng chữ thường. Đôi khi bạn cần nhấn mạnh nội dung...
+        </description>
+        <pubDate>Fri, 03 Jul 2015 07:24:54 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html</guid>
+      </item>
+    
+      <item>
+        <title>Hiển thị danh sách database và vị trí lưu trữ trong SQL Server</title>
+        <description>
+          
+          Trong quá trình làm việc với SQL Server, đôi khi bạn cần hiển thị danh sách database cùng với vị trí lưu trữ các file Data, Log của các Database đó. Đây là Query sẽ trả về kết quả mong muốn. SELECT db.name AS [DB Name], mf.name AS [Logical Name],...
+        </description>
+        <pubDate>Fri, 03 Jul 2015 02:51:15 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/07/03/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server.html</guid>
+      </item>
+    
+      <item>
+        <title>SQL Server - Ctrl + R không làm việc trong SSMS</title>
+        <description>
+          
+          Hôm nay, không biết vì lý do gì mà tổ hợp phím Ctrl+R không làm việc trên SQL Server Management Studio nữa. Hiện tại tôi đang dùng SQL Management Studio 2012 (SSMS). Trong SSMS, Ctrl+R là tổ hợp phím tắt sử dụng để ẩn vùng kết quả truy vấn của...
+        </description>
+        <pubDate>Thu, 21 May 2015 11:10:52 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/05/21/sql-server-ctrl-r-khong-lam-viec-trong-ssms.html</guid>
+      </item>
+    
+      <item>
+        <title>Mở nhiều tài khoản Skype trên cùng một máy tính</title>
+        <description>
+          
+          Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi. Mặc định, Skype chỉ cho phép mở một chương trình (đăng nhập bằng một tài khoản) trên một máy tính. Để có thể mở nhiều...
+        </description>
+        <pubDate>Thu, 21 May 2015 07:32:19 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html</guid>
+      </item>
+    
+      <item>
+        <title>Lưu cấu hình IP Profile và thiết lập lại khi cần thiết</title>
+        <description>
+          
+          Đôi khi, chúng ta cần phải thực hiện những công việc mang tính lặp đi lặp lại như việc thay đổi địa chỉ IP trên máy tính cá nhân khi kết nối mạng ở vài nơi. Việc thay đổi này lặp đi lặp lại hàng ngày. Sau khi tìm hiểu,...
+        </description>
+        <pubDate>Fri, 24 Apr 2015 02:23:16 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tips%20and%20tricks/2015/04/24/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh.html</guid>
+      </item>
+    
+      <item>
+        <title>Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong trigger</title>
+        <description>
+          
+          Đôi khi, vì lý do gì đó mà triger của bảng trong SQL Server bạn cần phải kiểm tra xem trường nào đang được update trước khi thực thi các lệnh tiếp theo. Xem thêm bài viết này của tôi tại đây. Bài này được tôi viết lại từ bài...
+        </description>
+        <pubDate>Fri, 24 Apr 2015 01:47:26 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html</guid>
+      </item>
+    
+      <item>
+        <title>Thiên nhiên chan hòa trong nhà ống 40 m2 ở Hà Nội</title>
+        <description>
+          
+          Ngôi nhà nằm trong con ngõ nhỏ điển hình cho kiểu nhà ống Hà Nội - những căn nhà để đưa ánh sáng vào là cả một tham vọng. Ngôi nhà 4 tầng có diện tích mặt bằng 3,8 x 10,7 m, tổng diện tích sử dụng khoảng 120 m2....
+        </description>
+        <pubDate>Thu, 16 Apr 2015 01:05:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html</guid>
+      </item>
+    
+      <item>
+        <title>Tôi đã  xây dựng lại blog với Ghost</title>
+        <description>
+          
+          Một thời gian dài tôi khá bận bịu với công việc và nhiều biến cố xảy ra cho gia đình. Một thời gian dài 2 blog của tôi trên wordpress là Chuyện gia đình và Trịnh Văn Chung dường như đã đi vào quên lãng. Qua quá trình đọc và...
+        </description>
+        <pubDate>Tue, 07 Apr 2015 05:00:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/work/life/blogging/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/work/life/blogging/2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html</guid>
+      </item>
+    
+      <item>
+        <title>Ta 30</title>
+        <description>
+          
+          Ngày ta 30, thế giới chào đón bằng cơn địa chấn mang tên FIFA Worldcup. Người Đức vỡ òa, người Brazil nức nở (giá hôm nay tỷ số 9-7 thì sẽ có ý nghĩa hơn nhiều). 30 tuổi, quãng thời gian tuổi trẻ, của tuổi thanh xuân căng tràn sức...
+        </description>
+        <pubDate>Wed, 09 Jul 2014 08:52:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2014/07/09/toi-30.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2014/07/09/toi-30.html</guid>
+      </item>
+    
+      <item>
+        <title>#BI#</title>
+        <description>
+          
+          Hôm nay ba mẹ chở con với em bo đi ăn gà rán nhé. – Ăn gà rán trong siêu thị hả Ba. Không, mình đi ăn ở chỗ khác (thường thì sẽ vào Coop Phan Văn Trị nhưng sợ Bi và Bo ham đòi vào chơi game nên hôm...
+        </description>
+        <pubDate>Wed, 03 Apr 2013 05:00:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2013/04/03/bi.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2013/04/03/bi.html</guid>
+      </item>
+    
+      <item>
+        <title>#Bi#</title>
+        <description>
+          
+          … … Bi: Ba ơi, ở lớp bạn nào chọc con là con la bạn đó. Ở nhà em Bo mà chọc con con cũng la em Bo luôn. Ba: Sao lại la, con chỉ cần nói nhẹ là các bạn và em nghe thôi. Bi: Sao lại nói nhẹ?...
+        </description>
+        <pubDate>Wed, 03 Apr 2013 05:00:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2013/04/03/bi-2.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2013/04/03/bi-2.html</guid>
+      </item>
+    
+      <item>
+        <title>Một vài suy nghĩ sau khi đọc “Bên thắng cuộc”</title>
+        <description>
+          
+          Tranh thủ mấy ngày nghỉ cuối năm, mình đọc xong cuốn Bên Thắng Cuộc – Phần 1: Giải phóng của nhà báo Huy Đức. Là người trẻ, thuộc thế hệ 8x, tuổi thơ gắn với phần cuối giai đoạn mà BTC đề cập, lại sinh ra và lớn lên tại...
+        </description>
+        <pubDate>Fri, 04 Jan 2013 08:52:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2013/01/04/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc.html</guid>
+      </item>
+    
+      <item>
+        <title>Mẹ đau bao tử</title>
+        <description>
+          
+          Hôm nay mẹ bị đau bao tử, đi làm về mệt mẹ nằm nghỉ. Bi thấy vậy hỏi mẹ, mẹ bảo mẹ bị đau bao tử. Đế giờ ăn cơm, ba mẹ ăn cơm, Bi ngồi xem phim hoạt hình. Mẹ cũng vừa ăn vừa coi. Bi thấy vậy liền...
+        </description>
+        <pubDate>Thu, 03 Jan 2013 05:00:00 +0700</pubDate>
+        <link>http://chungtrinh.com"/life/2013/01/03/me-dau-bao-tu.html</link>
+        <guid isPermaLink="true">http://chungtrinh.com"/life/2013/01/03/me-dau-bao-tu.html</guid>
+      </item>
+    
+  </channel>
+</rss>
