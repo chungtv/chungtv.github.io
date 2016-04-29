@@ -4,7 +4,10 @@ title: Edit log message in SVN
 date: '2011-05-11 05:00:00'
 categories: [Work, Tips and tricks]
 tags: [SVN, Source Control]
-redirect_from: /edit-log-message-trong-svn/
+redirect_from: 
+  - /edit-log-message-trong-svn/
+  - /2011/05/11/edit-log-message-trong-svn.html
+  - /work/tips%20and%20tricks/2011/05/11/edit-log-message-trong-svn.html
 ---
 
 Hôm nay, vào show log của dự án (Click phải lên dự án –> TortoiseSVN –> Show Log). Xem lại log thì thấy một số cái message không hợp lý. Tính sửa lại, click phải lên revision dự định sửa, chọn Edit log message. Sau khi sửa xong, nhấn OK, thì nhận được lỗi từ TortoiseSVN là: `Repository has not been enabled to accept revision propchange; ask the administrator to create pre-revprop-change hook`.
