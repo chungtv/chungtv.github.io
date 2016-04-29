@@ -9,6 +9,7 @@ bigimg:
 
 <div class="posts-list">
   {% for post in paginator.posts %}
+  {% if post.published != false %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
@@ -31,6 +32,7 @@ bigimg:
     </div>
   
    </article>
+   {% endif %}
   {% endfor %}
 </div>
 

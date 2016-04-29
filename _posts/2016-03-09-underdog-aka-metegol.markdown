@@ -4,6 +4,8 @@ layout: post
 categories: [Life]
 bigimg:
     - "/images/2016/03/MetegolCharacters_zps4a9cdef9.jpg"
+image:
+    feature: "/images/2016/03/MetegolCharacters_zps4a9cdef9.jpg"
 ---
 
 Chủ nhật vừa rồi, ở nhà coi phim **“Underdog aka Metegol”** cùng với con. Phim kể về chuyện “vua banh bàn” Amadeo cùng với những cầu thủ banh bàn tí hon chiến đấu chống lại những kẻ ác đã phá hoại thành phố của họ. Trong lúc đi tìm kiếm những cầu thủ đồng đội banh bàn khác bị mất tích, xảy ra mâu thuẫn, mất đoàn kết giữa các cầu thủ đồ chơi tí hon này. Một cầu thủ đã phải đứng ra giải quyết. Anh ta đã yêu cầu các cầu thủ này kể về ưu điểm của cầu thủ đối diện mà anh ta ngưỡng mộ. Thật là kỳ diệu, mỗi người sau khi nói về ưu điểm của đối phương xong thì cảm thấy rất thoải mái và đoàn kết hơn. Bài học rút ra là để đoàn kết trong 1 team trước hết hãy nhìn ưu điểm, điểm tốt của các thành viên.

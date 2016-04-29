@@ -92,6 +92,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       share: true
+      published: true 
   -
     scope:
       path: "" # all files
@@ -157,3 +158,4 @@ prose:
 # 2fc73a3a967e97599c9763d05e564189
 gems: 
   - jekyll-paginate
+  - jekyll-redirect-from
