@@ -157,3 +157,4 @@ prose:
 # 2fc73a3a967e97599c9763d05e564189
 gems: 
   - jekyll-paginate
+  - jekyll-redirect-from
