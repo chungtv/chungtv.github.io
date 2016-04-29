@@ -4,7 +4,9 @@ title: Sử dụng COLUMNS_UPDATED() kiểm tra trường được update trong 
 date: '2015-04-24 01:47:26'
 categories: [Work, Tutorials]
 tags: [MS SQL Server]
-redirect_from: /su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/
+redirect_from: 
+  - /su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/
+  - /ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html
 ---
 
 
