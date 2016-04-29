@@ -4,7 +4,9 @@ title: Nước mắt đàn ông
 date: '2011-11-01 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /nuoc-mat-dan-ong/
+redirect_from: 
+  - /nuoc-mat-dan-ong/
+  - /2011/11/01/nuoc-mat-dan-ong.html
 ---
 
 ![Nước mắt đàn ông](https://trinhvanchung.files.wordpress.com/2011/11/image.png)

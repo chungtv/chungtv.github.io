@@ -4,7 +4,9 @@ title: Lỗi khi gỡ bỏ Microsoft Office 2007
 date: '2010-10-09 05:00:00'
 categories: [Work]
 tags: [Windows, MS Office]
-redirect_from: /loi-khi-go-bo-microsoft-office-2007/
+redirect_from: 
+ - /loi-khi-go-bo-microsoft-office-2007/
+ - /work/2010/10/09/loi-khi-go-bo-microsoft-office-2007.html
 ---
 
 > *Đây là bài viết cũ ở [blog của tôi trên wordpress](https://trinhvanchung.wordpress.com/category/th%E1%BB%A7-thu%E1%BA%ADt-tin-h%E1%BB%8Dc/office/). Hôm nay chuyển sang đây luôn để tiện theo dõi.*

@@ -4,7 +4,9 @@ title: Tôi đã  xây dựng lại blog với Ghost
 date: '2015-04-07 05:00:00'
 categories: [Work, Life, Blogging]
 tags: [Blogging, Ghost]
-redirect_from: /welcome-to-chung-trinh-blog-with-ghost/
+redirect_from: 
+  - /welcome-to-chung-trinh-blog-with-ghost/
+  - /2015/04/07/welcome-to-chung-trinh-blog-with-ghost.html
 ---
 
 Một thời gian dài tôi khá bận bịu với công việc và nhiều biến cố xảy ra cho gia đình. 

@@ -4,7 +4,9 @@ title: Truyện tranh đọc ngược
 date: '2011-04-19 05:00:00'
 categories: [Life]
 tags: [Book]
-redirect_from: /truyen-tranh-doc-nguoc/
+redirect_from: 
+  - /truyen-tranh-doc-nguoc/
+  - /2011/04/19/truyen-tranh-doc-nguoc.html
 ---
 
 Trưa hôm nay ngồi nói chuyện với mấy anh bạn trong công ty, kể về vụ đọc truyện tranh của con cháu, mới nhớ lại câu chuyện cách đây 2 tuần.

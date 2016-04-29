@@ -3,7 +3,9 @@ layout: post
 title: Kẹt xe!
 date: '2010-05-13 05:00:00'
 categories: [Life]
-redirect_from: /ket-xe/
+redirect_from: 
+  - /ket-xe/
+  - /2010/05/13/ket-xe.html
 ---
 
 Chiều hôm qua, sau khi đi siêu thị mua đồ về đến ngã tư Nguyễn Oanh – Phan Văn Trị thì bị kẹt xe, một cái xe buýt chạy hướng Nguyễn Oanh nằm chắn ngang đường PVT (có lẽ do những dòng người phía trước chạy theo hướng PVT chắn ngang nên xe buýt không thể tiến lên được).
