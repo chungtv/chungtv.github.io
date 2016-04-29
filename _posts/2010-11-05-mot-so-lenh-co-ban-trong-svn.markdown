@@ -4,7 +4,9 @@ title: Một số lệnh cơ bản trong SVN
 date: '2010-11-05 05:00:00'
 categories: [Work, Tutorials]
 tags: [SVN, Source Control]
-redirect_from: /mot-so-lenh-co-ban-trong-svn/
+redirect_from: 
+  - /mot-so-lenh-co-ban-trong-svn/
+  - /2010/11/05/mot-so-lenh-co-ban-trong-svn.html
 ---
 
 ![Subversion](https://trinhvanchung.files.wordpress.com/2010/11/image_thumb.png?w=396&h=58)
