@@ -4,7 +4,9 @@ title: Hàm đếm số ngày thứ trong 1 khoảng thời gian
 date: '2010-11-11 05:00:00'
 categories: [Work, Tips and tricks]
 tags: [MS SQL Server]
-redirect_from: /ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/
+redirect_from: 
+  - /ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/
+  - /2010/11/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian.html
 ---
 
 > Đôi khi mình cần phải đếm số thứ trong một khoảng thời gian nào đó. Ví dụ: Cần đếm xem trong tháng 11 có bao nhiêu ngày thứ 2, hay bao nhiêu ngày thứ 3. 
