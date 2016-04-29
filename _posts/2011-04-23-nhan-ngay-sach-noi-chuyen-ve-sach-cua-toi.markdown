@@ -4,7 +4,9 @@ title: Nhân ngày sách nói chuyện về sách của tôi
 date: '2011-04-23 05:00:00'
 categories: [Life]
 tags: [Book]
-redirect_from: /nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi/
+redirect_from: 
+  - /nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi/
+  - /2011/04/23/nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi.html
 ---
 
 > Từ năm 1995, tại kỳ họp lần thứ 28 của Đại hội đồng Liên Hợp Quốc, UNESCO đã quyết định chọn ngày 23-4 hàng năm làm “Ngày sách và bản quyền thế giới” (World Book and Copyright Day). Tại Việt Nam, Bộ VHTTDL cũng chọn 23-4 hàng năm làm ngày hội đọc sách của Việt Nam.
