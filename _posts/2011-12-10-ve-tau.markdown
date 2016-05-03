@@ -3,7 +3,9 @@ layout: post
 title: Vé tàu
 date: '2011-12-10 05:00:00'
 categories: [Life]
-redirect_from: /ve-tau/
+redirect_from: 
+  - /ve-tau/
+  - /2011/12/10/ve-tau.html
 ---
 
 > Mới đi lấy vé tàu về, có mỗi cái chuyện đi lấy vé tàu cũng có nhiều vấn đề.
