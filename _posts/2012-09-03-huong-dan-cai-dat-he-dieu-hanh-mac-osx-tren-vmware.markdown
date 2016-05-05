@@ -7,7 +7,7 @@ tags: [Windows, MacOSX, VMWare, Virtual Machine]
 redirect_from: 
  - /huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware/
  - /work/tutorials/2012/09/03/huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware.html
- - /2012/09/03/huong-dan-viet-blog-wordpress-tu-microsoft-word-2013.html
+ - /2012/09/03/huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware.html
 ---
 
 1. Trước hết bạn cần một máy tính có cấu hình tương đối (Hiện tại tôi đang dùng máy tính cũng CPU Core i3 2,4GHz, RAM 2GB)

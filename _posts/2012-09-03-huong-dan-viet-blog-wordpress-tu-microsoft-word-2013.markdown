@@ -7,6 +7,7 @@ tags: [MS Office, Blogging, Wordpress]
 redirect_from: 
   - /huong-dan-viet-blog-wordpress-tu-microsoft-word-2013/
   - /work/blogging/2012/09/03/huong-dan-viet-blog-wordpress-tu-microsoft-word-2013.html
+  - /2012/09/03/huong-dan-viet-blog-wordpress-tu-microsoft-word-2013.html
 
 ---
 
