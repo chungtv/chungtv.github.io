@@ -3,7 +3,9 @@ layout: post
 title: Năm mới!!!
 date: '2008-01-04 05:00:00'
 categories: [Life]
-redirect_from: /nam-moi/
+redirect_from: 
+    - /nam-moi/
+    - /2008/01/04/nam-moi.html
 ---
 
 Thế là một năm nữa đi qua. Mỗi người thêm một tuổi. Mình già thêm một tuổi. Mấy lần dự định ngồi tổng kết lại những gì mình đã làm được và chưa được trong 1 năm qua nhưng rồi bận rộn, công việc, khách hàng, áp lực … tất cả cuốn mình và một vòng xoáy khó có thể thoát ra được.

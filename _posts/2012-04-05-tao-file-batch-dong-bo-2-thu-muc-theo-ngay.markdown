@@ -4,7 +4,9 @@ title: Tạo file Batch đồng bộ 2 thư mục theo ngày
 date: '2012-04-05 05:00:00'
 categories: [Work, Tips and tricks]
 tags: [Batch, Sync]
-redirect_from: /tao-file-batch-dong-bo-2-thu-muc-theo-ngay/
+redirect_from: 
+	- /tao-file-batch-dong-bo-2-thu-muc-theo-ngay/
+	- /2012/04/05/tao-file-batch-dong-bo-2-thu-muc-theo-ngay.html
 ---
 
 Trong quá trình triển khai phần mềm, việc sửa đổi chương trình theo yêu cầu người dùng là không tránh khỏi. Thường đội triển khai sẽ hiệu chỉnh chương trình trực tiếp trên server và client sẽ update xuống.

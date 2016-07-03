@@ -4,7 +4,9 @@ title: Mở nhiều tài khoản Skype trên cùng một máy tính
 date: '2015-05-21 07:32:19'
 categories: [Work, Tips and tricks]
 tags: [Skype]
-redirect_from: /mo-2-tai-khoan-skype-tren-cung-mot-may-tinh/
+redirect_from: 
+    - /mo-2-tai-khoan-skype-tren-cung-mot-may-tinh/
+    - /2015/05/21/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh.html
 ---
 
 Trong công việc, vì lý do gì đó mà bạn cần phải mở nhiều tài khoản Skype trên cùng một máy tính để trao đổi.

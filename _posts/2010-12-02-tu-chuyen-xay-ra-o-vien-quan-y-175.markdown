@@ -3,7 +3,9 @@ layout: post
 title: Từ chuyện xảy ra ở viện Quân y 175
 date: '2010-12-02 05:00:00'
 categories: [Life]
-redirect_from: /tu-chuyen-xay-ra-o-vien-quan-y-175/
+redirect_from: 
+    - /tu-chuyen-xay-ra-o-vien-quan-y-175/
+    - /2010/12/02/tu-chuyen-xay-ra-o-vien-quan-y-175.html
 ---
 
 Hôm trước, vợ bị bệnh nằm trong viện quân y 175. Mình vào chăm và đưa vợ đi siêu âm có dịp chứng kiến một truyện xảy ra tại đây, đáng để suy nghĩ về việc thực hiện cuộc vận động “học và làm theo tấm gương đạo đức Hồ Chí Minh”.

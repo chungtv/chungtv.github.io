@@ -3,7 +3,9 @@ layout: post
 title: Lạm bàn về đồng phục
 date: '2011-10-06 05:00:00'
 categories: [Life]
-redirect_from: /lam-ban-ve-dong-phuc/
+redirect_from: 
+    - /lam-ban-ve-dong-phuc/
+    - /2011/10/06/lam-ban-ve-dong-phuc.html
 ---
 
 Hôm nay, công ty chuẩn bị đợt may đồng phục năm 2011.

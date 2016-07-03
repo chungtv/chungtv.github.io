@@ -4,7 +4,9 @@ title: Bo đã lớn rồi
 date: '2012-04-15 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /bo-da-lon-roi/
+redirect_from: 
+    - /bo-da-lon-roi/
+    - /2012/04/15/bo-da-lon-roi.html
 ---
 
 ![](https://chuyengiadinh.files.wordpress.com/2012/04/img_0179.jpg)

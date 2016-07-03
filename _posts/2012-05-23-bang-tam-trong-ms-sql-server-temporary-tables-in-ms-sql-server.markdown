@@ -4,7 +4,9 @@ title: Bảng tạm trong MS SQL Server – Temporary tables in MS SQL Server
 date: '2012-05-23 05:00:00'
 categories: [Work, Tutorials]
 tags: [MS SQL Server]
-redirect_from: /bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server/
+redirect_from: 
+    - /bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server/
+    - /work/tutorials/2012/05/23/bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server.html
 ---
 
 Khi làm việc với MS SQL Server, hẳn bạn cũng khá quen thuộc với khái niệm bảng tạm (Temporary table). Ít nhiều bạn đã từng làm hoặc từng gặp các đoạn:

@@ -7,6 +7,7 @@ tags: [MacOSX, Macbook, VMWare]
 redirect_from: 
   - /su-dung-fn-key-trong-vmware-fusion/
   - /work/tips%20and%20tricks/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html
+  - /macos/2015/07/14/su-dung-fn-key-trong-vmware-fusion.html
 ---
 
 Tôi dùng Macbook, cài đặt đặt và sử dụng hệ điều hành Windows thông qua VMWare Fusion.

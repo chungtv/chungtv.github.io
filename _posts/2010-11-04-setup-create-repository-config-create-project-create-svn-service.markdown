@@ -7,6 +7,7 @@ tags: [SVN, Source Control]
 redirect_from: 
     - /setup-create-repository-config-create-project-create-svn-service/
     - /2010/11/04/setup-create-repository-config-create-project-create-svn-service.html
+    - /work/tutorials/2010/11/04/setup-create-repository-config-create-project-create-svn-service.html
 ---
 
 ![Subversion](https://trinhvanchung.files.wordpress.com/2010/11/image.png)

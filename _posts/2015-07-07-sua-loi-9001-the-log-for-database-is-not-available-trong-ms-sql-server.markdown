@@ -4,7 +4,10 @@ title: 'Sửa lỗi 9001: The log for database is not available trong MS SQL Ser
 date: '2015-07-07 03:15:43'
 categories: [Work, Tips and tricks]
 tags: [MS SQL Server]
-redirect_from: /sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/
+redirect_from: 
+    - /sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/
+    - /work/tips%20and%20tricks/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html
+    - /ms%20sql%20server/2015/07/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server.html
 ---
 
 

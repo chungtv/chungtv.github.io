@@ -7,6 +7,7 @@ tags: [MS SQL Server]
 redirect_from: 
   - /su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/
   - /ms%20sql%20server/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html
+  - /work/tutorials/2015/04/24/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger.html
 ---
 
 

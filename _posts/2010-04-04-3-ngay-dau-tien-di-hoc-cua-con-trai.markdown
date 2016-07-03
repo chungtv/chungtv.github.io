@@ -4,7 +4,10 @@ title: 3 ngày đầu tiên đi học của con trai!!!
 date: '2010-04-04 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /3-ngay-dau-tien-di-hoc-cua-con-trai/
+redirect_from: 
+    - /3-ngay-dau-tien-di-hoc-cua-con-trai/
+    - /2010/04/04/3-ngay-dau-tien-di-hoc-cua-con-trai.html
+    - /life/2010/04/04/3-ngay-dau-tien-di-hoc-cua-con-trai.html
 ---
 
 Thế là con trai đã lớn thật rồi, đã đi học, đã có nhiều bạn hơn và đã có cô giáo.

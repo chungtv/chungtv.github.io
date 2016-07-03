@@ -4,7 +4,9 @@ title: Authentication in SVN
 date: '2010-11-12 05:00:00'
 categories: [Work, Tutorials]
 tags: [SVN, Source Control]
-redirect_from: /authentication-in-svn/
+redirect_from: 
+    - /authentication-in-svn/
+    - /2010/11/12/authentication-in-svn.html
 ---
 
 Trong các bài trước, tôi đã hướng dẫn các bạn cài đặt, cấu hình đơn giản, tạo repository, sử dụng một số lệnh cơ bản của giao thức SVN để thao tác với Repository.

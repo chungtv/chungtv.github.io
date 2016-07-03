@@ -7,6 +7,7 @@ tags: [SVN, Source Control]
 redirect_from: 
   - /mot-so-lenh-co-ban-trong-svn/
   - /2010/11/05/mot-so-lenh-co-ban-trong-svn.html
+  - /work/tutorials/2010/11/05/mot-so-lenh-co-ban-trong-svn.html
 ---
 
 ![Subversion](https://trinhvanchung.files.wordpress.com/2010/11/image_thumb.png?w=396&h=58)

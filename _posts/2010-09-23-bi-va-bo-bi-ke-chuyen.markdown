@@ -4,7 +4,9 @@ title: 'Bi và bo: Bi kể chuyện'
 date: '2010-09-23 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /bi-va-bo-bi-ke-chuyen/
+redirect_from: 
+    - /bi-va-bo-bi-ke-chuyen/
+    - /2010/09/23/bi-va-bo-bi-ke-chuyen.html
 ---
 
 > Lần đầu tiên show hình cu em và 2 anh em bi – bo (anh là Nhất – em là Nhân).

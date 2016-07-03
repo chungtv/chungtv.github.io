@@ -6,6 +6,7 @@ categories: [Life]
 redirect_from: 
   - /thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi/
   - /2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html
+  - /life/2015/04/16/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi.html
 ---
 
 > Ngôi nhà nằm trong con ngõ nhỏ điển hình cho kiểu nhà ống Hà Nội - những căn nhà để đưa ánh sáng vào là cả một tham vọng.

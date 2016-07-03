@@ -4,7 +4,9 @@ title: Sinh nhật đầu tiên của con trai tôi.
 date: '2009-12-11 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /sinh-nhat-dau-tien-cua-con-trai-toi/
+redirect_from: 
+    - /sinh-nhat-dau-tien-cua-con-trai-toi/
+    - /2009/12/11/sinh-nhat-dau-tien-cua-con-trai-toi.html
 ---
 
 Bi à, thế là con của bố đã sắp 1 tuổi rồi đấy. Thời gian nhanh quá con nhỉ, gần đến lúc con tròn 1 năm thì bố nhớ lại lúc con bố vừa chào đời, những cảm xúc buồn vui lẫn lộn, xen kẽ nhau ùa đến trong suy nghĩ của bố.

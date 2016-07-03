@@ -4,7 +4,9 @@ title: Những tác phẩm đầu tay của con trai
 date: '2011-06-01 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirect_from: /nhung-tac-pham-dau-tay-cua-con-trai/
+redirect_from: 
+    - /nhung-tac-pham-dau-tay-cua-con-trai/
+    - /2011/06/01/nhung-tac-pham-dau-tay-cua-con-trai.html
 ---
 
 Đây là những tác phẩm đầu tay của con trai Ngọc Nhất năm đầu tiên đi học. Giời thiệu của anh chị em :)

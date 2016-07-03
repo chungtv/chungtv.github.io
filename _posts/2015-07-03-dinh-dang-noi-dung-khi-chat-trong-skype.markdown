@@ -8,6 +8,7 @@ tags: [Skype]
 redirect_from: 
   - /dinh-dang-noi-dung-khi-chat-trong-skype/
   - /2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html
+  - /work/tutorials/2015/07/03/dinh-dang-noi-dung-khi-chat-trong-skype.html
 ---
 
 *[Skype](http://www.skype.com) hiện nay là một ứng dụng chat rất phổ biến, nó được các công ty sử dụng rất nhiều trong trao đổi công việc.*

@@ -4,7 +4,9 @@ title: Trung thu của ba–Trung thu của con
 date: '2012-09-29 05:00:00'
 categories: [Life]
 tags: [My Family]
-redirec_from: /trung-thu-cua-ba-trung-thu-cua-con/
+redirec_from: 
+    - /trung-thu-cua-ba-trung-thu-cua-con/
+    - /2012/09/29/trung-thu-cua-ba-trung-thu-cua-con.html
 ---
 
 ![](https://chuyengiadinh.files.wordpress.com/2012/09/p1010200.jpg)

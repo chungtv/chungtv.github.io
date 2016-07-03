@@ -3,7 +3,9 @@ layout: post
 title: Chân giá trị
 date: '2010-09-21 05:00:00'
 categories: [Life]
-redirect_from: /chan-gia-tri/
+redirect_from: 
+    - /chan-gia-tri/
+    - /2010/09/21/chan-gia-tri.html
 ---
 
 ![](https://trinhvanchung.files.wordpress.com/2010/09/tinvaodieukhongcotheposter1.jpg)
