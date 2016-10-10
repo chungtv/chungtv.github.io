@@ -17,5 +17,4 @@ Tôi đang sử dụng Macbook pro retina 13 inch. Một số phím tôi thườ
  * Phím <kbd>End</kbd> = <kbd>Fn</kbd>+<kbd>→</kbd>
  * Phím <kbd>Page Up</kbd> = <kbd>Fn</kbd>+<kbd>↑</kbd>
  * Phím <kbd>Page Down</kbd> = <kbd>Fn</kbd>+<kbd>↓</kbd>
-
-Với Parallels trên Mac cài Windows, để sử dụng phím <kbd>INS</kbd>, nhấn tổ hợp <kbd>fn</kbd>+<kbd>return</kbd>
+ * Với Parallels trên Mac cài Windows, để sử dụng phím <kbd>INS</kbd>, nhấn tổ hợp <kbd>fn</kbd>+<kbd>return</kbd>
