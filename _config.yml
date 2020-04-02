@@ -3,7 +3,7 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-url: http://chungtrinh.com
+url: https://b.chungtrinh.com
 baseurl: #""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
