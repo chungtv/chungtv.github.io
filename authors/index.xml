@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Chung Trịnh&#39;s Notes</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi-vn</language><lastBuildDate>Mon, 14 Jan 2019 17:35:25 +0700</lastBuildDate>
+    <image>
+      <url>/images/icon_hu1878d3b78efadcc51c14dd0b1afc88d1_1062_512x512_fill_lanczos_center_2.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+  </channel>
+</rss>

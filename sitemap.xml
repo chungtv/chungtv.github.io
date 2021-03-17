@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/03/2021-03-17-con-trai/</loc>
+    <lastmod>2021-03-17T12:27:39+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-03-17T12:27:39+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/08/19-phuong-phap-ban-hang-thong-minh-cho-doanh-nghiep-saas/</loc>
+    <lastmod>2020-08-24T22:27:39+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/04/thiet-ke-form-tot-hon/</loc>
+    <lastmod>2020-04-27T22:27:39+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/10/mot-so-static-generator-su-dung-de-viet-document/</loc>
+    <lastmod>2019-10-21T18:20:55+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/10/error-during-websocket-handshake-incorrect-sec-websocket-accept-header-value/</loc>
+    <lastmod>2019-10-18T18:20:26+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/02/the-best-way-to-install-node-js-npm-and-yarn-on-mac-osx/</loc>
+    <lastmod>2019-02-13T18:15:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2019-01-14T17:35:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/chung-trinh/</loc>
+    <lastmod>2019-01-14T17:35:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/01/may-do-phan-mem/</loc>
+    <lastmod>2019-01-14T17:35:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/12/authentication-va-authorization/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/12/cong-viec-khong-nuoi-nguoi-nhan-ha-tap-the-khong-nuoi-ke-luoi/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/11/6-dieu-salesman-can-phai-nho-2/</loc>
+    <lastmod>2018-11-17T18:30:56+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/restore-mssql-database-su-dung-sql-scripts-t-sql/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/how-to-enable-tcp-ip-for-sql-server-using-command-line/</loc>
+    <lastmod>2018-07-05T18:31:22+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/lam-thue-va-lam-chu/</loc>
+    <lastmod>2018-07-04T18:31:35+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/05/round-up-hoac-round-down-trong-sql-server/</loc>
+    <lastmod>2018-05-13T18:31:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/11/mot-so-extensions-huu-ich-cho-safari/</loc>
+    <lastmod>2017-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/10/encrypt-and-decrypt-connection-strings-in-web-config/</loc>
+    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/12/sua-loi-validation-of-viewstate-mac-failed-khi-host-web-asp-net/</loc>
+    <lastmod>2016-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/11/sql-server-attach-database-voi-file-mdf/</loc>
+    <lastmod>2016-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/11/sql-server-take-offline-database-bi-treo/</loc>
+    <lastmod>2016-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/11/tren-cay-co-10-con-chim-ban-chet-1-con-hoi-con-lai-may-con/</loc>
+    <lastmod>2016-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/10/5-cach-de-hoc-mot-ngon-ngu-lap-trinh-hoac-mot-nen-tang-moi/</loc>
+    <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/06/ban-co-gi-khi-di-khach/</loc>
+    <lastmod>2016-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/demo/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/internal-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/03/underdog-aka-metegol/</loc>
+    <lastmod>2016-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/10/thay-doi-duong-dan-local-trong-team-foundation-server/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/10/sua-loi-unable-to-modify-table-timeout-expired-trong-sql-server-management-studio/</loc>
+    <lastmod>2015-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/09/cach-sua-loi-conflict-collation-trong-ms-sql-server/</loc>
+    <lastmod>2015-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/08/start-menu-cotana-va-modern-apps-khong-hoat-dong-trong-windows-10/</loc>
+    <lastmod>2015-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/su-dung-fn-key-trong-vmware-fusion/</loc>
+    <lastmod>2015-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/macbook-keyboard/</loc>
+    <lastmod>2015-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/sua-loi-9001-the-log-for-database-is-not-available-trong-ms-sql-server/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/tips-lay-thuoc-tinh-cua-tat-ca-database-trong-ms-sql-server-2/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/hien-thi-danh-sach-database-va-vi-tri-luu-tru-trong-sql-server/</loc>
+    <lastmod>2015-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/dinh-dang-noi-dung-khi-chat-trong-skype/</loc>
+    <lastmod>2015-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/05/mo-2-tai-khoan-skype-tren-cung-mot-may-tinh/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/05/sql-server-ctrl-r-khong-lam-viec-trong-ssms/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/04/luu-cau-hinh-ip-va-set-lai-khi-can-thiet-bang-dong-lenh/</loc>
+    <lastmod>2015-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/04/su-dung-columns_updated-de-kiem-tra-truong-duoc-update-trong-trigger/</loc>
+    <lastmod>2015-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/04/thien-nhien-chan-hoa-trong-nha-ong-40-m2-o-ha-noi/</loc>
+    <lastmod>2015-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/04/welcome-to-chung-trinh-blog-with-ghost/</loc>
+    <lastmod>2015-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/07/toi-30/</loc>
+    <lastmod>2014-07-09T23:04:43+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2013/01/mot-vai-suy-nghi-sau-khi-doc-ben-thang-cuoc/</loc>
+    <lastmod>2013-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2013/01/chao-nam-2012-don-2013/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/09/trung-thu-cua-ba-trung-thu-cua-con/</loc>
+    <lastmod>2012-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/09/huong-dan-cai-dat-he-dieu-hanh-mac-osx-tren-vmware/</loc>
+    <lastmod>2012-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/09/huong-dan-viet-blog-wordpress-tu-microsoft-word-2013/</loc>
+    <lastmod>2012-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/07/huong-dan-su-dung-dropbox/</loc>
+    <lastmod>2012-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/05/bang-tam-trong-ms-sql-server-temporary-tables-in-ms-sql-server/</loc>
+    <lastmod>2012-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/05/entry-for-may-14-2012/</loc>
+    <lastmod>2012-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/04/tao-file-batch-dong-bo-2-thu-muc-theo-ngay/</loc>
+    <lastmod>2012-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/12/ve-tau/</loc>
+    <lastmod>2011-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/11/nuoc-mat-dan-ong/</loc>
+    <lastmod>2011-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/05/truy-van-du-lieu-tu-xa-thong-qua-ms-sql-linked-server/</loc>
+    <lastmod>2011-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/05/xoa-code-tren-forms-va-class-cua-foxpro/</loc>
+    <lastmod>2011-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/05/edit-log-message-trong-svn/</loc>
+    <lastmod>2011-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/04/nhan-ngay-sach-noi-chuyen-ve-sach-cua-toi/</loc>
+    <lastmod>2011-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/04/truyen-tranh-doc-nguoc/</loc>
+    <lastmod>2011-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/12/tu-chuyen-xay-ra-o-vien-quan-y-175/</loc>
+    <lastmod>2010-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/11/authentication-in-svn/</loc>
+    <lastmod>2010-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/11/ham-dem-so-ngay-thu-trong-1-khoang-thoi-gian/</loc>
+    <lastmod>2010-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/11/mot-so-lenh-co-ban-trong-svn/</loc>
+    <lastmod>2010-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/11/setup-create-repository-config-create-project-create-svn-service/</loc>
+    <lastmod>2010-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/10/loi-khi-go-bo-microsoft-office-2007/</loc>
+    <lastmod>2010-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/09/chan-gia-tri/</loc>
+    <lastmod>2010-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/09/gia-tri-gia-tri-su-dung-va-chuyen-lang-phi/</loc>
+    <lastmod>2010-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/09/ket-xe-ky-su/</loc>
+    <lastmod>2010-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/05/chuyen-o-sieu-thi/</loc>
+    <lastmod>2010-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/05/inside-out-outside-in/</loc>
+    <lastmod>2010-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/04/banh-pia-nuoc-tra-su-ket-hop-tuyet-voi/</loc>
+    <lastmod>2010-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/04/ao-dai-nho/</loc>
+    <lastmod>2010-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/04/tu-hao-que-huong-thanh-hoa/</loc>
+    <lastmod>2010-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2009/12/sinh-nhat-dau-tien-cua-con-trai-toi/</loc>
+    <lastmod>2009-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2009/11/ky-niem-ve-nhung-nguoi-thay/</loc>
+    <lastmod>2009-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/nelson-bighetti/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+  </url>
+  
+</urlset>
